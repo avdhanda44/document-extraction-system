@@ -1,0 +1,12 @@
+{
+    "employee_name": "Arjun Mehta",
+    "employee_id": "EMP-9153",
+    "date_of_birth": "28/08/1992",
+    "date_of_joining": "12/06/2026",
+    "department": "Product Management",
+    "designation": "Associate Product Manager",
+    "mobile_number": "9832156487",
+    "email": "arjun.mehta@example.com",
+    "address": "8B, Skyline Towers, Bannerghatta Road, Bengaluru; Karnataka",
+    "pincode": "560076"
+}

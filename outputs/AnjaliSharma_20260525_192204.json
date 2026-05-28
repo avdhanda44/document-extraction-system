@@ -1,0 +1,12 @@
+{
+    "employee_name": "Anjali Sharma",
+    "employee_id": "EMP-2047",
+    "date_of_birth": "22/11/1993",
+    "date_of_joining": "15/05/2026",
+    "department": "Human Resources",
+    "designation": "HR Executive",
+    "mobile_number": "9123456789",
+    "email": "anjali sharma@example.com",
+    "address": "45, Green Park Lane, Bengaluru, Karnataka",
+    "pincode": "560034"
+}
