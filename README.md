@@ -1,282 +1,188 @@
-# Intelligent Document Extraction System
+# Document Extraction POC
 
-## Project Overview
+This project is a local proof of concept for extracting structured employee form data from uploaded documents.
 
-This project focuses on building an intelligent document extraction system capable of automatically processing multiple document formats and extracting structured information for business workflows and form automation.
+The main file to run is `document_extraction_poc.ipynb`. It loads a few helper notebooks, asks for a file from `uploads/`, extracts the text, converts the form fields into JSON, and saves the result in `outputs/`.
 
-The primary goal is to reduce manual data entry by converting uploaded documents into machine-readable structured JSON outputs.
+## Current Status
 
-The system is being designed in a modular and scalable way so that additional document types, extraction methods, and AI capabilities can be integrated in future phases.
-
----
-
-# Problem Statement
-
-Organizations often receive documents in multiple formats such as:
-
-- Employee enrollment forms
-- Identification documents
-- Policy forms
-- Scanned PDFs
-- Images of forms
-
-Manually extracting information from these documents is time-consuming and error-prone.
-
-This project aims to automate that process by:
-
-- Detecting document type
-- Extracting text
-- Identifying predefined fields
-- Returning structured JSON output
-- Supporting future multilingual and AI-based extraction workflows
-
----
-
-# Current Project Status
-
-## Completed Features
-
-### 1. Local Document Processing Pipeline
-- Local project environment setup
-- Structured project folder organization
-- Uploads and outputs management
-
----
-
-### 2. File Validation
-The system currently validates:
-
-- Empty filename detection
-- File existence
-- Valid file path checking
-
----
-
-### 3. Real File Type Detection
-The system does not rely only on file extensions.
-
-Actual file signatures (magic bytes) are used to detect:
-
-- PNG
-- JPG/JPEG
-- PDF
-- Office document signatures
-
-Example:
-- A fake `.pdf` renamed from an image can still be detected correctly.
-
----
-
-### 4. OCR Extraction for Images
-Implemented OCR pipeline using:
-
-- EasyOCR
-
-Current image support:
-- PNG
-- JPG/JPEG
-
-Capabilities:
-- Detect text regions
-- Extract text
-- Generate clean text output
-
----
-
-### 5. PDF Processing
 Implemented:
-- Digital PDF detection
-- Text extraction using `pdfplumber`
 
-Current workflow:
-- If PDF contains machine-readable text → extract directly
-- If no readable text exists → classify as scanned PDF
+- File name validation against the local `uploads/` folder
+- File type detection using file content, not only file extension
+- Digital PDF text extraction with `pdfplumber`
+- Scanned PDF OCR using `pdf2image` and `EasyOCR`
+- PNG/JPG image OCR using `EasyOCR`
+- DOCX text extraction using `python-docx`
+- Schema-based extraction for employee enrollment forms
+- Cleanup for common OCR email mistakes
+- Timestamped JSON output files
 
----
+Not implemented yet:
 
-### 6. Scanned PDF Detection
-The system can already identify scanned PDFs.
+- Excel extraction
+- API or web app
+- Human review/edit screen
+- Database storage
 
-Planned next step:
-- Convert scanned PDF pages into images
-- Pass pages through OCR pipeline
-
----
-
-### 7. Schema-Based Field Extraction
-Implemented extraction of predefined fields using form schema mapping.
-
-Current supported fields:
-
-- Employee Name
-- Employee ID
-- Date of Birth
-- Date of Joining
-- Department
-- Designation
-- Mobile Number
-- Email
-- Address
-- Pincode
-
----
-
-### 8. Structured JSON Output
-The extracted information is converted into structured JSON format.
-
-Example:
-
-```json
-{
-    "employee_name": "Arjun Mehta",
-    "employee_id": "EMP-9153",
-    "department": "Product Management"
-}
-```
-
-JSON outputs are automatically timestamped and saved inside the outputs folder.
-
----
-
-# Current Architecture
-
-```text
-Document Upload
-        ↓
-File Validation
-        ↓
-Actual File Type Detection
-        ↓
-Image OCR OR PDF Extraction
-        ↓
-Clean Text Generation
-        ↓
-Schema-Based Field Extraction
-        ↓
-Structured JSON Output
-```
-
----
-
-# Technologies Used
-
-## Programming Language
-- Python
-
-## OCR
-- EasyOCR
-
-## PDF Processing
-- pdfplumber
-
-## Environment
-- Jupyter Notebook
-- VS Code
-
-## Data Format
-- JSON
-
-## File Handling
-- pathlib
-
----
-
-# Current Limitations
-
-The current version is intentionally focused on building a stable foundational pipeline.
-
-Not yet implemented:
-
-- Scanned PDF OCR processing
-- DOCX support
-- Excel support
-- Multilingual OCR
-- Human review UI
-- Database integration
-- API deployment
-- NER-based extraction
-- Cloud hosting
-
----
-
-# Planned Future Enhancements
-
-## 1. Scanned PDF OCR Pipeline
-PDF → Image Conversion → OCR
-
----
-
-## 2. Multilingual Support
-Planned language support:
-- English
-- Hindi
-- Additional Indian regional languages
-
----
-
-## 3. Named Entity Recognition (NER)
-NER will later help with:
-- Unstructured documents
-- Flexible document layouts
-- Sentence-level extraction
-
----
-
-## 4. Human Review Interface
-Users will be able to:
-- Review extracted values
-- Edit incorrect fields
-- Approve final structured data
-
----
-
-## 5. API & UI Development
-Future plans include:
-- FastAPI backend
-- Streamlit interface
-- Web upload system
-
----
-
-## 6. Database Integration
-Planned support for:
-- PostgreSQL
-- MongoDB
-- Cloud storage systems
-
----
-
-# End Goal
-
-The long-term objective is to build a scalable intelligent document processing platform capable of:
-
-- Handling multiple document types
-- Supporting multilingual extraction
-- Automating form-filling workflows
-- Reducing manual processing effort
-- Generating reliable structured outputs
-- Integrating with enterprise business systems
-
-The system is being designed incrementally, starting from core OCR and structured extraction foundations before moving into advanced AI-assisted workflows.
-
----
-
-# Repository Structure
+## Project Structure
 
 ```text
 document_extractor/
-│
-├── uploads/
-├── outputs/
-├── document_extraction_poc.ipynb
-├── main.py
-├── README.md
+├── document_extraction_poc.ipynb   # main notebook to run
+├── 01_project_setup.ipynb          # imports, folders, schema, file validation
+├── 02_text_extraction.ipynb        # PDF/image/DOCX detection and text extraction
+├── 03_field_extraction.ipynb       # text cleanup and JSON field extraction
+├── 04_save_output.ipynb            # JSON output saving
+├── uploads/                        # input files
+├── outputs/                        # generated JSON files
 ├── pyproject.toml
-└── .gitignore
+├── uv.lock
+└── README.md
 ```
 
----
+## Supported Input Files
 
-# Current Development Approach
+Currently supported:
 
-The project is currently being developed and tested locally with sample documents and iterative improvements before moving toward deployment and broader collaboration/testing workflows.
+- `.pdf` files with machine-readable text
+- scanned `.pdf` files, if Poppler is installed
+- `.png` images
+- `.jpg` / `.jpeg` images
+- `.docx` Word documents
+
+Scanned PDFs are converted to images with `pdf2image`, then read with `EasyOCR`.
+
+DOCX files are read directly with `python-docx`. The extractor reads both normal paragraphs and table cells.
+
+## How To Run
+
+Open `document_extraction_poc.ipynb` in VS Code or Jupyter and run the cells from top to bottom.
+
+The first code cell loads the helper notebooks:
+
+```python
+%run ./01_project_setup.ipynb
+%run ./02_text_extraction.ipynb
+%run ./03_field_extraction.ipynb
+%run ./04_save_output.ipynb
+```
+
+After that, the main notebook runs the POC flow:
+
+1. Enter a file name from `uploads/`.
+2. Validate the selected file.
+3. Detect whether the file is PDF, image, or DOCX.
+4. Extract raw text.
+5. Convert the text into structured JSON.
+6. Save the JSON file in `outputs/`.
+
+Example file names:
+
+```text
+AnjaliSharma.pdf
+NehaPatil.png
+EmployeeForm.docx
+```
+
+The output JSON file is saved using this format:
+
+```text
+<input_file_name>_<YYYYMMDD_HHMMSS>.json
+```
+
+## Extracted Fields
+
+The notebook extracts these fields:
+
+```json
+{
+    "employee_name": "",
+    "employee_id": "",
+    "date_of_birth": "",
+    "date_of_joining": "",
+    "department": "",
+    "designation": "",
+    "mobile_number": "",
+    "email": "",
+    "address": "",
+    "pincode": ""
+}
+```
+
+The field mapping is controlled by `form_schema` in `01_project_setup.ipynb`.
+
+## Notebook Guide
+
+`document_extraction_poc.ipynb` is the only notebook you need to run manually.
+
+The helper notebooks keep the code organized:
+
+- `01_project_setup.ipynb`: shared imports, folders, form schema, and file validation
+- `02_text_extraction.ipynb`: file type detection and raw text extraction
+- `03_field_extraction.ipynb`: OCR cleanup, label matching, and field extraction
+- `04_save_output.ipynb`: timestamped JSON saving
+
+This keeps the project notebook-based, but avoids putting all code in one large notebook.
+
+## Extraction Logic
+
+The parser handles common form layouts:
+
+- label and value on the same line
+- label on one line and value on the next line
+- separator-only values such as `:` or `-`
+- OCR-split labels, such as `Date of` followed by `Joining:`
+- common email OCR issues, such as spaces or colons inside the local part
+
+Example cleanup:
+
+```text
+priyanka nair@example.com -> priyanka.nair@example.com
+neha:patil@example.com    -> neha.patil@example.com
+```
+
+## Dependencies
+
+Defined in `pyproject.toml`:
+
+- Python `>=3.12`
+- `easyocr`
+- `pdfplumber`
+- `ipywidgets`
+- `ipykernel`
+- `opencv-python`
+- `pdf2image`
+- `pillow`
+- `python-docx`
+- `nbformat`
+
+If using `uv`, install dependencies with:
+
+```bash
+uv sync
+```
+
+Then open the notebook using the project virtual environment.
+
+Note: scanned PDF OCR requires Poppler because `pdf2image` depends on it.
+
+## Notes For Contributors
+
+- Put test files in `uploads/`.
+- Run `document_extraction_poc.ipynb` from top to bottom.
+- Do not manually edit generated JSON files unless testing output formatting.
+- If field extraction is wrong, first inspect the raw text output cell.
+- If OCR reads a value incorrectly, improve cleanup in `03_field_extraction.ipynb`.
+- If a new field is needed, add it to `form_schema` in `01_project_setup.ipynb`.
+- If a new file type is needed, update `detect_file_type()` and `extract_text()` in `02_text_extraction.ipynb`.
+
+## Roadmap
+
+Planned next steps:
+
+- Add validation rules for dates, phone numbers, emails, and pincode
+- Add confidence scores for OCR fields
+- Add a small review/edit interface
+- Add Excel support if needed
+- Add API support later if the POC moves beyond notebooks
