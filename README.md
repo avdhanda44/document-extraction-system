@@ -2,7 +2,9 @@
 
 This project is a local proof of concept for extracting structured employee form data from uploaded documents.
 
-The main file to run is `notebooks/document_extraction_poc.ipynb`. It loads a few helper notebooks, asks for a file from `uploads/`, extracts the text, converts the form fields into JSON, and saves the result in `outputs/`.
+The main file to run is `notebooks/document_extraction_poc.ipynb`. It loads a few helper Python files, asks for a file from `uploads/`, extracts the text, converts the form fields into JSON, and saves the result in `outputs/`.
+
+The helper Python files are available in the `notebooks/` folder as `01_project_setup.py`, `02_text_extraction.py`, `03_field_extraction.py`, `04_save_output.py`, and `05_validation.py`.
 
 ## Current Status
 
@@ -40,11 +42,11 @@ Not implemented yet:
 document_extractor/
 ├── notebooks/
 │   ├── document_extraction_poc.ipynb   # main notebook to run
-│   ├── 01_project_setup.ipynb          # imports, folders, schema, file validation
-│   ├── 02_text_extraction.ipynb        # PDF/image/DOCX detection and text extraction
-│   ├── 03_field_extraction.ipynb       # text cleanup and JSON field extraction
-│   ├── 04_save_output.ipynb            # JSON output saving
-│   └── 05_validation.ipynb             # post-extraction validation helpers
+│   ├── 01_project_setup.py             # python helper code for project setup
+│   ├── 02_text_extraction.py           # python helper code for text extraction
+│   ├── 03_field_extraction.py          # python helper code for field extraction
+│   ├── 04_save_output.py               # python helper code for output saving
+│   ├── 05_validation.py                # python helper code for validation helpers
 ├── uploads/                        # input files
 ├── outputs/                        # generated JSON files
 ├── pyproject.toml
@@ -70,14 +72,17 @@ DOCX files are read directly with `python-docx`. The extractor reads both normal
 
 Open `notebooks/document_extraction_poc.ipynb` in VS Code or Jupyter and run the cells from top to bottom.
 
-The first code cell loads the helper notebooks from the `notebooks/` folder:
+The first code cell loads the helper Python files from the `notebooks/` folder:
 
 ```python
-%run './notebooks/01_project_setup.ipynb'
-%run './notebooks/02_text_extraction.ipynb'
-%run './notebooks/03_field_extraction.ipynb'
-%run './notebooks/04_save_output.ipynb'
+%run './notebooks/01_project_setup.py'
+%run './notebooks/02_text_extraction.py'
+%run './notebooks/03_field_extraction.py'
+%run './notebooks/04_save_output.py'
+%run './notebooks/05_validation.py'
 ```
+
+Python module equivalents of the helper notebooks are also available in the same folder if you want a script-friendly version of the helper logic.
 
 After that, the main notebook runs the POC flow:
 
@@ -121,18 +126,19 @@ The notebook extracts these fields:
 }
 ```
 
-The field mapping is controlled by `form_schema` in `notebooks/01_project_setup.ipynb`.
+The field mapping is controlled by `form_schema` in `notebooks/01_project_setup.py`.
 
 ## Notebook Guide
 
 `notebooks/document_extraction_poc.ipynb` is the only notebook you need to run manually.
 
-The helper notebooks keep the code organized:
+The helper Python files keep the code organized:
 
-- `notebooks/01_project_setup.ipynb`: shared imports, folders, form schema, and file validation
-- `notebooks/02_text_extraction.ipynb`: file type detection and raw text extraction
-- `notebooks/03_field_extraction.ipynb`: OCR cleanup, label matching, and field extraction
-- `notebooks/04_save_output.ipynb`: timestamped JSON saving
+- `notebooks/01_project_setup.py`: shared imports, folders, form schema, and file validation
+- `notebooks/02_text_extraction.py`: file type detection and raw text extraction
+- `notebooks/03_field_extraction.py`: OCR cleanup, label matching, and field extraction
+- `notebooks/04_save_output.py`: timestamped JSON saving
+- `notebooks/05_validation.py`: validation helpers
 
 This keeps the project notebook-based, but avoids putting all code in one large notebook.
 
@@ -205,9 +211,9 @@ Missing values remain empty strings and are reported through validation errors o
 - Run `notebooks/document_extraction_poc.ipynb` from top to bottom.
 - Do not manually edit generated JSON files unless testing output formatting.
 - If field extraction is wrong, first inspect the raw text output cell.
-- If OCR reads a value incorrectly, improve cleanup in `notebooks/03_field_extraction.ipynb`.
-- If a new field is needed, add it to `form_schema` in `notebooks/01_project_setup.ipynb`.
-- If a new file type is needed, update `detect_file_type()` and `extract_text()` in `notebooks/02_text_extraction.ipynb`.
+- If OCR reads a value incorrectly, improve cleanup in `notebooks/03_field_extraction.py`.
+- If a new field is needed, add it to `form_schema` in `notebooks/01_project_setup.py`.
+- If a new file type is needed, update `detect_file_type()` and `extract_text()` in `notebooks/02_text_extraction.py`.
 
 ## Roadmap
 
