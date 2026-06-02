@@ -2,7 +2,7 @@
 
 This project is a local proof of concept for extracting structured employee form data from uploaded documents.
 
-The main file to run is `document_extraction_poc.ipynb`. It loads a few helper notebooks, asks for a file from `uploads/`, extracts the text, converts the form fields into JSON, and saves the result in `outputs/`.
+The main file to run is `notebooks/document_extraction_poc.ipynb`. It loads a few helper notebooks, asks for a file from `uploads/`, extracts the text, converts the form fields into JSON, and saves the result in `outputs/`.
 
 ## Current Status
 
@@ -18,6 +18,15 @@ Implemented:
 - Cleanup for common OCR email mistakes
 - Timestamped JSON output files
 
+- Post-extraction validation layer
+- Email validation
+- Mobile number validation
+- Pincode validation
+- Date validation
+- Employee ID validation
+- Required field validation
+- Validation summary generation
+
 Not implemented yet:
 
 - Excel extraction
@@ -29,11 +38,13 @@ Not implemented yet:
 
 ```text
 document_extractor/
-├── document_extraction_poc.ipynb   # main notebook to run
-├── 01_project_setup.ipynb          # imports, folders, schema, file validation
-├── 02_text_extraction.ipynb        # PDF/image/DOCX detection and text extraction
-├── 03_field_extraction.ipynb       # text cleanup and JSON field extraction
-├── 04_save_output.ipynb            # JSON output saving
+├── notebooks/
+│   ├── document_extraction_poc.ipynb   # main notebook to run
+│   ├── 01_project_setup.ipynb          # imports, folders, schema, file validation
+│   ├── 02_text_extraction.ipynb        # PDF/image/DOCX detection and text extraction
+│   ├── 03_field_extraction.ipynb       # text cleanup and JSON field extraction
+│   ├── 04_save_output.ipynb            # JSON output saving
+│   └── 05_validation.ipynb             # post-extraction validation helpers
 ├── uploads/                        # input files
 ├── outputs/                        # generated JSON files
 ├── pyproject.toml
@@ -57,15 +68,15 @@ DOCX files are read directly with `python-docx`. The extractor reads both normal
 
 ## How To Run
 
-Open `document_extraction_poc.ipynb` in VS Code or Jupyter and run the cells from top to bottom.
+Open `notebooks/document_extraction_poc.ipynb` in VS Code or Jupyter and run the cells from top to bottom.
 
-The first code cell loads the helper notebooks:
+The first code cell loads the helper notebooks from the `notebooks/` folder:
 
 ```python
-%run ./01_project_setup.ipynb
-%run ./02_text_extraction.ipynb
-%run ./03_field_extraction.ipynb
-%run ./04_save_output.ipynb
+%run './notebooks/01_project_setup.ipynb'
+%run './notebooks/02_text_extraction.ipynb'
+%run './notebooks/03_field_extraction.ipynb'
+%run './notebooks/04_save_output.ipynb'
 ```
 
 After that, the main notebook runs the POC flow:
@@ -110,18 +121,18 @@ The notebook extracts these fields:
 }
 ```
 
-The field mapping is controlled by `form_schema` in `01_project_setup.ipynb`.
+The field mapping is controlled by `form_schema` in `notebooks/01_project_setup.ipynb`.
 
 ## Notebook Guide
 
-`document_extraction_poc.ipynb` is the only notebook you need to run manually.
+`notebooks/document_extraction_poc.ipynb` is the only notebook you need to run manually.
 
 The helper notebooks keep the code organized:
 
-- `01_project_setup.ipynb`: shared imports, folders, form schema, and file validation
-- `02_text_extraction.ipynb`: file type detection and raw text extraction
-- `03_field_extraction.ipynb`: OCR cleanup, label matching, and field extraction
-- `04_save_output.ipynb`: timestamped JSON saving
+- `notebooks/01_project_setup.ipynb`: shared imports, folders, form schema, and file validation
+- `notebooks/02_text_extraction.ipynb`: file type detection and raw text extraction
+- `notebooks/03_field_extraction.ipynb`: OCR cleanup, label matching, and field extraction
+- `notebooks/04_save_output.ipynb`: timestamped JSON saving
 
 This keeps the project notebook-based, but avoids putting all code in one large notebook.
 
@@ -167,15 +178,36 @@ Then open the notebook using the project virtual environment.
 
 Note: scanned PDF OCR requires Poppler because `pdf2image` depends on it.
 
+## Validation Layer
+
+After field extraction, the extracted JSON is validated before being saved.
+
+Validation checks:
+
+- Required fields
+- Email format
+- Mobile number format
+- Pincode format
+- Date validity
+- Employee ID format
+
+The final output contains:
+
+- extracted_data
+- validation_results
+- validation_summary
+
+Missing values remain empty strings and are reported through validation errors or warnings rather than being replaced with placeholder text.
+
 ## Notes For Contributors
 
 - Put test files in `uploads/`.
-- Run `document_extraction_poc.ipynb` from top to bottom.
+- Run `notebooks/document_extraction_poc.ipynb` from top to bottom.
 - Do not manually edit generated JSON files unless testing output formatting.
 - If field extraction is wrong, first inspect the raw text output cell.
-- If OCR reads a value incorrectly, improve cleanup in `03_field_extraction.ipynb`.
-- If a new field is needed, add it to `form_schema` in `01_project_setup.ipynb`.
-- If a new file type is needed, update `detect_file_type()` and `extract_text()` in `02_text_extraction.ipynb`.
+- If OCR reads a value incorrectly, improve cleanup in `notebooks/03_field_extraction.ipynb`.
+- If a new field is needed, add it to `form_schema` in `notebooks/01_project_setup.ipynb`.
+- If a new file type is needed, update `detect_file_type()` and `extract_text()` in `notebooks/02_text_extraction.ipynb`.
 
 ## Roadmap
 

@@ -7,4 +7,10 @@ wheels/
 *.egg-info
 
 # Virtual environments
-.venv
+.venv/
+
+# Notebook and output artifacts
+.ipynb_checkpoints/
+__pycache__/
+outputs/*.json
+validation_test_report*.json
