@@ -2,9 +2,7 @@
 
 This project is a local proof of concept for extracting structured employee form data from uploaded documents.
 
-The main file to run is `notebooks/document_extraction_poc.ipynb`. It loads a few helper Python files, asks for a file from `uploads/`, extracts the text, converts the form fields into JSON, and saves the result in `outputs/`.
-
-The helper Python files are available in the `notebooks/` folder as `01_project_setup.py`, `02_text_extraction.py`, `03_field_extraction.py`, `04_save_output.py`, and `05_validation.py`.
+The main file to run is `main.py`. It reads a file from `uploads/`, extracts text, classifies the document, maps field values, validates the extracted values, and saves the final JSON.
 
 ## Current Status
 
@@ -18,8 +16,7 @@ Implemented:
 - DOCX text extraction using `python-docx`
 - Schema-based extraction for employee enrollment forms
 - Cleanup for common OCR email mistakes
-- Timestamped JSON output files
-
+- One output JSON file per uploaded file
 - Post-extraction validation layer
 - Email validation
 - Mobile number validation
@@ -39,16 +36,25 @@ Not implemented yet:
 ## Project Structure
 
 ```text
-document_extractor/
-├── notebooks/
-│   ├── document_extraction_poc.ipynb   # main notebook to run
-│   ├── 01_project_setup.py             # python helper code for project setup
-│   ├── 02_text_extraction.py           # python helper code for text extraction
-│   ├── 03_field_extraction.py          # python helper code for field extraction
-│   ├── 04_save_output.py               # python helper code for output saving
-│   ├── 05_validation.py                # python helper code for validation helpers
-├── uploads/                        # input files
-├── outputs/                        # generated JSON files
+document-extraction-system/
+├── Backend/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── json_generator.py
+│   ├── processor/
+│   │   ├── __init__.py
+│   │   ├── text_extractor.py
+│   │   ├── pdf_processor.py
+│   │   ├── ocr_processor.py
+│   │   ├── docx_processor.py
+│   ├── extractor/
+│   │   ├── __init__.py
+│   │   ├── document_classification.py
+│   │   ├── field_mapper.py
+│   │   ├── validation.py
+├── uploads/
+├── outputs/
+├── main.py
 ├── pyproject.toml
 ├── uv.lock
 └── README.md
@@ -70,46 +76,33 @@ DOCX files are read directly with `python-docx`. The extractor reads both normal
 
 ## How To Run
 
-Open `notebooks/document_extraction_poc.ipynb` in VS Code or Jupyter and run the cells from top to bottom.
+Put the document inside the `uploads/` folder.
 
-The first code cell loads the helper Python files from the `notebooks/` folder:
+Run the project from the project root:
 
-```python
-%run './notebooks/01_project_setup.py'
-%run './notebooks/02_text_extraction.py'
-%run './notebooks/03_field_extraction.py'
-%run './notebooks/04_save_output.py'
-%run './notebooks/05_validation.py'
+```bash
+uv --cache-dir .uv-cache run python main.py RahulVerma.pdf
 ```
-
-Python module equivalents of the helper notebooks are also available in the same folder if you want a script-friendly version of the helper logic.
-
-After that, the main notebook runs the POC flow:
-
-1. Enter a file name from `uploads/`.
-2. Validate the selected file.
-3. Detect whether the file is PDF, image, or DOCX.
-4. Extract raw text.
-5. Convert the text into structured JSON.
-6. Save the JSON file in `outputs/`.
 
 Example file names:
 
 ```text
 AnjaliSharma.pdf
 NehaPatil.png
-EmployeeForm.docx
+RahulVerma.pdf
 ```
 
 The output JSON file is saved using this format:
 
 ```text
-<input_file_name>_<YYYYMMDD_HHMMSS>.json
+outputs/<input_file_name>_output.json
 ```
+
+Running the same input file again replaces the same output file.
 
 ## Extracted Fields
 
-The notebook extracts these fields:
+The employee form schema extracts these fields:
 
 ```json
 {
@@ -125,22 +118,6 @@ The notebook extracts these fields:
     "pincode": ""
 }
 ```
-
-The field mapping is controlled by `form_schema` in `notebooks/01_project_setup.py`.
-
-## Notebook Guide
-
-`notebooks/document_extraction_poc.ipynb` is the only notebook you need to run manually.
-
-The helper Python files keep the code organized:
-
-- `notebooks/01_project_setup.py`: shared imports, folders, form schema, and file validation
-- `notebooks/02_text_extraction.py`: file type detection and raw text extraction
-- `notebooks/03_field_extraction.py`: OCR cleanup, label matching, and field extraction
-- `notebooks/04_save_output.py`: timestamped JSON saving
-- `notebooks/05_validation.py`: validation helpers
-
-This keeps the project notebook-based, but avoids putting all code in one large notebook.
 
 ## Extraction Logic
 
@@ -167,20 +144,17 @@ Defined in `pyproject.toml`:
 - `easyocr`
 - `pdfplumber`
 - `ipywidgets`
-- `ipykernel`
 - `opencv-python`
 - `pdf2image`
 - `pillow`
 - `python-docx`
-- `nbformat`
+- `regex`
 
 If using `uv`, install dependencies with:
 
 ```bash
 uv sync
 ```
-
-Then open the notebook using the project virtual environment.
 
 Note: scanned PDF OCR requires Poppler because `pdf2image` depends on it.
 
@@ -199,21 +173,19 @@ Validation checks:
 
 The final output contains:
 
-- extracted_data
-- validation_results
-- validation_summary
+- `extracted_output`
+- `validation`
 
 Missing values remain empty strings and are reported through validation errors or warnings rather than being replaced with placeholder text.
 
 ## Notes For Contributors
 
 - Put test files in `uploads/`.
-- Run `notebooks/document_extraction_poc.ipynb` from top to bottom.
+- Run `main.py` from the project root.
 - Do not manually edit generated JSON files unless testing output formatting.
-- If field extraction is wrong, first inspect the raw text output cell.
-- If OCR reads a value incorrectly, improve cleanup in `notebooks/03_field_extraction.py`.
-- If a new field is needed, add it to `form_schema` in `notebooks/01_project_setup.py`.
-- If a new file type is needed, update `detect_file_type()` and `extract_text()` in `notebooks/02_text_extraction.py`.
+- If field extraction is wrong, first inspect the raw extracted text from the processor output during debugging.
+- If OCR reads a value incorrectly, inspect the image quality and OCR output.
+- If a new file type is needed, update `detect_uploaded_file_type()` and `extract_text_by_file_type()` in `Backend/processor/text_extractor.py`.
 
 ## Roadmap
 
@@ -223,4 +195,4 @@ Planned next steps:
 - Add confidence scores for OCR fields
 - Add a small review/edit interface
 - Add Excel support if needed
-- Add API support later if the POC moves beyond notebooks
+- Add API support later if needed
