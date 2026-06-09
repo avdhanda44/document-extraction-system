@@ -1,0 +1,20 @@
+{
+    "bank_name": "Punjab National Bank",
+    "branch_name": "Chandni Chowk",
+    "ifsc": "PUNB0004567",
+    "account_number": "50400456789012",
+    "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+    "account_holder": "Mr. Vikram Singh",
+    "father_name": "Harpal Singh",
+    "cif_number": "090817044",
+    "pan_number": "DEFRS3456G",
+    "address": "45 Civil Lines Jaipur Rajasthan 302006",
+    "account_opened": "18/01/2009",
+    "source_images": [
+        "EMP004_passbook_clean.png",
+        "EMP004_passbook_rotated.png",
+        "EMP004_passbook_blurred.png",
+        "EMP004_passbook_compressed.jpg",
+        "EMP004_passbook_mobile_photo.jpg"
+    ]
+}

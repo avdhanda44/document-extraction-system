@@ -1,0 +1,20 @@
+{
+    "bank_name": "ICICI Bank",
+    "branch_name": "Fort",
+    "ifsc": "ICIC0003456",
+    "account_number": "50300345678901",
+    "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+    "account_holder": "Ms. Anjali Nair",
+    "father_name": "Suresh Nair",
+    "cif_number": "090787783",
+    "pan_number": "CDEQN9012F",
+    "address": "23 Marine Drive Mumbai Maharashtra 400020",
+    "account_opened": "05/11/2016",
+    "source_images": [
+        "EMP003_passbook_clean.png",
+        "EMP003_passbook_rotated.png",
+        "EMP003_passbook_blurred.png",
+        "EMP003_passbook_compressed.jpg",
+        "EMP003_passbook_mobile_photo.jpg"
+    ]
+}
