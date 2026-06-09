@@ -1,0 +1,19 @@
+{
+    "aadhaar_number": "4567 8901 2345",
+    "name": "Anjali Nair",
+    "date_of_birth": "05/11/1994",
+    "gender": "Female",
+    "address": "23 Marine Drive Mumbai Maharashtra 400020",
+    "source_images": [
+        "EMP003_aadhaar_front_clean.png",
+        "EMP003_aadhaar_front_rotated.png",
+        "EMP003_aadhaar_front_blurred.png",
+        "EMP003_aadhaar_front_compressed.jpg",
+        "EMP003_aadhaar_front_mobile_photo.jpg",
+        "EMP003_aadhaar_back_clean.png",
+        "EMP003_aadhaar_back_rotated.png",
+        "EMP003_aadhaar_back_blurred.png",
+        "EMP003_aadhaar_back_compressed.jpg",
+        "EMP003_aadhaar_back_mobile_photo.jpg"
+    ]
+}

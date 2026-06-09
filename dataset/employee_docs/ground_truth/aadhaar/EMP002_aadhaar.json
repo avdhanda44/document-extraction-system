@@ -1,0 +1,19 @@
+{
+    "aadhaar_number": "3456 7890 1234",
+    "name": "Rohit Verma",
+    "date_of_birth": "22/07/1989",
+    "gender": "Male",
+    "address": "7B MG Road Bengaluru Karnataka 560001",
+    "source_images": [
+        "EMP002_aadhaar_front_clean.png",
+        "EMP002_aadhaar_front_rotated.png",
+        "EMP002_aadhaar_front_blurred.png",
+        "EMP002_aadhaar_front_compressed.jpg",
+        "EMP002_aadhaar_front_mobile_photo.jpg",
+        "EMP002_aadhaar_back_clean.png",
+        "EMP002_aadhaar_back_rotated.png",
+        "EMP002_aadhaar_back_blurred.png",
+        "EMP002_aadhaar_back_compressed.jpg",
+        "EMP002_aadhaar_back_mobile_photo.jpg"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "pan_number": "ABCPS1234D",
+    "name": "Priya Sharma",
+    "father_name": "Rajesh Sharma",
+    "date_of_birth": "15/03/1992",
+    "gender": "Female",
+    "source_images": [
+        "EMP001_pan_clean.png",
+        "EMP001_pan_rotated.png",
+        "EMP001_pan_blurred.png",
+        "EMP001_pan_compressed.jpg",
+        "EMP001_pan_mobile_photo.jpg"
+    ]
+}

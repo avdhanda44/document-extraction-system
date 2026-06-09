@@ -1,0 +1,19 @@
+{
+    "aadhaar_number": "6789 0123 4567",
+    "name": "Sneha Iyer",
+    "date_of_birth": "30/06/1996",
+    "gender": "Female",
+    "address": "88 Anna Salai Chennai Tamil Nadu 600002",
+    "source_images": [
+        "EMP005_aadhaar_front_clean.png",
+        "EMP005_aadhaar_front_rotated.png",
+        "EMP005_aadhaar_front_blurred.png",
+        "EMP005_aadhaar_front_compressed.jpg",
+        "EMP005_aadhaar_front_mobile_photo.jpg",
+        "EMP005_aadhaar_back_clean.png",
+        "EMP005_aadhaar_back_rotated.png",
+        "EMP005_aadhaar_back_blurred.png",
+        "EMP005_aadhaar_back_compressed.jpg",
+        "EMP005_aadhaar_back_mobile_photo.jpg"
+    ]
+}
