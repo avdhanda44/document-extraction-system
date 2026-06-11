@@ -1,0 +1,5 @@
+doc_type,easyocr,paddleocr,tesseract
+pan,80%,98%,59%
+aadhaar,46%,45%,36%
+passbook,51%,78%,47%
+invoice,90%,97%,77%

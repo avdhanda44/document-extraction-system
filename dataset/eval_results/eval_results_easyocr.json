@@ -1,0 +1,4583 @@
+{
+    "summary": {
+        "total_images": 135,
+        "ocr_success_count": 135,
+        "ocr_success_rate": 1.0,
+        "avg_field_presence": 0.6465,
+        "by_doc_type": {
+            "pan": {
+                "total_images": 25,
+                "ocr_success_count": 25,
+                "ocr_success_rate": 1.0,
+                "avg_field_presence": 0.8
+            },
+            "aadhaar": {
+                "total_images": 50,
+                "ocr_success_count": 50,
+                "ocr_success_rate": 1.0,
+                "avg_field_presence": 0.464
+            },
+            "passbook": {
+                "total_images": 25,
+                "ocr_success_count": 25,
+                "ocr_success_rate": 1.0,
+                "avg_field_presence": 0.51
+            },
+            "invoice": {
+                "total_images": 35,
+                "ocr_success_count": 35,
+                "ocr_success_rate": 1.0,
+                "avg_field_presence": 0.8952
+            }
+        },
+        "by_variant": {
+            "blurred": {
+                "total_images": 20,
+                "ocr_success_rate": 1.0,
+                "avg_field_presence": 0.2475
+            },
+            "clean": {
+                "total_images": 20,
+                "ocr_success_rate": 1.0,
+                "avg_field_presence": 0.7375
+            },
+            "compressed": {
+                "total_images": 20,
+                "ocr_success_rate": 1.0,
+                "avg_field_presence": 0.7025
+            },
+            "mobile_photo": {
+                "total_images": 20,
+                "ocr_success_rate": 1.0,
+                "avg_field_presence": 0.395
+            },
+            "original": {
+                "total_images": 35,
+                "ocr_success_rate": 1.0,
+                "avg_field_presence": 0.8952
+            },
+            "rotated": {
+                "total_images": 20,
+                "ocr_success_rate": 1.0,
+                "avg_field_presence": 0.715
+            }
+        }
+    },
+    "results": [
+        {
+            "image": "EMP001_pan_blurred.png",
+            "doc_type": "pan",
+            "variant": "blurred",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 135,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "ABCPS1234D",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP001_pan_clean.png",
+            "doc_type": "pan",
+            "variant": "clean",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 166,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 30.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "ABCPS1234D",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP001_pan_compressed.jpg",
+            "doc_type": "pan",
+            "variant": "compressed",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 166,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 30.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "ABCPS1234D",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP001_pan_mobile_photo.jpg",
+            "doc_type": "pan",
+            "variant": "mobile_photo",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 160,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 30.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "ABCPS1234D",
+                    "found_in_text": false
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP001_pan_rotated.png",
+            "doc_type": "pan",
+            "variant": "rotated",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 166,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 30.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "ABCPS1234D",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP002_pan_blurred.png",
+            "doc_type": "pan",
+            "variant": "blurred",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 101,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "BCDPV5678E",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.25,
+            "error": null
+        },
+        {
+            "image": "EMP002_pan_clean.png",
+            "doc_type": "pan",
+            "variant": "clean",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 161,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "BCDPV5678E",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP002_pan_compressed.jpg",
+            "doc_type": "pan",
+            "variant": "compressed",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 161,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "BCDPV5678E",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP002_pan_mobile_photo.jpg",
+            "doc_type": "pan",
+            "variant": "mobile_photo",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 147,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "BCDPV5678E",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP002_pan_rotated.png",
+            "doc_type": "pan",
+            "variant": "rotated",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 161,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "BCDPV5678E",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP003_pan_blurred.png",
+            "doc_type": "pan",
+            "variant": "blurred",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 128,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "CDEQN9012F",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP003_pan_clean.png",
+            "doc_type": "pan",
+            "variant": "clean",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 164,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 30.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "CDEQN9012F",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP003_pan_compressed.jpg",
+            "doc_type": "pan",
+            "variant": "compressed",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 163,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 30.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "CDEQN9012F",
+                    "found_in_text": false
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP003_pan_mobile_photo.jpg",
+            "doc_type": "pan",
+            "variant": "mobile_photo",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 147,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "CDEQN9012F",
+                    "found_in_text": false
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.5,
+            "error": null
+        },
+        {
+            "image": "EMP003_pan_rotated.png",
+            "doc_type": "pan",
+            "variant": "rotated",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 163,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "CDEQN9012F",
+                    "found_in_text": false
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP004_pan_blurred.png",
+            "doc_type": "pan",
+            "variant": "blurred",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 132,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "DEFRS3456G",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP004_pan_clean.png",
+            "doc_type": "pan",
+            "variant": "clean",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 163,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "DEFRS3456G",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP004_pan_compressed.jpg",
+            "doc_type": "pan",
+            "variant": "compressed",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 163,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "DEFRS3456G",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP004_pan_mobile_photo.jpg",
+            "doc_type": "pan",
+            "variant": "mobile_photo",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 125,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "DEFRS3456G",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.5,
+            "error": null
+        },
+        {
+            "image": "EMP004_pan_rotated.png",
+            "doc_type": "pan",
+            "variant": "rotated",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 162,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "DEFRS3456G",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP005_pan_blurred.png",
+            "doc_type": "pan",
+            "variant": "blurred",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 68,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "EFGTI7890H",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.25,
+            "error": null
+        },
+        {
+            "image": "EMP005_pan_clean.png",
+            "doc_type": "pan",
+            "variant": "clean",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 163,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 30.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "EFGTI7890H",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP005_pan_compressed.jpg",
+            "doc_type": "pan",
+            "variant": "compressed",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 162,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 30.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "EFGTI7890H",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP005_pan_mobile_photo.jpg",
+            "doc_type": "pan",
+            "variant": "mobile_photo",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 98,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "EFGTI7890H",
+                    "found_in_text": false
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.25,
+            "error": null
+        },
+        {
+            "image": "EMP005_pan_rotated.png",
+            "doc_type": "pan",
+            "variant": "rotated",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 165,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "pan_number": {
+                    "ground_truth": "EFGTI7890H",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP001_aadhaar_back_blurred.png",
+            "doc_type": "aadhaar",
+            "variant": "blurred",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 43,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "2345 6789 0123",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "14 Rajpur Road Dehradun Uttarakhand 248001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP001_aadhaar_back_clean.png",
+            "doc_type": "aadhaar",
+            "variant": "clean",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 193,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "2345 6789 0123",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "14 Rajpur Road Dehradun Uttarakhand 248001",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP001_aadhaar_back_compressed.jpg",
+            "doc_type": "aadhaar",
+            "variant": "compressed",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 198,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "2345 6789 0123",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "14 Rajpur Road Dehradun Uttarakhand 248001",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP001_aadhaar_back_mobile_photo.jpg",
+            "doc_type": "aadhaar",
+            "variant": "mobile_photo",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 140,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "2345 6789 0123",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "14 Rajpur Road Dehradun Uttarakhand 248001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP001_aadhaar_back_rotated.png",
+            "doc_type": "aadhaar",
+            "variant": "rotated",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 195,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "2345 6789 0123",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "14 Rajpur Road Dehradun Uttarakhand 248001",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP001_aadhaar_front_blurred.png",
+            "doc_type": "aadhaar",
+            "variant": "blurred",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 107,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "2345 6789 0123",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "14 Rajpur Road Dehradun Uttarakhand 248001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP001_aadhaar_front_clean.png",
+            "doc_type": "aadhaar",
+            "variant": "clean",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 337,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "2345 6789 0123",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "14 Rajpur Road Dehradun Uttarakhand 248001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP001_aadhaar_front_compressed.jpg",
+            "doc_type": "aadhaar",
+            "variant": "compressed",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 320,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "2345 6789 0123",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "14 Rajpur Road Dehradun Uttarakhand 248001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP001_aadhaar_front_mobile_photo.jpg",
+            "doc_type": "aadhaar",
+            "variant": "mobile_photo",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 312,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "2345 6789 0123",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "14 Rajpur Road Dehradun Uttarakhand 248001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.6,
+            "error": null
+        },
+        {
+            "image": "EMP001_aadhaar_front_rotated.png",
+            "doc_type": "aadhaar",
+            "variant": "rotated",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 329,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "2345 6789 0123",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Priya Sharma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "15/03/1992",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "14 Rajpur Road Dehradun Uttarakhand 248001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.6,
+            "error": null
+        },
+        {
+            "image": "EMP002_aadhaar_back_blurred.png",
+            "doc_type": "aadhaar",
+            "variant": "blurred",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 60,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "3456 7890 1234",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "7B MG Road Bengaluru Karnataka 560001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP002_aadhaar_back_clean.png",
+            "doc_type": "aadhaar",
+            "variant": "clean",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 188,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "3456 7890 1234",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "7B MG Road Bengaluru Karnataka 560001",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP002_aadhaar_back_compressed.jpg",
+            "doc_type": "aadhaar",
+            "variant": "compressed",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 187,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "3456 7890 1234",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "7B MG Road Bengaluru Karnataka 560001",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP002_aadhaar_back_mobile_photo.jpg",
+            "doc_type": "aadhaar",
+            "variant": "mobile_photo",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 70,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "3456 7890 1234",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "7B MG Road Bengaluru Karnataka 560001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP002_aadhaar_back_rotated.png",
+            "doc_type": "aadhaar",
+            "variant": "rotated",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 192,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "3456 7890 1234",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "7B MG Road Bengaluru Karnataka 560001",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP002_aadhaar_front_blurred.png",
+            "doc_type": "aadhaar",
+            "variant": "blurred",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 95,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "3456 7890 1234",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "7B MG Road Bengaluru Karnataka 560001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP002_aadhaar_front_clean.png",
+            "doc_type": "aadhaar",
+            "variant": "clean",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 335,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "3456 7890 1234",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "7B MG Road Bengaluru Karnataka 560001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP002_aadhaar_front_compressed.jpg",
+            "doc_type": "aadhaar",
+            "variant": "compressed",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 321,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "3456 7890 1234",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "7B MG Road Bengaluru Karnataka 560001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP002_aadhaar_front_mobile_photo.jpg",
+            "doc_type": "aadhaar",
+            "variant": "mobile_photo",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 204,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "3456 7890 1234",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "7B MG Road Bengaluru Karnataka 560001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.6,
+            "error": null
+        },
+        {
+            "image": "EMP002_aadhaar_front_rotated.png",
+            "doc_type": "aadhaar",
+            "variant": "rotated",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 345,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "3456 7890 1234",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Rohit Verma",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "22/07/1989",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "7B MG Road Bengaluru Karnataka 560001",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP003_aadhaar_back_blurred.png",
+            "doc_type": "aadhaar",
+            "variant": "blurred",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 44,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "4567 8901 2345",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "23 Marine Drive Mumbai Maharashtra 400020",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP003_aadhaar_back_clean.png",
+            "doc_type": "aadhaar",
+            "variant": "clean",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 192,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "4567 8901 2345",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "23 Marine Drive Mumbai Maharashtra 400020",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP003_aadhaar_back_compressed.jpg",
+            "doc_type": "aadhaar",
+            "variant": "compressed",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 194,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "4567 8901 2345",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "23 Marine Drive Mumbai Maharashtra 400020",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP003_aadhaar_back_mobile_photo.jpg",
+            "doc_type": "aadhaar",
+            "variant": "mobile_photo",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 88,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "4567 8901 2345",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "23 Marine Drive Mumbai Maharashtra 400020",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP003_aadhaar_back_rotated.png",
+            "doc_type": "aadhaar",
+            "variant": "rotated",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 202,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "4567 8901 2345",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "23 Marine Drive Mumbai Maharashtra 400020",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP003_aadhaar_front_blurred.png",
+            "doc_type": "aadhaar",
+            "variant": "blurred",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 29,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "4567 8901 2345",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "23 Marine Drive Mumbai Maharashtra 400020",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP003_aadhaar_front_clean.png",
+            "doc_type": "aadhaar",
+            "variant": "clean",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 339,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "4567 8901 2345",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "23 Marine Drive Mumbai Maharashtra 400020",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP003_aadhaar_front_compressed.jpg",
+            "doc_type": "aadhaar",
+            "variant": "compressed",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 330,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "4567 8901 2345",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "23 Marine Drive Mumbai Maharashtra 400020",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP003_aadhaar_front_mobile_photo.jpg",
+            "doc_type": "aadhaar",
+            "variant": "mobile_photo",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 67,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "4567 8901 2345",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "23 Marine Drive Mumbai Maharashtra 400020",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP003_aadhaar_front_rotated.png",
+            "doc_type": "aadhaar",
+            "variant": "rotated",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 344,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "4567 8901 2345",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Anjali Nair",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "05/11/1994",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "23 Marine Drive Mumbai Maharashtra 400020",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP004_aadhaar_back_blurred.png",
+            "doc_type": "aadhaar",
+            "variant": "blurred",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 14,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "5678 9012 3456",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "45 Civil Lines Jaipur Rajasthan 302006",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP004_aadhaar_back_clean.png",
+            "doc_type": "aadhaar",
+            "variant": "clean",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 189,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "5678 9012 3456",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "45 Civil Lines Jaipur Rajasthan 302006",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP004_aadhaar_back_compressed.jpg",
+            "doc_type": "aadhaar",
+            "variant": "compressed",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 193,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "5678 9012 3456",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "45 Civil Lines Jaipur Rajasthan 302006",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP004_aadhaar_back_mobile_photo.jpg",
+            "doc_type": "aadhaar",
+            "variant": "mobile_photo",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 26,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "5678 9012 3456",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "45 Civil Lines Jaipur Rajasthan 302006",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP004_aadhaar_back_rotated.png",
+            "doc_type": "aadhaar",
+            "variant": "rotated",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 191,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "5678 9012 3456",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "45 Civil Lines Jaipur Rajasthan 302006",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP004_aadhaar_front_blurred.png",
+            "doc_type": "aadhaar",
+            "variant": "blurred",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 94,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "5678 9012 3456",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "45 Civil Lines Jaipur Rajasthan 302006",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP004_aadhaar_front_clean.png",
+            "doc_type": "aadhaar",
+            "variant": "clean",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 333,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "5678 9012 3456",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "45 Civil Lines Jaipur Rajasthan 302006",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP004_aadhaar_front_compressed.jpg",
+            "doc_type": "aadhaar",
+            "variant": "compressed",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 322,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "5678 9012 3456",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "45 Civil Lines Jaipur Rajasthan 302006",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP004_aadhaar_front_mobile_photo.jpg",
+            "doc_type": "aadhaar",
+            "variant": "mobile_photo",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 105,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "5678 9012 3456",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "45 Civil Lines Jaipur Rajasthan 302006",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP004_aadhaar_front_rotated.png",
+            "doc_type": "aadhaar",
+            "variant": "rotated",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 340,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "5678 9012 3456",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Vikram Singh",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "18/01/1987",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Male",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "45 Civil Lines Jaipur Rajasthan 302006",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP005_aadhaar_back_blurred.png",
+            "doc_type": "aadhaar",
+            "variant": "blurred",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 54,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "6789 0123 4567",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "88 Anna Salai Chennai Tamil Nadu 600002",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP005_aadhaar_back_clean.png",
+            "doc_type": "aadhaar",
+            "variant": "clean",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 190,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "6789 0123 4567",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "88 Anna Salai Chennai Tamil Nadu 600002",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP005_aadhaar_back_compressed.jpg",
+            "doc_type": "aadhaar",
+            "variant": "compressed",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 191,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "6789 0123 4567",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "88 Anna Salai Chennai Tamil Nadu 600002",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP005_aadhaar_back_mobile_photo.jpg",
+            "doc_type": "aadhaar",
+            "variant": "mobile_photo",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 37,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "6789 0123 4567",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "88 Anna Salai Chennai Tamil Nadu 600002",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP005_aadhaar_back_rotated.png",
+            "doc_type": "aadhaar",
+            "variant": "rotated",
+            "side": "back",
+            "ocr_success": true,
+            "ocr_chars": 194,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "6789 0123 4567",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "88 Anna Salai Chennai Tamil Nadu 600002",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.4,
+            "error": null
+        },
+        {
+            "image": "EMP005_aadhaar_front_blurred.png",
+            "doc_type": "aadhaar",
+            "variant": "blurred",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 17,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "6789 0123 4567",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": false
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": false
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "88 Anna Salai Chennai Tamil Nadu 600002",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.2,
+            "error": null
+        },
+        {
+            "image": "EMP005_aadhaar_front_clean.png",
+            "doc_type": "aadhaar",
+            "variant": "clean",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 334,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "6789 0123 4567",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "88 Anna Salai Chennai Tamil Nadu 600002",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP005_aadhaar_front_compressed.jpg",
+            "doc_type": "aadhaar",
+            "variant": "compressed",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 314,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "6789 0123 4567",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": false
+                },
+                "address": {
+                    "ground_truth": "88 Anna Salai Chennai Tamil Nadu 600002",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.6,
+            "error": null
+        },
+        {
+            "image": "EMP005_aadhaar_front_mobile_photo.jpg",
+            "doc_type": "aadhaar",
+            "variant": "mobile_photo",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 294,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "6789 0123 4567",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "88 Anna Salai Chennai Tamil Nadu 600002",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP005_aadhaar_front_rotated.png",
+            "doc_type": "aadhaar",
+            "variant": "rotated",
+            "side": "front",
+            "ocr_success": true,
+            "ocr_chars": 315,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "aadhaar_number": {
+                    "ground_truth": "6789 0123 4567",
+                    "found_in_text": true
+                },
+                "name": {
+                    "ground_truth": "Sneha Iyer",
+                    "found_in_text": true
+                },
+                "date_of_birth": {
+                    "ground_truth": "30/06/1996",
+                    "found_in_text": true
+                },
+                "gender": {
+                    "ground_truth": "Female",
+                    "found_in_text": true
+                },
+                "address": {
+                    "ground_truth": "88 Anna Salai Chennai Tamil Nadu 600002",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.8,
+            "error": null
+        },
+        {
+            "image": "EMP001_passbook_blurred.png",
+            "doc_type": "passbook",
+            "variant": "blurred",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 339,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50100123456789",
+                    "found_in_text": false
+                },
+                "ifsc": {
+                    "ground_truth": "SBIN0001234",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Priya Sharma",
+                    "found_in_text": false
+                },
+                "pan_number": {
+                    "ground_truth": "ABCPS1234D",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.0,
+            "error": null
+        },
+        {
+            "image": "EMP001_passbook_clean.png",
+            "doc_type": "passbook",
+            "variant": "clean",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 491,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50100123456789",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "SBIN0001234",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Priya Sharma",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "ABCPS1234D",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP001_passbook_compressed.jpg",
+            "doc_type": "passbook",
+            "variant": "compressed",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 503,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50100123456789",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "SBIN0001234",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Priya Sharma",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "ABCPS1234D",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.5,
+            "error": null
+        },
+        {
+            "image": "EMP001_passbook_mobile_photo.jpg",
+            "doc_type": "passbook",
+            "variant": "mobile_photo",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 417,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50100123456789",
+                    "found_in_text": false
+                },
+                "ifsc": {
+                    "ground_truth": "SBIN0001234",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Priya Sharma",
+                    "found_in_text": false
+                },
+                "pan_number": {
+                    "ground_truth": "ABCPS1234D",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.0,
+            "error": null
+        },
+        {
+            "image": "EMP001_passbook_rotated.png",
+            "doc_type": "passbook",
+            "variant": "rotated",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 500,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50100123456789",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "SBIN0001234",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Priya Sharma",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "ABCPS1234D",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP002_passbook_blurred.png",
+            "doc_type": "passbook",
+            "variant": "blurred",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 3,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50200234567890",
+                    "found_in_text": false
+                },
+                "ifsc": {
+                    "ground_truth": "HDFC0002345",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Mr. Rohit Verma",
+                    "found_in_text": false
+                },
+                "pan_number": {
+                    "ground_truth": "BCDPV5678E",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.0,
+            "error": null
+        },
+        {
+            "image": "EMP002_passbook_clean.png",
+            "doc_type": "passbook",
+            "variant": "clean",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 480,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50200234567890",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "HDFC0002345",
+                    "found_in_text": true
+                },
+                "account_holder": {
+                    "ground_truth": "Mr. Rohit Verma",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "BCDPV5678E",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP002_passbook_compressed.jpg",
+            "doc_type": "passbook",
+            "variant": "compressed",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 483,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50200234567890",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "HDFC0002345",
+                    "found_in_text": true
+                },
+                "account_holder": {
+                    "ground_truth": "Mr. Rohit Verma",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "BCDPV5678E",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP002_passbook_mobile_photo.jpg",
+            "doc_type": "passbook",
+            "variant": "mobile_photo",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 344,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50200234567890",
+                    "found_in_text": false
+                },
+                "ifsc": {
+                    "ground_truth": "HDFC0002345",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Mr. Rohit Verma",
+                    "found_in_text": false
+                },
+                "pan_number": {
+                    "ground_truth": "BCDPV5678E",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.0,
+            "error": null
+        },
+        {
+            "image": "EMP002_passbook_rotated.png",
+            "doc_type": "passbook",
+            "variant": "rotated",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 487,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50200234567890",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "HDFC0002345",
+                    "found_in_text": true
+                },
+                "account_holder": {
+                    "ground_truth": "Mr. Rohit Verma",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "BCDPV5678E",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP003_passbook_blurred.png",
+            "doc_type": "passbook",
+            "variant": "blurred",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 16,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50300345678901",
+                    "found_in_text": false
+                },
+                "ifsc": {
+                    "ground_truth": "ICIC0003456",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Anjali Nair",
+                    "found_in_text": false
+                },
+                "pan_number": {
+                    "ground_truth": "CDEQN9012F",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.0,
+            "error": null
+        },
+        {
+            "image": "EMP003_passbook_clean.png",
+            "doc_type": "passbook",
+            "variant": "clean",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 486,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50300345678901",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "ICIC0003456",
+                    "found_in_text": true
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Anjali Nair",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "CDEQN9012F",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP003_passbook_compressed.jpg",
+            "doc_type": "passbook",
+            "variant": "compressed",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 499,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50300345678901",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "ICIC0003456",
+                    "found_in_text": true
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Anjali Nair",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "CDEQN9012F",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP003_passbook_mobile_photo.jpg",
+            "doc_type": "passbook",
+            "variant": "mobile_photo",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 437,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50300345678901",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "ICIC0003456",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Anjali Nair",
+                    "found_in_text": false
+                },
+                "pan_number": {
+                    "ground_truth": "CDEQN9012F",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.25,
+            "error": null
+        },
+        {
+            "image": "EMP003_passbook_rotated.png",
+            "doc_type": "passbook",
+            "variant": "rotated",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 505,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50300345678901",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "ICIC0003456",
+                    "found_in_text": true
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Anjali Nair",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "CDEQN9012F",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "EMP004_passbook_blurred.png",
+            "doc_type": "passbook",
+            "variant": "blurred",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 28,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50400456789012",
+                    "found_in_text": false
+                },
+                "ifsc": {
+                    "ground_truth": "PUNB0004567",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Mr. Vikram Singh",
+                    "found_in_text": false
+                },
+                "pan_number": {
+                    "ground_truth": "DEFRS3456G",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.0,
+            "error": null
+        },
+        {
+            "image": "EMP004_passbook_clean.png",
+            "doc_type": "passbook",
+            "variant": "clean",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 489,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50400456789012",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "PUNB0004567",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Mr. Vikram Singh",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "DEFRS3456G",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP004_passbook_compressed.jpg",
+            "doc_type": "passbook",
+            "variant": "compressed",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 490,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50400456789012",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "PUNB0004567",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Mr. Vikram Singh",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "DEFRS3456G",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.5,
+            "error": null
+        },
+        {
+            "image": "EMP004_passbook_mobile_photo.jpg",
+            "doc_type": "passbook",
+            "variant": "mobile_photo",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 480,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50400456789012",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "PUNB0004567",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Mr. Vikram Singh",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "DEFRS3456G",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.5,
+            "error": null
+        },
+        {
+            "image": "EMP004_passbook_rotated.png",
+            "doc_type": "passbook",
+            "variant": "rotated",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 494,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50400456789012",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "PUNB0004567",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Mr. Vikram Singh",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "DEFRS3456G",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP005_passbook_blurred.png",
+            "doc_type": "passbook",
+            "variant": "blurred",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 6,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50500567890123",
+                    "found_in_text": false
+                },
+                "ifsc": {
+                    "ground_truth": "KARB0005678",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Sneha Iyer",
+                    "found_in_text": false
+                },
+                "pan_number": {
+                    "ground_truth": "EFGTI7890H",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.0,
+            "error": null
+        },
+        {
+            "image": "EMP005_passbook_clean.png",
+            "doc_type": "passbook",
+            "variant": "clean",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 474,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50500567890123",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "KARB0005678",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Sneha Iyer",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "EFGTI7890H",
+                    "found_in_text": false
+                }
+            },
+            "field_presence_rate": 0.5,
+            "error": null
+        },
+        {
+            "image": "EMP005_passbook_compressed.jpg",
+            "doc_type": "passbook",
+            "variant": "compressed",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 483,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50500567890123",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "KARB0005678",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Sneha Iyer",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "EFGTI7890H",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP005_passbook_mobile_photo.jpg",
+            "doc_type": "passbook",
+            "variant": "mobile_photo",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 351,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50500567890123",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "KARB0005678",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Sneha Iyer",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "EFGTI7890H",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "EMP005_passbook_rotated.png",
+            "doc_type": "passbook",
+            "variant": "rotated",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 475,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "account_number": {
+                    "ground_truth": "50500567890123",
+                    "found_in_text": true
+                },
+                "ifsc": {
+                    "ground_truth": "KARB0005678",
+                    "found_in_text": false
+                },
+                "account_holder": {
+                    "ground_truth": "Ms. Sneha Iyer",
+                    "found_in_text": true
+                },
+                "pan_number": {
+                    "ground_truth": "EFGTI7890H",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.75,
+            "error": null
+        },
+        {
+            "image": "X00016469672.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 863,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "SOON HUAT MACHINERY ENTERPRISE",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "11/01/2019",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "327.00",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51005361900.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 707,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "TEO HENG STATIONERY & BOOKS",
+                    "found_in_text": false
+                },
+                "date": {
+                    "ground_truth": "23/01/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "18.00",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.6667,
+            "error": null
+        },
+        {
+            "image": "X51005361946.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 693,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "MR. D.I.Y. (M) SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "14-03-18",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "37.10",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51005433492.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 542,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "UNIHAKKA INTERNATIONAL SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "05 MAR 2018",
+                    "found_in_text": false
+                },
+                "total": {
+                    "ground_truth": "$8.20",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.6667,
+            "error": null
+        },
+        {
+            "image": "X51005433514.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 559,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "UNIHAKKA INTERNATIONAL SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "03 MAR 2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "$8.20",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51005577192.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 549,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "FY EAGLE ENTERPRISE",
+                    "found_in_text": false
+                },
+                "date": {
+                    "ground_truth": "04/12/2017",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "7.00",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.6667,
+            "error": null
+        },
+        {
+            "image": "X51005605286.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 608,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "AEON CO. (M) BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "09/02/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "5.90",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51005605333.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 694,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "POPULAR BOOK CO. (M) SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "07/01/18",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "31.45",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51005663273.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 582,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "SYARIKAT PERNIAGAAN GIN KEE",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "04/12/2017",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "47.70",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51005663293.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 653,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "SWEET FOREST CAFE",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "14-02-2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "30.30",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51005676539.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 575,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "SYARIKAT PERNIAGAAN GIN KEE",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "10/01/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "23.32",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51005711451.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 502,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "RSTORAN WAN SHENG",
+                    "found_in_text": false
+                },
+                "date": {
+                    "ground_truth": "05-03-2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "6.00",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.6667,
+            "error": null
+        },
+        {
+            "image": "X51005719873.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 677,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 20.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "CT281 - TEALIVE SHELL KEPONG OTTOGO ENTERPRISE",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "21/01/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "RM8.60",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51005719886.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 339,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "SUNFISH",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "05/01/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "28.70",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51005757324.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 613,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "MR. D.I.Y. (M) SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "25-03-18",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "50.80",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51006008086.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 709,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "POPULAR BOOK CO. (M) SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "24/01/18",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "30.10",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51006008095.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 473,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "BOON SENG PAPER SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "19/03/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "31.80",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51006311758.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 801,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "TONYMOLY VIVA CITY",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "29/03/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "100.60",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51006311778.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 569,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "ANZEL ADVERTISING (M) SDN BHD",
+                    "found_in_text": false
+                },
+                "date": {
+                    "ground_truth": "21/03/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "7.40",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.6667,
+            "error": null
+        },
+        {
+            "image": "X51006329402.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 568,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "SEGI CASH & CARRY SDN. BHD.",
+                    "found_in_text": false
+                },
+                "date": {
+                    "ground_truth": "06/04/17",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "50.45",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.6667,
+            "error": null
+        },
+        {
+            "image": "X51006387740.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 622,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "ARTRANGE STATIONERS & PRINT SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "10/04/2017",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "15.40",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51006414394.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 744,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "RESTORAN SIAM VILLAGE",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "27/04/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "275.90",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51006414470.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 564,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "UNIHAKKA INTERNATIONAL SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "09 APR 2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "$8.20",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51006556818.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 870,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 10.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "GARDENIA BAKERIES (KL) SDN BHD",
+                    "found_in_text": false
+                },
+                "date": {
+                    "ground_truth": "03/09/2017",
+                    "found_in_text": false
+                },
+                "total": {
+                    "ground_truth": "29.59",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.3333,
+            "error": null
+        },
+        {
+            "image": "X51006556828.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 921,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "GARDENIA BAKERIES (KL) SDN BHD",
+                    "found_in_text": false
+                },
+                "date": {
+                    "ground_truth": "25/09/2017",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "36.55",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.6667,
+            "error": null
+        },
+        {
+            "image": "X51006619709.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 906,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "MR. D.I.Y. (KUCHAI) SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "24-01-16",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "RM 57.40",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51006913028.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 586,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "UNIHAKKA INTERNATIONAL SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "07 MAY 2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "$8.70",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51006913051.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 590,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "THE TOAST F&B SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "11/05/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "31.00",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51007231338.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 677,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "DIMILIKI OLEH T PLUS F&B SDN. BHD.",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "11/05/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "9.45",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51007579726.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 678,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "RAPID RAIL SDN BHD",
+                    "found_in_text": false
+                },
+                "date": {
+                    "ground_truth": "18/06/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "RM 30.00",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.6667,
+            "error": null
+        },
+        {
+            "image": "X51008099046.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 491,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "RESTORAN WAN SHENG",
+                    "found_in_text": false
+                },
+                "date": {
+                    "ground_truth": "12-06-2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "4.60",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 0.6667,
+            "error": null
+        },
+        {
+            "image": "X51008114262.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 486,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "99 SPEED MART S/B",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "05-05-18",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "137.15",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51008142060.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 716,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "KEDAI PAPAN YEW CHUAN",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "26/05/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "121.90",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51008142061.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 746,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "KEDAI PAPAN YEW CHUAN",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "03/05/2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "178.08",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        },
+        {
+            "image": "X51008164969.jpg",
+            "doc_type": "invoice",
+            "variant": "original",
+            "side": "n/a",
+            "ocr_success": true,
+            "ocr_chars": 608,
+            "classification": {
+                "predicted_type": "unknown",
+                "confidence_pct": 0.0,
+                "confidence_level": "low"
+            },
+            "field_scores": {
+                "company": {
+                    "ground_truth": "ONE ONE THREE SEAFOOD RESTAURANT SDN BHD",
+                    "found_in_text": true
+                },
+                "date": {
+                    "ground_truth": "14-06-2018",
+                    "found_in_text": true
+                },
+                "total": {
+                    "ground_truth": "59.00",
+                    "found_in_text": true
+                }
+            },
+            "field_presence_rate": 1.0,
+            "error": null
+        }
+    ]
+}

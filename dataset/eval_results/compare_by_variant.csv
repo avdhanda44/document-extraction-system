@@ -1,0 +1,17 @@
+doc_type,variant,easyocr,paddleocr,tesseract
+pan,clean,100%,100%,75%
+pan,rotated,90%,100%,70%
+pan,blurred,55%,100%,45%
+pan,compressed,95%,100%,75%
+pan,mobile_photo,60%,90%,20%
+aadhaar,clean,60%,50%,58%
+aadhaar,rotated,58%,50%,28%
+aadhaar,blurred,22%,36%,14%
+aadhaar,compressed,58%,50%,50%
+aadhaar,mobile_photo,34%,40%,14%
+passbook,clean,75%,95%,100%
+passbook,rotated,80%,90%,50%
+passbook,blurred,0%,30%,5%
+passbook,compressed,70%,95%,75%
+passbook,mobile_photo,30%,80%,5%
+invoice,original,90%,97%,77%

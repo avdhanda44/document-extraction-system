@@ -1,0 +1,17 @@
+doc_type,field,clean,rotated,blurred,compressed,mobile_photo,original,ALL VARIANTS
+pan,date_of_birth,100%,80%,40%,100%,60%,-,76%
+pan,gender,100%,100%,60%,100%,60%,-,84%
+pan,name,100%,100%,20%,100%,80%,-,80%
+pan,pan_number,100%,80%,100%,80%,40%,-,80%
+aadhaar,aadhaar_number,100%,100%,100%,100%,100%,-,100%
+aadhaar,address,50%,50%,0%,50%,0%,-,30%
+aadhaar,date_of_birth,50%,50%,0%,50%,30%,-,36%
+aadhaar,gender,50%,40%,10%,40%,10%,-,30%
+aadhaar,name,50%,50%,0%,50%,30%,-,36%
+passbook,account_holder,100%,100%,0%,100%,40%,-,68%
+passbook,account_number,100%,100%,0%,100%,60%,-,72%
+passbook,ifsc,40%,40%,0%,40%,0%,-,24%
+passbook,pan_number,60%,80%,0%,40%,20%,-,40%
+invoice,company,-,-,-,-,-,74%,74%
+invoice,date,-,-,-,-,-,94%,94%
+invoice,total,-,-,-,-,-,100%,100%

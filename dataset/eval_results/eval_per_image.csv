@@ -1,0 +1,136 @@
+image,doc_type,variant,side,ocr_success,ocr_chars,predicted_doc_type,classification_confidence_pct,field_presence_rate,fields_checked,fields_found,aadhaar_number_gt,aadhaar_number_found,account_holder_gt,account_holder_found,account_number_gt,account_number_found,address_gt,address_found,company_gt,company_found,date_gt,date_found,date_of_birth_gt,date_of_birth_found,gender_gt,gender_found,ifsc_gt,ifsc_found,name_gt,name_found,pan_number_gt,pan_number_found,total_gt,total_found
+EMP001_pan_blurred.png,pan,blurred,n/a,True,135,unknown,20.0,0.75,4,3,,,,,,,,,,,,,15/03/1992,YES,Female,YES,,,Priya Sharma,NO,ABCPS1234D,YES,,
+EMP001_pan_clean.png,pan,clean,n/a,True,166,unknown,30.0,1.0,4,4,,,,,,,,,,,,,15/03/1992,YES,Female,YES,,,Priya Sharma,YES,ABCPS1234D,YES,,
+EMP001_pan_compressed.jpg,pan,compressed,n/a,True,166,unknown,30.0,1.0,4,4,,,,,,,,,,,,,15/03/1992,YES,Female,YES,,,Priya Sharma,YES,ABCPS1234D,YES,,
+EMP001_pan_mobile_photo.jpg,pan,mobile_photo,n/a,True,160,unknown,30.0,0.75,4,3,,,,,,,,,,,,,15/03/1992,YES,Female,YES,,,Priya Sharma,YES,ABCPS1234D,NO,,
+EMP001_pan_rotated.png,pan,rotated,n/a,True,166,unknown,30.0,1.0,4,4,,,,,,,,,,,,,15/03/1992,YES,Female,YES,,,Priya Sharma,YES,ABCPS1234D,YES,,
+EMP002_pan_blurred.png,pan,blurred,n/a,True,101,unknown,10.0,0.25,4,1,,,,,,,,,,,,,22/07/1989,NO,Male,NO,,,Rohit Verma,NO,BCDPV5678E,YES,,
+EMP002_pan_clean.png,pan,clean,n/a,True,161,unknown,20.0,1.0,4,4,,,,,,,,,,,,,22/07/1989,YES,Male,YES,,,Rohit Verma,YES,BCDPV5678E,YES,,
+EMP002_pan_compressed.jpg,pan,compressed,n/a,True,161,unknown,20.0,1.0,4,4,,,,,,,,,,,,,22/07/1989,YES,Male,YES,,,Rohit Verma,YES,BCDPV5678E,YES,,
+EMP002_pan_mobile_photo.jpg,pan,mobile_photo,n/a,True,147,unknown,20.0,1.0,4,4,,,,,,,,,,,,,22/07/1989,YES,Male,YES,,,Rohit Verma,YES,BCDPV5678E,YES,,
+EMP002_pan_rotated.png,pan,rotated,n/a,True,161,unknown,20.0,1.0,4,4,,,,,,,,,,,,,22/07/1989,YES,Male,YES,,,Rohit Verma,YES,BCDPV5678E,YES,,
+EMP003_pan_blurred.png,pan,blurred,n/a,True,128,unknown,20.0,0.75,4,3,,,,,,,,,,,,,05/11/1994,NO,Female,YES,,,Anjali Nair,YES,CDEQN9012F,YES,,
+EMP003_pan_clean.png,pan,clean,n/a,True,164,unknown,30.0,1.0,4,4,,,,,,,,,,,,,05/11/1994,YES,Female,YES,,,Anjali Nair,YES,CDEQN9012F,YES,,
+EMP003_pan_compressed.jpg,pan,compressed,n/a,True,163,unknown,30.0,0.75,4,3,,,,,,,,,,,,,05/11/1994,YES,Female,YES,,,Anjali Nair,YES,CDEQN9012F,NO,,
+EMP003_pan_mobile_photo.jpg,pan,mobile_photo,n/a,True,147,unknown,20.0,0.5,4,2,,,,,,,,,,,,,05/11/1994,NO,Female,YES,,,Anjali Nair,YES,CDEQN9012F,NO,,
+EMP003_pan_rotated.png,pan,rotated,n/a,True,163,unknown,20.0,0.75,4,3,,,,,,,,,,,,,05/11/1994,YES,Female,YES,,,Anjali Nair,YES,CDEQN9012F,NO,,
+EMP004_pan_blurred.png,pan,blurred,n/a,True,132,unknown,10.0,0.75,4,3,,,,,,,,,,,,,18/01/1987,YES,Male,YES,,,Vikram Singh,NO,DEFRS3456G,YES,,
+EMP004_pan_clean.png,pan,clean,n/a,True,163,unknown,20.0,1.0,4,4,,,,,,,,,,,,,18/01/1987,YES,Male,YES,,,Vikram Singh,YES,DEFRS3456G,YES,,
+EMP004_pan_compressed.jpg,pan,compressed,n/a,True,163,unknown,20.0,1.0,4,4,,,,,,,,,,,,,18/01/1987,YES,Male,YES,,,Vikram Singh,YES,DEFRS3456G,YES,,
+EMP004_pan_mobile_photo.jpg,pan,mobile_photo,n/a,True,125,unknown,10.0,0.5,4,2,,,,,,,,,,,,,18/01/1987,YES,Male,NO,,,Vikram Singh,NO,DEFRS3456G,YES,,
+EMP004_pan_rotated.png,pan,rotated,n/a,True,162,unknown,10.0,1.0,4,4,,,,,,,,,,,,,18/01/1987,YES,Male,YES,,,Vikram Singh,YES,DEFRS3456G,YES,,
+EMP005_pan_blurred.png,pan,blurred,n/a,True,68,unknown,0.0,0.25,4,1,,,,,,,,,,,,,30/06/1996,NO,Female,NO,,,Sneha Iyer,NO,EFGTI7890H,YES,,
+EMP005_pan_clean.png,pan,clean,n/a,True,163,unknown,30.0,1.0,4,4,,,,,,,,,,,,,30/06/1996,YES,Female,YES,,,Sneha Iyer,YES,EFGTI7890H,YES,,
+EMP005_pan_compressed.jpg,pan,compressed,n/a,True,162,unknown,30.0,1.0,4,4,,,,,,,,,,,,,30/06/1996,YES,Female,YES,,,Sneha Iyer,YES,EFGTI7890H,YES,,
+EMP005_pan_mobile_photo.jpg,pan,mobile_photo,n/a,True,98,unknown,10.0,0.25,4,1,,,,,,,,,,,,,30/06/1996,NO,Female,NO,,,Sneha Iyer,YES,EFGTI7890H,NO,,
+EMP005_pan_rotated.png,pan,rotated,n/a,True,165,unknown,20.0,0.75,4,3,,,,,,,,,,,,,30/06/1996,NO,Female,YES,,,Sneha Iyer,YES,EFGTI7890H,YES,,
+EMP001_aadhaar_back_blurred.png,aadhaar,blurred,back,True,43,unknown,0.0,0.2,5,1,2345 6789 0123,YES,,,,,14 Rajpur Road Dehradun Uttarakhand 248001,NO,,,,,15/03/1992,NO,Female,NO,,,Priya Sharma,NO,,,,
+EMP001_aadhaar_back_clean.png,aadhaar,clean,back,True,193,unknown,0.0,0.4,5,2,2345 6789 0123,YES,,,,,14 Rajpur Road Dehradun Uttarakhand 248001,YES,,,,,15/03/1992,NO,Female,NO,,,Priya Sharma,NO,,,,
+EMP001_aadhaar_back_compressed.jpg,aadhaar,compressed,back,True,198,unknown,0.0,0.4,5,2,2345 6789 0123,YES,,,,,14 Rajpur Road Dehradun Uttarakhand 248001,YES,,,,,15/03/1992,NO,Female,NO,,,Priya Sharma,NO,,,,
+EMP001_aadhaar_back_mobile_photo.jpg,aadhaar,mobile_photo,back,True,140,unknown,0.0,0.2,5,1,2345 6789 0123,YES,,,,,14 Rajpur Road Dehradun Uttarakhand 248001,NO,,,,,15/03/1992,NO,Female,NO,,,Priya Sharma,NO,,,,
+EMP001_aadhaar_back_rotated.png,aadhaar,rotated,back,True,195,unknown,0.0,0.4,5,2,2345 6789 0123,YES,,,,,14 Rajpur Road Dehradun Uttarakhand 248001,YES,,,,,15/03/1992,NO,Female,NO,,,Priya Sharma,NO,,,,
+EMP001_aadhaar_front_blurred.png,aadhaar,blurred,front,True,107,unknown,10.0,0.4,5,2,2345 6789 0123,YES,,,,,14 Rajpur Road Dehradun Uttarakhand 248001,NO,,,,,15/03/1992,NO,Female,YES,,,Priya Sharma,NO,,,,
+EMP001_aadhaar_front_clean.png,aadhaar,clean,front,True,337,unknown,20.0,0.8,5,4,2345 6789 0123,YES,,,,,14 Rajpur Road Dehradun Uttarakhand 248001,NO,,,,,15/03/1992,YES,Female,YES,,,Priya Sharma,YES,,,,
+EMP001_aadhaar_front_compressed.jpg,aadhaar,compressed,front,True,320,unknown,20.0,0.8,5,4,2345 6789 0123,YES,,,,,14 Rajpur Road Dehradun Uttarakhand 248001,NO,,,,,15/03/1992,YES,Female,YES,,,Priya Sharma,YES,,,,
+EMP001_aadhaar_front_mobile_photo.jpg,aadhaar,mobile_photo,front,True,312,unknown,10.0,0.6,5,3,2345 6789 0123,YES,,,,,14 Rajpur Road Dehradun Uttarakhand 248001,NO,,,,,15/03/1992,YES,Female,NO,,,Priya Sharma,YES,,,,
+EMP001_aadhaar_front_rotated.png,aadhaar,rotated,front,True,329,unknown,10.0,0.6,5,3,2345 6789 0123,YES,,,,,14 Rajpur Road Dehradun Uttarakhand 248001,NO,,,,,15/03/1992,YES,Female,NO,,,Priya Sharma,YES,,,,
+EMP002_aadhaar_back_blurred.png,aadhaar,blurred,back,True,60,unknown,0.0,0.2,5,1,3456 7890 1234,YES,,,,,7B MG Road Bengaluru Karnataka 560001,NO,,,,,22/07/1989,NO,Male,NO,,,Rohit Verma,NO,,,,
+EMP002_aadhaar_back_clean.png,aadhaar,clean,back,True,188,unknown,0.0,0.4,5,2,3456 7890 1234,YES,,,,,7B MG Road Bengaluru Karnataka 560001,YES,,,,,22/07/1989,NO,Male,NO,,,Rohit Verma,NO,,,,
+EMP002_aadhaar_back_compressed.jpg,aadhaar,compressed,back,True,187,unknown,0.0,0.4,5,2,3456 7890 1234,YES,,,,,7B MG Road Bengaluru Karnataka 560001,YES,,,,,22/07/1989,NO,Male,NO,,,Rohit Verma,NO,,,,
+EMP002_aadhaar_back_mobile_photo.jpg,aadhaar,mobile_photo,back,True,70,unknown,0.0,0.2,5,1,3456 7890 1234,YES,,,,,7B MG Road Bengaluru Karnataka 560001,NO,,,,,22/07/1989,NO,Male,NO,,,Rohit Verma,NO,,,,
+EMP002_aadhaar_back_rotated.png,aadhaar,rotated,back,True,192,unknown,0.0,0.4,5,2,3456 7890 1234,YES,,,,,7B MG Road Bengaluru Karnataka 560001,YES,,,,,22/07/1989,NO,Male,NO,,,Rohit Verma,NO,,,,
+EMP002_aadhaar_front_blurred.png,aadhaar,blurred,front,True,95,unknown,0.0,0.2,5,1,3456 7890 1234,YES,,,,,7B MG Road Bengaluru Karnataka 560001,NO,,,,,22/07/1989,NO,Male,NO,,,Rohit Verma,NO,,,,
+EMP002_aadhaar_front_clean.png,aadhaar,clean,front,True,335,unknown,10.0,0.8,5,4,3456 7890 1234,YES,,,,,7B MG Road Bengaluru Karnataka 560001,NO,,,,,22/07/1989,YES,Male,YES,,,Rohit Verma,YES,,,,
+EMP002_aadhaar_front_compressed.jpg,aadhaar,compressed,front,True,321,unknown,10.0,0.8,5,4,3456 7890 1234,YES,,,,,7B MG Road Bengaluru Karnataka 560001,NO,,,,,22/07/1989,YES,Male,YES,,,Rohit Verma,YES,,,,
+EMP002_aadhaar_front_mobile_photo.jpg,aadhaar,mobile_photo,front,True,204,unknown,0.0,0.6,5,3,3456 7890 1234,YES,,,,,7B MG Road Bengaluru Karnataka 560001,NO,,,,,22/07/1989,YES,Male,NO,,,Rohit Verma,YES,,,,
+EMP002_aadhaar_front_rotated.png,aadhaar,rotated,front,True,345,unknown,10.0,0.8,5,4,3456 7890 1234,YES,,,,,7B MG Road Bengaluru Karnataka 560001,NO,,,,,22/07/1989,YES,Male,YES,,,Rohit Verma,YES,,,,
+EMP003_aadhaar_back_blurred.png,aadhaar,blurred,back,True,44,unknown,0.0,0.2,5,1,4567 8901 2345,YES,,,,,23 Marine Drive Mumbai Maharashtra 400020,NO,,,,,05/11/1994,NO,Female,NO,,,Anjali Nair,NO,,,,
+EMP003_aadhaar_back_clean.png,aadhaar,clean,back,True,192,unknown,0.0,0.4,5,2,4567 8901 2345,YES,,,,,23 Marine Drive Mumbai Maharashtra 400020,YES,,,,,05/11/1994,NO,Female,NO,,,Anjali Nair,NO,,,,
+EMP003_aadhaar_back_compressed.jpg,aadhaar,compressed,back,True,194,unknown,0.0,0.4,5,2,4567 8901 2345,YES,,,,,23 Marine Drive Mumbai Maharashtra 400020,YES,,,,,05/11/1994,NO,Female,NO,,,Anjali Nair,NO,,,,
+EMP003_aadhaar_back_mobile_photo.jpg,aadhaar,mobile_photo,back,True,88,unknown,0.0,0.2,5,1,4567 8901 2345,YES,,,,,23 Marine Drive Mumbai Maharashtra 400020,NO,,,,,05/11/1994,NO,Female,NO,,,Anjali Nair,NO,,,,
+EMP003_aadhaar_back_rotated.png,aadhaar,rotated,back,True,202,unknown,0.0,0.4,5,2,4567 8901 2345,YES,,,,,23 Marine Drive Mumbai Maharashtra 400020,YES,,,,,05/11/1994,NO,Female,NO,,,Anjali Nair,NO,,,,
+EMP003_aadhaar_front_blurred.png,aadhaar,blurred,front,True,29,unknown,0.0,0.2,5,1,4567 8901 2345,YES,,,,,23 Marine Drive Mumbai Maharashtra 400020,NO,,,,,05/11/1994,NO,Female,NO,,,Anjali Nair,NO,,,,
+EMP003_aadhaar_front_clean.png,aadhaar,clean,front,True,339,unknown,20.0,0.8,5,4,4567 8901 2345,YES,,,,,23 Marine Drive Mumbai Maharashtra 400020,NO,,,,,05/11/1994,YES,Female,YES,,,Anjali Nair,YES,,,,
+EMP003_aadhaar_front_compressed.jpg,aadhaar,compressed,front,True,330,unknown,20.0,0.8,5,4,4567 8901 2345,YES,,,,,23 Marine Drive Mumbai Maharashtra 400020,NO,,,,,05/11/1994,YES,Female,YES,,,Anjali Nair,YES,,,,
+EMP003_aadhaar_front_mobile_photo.jpg,aadhaar,mobile_photo,front,True,67,unknown,0.0,0.2,5,1,4567 8901 2345,YES,,,,,23 Marine Drive Mumbai Maharashtra 400020,NO,,,,,05/11/1994,NO,Female,NO,,,Anjali Nair,NO,,,,
+EMP003_aadhaar_front_rotated.png,aadhaar,rotated,front,True,344,unknown,20.0,0.8,5,4,4567 8901 2345,YES,,,,,23 Marine Drive Mumbai Maharashtra 400020,NO,,,,,05/11/1994,YES,Female,YES,,,Anjali Nair,YES,,,,
+EMP004_aadhaar_back_blurred.png,aadhaar,blurred,back,True,14,unknown,0.0,0.2,5,1,5678 9012 3456,YES,,,,,45 Civil Lines Jaipur Rajasthan 302006,NO,,,,,18/01/1987,NO,Male,NO,,,Vikram Singh,NO,,,,
+EMP004_aadhaar_back_clean.png,aadhaar,clean,back,True,189,unknown,0.0,0.4,5,2,5678 9012 3456,YES,,,,,45 Civil Lines Jaipur Rajasthan 302006,YES,,,,,18/01/1987,NO,Male,NO,,,Vikram Singh,NO,,,,
+EMP004_aadhaar_back_compressed.jpg,aadhaar,compressed,back,True,193,unknown,0.0,0.4,5,2,5678 9012 3456,YES,,,,,45 Civil Lines Jaipur Rajasthan 302006,YES,,,,,18/01/1987,NO,Male,NO,,,Vikram Singh,NO,,,,
+EMP004_aadhaar_back_mobile_photo.jpg,aadhaar,mobile_photo,back,True,26,unknown,0.0,0.2,5,1,5678 9012 3456,YES,,,,,45 Civil Lines Jaipur Rajasthan 302006,NO,,,,,18/01/1987,NO,Male,NO,,,Vikram Singh,NO,,,,
+EMP004_aadhaar_back_rotated.png,aadhaar,rotated,back,True,191,unknown,0.0,0.4,5,2,5678 9012 3456,YES,,,,,45 Civil Lines Jaipur Rajasthan 302006,YES,,,,,18/01/1987,NO,Male,NO,,,Vikram Singh,NO,,,,
+EMP004_aadhaar_front_blurred.png,aadhaar,blurred,front,True,94,unknown,0.0,0.2,5,1,5678 9012 3456,YES,,,,,45 Civil Lines Jaipur Rajasthan 302006,NO,,,,,18/01/1987,NO,Male,NO,,,Vikram Singh,NO,,,,
+EMP004_aadhaar_front_clean.png,aadhaar,clean,front,True,333,unknown,10.0,0.8,5,4,5678 9012 3456,YES,,,,,45 Civil Lines Jaipur Rajasthan 302006,NO,,,,,18/01/1987,YES,Male,YES,,,Vikram Singh,YES,,,,
+EMP004_aadhaar_front_compressed.jpg,aadhaar,compressed,front,True,322,unknown,0.0,0.8,5,4,5678 9012 3456,YES,,,,,45 Civil Lines Jaipur Rajasthan 302006,NO,,,,,18/01/1987,YES,Male,YES,,,Vikram Singh,YES,,,,
+EMP004_aadhaar_front_mobile_photo.jpg,aadhaar,mobile_photo,front,True,105,unknown,0.0,0.2,5,1,5678 9012 3456,YES,,,,,45 Civil Lines Jaipur Rajasthan 302006,NO,,,,,18/01/1987,NO,Male,NO,,,Vikram Singh,NO,,,,
+EMP004_aadhaar_front_rotated.png,aadhaar,rotated,front,True,340,unknown,10.0,0.8,5,4,5678 9012 3456,YES,,,,,45 Civil Lines Jaipur Rajasthan 302006,NO,,,,,18/01/1987,YES,Male,YES,,,Vikram Singh,YES,,,,
+EMP005_aadhaar_back_blurred.png,aadhaar,blurred,back,True,54,unknown,0.0,0.2,5,1,6789 0123 4567,YES,,,,,88 Anna Salai Chennai Tamil Nadu 600002,NO,,,,,30/06/1996,NO,Female,NO,,,Sneha Iyer,NO,,,,
+EMP005_aadhaar_back_clean.png,aadhaar,clean,back,True,190,unknown,0.0,0.4,5,2,6789 0123 4567,YES,,,,,88 Anna Salai Chennai Tamil Nadu 600002,YES,,,,,30/06/1996,NO,Female,NO,,,Sneha Iyer,NO,,,,
+EMP005_aadhaar_back_compressed.jpg,aadhaar,compressed,back,True,191,unknown,0.0,0.4,5,2,6789 0123 4567,YES,,,,,88 Anna Salai Chennai Tamil Nadu 600002,YES,,,,,30/06/1996,NO,Female,NO,,,Sneha Iyer,NO,,,,
+EMP005_aadhaar_back_mobile_photo.jpg,aadhaar,mobile_photo,back,True,37,unknown,0.0,0.2,5,1,6789 0123 4567,YES,,,,,88 Anna Salai Chennai Tamil Nadu 600002,NO,,,,,30/06/1996,NO,Female,NO,,,Sneha Iyer,NO,,,,
+EMP005_aadhaar_back_rotated.png,aadhaar,rotated,back,True,194,unknown,0.0,0.4,5,2,6789 0123 4567,YES,,,,,88 Anna Salai Chennai Tamil Nadu 600002,YES,,,,,30/06/1996,NO,Female,NO,,,Sneha Iyer,NO,,,,
+EMP005_aadhaar_front_blurred.png,aadhaar,blurred,front,True,17,unknown,0.0,0.2,5,1,6789 0123 4567,YES,,,,,88 Anna Salai Chennai Tamil Nadu 600002,NO,,,,,30/06/1996,NO,Female,NO,,,Sneha Iyer,NO,,,,
+EMP005_aadhaar_front_clean.png,aadhaar,clean,front,True,334,unknown,20.0,0.8,5,4,6789 0123 4567,YES,,,,,88 Anna Salai Chennai Tamil Nadu 600002,NO,,,,,30/06/1996,YES,Female,YES,,,Sneha Iyer,YES,,,,
+EMP005_aadhaar_front_compressed.jpg,aadhaar,compressed,front,True,314,unknown,20.0,0.6,5,3,6789 0123 4567,YES,,,,,88 Anna Salai Chennai Tamil Nadu 600002,NO,,,,,30/06/1996,YES,Female,NO,,,Sneha Iyer,YES,,,,
+EMP005_aadhaar_front_mobile_photo.jpg,aadhaar,mobile_photo,front,True,294,unknown,10.0,0.8,5,4,6789 0123 4567,YES,,,,,88 Anna Salai Chennai Tamil Nadu 600002,NO,,,,,30/06/1996,YES,Female,YES,,,Sneha Iyer,YES,,,,
+EMP005_aadhaar_front_rotated.png,aadhaar,rotated,front,True,315,unknown,20.0,0.8,5,4,6789 0123 4567,YES,,,,,88 Anna Salai Chennai Tamil Nadu 600002,NO,,,,,30/06/1996,YES,Female,YES,,,Sneha Iyer,YES,,,,
+EMP001_passbook_blurred.png,passbook,blurred,n/a,True,339,unknown,0.0,0.0,4,0,,,Ms. Priya Sharma,NO,50100123456789,NO,,,,,,,,,,,SBIN0001234,NO,,,ABCPS1234D,NO,,
+EMP001_passbook_clean.png,passbook,clean,n/a,True,491,unknown,20.0,0.75,4,3,,,Ms. Priya Sharma,YES,50100123456789,YES,,,,,,,,,,,SBIN0001234,NO,,,ABCPS1234D,YES,,
+EMP001_passbook_compressed.jpg,passbook,compressed,n/a,True,503,unknown,20.0,0.5,4,2,,,Ms. Priya Sharma,YES,50100123456789,YES,,,,,,,,,,,SBIN0001234,NO,,,ABCPS1234D,NO,,
+EMP001_passbook_mobile_photo.jpg,passbook,mobile_photo,n/a,True,417,unknown,0.0,0.0,4,0,,,Ms. Priya Sharma,NO,50100123456789,NO,,,,,,,,,,,SBIN0001234,NO,,,ABCPS1234D,NO,,
+EMP001_passbook_rotated.png,passbook,rotated,n/a,True,500,unknown,20.0,0.75,4,3,,,Ms. Priya Sharma,YES,50100123456789,YES,,,,,,,,,,,SBIN0001234,NO,,,ABCPS1234D,YES,,
+EMP002_passbook_blurred.png,passbook,blurred,n/a,True,3,unknown,0.0,0.0,4,0,,,Mr. Rohit Verma,NO,50200234567890,NO,,,,,,,,,,,HDFC0002345,NO,,,BCDPV5678E,NO,,
+EMP002_passbook_clean.png,passbook,clean,n/a,True,480,unknown,20.0,0.75,4,3,,,Mr. Rohit Verma,YES,50200234567890,YES,,,,,,,,,,,HDFC0002345,YES,,,BCDPV5678E,NO,,
+EMP002_passbook_compressed.jpg,passbook,compressed,n/a,True,483,unknown,20.0,1.0,4,4,,,Mr. Rohit Verma,YES,50200234567890,YES,,,,,,,,,,,HDFC0002345,YES,,,BCDPV5678E,YES,,
+EMP002_passbook_mobile_photo.jpg,passbook,mobile_photo,n/a,True,344,unknown,0.0,0.0,4,0,,,Mr. Rohit Verma,NO,50200234567890,NO,,,,,,,,,,,HDFC0002345,NO,,,BCDPV5678E,NO,,
+EMP002_passbook_rotated.png,passbook,rotated,n/a,True,487,unknown,20.0,0.75,4,3,,,Mr. Rohit Verma,YES,50200234567890,YES,,,,,,,,,,,HDFC0002345,YES,,,BCDPV5678E,NO,,
+EMP003_passbook_blurred.png,passbook,blurred,n/a,True,16,unknown,0.0,0.0,4,0,,,Ms. Anjali Nair,NO,50300345678901,NO,,,,,,,,,,,ICIC0003456,NO,,,CDEQN9012F,NO,,
+EMP003_passbook_clean.png,passbook,clean,n/a,True,486,unknown,20.0,1.0,4,4,,,Ms. Anjali Nair,YES,50300345678901,YES,,,,,,,,,,,ICIC0003456,YES,,,CDEQN9012F,YES,,
+EMP003_passbook_compressed.jpg,passbook,compressed,n/a,True,499,unknown,20.0,0.75,4,3,,,Ms. Anjali Nair,YES,50300345678901,YES,,,,,,,,,,,ICIC0003456,YES,,,CDEQN9012F,NO,,
+EMP003_passbook_mobile_photo.jpg,passbook,mobile_photo,n/a,True,437,unknown,10.0,0.25,4,1,,,Ms. Anjali Nair,NO,50300345678901,YES,,,,,,,,,,,ICIC0003456,NO,,,CDEQN9012F,NO,,
+EMP003_passbook_rotated.png,passbook,rotated,n/a,True,505,unknown,20.0,1.0,4,4,,,Ms. Anjali Nair,YES,50300345678901,YES,,,,,,,,,,,ICIC0003456,YES,,,CDEQN9012F,YES,,
+EMP004_passbook_blurred.png,passbook,blurred,n/a,True,28,unknown,0.0,0.0,4,0,,,Mr. Vikram Singh,NO,50400456789012,NO,,,,,,,,,,,PUNB0004567,NO,,,DEFRS3456G,NO,,
+EMP004_passbook_clean.png,passbook,clean,n/a,True,489,unknown,20.0,0.75,4,3,,,Mr. Vikram Singh,YES,50400456789012,YES,,,,,,,,,,,PUNB0004567,NO,,,DEFRS3456G,YES,,
+EMP004_passbook_compressed.jpg,passbook,compressed,n/a,True,490,unknown,20.0,0.5,4,2,,,Mr. Vikram Singh,YES,50400456789012,YES,,,,,,,,,,,PUNB0004567,NO,,,DEFRS3456G,NO,,
+EMP004_passbook_mobile_photo.jpg,passbook,mobile_photo,n/a,True,480,unknown,10.0,0.5,4,2,,,Mr. Vikram Singh,YES,50400456789012,YES,,,,,,,,,,,PUNB0004567,NO,,,DEFRS3456G,NO,,
+EMP004_passbook_rotated.png,passbook,rotated,n/a,True,494,unknown,20.0,0.75,4,3,,,Mr. Vikram Singh,YES,50400456789012,YES,,,,,,,,,,,PUNB0004567,NO,,,DEFRS3456G,YES,,
+EMP005_passbook_blurred.png,passbook,blurred,n/a,True,6,unknown,0.0,0.0,4,0,,,Ms. Sneha Iyer,NO,50500567890123,NO,,,,,,,,,,,KARB0005678,NO,,,EFGTI7890H,NO,,
+EMP005_passbook_clean.png,passbook,clean,n/a,True,474,unknown,20.0,0.5,4,2,,,Ms. Sneha Iyer,YES,50500567890123,YES,,,,,,,,,,,KARB0005678,NO,,,EFGTI7890H,NO,,
+EMP005_passbook_compressed.jpg,passbook,compressed,n/a,True,483,unknown,20.0,0.75,4,3,,,Ms. Sneha Iyer,YES,50500567890123,YES,,,,,,,,,,,KARB0005678,NO,,,EFGTI7890H,YES,,
+EMP005_passbook_mobile_photo.jpg,passbook,mobile_photo,n/a,True,351,unknown,20.0,0.75,4,3,,,Ms. Sneha Iyer,YES,50500567890123,YES,,,,,,,,,,,KARB0005678,NO,,,EFGTI7890H,YES,,
+EMP005_passbook_rotated.png,passbook,rotated,n/a,True,475,unknown,20.0,0.75,4,3,,,Ms. Sneha Iyer,YES,50500567890123,YES,,,,,,,,,,,KARB0005678,NO,,,EFGTI7890H,YES,,
+X00016469672.jpg,invoice,original,n/a,True,863,unknown,10.0,1.0,3,3,,,,,,,,,SOON HUAT MACHINERY ENTERPRISE,YES,11/01/2019,YES,,,,,,,,,,,327.00,YES
+X51005361900.jpg,invoice,original,n/a,True,707,unknown,0.0,0.6667,3,2,,,,,,,,,TEO HENG STATIONERY & BOOKS,NO,23/01/2018,YES,,,,,,,,,,,18.00,YES
+X51005361946.jpg,invoice,original,n/a,True,693,unknown,0.0,1.0,3,3,,,,,,,,,MR. D.I.Y. (M) SDN BHD,YES,14-03-18,YES,,,,,,,,,,,37.10,YES
+X51005433492.jpg,invoice,original,n/a,True,542,unknown,0.0,0.6667,3,2,,,,,,,,,UNIHAKKA INTERNATIONAL SDN BHD,YES,05 MAR 2018,NO,,,,,,,,,,,$8.20,YES
+X51005433514.jpg,invoice,original,n/a,True,559,unknown,0.0,1.0,3,3,,,,,,,,,UNIHAKKA INTERNATIONAL SDN BHD,YES,03 MAR 2018,YES,,,,,,,,,,,$8.20,YES
+X51005577192.jpg,invoice,original,n/a,True,549,unknown,0.0,0.6667,3,2,,,,,,,,,FY EAGLE ENTERPRISE,NO,04/12/2017,YES,,,,,,,,,,,7.00,YES
+X51005605286.jpg,invoice,original,n/a,True,608,unknown,0.0,1.0,3,3,,,,,,,,,AEON CO. (M) BHD,YES,09/02/2018,YES,,,,,,,,,,,5.90,YES
+X51005605333.jpg,invoice,original,n/a,True,694,unknown,0.0,1.0,3,3,,,,,,,,,POPULAR BOOK CO. (M) SDN BHD,YES,07/01/18,YES,,,,,,,,,,,31.45,YES
+X51005663273.jpg,invoice,original,n/a,True,582,unknown,0.0,1.0,3,3,,,,,,,,,SYARIKAT PERNIAGAAN GIN KEE,YES,04/12/2017,YES,,,,,,,,,,,47.70,YES
+X51005663293.jpg,invoice,original,n/a,True,653,unknown,0.0,1.0,3,3,,,,,,,,,SWEET FOREST CAFE,YES,14-02-2018,YES,,,,,,,,,,,30.30,YES
+X51005676539.jpg,invoice,original,n/a,True,575,unknown,0.0,1.0,3,3,,,,,,,,,SYARIKAT PERNIAGAAN GIN KEE,YES,10/01/2018,YES,,,,,,,,,,,23.32,YES
+X51005711451.jpg,invoice,original,n/a,True,502,unknown,0.0,0.6667,3,2,,,,,,,,,RSTORAN WAN SHENG,NO,05-03-2018,YES,,,,,,,,,,,6.00,YES
+X51005719873.jpg,invoice,original,n/a,True,677,unknown,20.0,1.0,3,3,,,,,,,,,CT281 - TEALIVE SHELL KEPONG OTTOGO ENTERPRISE,YES,21/01/2018,YES,,,,,,,,,,,RM8.60,YES
+X51005719886.jpg,invoice,original,n/a,True,339,unknown,0.0,1.0,3,3,,,,,,,,,SUNFISH,YES,05/01/2018,YES,,,,,,,,,,,28.70,YES
+X51005757324.jpg,invoice,original,n/a,True,613,unknown,0.0,1.0,3,3,,,,,,,,,MR. D.I.Y. (M) SDN BHD,YES,25-03-18,YES,,,,,,,,,,,50.80,YES
+X51006008086.jpg,invoice,original,n/a,True,709,unknown,0.0,1.0,3,3,,,,,,,,,POPULAR BOOK CO. (M) SDN BHD,YES,24/01/18,YES,,,,,,,,,,,30.10,YES
+X51006008095.jpg,invoice,original,n/a,True,473,unknown,0.0,1.0,3,3,,,,,,,,,BOON SENG PAPER SDN BHD,YES,19/03/2018,YES,,,,,,,,,,,31.80,YES
+X51006311758.jpg,invoice,original,n/a,True,801,unknown,0.0,1.0,3,3,,,,,,,,,TONYMOLY VIVA CITY,YES,29/03/2018,YES,,,,,,,,,,,100.60,YES
+X51006311778.jpg,invoice,original,n/a,True,569,unknown,10.0,0.6667,3,2,,,,,,,,,ANZEL ADVERTISING (M) SDN BHD,NO,21/03/2018,YES,,,,,,,,,,,7.40,YES
+X51006329402.jpg,invoice,original,n/a,True,568,unknown,0.0,0.6667,3,2,,,,,,,,,SEGI CASH & CARRY SDN. BHD.,NO,06/04/17,YES,,,,,,,,,,,50.45,YES
+X51006387740.jpg,invoice,original,n/a,True,622,unknown,0.0,1.0,3,3,,,,,,,,,ARTRANGE STATIONERS & PRINT SDN BHD,YES,10/04/2017,YES,,,,,,,,,,,15.40,YES
+X51006414394.jpg,invoice,original,n/a,True,744,unknown,0.0,1.0,3,3,,,,,,,,,RESTORAN SIAM VILLAGE,YES,27/04/2018,YES,,,,,,,,,,,275.90,YES
+X51006414470.jpg,invoice,original,n/a,True,564,unknown,0.0,1.0,3,3,,,,,,,,,UNIHAKKA INTERNATIONAL SDN BHD,YES,09 APR 2018,YES,,,,,,,,,,,$8.20,YES
+X51006556818.jpg,invoice,original,n/a,True,870,unknown,10.0,0.3333,3,1,,,,,,,,,GARDENIA BAKERIES (KL) SDN BHD,NO,03/09/2017,NO,,,,,,,,,,,29.59,YES
+X51006556828.jpg,invoice,original,n/a,True,921,unknown,0.0,0.6667,3,2,,,,,,,,,GARDENIA BAKERIES (KL) SDN BHD,NO,25/09/2017,YES,,,,,,,,,,,36.55,YES
+X51006619709.jpg,invoice,original,n/a,True,906,unknown,0.0,1.0,3,3,,,,,,,,,MR. D.I.Y. (KUCHAI) SDN BHD,YES,24-01-16,YES,,,,,,,,,,,RM 57.40,YES
+X51006913028.jpg,invoice,original,n/a,True,586,unknown,0.0,1.0,3,3,,,,,,,,,UNIHAKKA INTERNATIONAL SDN BHD,YES,07 MAY 2018,YES,,,,,,,,,,,$8.70,YES
+X51006913051.jpg,invoice,original,n/a,True,590,unknown,0.0,1.0,3,3,,,,,,,,,THE TOAST F&B SDN BHD,YES,11/05/2018,YES,,,,,,,,,,,31.00,YES
+X51007231338.jpg,invoice,original,n/a,True,677,unknown,0.0,1.0,3,3,,,,,,,,,DIMILIKI OLEH T PLUS F&B SDN. BHD.,YES,11/05/2018,YES,,,,,,,,,,,9.45,YES
+X51007579726.jpg,invoice,original,n/a,True,678,unknown,0.0,0.6667,3,2,,,,,,,,,RAPID RAIL SDN BHD,NO,18/06/2018,YES,,,,,,,,,,,RM 30.00,YES
+X51008099046.jpg,invoice,original,n/a,True,491,unknown,0.0,0.6667,3,2,,,,,,,,,RESTORAN WAN SHENG,NO,12-06-2018,YES,,,,,,,,,,,4.60,YES
+X51008114262.jpg,invoice,original,n/a,True,486,unknown,0.0,1.0,3,3,,,,,,,,,99 SPEED MART S/B,YES,05-05-18,YES,,,,,,,,,,,137.15,YES
+X51008142060.jpg,invoice,original,n/a,True,716,unknown,0.0,1.0,3,3,,,,,,,,,KEDAI PAPAN YEW CHUAN,YES,26/05/2018,YES,,,,,,,,,,,121.90,YES
+X51008142061.jpg,invoice,original,n/a,True,746,unknown,0.0,1.0,3,3,,,,,,,,,KEDAI PAPAN YEW CHUAN,YES,03/05/2018,YES,,,,,,,,,,,178.08,YES
+X51008164969.jpg,invoice,original,n/a,True,608,unknown,0.0,1.0,3,3,,,,,,,,,ONE ONE THREE SEAFOOD RESTAURANT SDN BHD,YES,14-06-2018,YES,,,,,,,,,,,59.00,YES
