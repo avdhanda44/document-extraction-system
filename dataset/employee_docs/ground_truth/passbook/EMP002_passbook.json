@@ -1,0 +1,20 @@
+{
+    "bank_name": "HDFC Bank",
+    "branch_name": "Koramangala",
+    "ifsc": "HDFC0002345",
+    "account_number": "50200234567890",
+    "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+    "account_holder": "Mr. Rohit Verma",
+    "father_name": "Mohan Verma",
+    "cif_number": "090758522",
+    "pan_number": "BCDPV5678E",
+    "address": "7B MG Road Bengaluru Karnataka 560001",
+    "account_opened": "22/07/2011",
+    "source_images": [
+        "EMP002_passbook_clean.png",
+        "EMP002_passbook_rotated.png",
+        "EMP002_passbook_blurred.png",
+        "EMP002_passbook_compressed.jpg",
+        "EMP002_passbook_mobile_photo.jpg"
+    ]
+}

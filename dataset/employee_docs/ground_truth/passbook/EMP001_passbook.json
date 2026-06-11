@@ -1,0 +1,20 @@
+{
+    "bank_name": "State Bank of India",
+    "branch_name": "Connaught Place",
+    "ifsc": "SBIN0001234",
+    "account_number": "50100123456789",
+    "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+    "account_holder": "Ms. Priya Sharma",
+    "father_name": "Rajesh Sharma",
+    "cif_number": "090729261",
+    "pan_number": "ABCPS1234D",
+    "address": "14 Rajpur Road Dehradun Uttarakhand 248001",
+    "account_opened": "15/03/2014",
+    "source_images": [
+        "EMP001_passbook_clean.png",
+        "EMP001_passbook_rotated.png",
+        "EMP001_passbook_blurred.png",
+        "EMP001_passbook_compressed.jpg",
+        "EMP001_passbook_mobile_photo.jpg"
+    ]
+}
