@@ -18,19 +18,56 @@ employee_form_schema = {
 }
 
 
-# Aadhaar schema.
-# Aadhaar can have English and Hindi labels, so one field can have many possible labels.
-aadhaar_card_schema = {
+# Aadhaar front schema.
+# Keep only the fields that can appear on the front side of an Aadhaar card.
+aadhaar_front_schema = {
     "aadhaar_number": ["Aadhaar Number:", "आधार संख्या:", "आधार नंबर:"],
+    "vid": ["VID:", "वीआईडी:"],
     "name": ["Name:", "नाम:"],
+    "hindi_name": ["Hindi Name:", "नाम:"],
     "date_of_birth": ["Date of Birth:", "DOB:", "जन्म तिथि:"],
     "year_of_birth": ["Year of Birth:", "YOB:", "जन्म वर्ष:"],
-    "gender": ["Gender:", "लिंग:"],
-    "address": ["Address:", "पता:"],
-    "father_name": ["Father Name:", "पिता का नाम:"],
-    "husband_name": ["Husband Name:", "पति का नाम:"],
-    "mobile_number": ["Mobile Number:", "मोबाइल नंबर:"],
+    "gender": ["Gender:", "लिंग:", "Male", "Female", "पुरुष", "महिला"],
+}
+
+
+# Aadhaar back schema.
+# Keep only address-side fields. Relationship fields are split so comparison can
+# score C/O, Father/S/O, and W/O/Husband separately.
+aadhaar_back_schema = {
+    "aadhaar_number": ["Aadhaar Number:", "आधार संख्या:", "आधार नंबर:"],
     "vid": ["VID:", "वीआईडी:"],
+    "relationship_label": ["Father:", "S/O:", "C/O:", "W/O:", "Husband:", "पिता:", "पति:", "मार्फत:"],
+    "care_of": ["C/O:", "Care Of:", "मार्फत:"],
+    "father_name": ["Father:", "Father Name:", "S/O:", "पिता का नाम:", "पिता:"],
+    "husband_name": ["Husband:", "Husband Name:", "W/O:", "पति का नाम:", "पति:"],
+    "hindi_relationship_label": ["पिता:", "पति:", "पत्नी:", "पुत्र:", "मार्फत:"],
+    "hindi_care_of": ["मार्फत:"],
+    "hindi_father_name": ["पिता:", "पिता का नाम:", "पुत्र:"],
+    "hindi_husband_name": ["पति:", "पति का नाम:", "पत्नी:"],
+    "address": ["Address:", "पता:"],
+    "hindi_address": ["पता:"],
+    "hindi_address_lines": ["पता:"],
+    "pincode": ["Pincode:", "PIN Code:", "Postal Code:"],
+}
+
+
+# Backward-compatible combined schema for older code paths that still import it.
+aadhaar_card_schema = {
+    **aadhaar_front_schema,
+    **aadhaar_back_schema,
+}
+
+
+pan_card_schema = {
+    "pan_number": ["Permanent Account Number", "PAN", "PAN Number"],
+    "name": ["Name", "नाम"],
+    "hindi_name": ["नाम"],
+    "father_name": ["Father's Name", "Father Name", "पिता का नाम"],
+    "hindi_father_name": ["पिता का नाम"],
+    "date_of_birth": ["Date of Birth", "जन्म की तारीख"],
+    "signature_present": ["Signature", "हस्ताक्षर"],
+    "card_issue_date_text": ["Issue Date", "Card Issue Date"],
 }
 
 
@@ -38,7 +75,9 @@ aadhaar_card_schema = {
 # Later, if we add PAN card or another form, we will add it in this dictionary.
 document_schemas = {
     "employee_form": employee_form_schema,
-    "aadhaar_card": aadhaar_card_schema,
+    "aadhaar_front": aadhaar_front_schema,
+    "aadhaar_back": aadhaar_back_schema,
+    "pan_card": pan_card_schema,
 }
 
 

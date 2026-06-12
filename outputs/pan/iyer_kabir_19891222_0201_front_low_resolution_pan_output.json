@@ -1,0 +1,245 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/employee_docs/generated_docs/pan/iyer_kabir_19891222_0201_front_low_resolution.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/employee_docs/ground_truth/pan/iyer_kabir_19891222_0201_front_low_resolution.json",
+        "side": "front",
+        "quality": "low_resolution"
+    },
+    "ground_truth": {
+        "pan_number": "KABPI2212M",
+        "name": "Kabir Iyer",
+        "hindi_name": "कबीर अय्यर",
+        "father_name": "Suresh Iyer",
+        "hindi_father_name": "सुरेश अय्यर",
+        "date_of_birth": "1989-12-22",
+        "signature_present": true,
+        "card_issue_date_text": "15112021"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "pan_number": "KABPI2212M",
+                "name": "LABIR ITEH",
+                "father_name": "SURESH IYER",
+                "date_of_birth": "",
+                "hindi_name": "आयकर वभाग",
+                "hindi_father_name": "लेखा तख्या फारद",
+                "signature_present": false,
+                "card_issue_date_text": ""
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 2,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KABPI2212M",
+                        "extracted": "KABPI2212M",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Kabir Iyer",
+                        "extracted": "LABIR ITEH",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 70.0
+                    },
+                    "hindi_name": {
+                        "expected": "कबीर अय्यर",
+                        "extracted": "आयकर वभाग",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 31.58
+                    },
+                    "father_name": {
+                        "expected": "Suresh Iyer",
+                        "extracted": "SURESH IYER",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुरेश अय्यर",
+                        "extracted": "लेखा तख्या फारद",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 38.46
+                    },
+                    "date_of_birth": {
+                        "expected": "1989-12-22",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            }
+        },
+        "tesseract": {
+            "extracted_data": {
+                "pan_number": "KABPI2212M",
+                "name": "KABIR IYER",
+                "father_name": "SURESH IYER",
+                "date_of_birth": "1989-12-22",
+                "hindi_name": "कबीर आयूयर",
+                "hindi_father_name": "स्थायी लेखा संख्या",
+                "signature_present": true,
+                "card_issue_date_text": ""
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 6,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KABPI2212M",
+                        "extracted": "KABPI2212M",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Kabir Iyer",
+                        "extracted": "KABIR IYER",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "कबीर अय्यर",
+                        "extracted": "कबीर आयूयर",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 80.0
+                    },
+                    "father_name": {
+                        "expected": "Suresh Iyer",
+                        "extracted": "SURESH IYER",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुरेश अय्यर",
+                        "extracted": "स्थायी लेखा संख्या",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 27.59
+                    },
+                    "date_of_birth": {
+                        "expected": "1989-12-22",
+                        "extracted": "1989-12-22",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            }
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "pan_number": "KABPI2212M",
+                "name": "KABIR IYER",
+                "father_name": "KABIR IYER",
+                "date_of_birth": "1989-12-22",
+                "hindi_name": "कवीर अपयर",
+                "hindi_father_name": "आयकर",
+                "signature_present": true,
+                "card_issue_date_text": "15112021"
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 62.5,
+                "matched_fields": 5,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KABPI2212M",
+                        "extracted": "KABPI2212M",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Kabir Iyer",
+                        "extracted": "KABIR IYER",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "कबीर अय्यर",
+                        "extracted": "कवीर अपयर",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 73.68
+                    },
+                    "father_name": {
+                        "expected": "Suresh Iyer",
+                        "extracted": "KABIR IYER",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 57.14
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुरेश अय्यर",
+                        "extracted": "आयकर",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 26.67
+                    },
+                    "date_of_birth": {
+                        "expected": "1989-12-22",
+                        "extracted": "1989-12-22",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "15112021",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            }
+        }
+    }
+}

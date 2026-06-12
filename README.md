@@ -45,7 +45,7 @@ document-extraction-system/
 │   │   ├── __init__.py
 │   │   ├── text_extractor.py
 │   │   ├── pdf_processor.py
-│   │   ├── ocr_processor.py
+│   │   ├── image_processor.py
 │   │   ├── docx_processor.py
 │   ├── extractor/
 │   │   ├── __init__.py

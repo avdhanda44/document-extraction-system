@@ -1,0 +1,220 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/employee_docs/generated_docs/aadhaar/menon_asha_front_19930418_cropped.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/employee_docs/ground_truth/aadhaar/menon_asha_front_19930418_cropped.json",
+        "side": "front",
+        "quality": "cropped"
+    },
+    "ground_truth": {
+        "aadhaar_number": "3101 6165 8168",
+        "vid": "",
+        "name": "Asha Menon",
+        "hindi_name": "आशा मेनन",
+        "date_of_birth": "1993-04-18",
+        "year_of_birth": "",
+        "gender": "FEMALE"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "aadhaar_number": "3101 6165 8168",
+                "name": "Asha Menon",
+                "gender": "FEMALE",
+                "vid": "",
+                "hindi_name": "भारत सरकार",
+                "date_of_birth": "1993-04-18",
+                "year_of_birth": ""
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 80.0,
+                "matched_fields": 4,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "3101 6165 8168",
+                        "extracted": "3101 6165 8168",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Asha Menon",
+                        "extracted": "Asha Menon",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "आशा मेनन",
+                        "extracted": "भारत सरकार",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 22.22
+                    },
+                    "date_of_birth": {
+                        "expected": "1993-04-18",
+                        "extracted": "1993-04-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "FEMALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            }
+        },
+        "tesseract": {
+            "extracted_data": {
+                "aadhaar_number": "3101 6165 8168",
+                "name": "Asha Menon",
+                "gender": "FEMALE",
+                "vid": "",
+                "hindi_name": "आशा मेनन",
+                "date_of_birth": "1993-04-18",
+                "year_of_birth": ""
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 5,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "3101 6165 8168",
+                        "extracted": "3101 6165 8168",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Asha Menon",
+                        "extracted": "Asha Menon",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "आशा मेनन",
+                        "extracted": "आशा मेनन",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date_of_birth": {
+                        "expected": "1993-04-18",
+                        "extracted": "1993-04-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "FEMALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            }
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "aadhaar_number": "3101 6165 8168",
+                "name": "Asha Menon",
+                "gender": "FEMALE",
+                "vid": "",
+                "hindi_name": "भारत सरकार",
+                "date_of_birth": "1993-04-18",
+                "year_of_birth": ""
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 80.0,
+                "matched_fields": 4,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "3101 6165 8168",
+                        "extracted": "3101 6165 8168",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Asha Menon",
+                        "extracted": "Asha Menon",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "आशा मेनन",
+                        "extracted": "भारत सरकार",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 22.22
+                    },
+                    "date_of_birth": {
+                        "expected": "1993-04-18",
+                        "extracted": "1993-04-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "FEMALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            }
+        }
+    }
+}

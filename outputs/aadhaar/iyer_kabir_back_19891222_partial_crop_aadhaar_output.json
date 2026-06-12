@@ -1,0 +1,437 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/employee_docs/generated_docs/aadhaar/iyer_kabir_back_19891222_partial_crop.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/employee_docs/ground_truth/aadhaar/iyer_kabir_back_19891222_partial_crop.json",
+        "side": "back",
+        "quality": "partial_crop"
+    },
+    "ground_truth": {
+        "aadhaar_number": "3102 6166 8169",
+        "vid": "",
+        "relationship_label": "C/O",
+        "care_of": "Lakshmi Iyer",
+        "father_name": "",
+        "husband_name": "",
+        "hindi_relationship_label": "मार्फत",
+        "hindi_care_of": "लक्ष्मी अय्यर",
+        "hindi_father_name": "",
+        "hindi_husband_name": "",
+        "address": "17B Lake View Road Chennai Tamil Nadu 600041",
+        "hindi_address": "17B लअकए वइएव रोड चेन्नई तअमइल नअदउ 600041",
+        "hindi_address_lines": [
+            "पता:",
+            "मार्फत: लक्ष्मी अय्यर",
+            "17B, लअकए वइएव रोड",
+            "चेन्नई, तअमइल नअदउ",
+            "600041"
+        ],
+        "pincode": "600041"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "aadhaar_number": "3102 6166 8169",
+                "address": "Chennai, Tamil Nadu 600041",
+                "pincode": "600041",
+                "vid": "",
+                "relationship_label": "",
+                "care_of": "",
+                "father_name": "",
+                "husband_name": "",
+                "hindi_relationship_label": "मार्फत",
+                "hindi_care_of": "ः लकष्मी अय्यर",
+                "hindi_father_name": "",
+                "hindi_husband_name": "",
+                "hindi_address": "600041",
+                "hindi_address_lines": [
+                    "600041"
+                ]
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 55.56,
+                "matched_fields": 5,
+                "total_fields": 9,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "3102 6166 8169",
+                        "extracted": "3102 6166 8169",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "relationship_label": {
+                        "expected": "C/O",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "care_of": {
+                        "expected": "Lakshmi Iyer",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_relationship_label": {
+                        "expected": "मार्फत",
+                        "extracted": "मार्फत",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "hindi_care_of": {
+                        "expected": "लक्ष्मी अय्यर",
+                        "extracted": "ः लकष्मी अय्यर",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 88.89
+                    },
+                    "hindi_father_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "address": {
+                        "expected": "17B Lake View Road Chennai Tamil Nadu 600041",
+                        "extracted": "Chennai, Tamil Nadu 600041",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 72.46
+                    },
+                    "hindi_address": {
+                        "expected": "17B लअकए वइएव रोड चेन्नई तअमइल नअदउ 600041",
+                        "extracted": "600041",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 25.0
+                    },
+                    "hindi_address_lines": {
+                        "expected": [
+                            "पता:",
+                            "मार्फत: लक्ष्मी अय्यर",
+                            "17B, लअकए वइएव रोड",
+                            "चेन्नई, तअमइल नअदउ",
+                            "600041"
+                        ],
+                        "extracted": [
+                            "600041"
+                        ],
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 16.44
+                    },
+                    "pincode": {
+                        "expected": "600041",
+                        "extracted": "600041",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            }
+        },
+        "tesseract": {
+            "extracted_data": {
+                "aadhaar_number": "3102 6166 8169",
+                "address": "600041",
+                "pincode": "600041",
+                "vid": "",
+                "relationship_label": "C/O",
+                "care_of": "Lakshmi lyer",
+                "father_name": "",
+                "husband_name": "",
+                "hindi_relationship_label": "",
+                "hindi_care_of": "",
+                "hindi_father_name": "",
+                "hindi_husband_name": "",
+                "hindi_address": "मारफत THT अयूयर 178, Lake View Road 178, लअकए वड्एव रोड Chennai, Tamil Nadu चेन्नई, तअमडल नअदउ 600041",
+                "hindi_address_lines": [
+                    "पता:",
+                    "मारफत THT अयूयर 178, Lake View Road",
+                    "178, लअकए वड्एव रोड Chennai, Tamil Nadu",
+                    "चेन्नई, तअमडल नअदउ 600041"
+                ]
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 44.44,
+                "matched_fields": 4,
+                "total_fields": 9,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "3102 6166 8169",
+                        "extracted": "3102 6166 8169",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "relationship_label": {
+                        "expected": "C/O",
+                        "extracted": "C/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "care_of": {
+                        "expected": "Lakshmi Iyer",
+                        "extracted": "Lakshmi lyer",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 91.67
+                    },
+                    "father_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_relationship_label": {
+                        "expected": "मार्फत",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_care_of": {
+                        "expected": "लक्ष्मी अय्यर",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_father_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "address": {
+                        "expected": "17B Lake View Road Chennai Tamil Nadu 600041",
+                        "extracted": "600041",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 24.0
+                    },
+                    "hindi_address": {
+                        "expected": "17B लअकए वइएव रोड चेन्नई तअमइल नअदउ 600041",
+                        "extracted": "मारफत THT अयूयर 178, Lake View Road 178, लअकए वड्एव रोड Chennai, Tamil Nadu चेन्नई, तअमडल नअदउ 600041",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 62.5
+                    },
+                    "hindi_address_lines": {
+                        "expected": [
+                            "पता:",
+                            "मार्फत: लक्ष्मी अय्यर",
+                            "17B, लअकए वइएव रोड",
+                            "चेन्नई, तअमइल नअदउ",
+                            "600041"
+                        ],
+                        "extracted": [
+                            "पता:",
+                            "मारफत THT अयूयर 178, Lake View Road",
+                            "178, लअकए वड्एव रोड Chennai, Tamil Nadu",
+                            "चेन्नई, तअमडल नअदउ 600041"
+                        ],
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 65.48
+                    },
+                    "pincode": {
+                        "expected": "600041",
+                        "extracted": "600041",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            }
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "aadhaar_number": "3102 6166 8169",
+                "address": "17B, Lake View Road 17B,3 Chennai, Tamil Nadu 600041",
+                "pincode": "600041",
+                "vid": "",
+                "relationship_label": "C/O",
+                "care_of": "Lakshmi lyer",
+                "father_name": "",
+                "husband_name": "",
+                "hindi_relationship_label": "मार्फत",
+                "hindi_care_of": "लक्ष्मी अय्यर",
+                "hindi_father_name": "",
+                "hindi_husband_name": "",
+                "hindi_address": "600041",
+                "hindi_address_lines": [
+                    "600041"
+                ]
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 77.78,
+                "matched_fields": 7,
+                "total_fields": 9,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "3102 6166 8169",
+                        "extracted": "3102 6166 8169",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "relationship_label": {
+                        "expected": "C/O",
+                        "extracted": "C/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "care_of": {
+                        "expected": "Lakshmi Iyer",
+                        "extracted": "Lakshmi lyer",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 91.67
+                    },
+                    "father_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_relationship_label": {
+                        "expected": "मार्फत",
+                        "extracted": "मार्फत",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "hindi_care_of": {
+                        "expected": "लक्ष्मी अय्यर",
+                        "extracted": "लक्ष्मी अय्यर",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_father_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "address": {
+                        "expected": "17B Lake View Road Chennai Tamil Nadu 600041",
+                        "extracted": "17B, Lake View Road 17B,3 Chennai, Tamil Nadu 600041",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_address": {
+                        "expected": "17B लअकए वइएव रोड चेन्नई तअमइल नअदउ 600041",
+                        "extracted": "600041",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 25.0
+                    },
+                    "hindi_address_lines": {
+                        "expected": [
+                            "पता:",
+                            "मार्फत: लक्ष्मी अय्यर",
+                            "17B, लअकए वइएव रोड",
+                            "चेन्नई, तअमइल नअदउ",
+                            "600041"
+                        ],
+                        "extracted": [
+                            "600041"
+                        ],
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 16.44
+                    },
+                    "pincode": {
+                        "expected": "600041",
+                        "extracted": "600041",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            }
+        }
+    }
+}

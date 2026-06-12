@@ -2,7 +2,7 @@ import zipfile
 from pathlib import Path
 
 from .docx_processor import extract_text_from_docx
-from .ocr_processor import extract_text_from_image
+from .image_processor import extract_text_from_image
 from .pdf_processor import extract_text_from_pdf
 
 

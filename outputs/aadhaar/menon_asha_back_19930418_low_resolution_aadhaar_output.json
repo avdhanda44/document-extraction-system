@@ -1,0 +1,451 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/employee_docs/generated_docs/aadhaar/menon_asha_back_19930418_low_resolution.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/employee_docs/ground_truth/aadhaar/menon_asha_back_19930418_low_resolution.json",
+        "side": "back",
+        "quality": "low_resolution"
+    },
+    "ground_truth": {
+        "aadhaar_number": "3101 6165 8168",
+        "vid": "",
+        "relationship_label": "Father",
+        "care_of": "",
+        "father_name": "Suresh Menon",
+        "husband_name": "",
+        "hindi_relationship_label": "पिता",
+        "hindi_care_of": "",
+        "hindi_father_name": "सुरेश मेनन",
+        "hindi_husband_name": "",
+        "address": "42 MG Road Kochi Kerala 682001",
+        "hindi_address": "42 मग रोड कओचइ कएरअलअ 682001",
+        "hindi_address_lines": [
+            "पता:",
+            "पिता: सुरेश मेनन",
+            "42, मग रोड",
+            "कओचइ, कएरअलअ",
+            "682001"
+        ],
+        "pincode": "682001"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "aadhaar_number": "3101 6165 8168",
+                "address": "p5 2 d -997-n J 69 n 601347",
+                "pincode": "601347",
+                "vid": "",
+                "relationship_label": "Father",
+                "care_of": "",
+                "father_name": "Suresh Menon",
+                "husband_name": "",
+                "hindi_relationship_label": "पति",
+                "hindi_care_of": "",
+                "hindi_father_name": "",
+                "hindi_husband_name": "ाः सुरेश मेनन",
+                "hindi_address": "ः 4२ NG Raad ४२ गग रोड झओएछ रपअसआ 0008 1 601347",
+                "hindi_address_lines": [
+                    "पता:",
+                    "ः",
+                    "पतिाः सुरेश मेनन",
+                    "4२ NG Raad",
+                    "४२ गग रोड",
+                    "झओएछ रपअसआ",
+                    "0008 1 601347"
+                ]
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 33.33,
+                "matched_fields": 3,
+                "total_fields": 9,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "3101 6165 8168",
+                        "extracted": "3101 6165 8168",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "relationship_label": {
+                        "expected": "Father",
+                        "extracted": "Father",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "father_name": {
+                        "expected": "Suresh Menon",
+                        "extracted": "Suresh Menon",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_relationship_label": {
+                        "expected": "पिता",
+                        "extracted": "पति",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुरेश मेनन",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_husband_name": {
+                        "expected": "",
+                        "extracted": "ाः सुरेश मेनन",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "address": {
+                        "expected": "42 MG Road Kochi Kerala 682001",
+                        "extracted": "p5 2 d -997-n J 69 n 601347",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 32.14
+                    },
+                    "hindi_address": {
+                        "expected": "42 मग रोड कओचइ कएरअलअ 682001",
+                        "extracted": "ः 4२ NG Raad ४२ गग रोड झओएछ रपअसआ 0008 1 601347",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 34.67
+                    },
+                    "hindi_address_lines": {
+                        "expected": [
+                            "पता:",
+                            "पिता: सुरेश मेनन",
+                            "42, मग रोड",
+                            "कओचइ, कएरअलअ",
+                            "682001"
+                        ],
+                        "extracted": [
+                            "पता:",
+                            "ः",
+                            "पतिाः सुरेश मेनन",
+                            "4२ NG Raad",
+                            "४२ गग रोड",
+                            "झओएछ रपअसआ",
+                            "0008 1 601347"
+                        ],
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 56.9
+                    },
+                    "pincode": {
+                        "expected": "682001",
+                        "extracted": "601347",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            }
+        },
+        "tesseract": {
+            "extracted_data": {
+                "aadhaar_number": "३101 6165 8168",
+                "address": "682001",
+                "pincode": "682001",
+                "vid": "",
+                "relationship_label": "सुरेश मेनन 42, मग रोड कओषड, कएर अलअ 682001 ३101 6165 8168",
+                "care_of": "",
+                "father_name": "",
+                "husband_name": "",
+                "hindi_relationship_label": "पति",
+                "hindi_care_of": "",
+                "hindi_father_name": "",
+                "hindi_husband_name": "सुरेश मेनन",
+                "hindi_address": "42, मग रोड कओषड, कएर अलअ 682001",
+                "hindi_address_lines": [
+                    "पता:",
+                    "पति सुरेश मेनन",
+                    "42, मग रोड",
+                    "कओषड, कएर अलअ",
+                    "682001"
+                ]
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 33.33,
+                "matched_fields": 3,
+                "total_fields": 9,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "3101 6165 8168",
+                        "extracted": "३101 6165 8168",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "relationship_label": {
+                        "expected": "Father",
+                        "extracted": "सुरेश मेनन 42, मग रोड कओषड, कएर अलअ 682001 ३101 6165 8168",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "father_name": {
+                        "expected": "Suresh Menon",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_relationship_label": {
+                        "expected": "पिता",
+                        "extracted": "पति",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुरेश मेनन",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_husband_name": {
+                        "expected": "",
+                        "extracted": "सुरेश मेनन",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "address": {
+                        "expected": "42 MG Road Kochi Kerala 682001",
+                        "extracted": "682001",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 33.33
+                    },
+                    "hindi_address": {
+                        "expected": "42 मग रोड कओचइ कएरअलअ 682001",
+                        "extracted": "42, मग रोड कओषड, कएर अलअ 682001",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 91.23
+                    },
+                    "hindi_address_lines": {
+                        "expected": [
+                            "पता:",
+                            "पिता: सुरेश मेनन",
+                            "42, मग रोड",
+                            "कओचइ, कएरअलअ",
+                            "682001"
+                        ],
+                        "extracted": [
+                            "पता:",
+                            "पति सुरेश मेनन",
+                            "42, मग रोड",
+                            "कओषड, कएर अलअ",
+                            "682001"
+                        ],
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 91.67
+                    },
+                    "pincode": {
+                        "expected": "682001",
+                        "extracted": "682001",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            }
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "aadhaar_number": "3101 6165 8168",
+                "address": "42, MG Road Kochi, Kerala 682001",
+                "pincode": "682001",
+                "vid": "",
+                "relationship_label": "Father",
+                "care_of": "",
+                "father_name": "Suresh Menon",
+                "husband_name": "",
+                "hindi_relationship_label": "पति",
+                "hindi_care_of": "",
+                "hindi_father_name": "",
+                "hindi_husband_name": "ा",
+                "hindi_address": "682001",
+                "hindi_address_lines": [
+                    "682001"
+                ]
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 55.56,
+                "matched_fields": 5,
+                "total_fields": 9,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "3101 6165 8168",
+                        "extracted": "3101 6165 8168",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "relationship_label": {
+                        "expected": "Father",
+                        "extracted": "Father",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "father_name": {
+                        "expected": "Suresh Menon",
+                        "extracted": "Suresh Menon",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_relationship_label": {
+                        "expected": "पिता",
+                        "extracted": "पति",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुरेश मेनन",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_husband_name": {
+                        "expected": "",
+                        "extracted": "ा",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "address": {
+                        "expected": "42 MG Road Kochi Kerala 682001",
+                        "extracted": "42, MG Road Kochi, Kerala 682001",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_address": {
+                        "expected": "42 मग रोड कओचइ कएरअलअ 682001",
+                        "extracted": "682001",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 35.29
+                    },
+                    "hindi_address_lines": {
+                        "expected": [
+                            "पता:",
+                            "पिता: सुरेश मेनन",
+                            "42, मग रोड",
+                            "कओचइ, कएरअलअ",
+                            "682001"
+                        ],
+                        "extracted": [
+                            "682001"
+                        ],
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 22.22
+                    },
+                    "pincode": {
+                        "expected": "682001",
+                        "extracted": "682001",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            }
+        }
+    }
+}

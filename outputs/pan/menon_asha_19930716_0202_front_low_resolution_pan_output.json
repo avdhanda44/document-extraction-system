@@ -1,0 +1,236 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/employee_docs/generated_docs/pan/menon_asha_19930716_0202_front_low_resolution.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/employee_docs/ground_truth/pan/menon_asha_19930716_0202_front_low_resolution.json",
+        "side": "front",
+        "quality": "low_resolution"
+    },
+    "ground_truth": {
+        "pan_number": "ASHPM0716F",
+        "name": "Asha Menon",
+        "hindi_name": "आशा मेनन",
+        "father_name": "Madhav Menon",
+        "hindi_father_name": "माधव मेनन",
+        "date_of_birth": "1993-07-16",
+        "signature_present": true,
+        "card_issue_date_text": "15112021"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {},
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "ASHPM0716F",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "name": {
+                        "expected": "Asha Menon",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_name": {
+                        "expected": "आशा मेनन",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Madhav Menon",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_father_name": {
+                        "expected": "माधव मेनन",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1993-07-16",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            }
+        },
+        "tesseract": {
+            "extracted_data": {
+                "pan_number": "ASHPM0716F",
+                "name": "",
+                "father_name": "",
+                "date_of_birth": "1993-07-16",
+                "hindi_name": "आयकर वभिग भारत सरकार",
+                "hindi_father_name": "लेखा संख्या कार् ड",
+                "signature_present": false,
+                "card_issue_date_text": ""
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 2,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "ASHPM0716F",
+                        "extracted": "ASHPM0716F",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Asha Menon",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_name": {
+                        "expected": "आशा मेनन",
+                        "extracted": "आयकर वभिग भारत सरकार",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 14.29
+                    },
+                    "father_name": {
+                        "expected": "Madhav Menon",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_father_name": {
+                        "expected": "माधव मेनन",
+                        "extracted": "लेखा संख्या कार् ड",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 7.41
+                    },
+                    "date_of_birth": {
+                        "expected": "1993-07-16",
+                        "extracted": "1993-07-16",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            }
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "pan_number": "ASHPM0716F",
+                "name": "MADHAV MENON",
+                "father_name": "MADHAV MENON",
+                "date_of_birth": "1993-07-16",
+                "hindi_name": "वभाग",
+                "hindi_father_name": "आयकर",
+                "signature_present": true,
+                "card_issue_date_text": "15112021"
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 6,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "ASHPM0716F",
+                        "extracted": "ASHPM0716F",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Asha Menon",
+                        "extracted": "MADHAV MENON",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 81.82
+                    },
+                    "hindi_name": {
+                        "expected": "आशा मेनन",
+                        "extracted": "वभाग",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 16.67
+                    },
+                    "father_name": {
+                        "expected": "Madhav Menon",
+                        "extracted": "MADHAV MENON",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_father_name": {
+                        "expected": "माधव मेनन",
+                        "extracted": "आयकर",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0.0
+                    },
+                    "date_of_birth": {
+                        "expected": "1993-07-16",
+                        "extracted": "1993-07-16",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "15112021",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            }
+        }
+    }
+}

@@ -38,6 +38,53 @@ document_validation_rules = {
             "vid",
         ],
     },
+    "aadhaar_front": {
+        "required": [
+            "aadhaar_number",
+            "name",
+            "gender",
+        ],
+        "optional": [
+            "vid",
+            "hindi_name",
+            "date_of_birth",
+            "year_of_birth",
+        ],
+    },
+    "aadhaar_back": {
+        "required": [
+            "aadhaar_number",
+            "address",
+            "pincode",
+        ],
+        "optional": [
+            "vid",
+            "relationship_label",
+            "care_of",
+            "father_name",
+            "husband_name",
+            "hindi_relationship_label",
+            "hindi_care_of",
+            "hindi_father_name",
+            "hindi_husband_name",
+            "hindi_address",
+            "hindi_address_lines",
+        ],
+    },
+    "pan_card": {
+        "required": [
+            "pan_number",
+            "name",
+            "father_name",
+            "date_of_birth",
+        ],
+        "optional": [
+            "hindi_name",
+            "hindi_father_name",
+            "signature_present",
+            "card_issue_date_text",
+        ],
+    },
 }
 
 
@@ -156,6 +203,20 @@ def check_vid(vid):
     return False, "VID must have exactly 16 digits", ""
 
 
+def check_pan_number(pan_number):
+    pan_number = (pan_number or "").strip().upper()
+
+    if pan_number == "":
+        return False, "Required field missing", ""
+
+    pan_number = re.sub(r"[^A-Z0-9]", "", pan_number)
+
+    if re.match(r"^[A-Z]{5}\d{4}[A-Z]$", pan_number):
+        return True, "", ""
+
+    return False, "PAN number must match format AAAAA9999A", ""
+
+
 def get_required_and_optional_fields(document_type, schema):
     # Use rules for only the document type selected by document classification.
     if document_type in document_validation_rules:
@@ -190,11 +251,17 @@ def check_field_format(field_name, value):
     if field_name == "vid":
         return check_vid(value)
 
+    if field_name == "pan_number":
+        return check_pan_number(value)
+
     return True, "", ""
 
 
 def validate_one_field(field_name, value, required_fields, optional_fields):
-    value = (value or "").strip()
+    if isinstance(value, list):
+        value = " ".join(str(item) for item in value)
+
+    value = str(value or "").strip()
 
     if field_name in required_fields and value == "":
         return False, "Required field missing", ""

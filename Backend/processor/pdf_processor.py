@@ -1,6 +1,6 @@
 import pdfplumber
 
-from .ocr_processor import extract_text_from_scanned_pdf
+from .image_processor import extract_text_from_scanned_pdf
 
 
 def extract_text_from_pdf(pdf_path):
