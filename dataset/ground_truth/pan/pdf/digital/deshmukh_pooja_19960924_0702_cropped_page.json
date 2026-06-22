@@ -1,0 +1,23 @@
+{
+    "pdf_type": "digital",
+    "variant": "cropped_page",
+    "pages": {
+        "1": "front"
+    },
+    "intentionally_unavailable_fields": {
+        "front": [
+            "date_of_birth",
+            "signature_present"
+        ]
+    },
+    "front": {
+        "pan_number": "HIJPD8246R",
+        "name": "Pooja Deshmukh",
+        "hindi_name": "पूजा देशमुख",
+        "father_name": "Mahesh Deshmukh",
+        "hindi_father_name": "महेश देशमुख",
+        "date_of_birth": "",
+        "signature_present": false,
+        "card_issue_date_text": "15112021"
+    }
+}

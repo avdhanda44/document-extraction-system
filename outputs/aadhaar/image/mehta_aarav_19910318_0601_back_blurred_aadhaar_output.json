@@ -1,0 +1,1115 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/aadhaar/image/mehta_aarav_19910318_0601_back_blurred.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/aadhaar/image/mehta_aarav_19910318_0601_back_blurred.json",
+        "side": "back",
+        "quality": "blurred"
+    },
+    "ground_truth": {
+        "aadhaar_number": "0601 3665 5668",
+        "vid": "",
+        "relationship_label": "S/O",
+        "care_of": "",
+        "father_name": "Suresh Mehta",
+        "husband_name": "",
+        "hindi_relationship_label": "पुत्र",
+        "hindi_care_of": "",
+        "hindi_father_name": "सुरेश मेहता",
+        "hindi_husband_name": "",
+        "address": "14 Lotus Park Road Pune Maharashtra 411001",
+        "hindi_address": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+        "hindi_address_lines": [
+            "पता:",
+            "पुत्र: सुरेश मेहता",
+            "14, लोटस पार्क रोड",
+            "पुणे, महाराष्ट्र",
+            "411001"
+        ],
+        "pincode": "411001"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "aadhaar_number": "0601 0665 3668",
+                "address": "",
+                "pincode": "",
+                "vid": "",
+                "relationship_label": "",
+                "care_of": "",
+                "father_name": "",
+                "husband_name": "",
+                "hindi_relationship_label": "",
+                "hindi_care_of": "",
+                "hindi_father_name": "",
+                "hindi_husband_name": "",
+                "hindi_address": "",
+                "hindi_address_lines": []
+            },
+            "classification": {
+                "document_type": "aadhaar_back",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_back",
+                    "total_fields_checked": 14,
+                    "valid_fields": 12,
+                    "invalid_fields": 2,
+                    "fields_with_warnings": 11,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0601 0665 3668",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "pincode": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "relationship_label": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "care_of": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "husband_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_relationship_label": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_care_of": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_husband_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_address": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_address_lines": {
+                        "value": [],
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 9,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0601 3665 5668",
+                        "extracted": "0601 0665 3668",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "father_name": {
+                        "expected": "Suresh Mehta",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_relationship_label": {
+                        "expected": "पुत्र",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुरेश मेहता",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "address": {
+                        "expected": "14 Lotus Park Road Pune Maharashtra 411001",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_address": {
+                        "expected": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_address_lines": {
+                        "expected": [
+                            "पता:",
+                            "पुत्र: सुरेश मेहता",
+                            "14, लोटस पार्क रोड",
+                            "पुणे, महाराष्ट्र",
+                            "411001"
+                        ],
+                        "extracted": [],
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "pincode": {
+                        "expected": "411001",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "ठ\n*\n060106653668",
+            "processing_time_seconds": 5.309
+        },
+        "tesseract": {
+            "extracted_data": {},
+            "classification": {
+                "document_type": "unknown",
+                "confidence_percent": 0.0,
+                "confidence_level": "low"
+            },
+            "validation": {
+                "summary": {
+                    "total_fields_checked": 0,
+                    "valid_fields": 0,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true,
+                    "note": "Document type is unknown, so validation could not run."
+                },
+                "field_results": {}
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 9,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0601 3665 5668",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "father_name": {
+                        "expected": "Suresh Mehta",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_relationship_label": {
+                        "expected": "पुत्र",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुरेश मेहता",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "address": {
+                        "expected": "14 Lotus Park Road Pune Maharashtra 411001",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_address": {
+                        "expected": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_address_lines": {
+                        "expected": [
+                            "पता:",
+                            "पुत्र: सुरेश मेहता",
+                            "14, लोटस पार्क रोड",
+                            "पुणे, महाराष्ट्र",
+                            "411001"
+                        ],
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "pincode": {
+                        "expected": "411001",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "",
+            "processing_time_seconds": 0.1587
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "aadhaar_number": "0601 3665 5668",
+                "address": "14, Lotus Park Road 14 stew eqe the Pune, Maharashtra pt 411001",
+                "pincode": "411001",
+                "vid": "",
+                "relationship_label": "S/O",
+                "care_of": "",
+                "father_name": "Suresh Mehta",
+                "husband_name": "",
+                "hindi_relationship_label": "",
+                "hindi_care_of": "",
+                "hindi_father_name": "",
+                "hindi_husband_name": "",
+                "hindi_address": "411001",
+                "hindi_address_lines": [
+                    "411001"
+                ]
+            },
+            "classification": {
+                "document_type": "aadhaar_back",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_back",
+                    "total_fields_checked": 14,
+                    "valid_fields": 14,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 7,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0601 3665 5668",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "14, Lotus Park Road 14 stew eqe the Pune, Maharashtra pt 411001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pincode": {
+                        "value": "411001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "relationship_label": {
+                        "value": "S/O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "care_of": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "father_name": {
+                        "value": "Suresh Mehta",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "husband_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_relationship_label": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_care_of": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_husband_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_address": {
+                        "value": "411001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_address_lines": {
+                        "value": [
+                            "411001"
+                        ],
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 55.56,
+                "matched_fields": 5,
+                "total_fields": 9,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0601 3665 5668",
+                        "extracted": "0601 3665 5668",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "S/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "father_name": {
+                        "expected": "Suresh Mehta",
+                        "extracted": "Suresh Mehta",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_relationship_label": {
+                        "expected": "पुत्र",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुरेश मेहता",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "address": {
+                        "expected": "14 Lotus Park Road Pune Maharashtra 411001",
+                        "extracted": "14, Lotus Park Road 14 stew eqe the Pune, Maharashtra pt 411001",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_address": {
+                        "expected": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+                        "extracted": "411001",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 26.09
+                    },
+                    "hindi_address_lines": {
+                        "expected": [
+                            "पता:",
+                            "पुत्र: सुरेश मेहता",
+                            "14, लोटस पार्क रोड",
+                            "पुणे, महाराष्ट्र",
+                            "411001"
+                        ],
+                        "extracted": [
+                            "411001"
+                        ],
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 17.65
+                    },
+                    "pincode": {
+                        "expected": "411001",
+                        "extracted": "411001",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "RITY GF-INDIA\nS/O: Suresh Mehta\nge ghe n\n14, Lotus Park Road\n14 stew eqe the\nPune, Maharashtra\npt\n411001\n0601 3665 5668\n図\n1O\nSuresh Meht\nMLPaRa\nP.Mae\n0601\n3665\n5668",
+            "processing_time_seconds": 11.5575
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "aadhaar_number": "0601 3665 5668",
+                "address": "SO 14. Lotus Part Road 811001",
+                "pincode": "811001",
+                "vid": "",
+                "relationship_label": "S/O",
+                "care_of": "",
+                "father_name": "Suresh",
+                "husband_name": "",
+                "hindi_relationship_label": "",
+                "hindi_care_of": "",
+                "hindi_father_name": "",
+                "hindi_husband_name": "",
+                "hindi_address": "811001",
+                "hindi_address_lines": [
+                    "811001"
+                ]
+            },
+            "classification": {
+                "document_type": "aadhaar_back",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_back",
+                    "total_fields_checked": 14,
+                    "valid_fields": 14,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 7,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0601 3665 5668",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "SO 14. Lotus Part Road 811001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pincode": {
+                        "value": "811001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "relationship_label": {
+                        "value": "S/O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "care_of": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "father_name": {
+                        "value": "Suresh",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "husband_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_relationship_label": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_care_of": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_husband_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_address": {
+                        "value": "811001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_address_lines": {
+                        "value": [
+                            "811001"
+                        ],
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 33.33,
+                "matched_fields": 3,
+                "total_fields": 9,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0601 3665 5668",
+                        "extracted": "0601 3665 5668",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "S/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "father_name": {
+                        "expected": "Suresh Mehta",
+                        "extracted": "Suresh",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 66.67
+                    },
+                    "husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_relationship_label": {
+                        "expected": "पुत्र",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुरेश मेहता",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "address": {
+                        "expected": "14 Lotus Park Road Pune Maharashtra 411001",
+                        "extracted": "SO 14. Lotus Part Road 811001",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 65.71
+                    },
+                    "hindi_address": {
+                        "expected": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+                        "extracted": "811001",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 21.74
+                    },
+                    "hindi_address_lines": {
+                        "expected": [
+                            "पता:",
+                            "पुत्र: सुरेश मेहता",
+                            "14, लोटस पार्क रोड",
+                            "पुणे, महाराष्ट्र",
+                            "411001"
+                        ],
+                        "extracted": [
+                            "811001"
+                        ],
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 14.71
+                    },
+                    "pincode": {
+                        "expected": "411001",
+                        "extracted": "811001",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "SO:Suresh\n14. Lotus Part Road\n811001\n060136655668",
+            "processing_time_seconds": 0.6572
+        },
+        "doctr": {
+            "extracted_data": {
+                "aadhaar_number": "0601 3665 5668",
+                "address": "14 Laras Raai rre Mnarmres Re 411001",
+                "pincode": "411001",
+                "vid": "",
+                "relationship_label": "S/O",
+                "care_of": "",
+                "father_name": "Suresh MeMa",
+                "husband_name": "",
+                "hindi_relationship_label": "",
+                "hindi_care_of": "",
+                "hindi_father_name": "",
+                "hindi_husband_name": "",
+                "hindi_address": "411001",
+                "hindi_address_lines": [
+                    "411001"
+                ]
+            },
+            "classification": {
+                "document_type": "aadhaar_back",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_back",
+                    "total_fields_checked": 14,
+                    "valid_fields": 14,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 7,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0601 3665 5668",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "14 Laras Raai rre Mnarmres Re 411001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pincode": {
+                        "value": "411001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "relationship_label": {
+                        "value": "S/O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "care_of": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "father_name": {
+                        "value": "Suresh MeMa",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "husband_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_relationship_label": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_care_of": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_husband_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_address": {
+                        "value": "411001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_address_lines": {
+                        "value": [
+                            "411001"
+                        ],
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 44.44,
+                "matched_fields": 4,
+                "total_fields": 9,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0601 3665 5668",
+                        "extracted": "0601 3665 5668",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "S/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "father_name": {
+                        "expected": "Suresh Mehta",
+                        "extracted": "Suresh MeMa",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 86.96
+                    },
+                    "husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_relationship_label": {
+                        "expected": "पुत्र",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_care_of": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुरेश मेहता",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_husband_name": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "address": {
+                        "expected": "14 Lotus Park Road Pune Maharashtra 411001",
+                        "extracted": "14 Laras Raai rre Mnarmres Re 411001",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 43.59
+                    },
+                    "hindi_address": {
+                        "expected": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+                        "extracted": "411001",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 26.09
+                    },
+                    "hindi_address_lines": {
+                        "expected": [
+                            "पता:",
+                            "पुत्र: सुरेश मेहता",
+                            "14, लोटस पार्क रोड",
+                            "पुणे, महाराष्ट्र",
+                            "411001"
+                        ],
+                        "extracted": [
+                            "411001"
+                        ],
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 17.65
+                    },
+                    "pincode": {
+                        "expected": "411001",
+                        "extracted": "411001",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "-\nso Suresh MeMa\na te e\n14 Laras Raai\n14 - - 2\nrre Mnarmres\nRe\n411001\n411001\n0601 3665 5668\n-\n- - -\n- - - -\n- - - -\n- - -\n-",
+            "processing_time_seconds": 5.1989
+        }
+    }
+}

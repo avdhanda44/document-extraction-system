@@ -1,0 +1,735 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/pan/image/chatterjee_rahul_19881206_0703_front_low_resolution.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/pan/image/chatterjee_rahul_19881206_0703_front_low_resolution.json",
+        "side": "front",
+        "quality": "low_resolution"
+    },
+    "ground_truth": {
+        "pan_number": "KLMPC9364T",
+        "name": "Rahul Chatterjee",
+        "hindi_name": "राहुल चटर्जी",
+        "father_name": "Subhash Chatterjee",
+        "hindi_father_name": "सुभाष चटर्जी",
+        "date_of_birth": "1988-12-06",
+        "signature_present": true,
+        "card_issue_date_text": "15112021"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "pan_number": "",
+                "name": "Faxcvz Uawe",
+                "father_name": "Faxcvz Uawe",
+                "date_of_birth": "",
+                "hindi_name": "आयकर वाभाग",
+                "hindi_father_name": "सयायी लेखा संख्या कारड",
+                "signature_present": false,
+                "card_issue_date_text": "05117021"
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 6,
+                    "invalid_fields": 2,
+                    "fields_with_warnings": 1,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Faxcvz Uawe",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "Faxcvz Uawe",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "आयकर वाभाग",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_father_name": {
+                        "value": "सयायी लेखा संख्या कारड",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "signature_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "card_issue_date_text": {
+                        "value": "05117021",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KLMPC9364T",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "name": {
+                        "expected": "Rahul Chatterjee",
+                        "extracted": "Faxcvz Uawe",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 29.63
+                    },
+                    "hindi_name": {
+                        "expected": "राहुल चटर्जी",
+                        "extracted": "आयकर वाभाग",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 18.18
+                    },
+                    "father_name": {
+                        "expected": "Subhash Chatterjee",
+                        "extracted": "Faxcvz Uawe",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 27.59
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुभाष चटर्जी",
+                        "extracted": "सयायी लेखा संख्या कारड",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 17.65
+                    },
+                    "date_of_birth": {
+                        "expected": "1988-12-06",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "05117021",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "आयकर वाभाग\nभारत सरकार\nINCOME TAX DEPARTMENT\nGOVT. OF INDIA\nसयायी लेखा संख्या कारड\nPermamneint Account Number\nKLMPC93६4T\nगाम\nWamट\nRAFUL CHATTERJE=\nपमगनाम\nFaxcvz Uawe\n05117021\nSUB ASHChATTERJEE\nउ्ा उ्टनगो\nरनम मतपत\nDwaco dulh\nStanalur\n06):|2/1088",
+            "processing_time_seconds": 8.0967
+        },
+        "tesseract": {
+            "extracted_data": {
+                "pan_number": "KLMPC9364T",
+                "name": "RAHUL CHATTERJEE",
+                "father_name": "SUBHASH CHATTERJ",
+                "date_of_birth": "1988-92-06",
+                "hindi_name": "अन् म की तारीख",
+                "hindi_father_name": "सथायां",
+                "signature_present": true,
+                "card_issue_date_text": ""
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 75.0,
+                "confidence_level": "medium"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 7,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 1,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "KLMPC9364T",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "RAHUL CHATTERJEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "SUBHASH CHATTERJ",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1988-92-06",
+                        "valid": false,
+                        "error": "Invalid date format or value",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "अन् म की तारीख",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_father_name": {
+                        "value": "सथायां",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "signature_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "card_issue_date_text": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 4,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KLMPC9364T",
+                        "extracted": "KLMPC9364T",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Rahul Chatterjee",
+                        "extracted": "RAHUL CHATTERJEE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "राहुल चटर्जी",
+                        "extracted": "अन् म की तारीख",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 15.38
+                    },
+                    "father_name": {
+                        "expected": "Subhash Chatterjee",
+                        "extracted": "SUBHASH CHATTERJ",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 94.12
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुभाष चटर्जी",
+                        "extracted": "सथायां",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 22.22
+                    },
+                    "date_of_birth": {
+                        "expected": "1988-12-06",
+                        "extracted": "1988-92-06",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "आयकर वभिग # aaa\nINCOME TAX DEPARTMENT 5 GOVT. OF INDIA\n\nसथायां Sal SAA STS\n\nPermanent Account Number ( #2,\n\nKLMPC9364T\n\nजाम / Name\n\nRAHUL CHATTERJEE\n\nराहुल eet\n\nपति का नाम / Father's Name\n\nSUBHASH CHATTERJ\n\nial wt\n\nअन्‌म की तारीख\n\nDate of Birth हश्ताकका / Signature\n06/92/1988",
+            "processing_time_seconds": 1.0324
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "pan_number": "KLMPC9364T",
+                "name": "RAHUL CHATTERJEE",
+                "father_name": "SUBHASH CHATTERJEE",
+                "date_of_birth": "1988-12-06",
+                "hindi_name": "राहुल",
+                "hindi_father_name": "आयकर",
+                "signature_present": true,
+                "card_issue_date_text": "15112021"
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 75.0,
+                "confidence_level": "medium"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 8,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "KLMPC9364T",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "RAHUL CHATTERJEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "SUBHASH CHATTERJEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1988-12-06",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "राहुल",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_father_name": {
+                        "value": "आयकर",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "signature_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "card_issue_date_text": {
+                        "value": "15112021",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 6,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KLMPC9364T",
+                        "extracted": "KLMPC9364T",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Rahul Chatterjee",
+                        "extracted": "RAHUL CHATTERJEE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "राहुल चटर्जी",
+                        "extracted": "राहुल",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 58.82
+                    },
+                    "father_name": {
+                        "expected": "Subhash Chatterjee",
+                        "extracted": "SUBHASH CHATTERJEE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुभाष चटर्जी",
+                        "extracted": "आयकर",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 12.5
+                    },
+                    "date_of_birth": {
+                        "expected": "1988-12-06",
+                        "extracted": "1988-12-06",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "15112021",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "3\nINCOME TAX DEPARTMENT\nGOVT. OF INDIA\naa aen  a\nPermanent Account Number\nKLMPC9364T\n/Name\nRAHUL CHATTERJEE\nTge acTo\n/Father's Name\n15112021\nSUBHASH CHATTERJEE\ngut aetut\naê ar\nDate of Birth\nrame / Signature\n06/12/1988\nवभाग\n6\nआयकर\nभारत\nसरकार\nINCOME\nTAX\nDEPARTMENT\nGOVT.\nOF\nINDIA\nस्थायी\nलेखा\nसंख्या\nकार्ड\nPermanent\nAccount\nNumber\nनाम / Name\nराहुल\nघटरजी\nपति का नाम / Father's Name\nसुभाष घटरजी\nजन्म\nकीसारीव\nDate\nof Birth\nहशताक्प\nJSignature",
+            "processing_time_seconds": 17.7814
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "pan_number": "KLMPC9364T",
+                "name": "RAHUL CHATTERJEE",
+                "father_name": "RAHUL CHATTERJEE",
+                "date_of_birth": "1988-12-06",
+                "hindi_name": "",
+                "hindi_father_name": "",
+                "signature_present": true,
+                "card_issue_date_text": "15112021"
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 50.0,
+                "confidence_level": "medium"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 8,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "KLMPC9364T",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "RAHUL CHATTERJEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "RAHUL CHATTERJEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1988-12-06",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "signature_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "card_issue_date_text": {
+                        "value": "15112021",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 62.5,
+                "matched_fields": 5,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KLMPC9364T",
+                        "extracted": "KLMPC9364T",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Rahul Chatterjee",
+                        "extracted": "RAHUL CHATTERJEE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "राहुल चटर्जी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Subhash Chatterjee",
+                        "extracted": "RAHUL CHATTERJEE",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 76.47
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुभाष चटर्जी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1988-12-06",
+                        "extracted": "1988-12-06",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "15112021",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "Elb Mehll\nINCOMETAXDEPARTMENT\nGOVT.OFINDIA\nPermanent Account Number\nKLMPC9364T\n/Name\nRAHUL CHATTERJEE\nT/FarsName\n15112021\nSUBHASH CHATTERJEE\nDate of Birth\naare/Signature\n06/12/1988",
+            "processing_time_seconds": 0.9476
+        },
+        "doctr": {
+            "extracted_data": {
+                "pan_number": "KLMPC9364T",
+                "name": "RAHUL CHATTERJEE",
+                "father_name": "SUBHASH CHATTERJEE",
+                "date_of_birth": "1988-12-06",
+                "hindi_name": "",
+                "hindi_father_name": "",
+                "signature_present": true,
+                "card_issue_date_text": "15112021"
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 62.5,
+                "confidence_level": "medium"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 8,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "KLMPC9364T",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "RAHUL CHATTERJEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "SUBHASH CHATTERJEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1988-12-06",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "signature_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "card_issue_date_text": {
+                        "value": "15112021",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 6,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KLMPC9364T",
+                        "extracted": "KLMPC9364T",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Rahul Chatterjee",
+                        "extracted": "RAHUL CHATTERJEE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "राहुल चटर्जी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Subhash Chatterjee",
+                        "extracted": "SUBHASH CHATTERJEE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुभाष चटर्जी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1988-12-06",
+                        "extracted": "1988-12-06",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "15112021",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "314GR AITT\nHRA ROR\na\nINCOME TAX DEPARTMENT\nGOVT.OF INDIA\nguTat dat Ferut ARS\nPermanent Account Number €\n-\nKLMPC9364T\nIH 11 Name\nRAHUL CHATTERJEE\ntiga squt\nafdt AHTR/Father's Name\n15112021\nSUBHASH CHATTERJEE\nEHTT sepat\nH at atral\nDate of Birth\nFae Signature\n06/12/1988",
+            "processing_time_seconds": 3.1097
+        }
+    }
+}

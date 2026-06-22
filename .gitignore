@@ -9,8 +9,62 @@ wheels/
 # Virtual environments
 .venv/
 
+# Local caches
+.uv-cache/
+.doctr-cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS/editor files
+.DS_Store
+**/.DS_Store
+
 # Notebook and output artifacts
 .ipynb_checkpoints/
-__pycache__/
-outputs/*.json
+outputs/*
+!outputs/aadhaar/
+!outputs/aadhaar/image/
+!outputs/aadhaar/image/.gitkeep
+!outputs/aadhaar/pdf/
+!outputs/aadhaar/pdf/.gitkeep
+!outputs/aadhaar/pdf/scanned/
+!outputs/aadhaar/pdf/scanned/.gitkeep
+!outputs/aadhaar/pdf/digital/
+!outputs/aadhaar/pdf/digital/.gitkeep
+!outputs/aadhaar/docx/
+!outputs/aadhaar/docx/.gitkeep
+!outputs/pan/
+!outputs/pan/image/
+!outputs/pan/image/.gitkeep
+!outputs/pan/pdf/
+!outputs/pan/pdf/.gitkeep
+!outputs/pan/pdf/scanned/
+!outputs/pan/pdf/scanned/.gitkeep
+!outputs/pan/pdf/digital/
+!outputs/pan/pdf/digital/.gitkeep
+!outputs/pan/docx/
+!outputs/pan/docx/.gitkeep
+!outputs/passbook/
+!outputs/passbook/image/
+!outputs/passbook/image/.gitkeep
+!outputs/passbook/pdf/
+!outputs/passbook/pdf/.gitkeep
+!outputs/passbook/pdf/scanned/
+!outputs/passbook/pdf/scanned/.gitkeep
+!outputs/passbook/pdf/digital/
+!outputs/passbook/pdf/digital/.gitkeep
+!outputs/passbook/docx/
+!outputs/passbook/docx/.gitkeep
+!outputs/invoice/
+!outputs/invoice/image/
+!outputs/invoice/image/.gitkeep
+!outputs/invoice/pdf/
+!outputs/invoice/pdf/.gitkeep
+!outputs/invoice/docx/
+!outputs/invoice/docx/.gitkeep
+outputs 2/
 validation_test_report*.json
+
+# Optional: uncomment these if generated datasets should not be versioned.
+# dataset/employee_docs/generated_docs/

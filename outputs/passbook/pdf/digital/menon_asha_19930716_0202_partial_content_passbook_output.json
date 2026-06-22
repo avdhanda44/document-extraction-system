@@ -1,0 +1,1438 @@
+{
+    "pdf": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/passbook/pdf/digital/menon_asha_19930716_0202_partial_content.pdf",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/passbook/pdf/digital/menon_asha_19930716_0202_partial_content.json",
+        "pdf_type": "digital",
+        "variant": "partial_content",
+        "page_count": 1,
+        "pages": {
+            "1": "passbook"
+        }
+    },
+    "ground_truth": {
+        "pdf_type": "digital",
+        "variant": "partial_content",
+        "pages": {
+            "1": "passbook"
+        },
+        "intentionally_unavailable_fields": {
+            "passbook": [
+                "account_holder",
+                "relationship_label",
+                "father_name",
+                "address"
+            ]
+        },
+        "passbook": {
+            "bank_name": "HDFC Bank",
+            "hindi_bank_name": "एचडीएफसी बैंक",
+            "branch_name": "Kochi Central",
+            "branch_code": "61510",
+            "email": "hdfc.0006789@bank.co.in",
+            "phone": "07745330",
+            "micr": "436516312",
+            "ifsc": "HDFC0006789",
+            "account_holder": "",
+            "relationship_label": "",
+            "father_name": "",
+            "cif_number": "096610722",
+            "account_number": "20230716020233",
+            "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+            "address": "",
+            "mop": "SINGLE",
+            "account_opened": "16/07/2015",
+            "nom_reg_no": "00000656096",
+            "pan_number": "ASHPM0716F",
+            "date_of_issue": "16/07/2015",
+            "continuation": "CONTINUATION",
+            "branch_manager_stamp_present": true
+        }
+    },
+    "page_results": {
+        "1": {
+            "page_label": "passbook",
+            "ground_truth": {
+                "bank_name": "HDFC Bank",
+                "hindi_bank_name": "एचडीएफसी बैंक",
+                "branch_name": "Kochi Central",
+                "branch_code": "61510",
+                "email": "hdfc.0006789@bank.co.in",
+                "phone": "07745330",
+                "micr": "436516312",
+                "ifsc": "HDFC0006789",
+                "account_holder": "",
+                "relationship_label": "",
+                "father_name": "",
+                "cif_number": "096610722",
+                "account_number": "20230716020233",
+                "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+                "address": "",
+                "mop": "SINGLE",
+                "account_opened": "16/07/2015",
+                "nom_reg_no": "00000656096",
+                "pan_number": "ASHPM0716F",
+                "date_of_issue": "16/07/2015",
+                "continuation": "CONTINUATION",
+                "branch_manager_stamp_present": true
+            },
+            "extractors": {
+                "pdfplumber": {
+                    "extracted_data": {
+                        "bank_name": "HDFC Bank",
+                        "branch_name": "Kochi Central",
+                        "ifsc": "HDFC0006789",
+                        "account_holder": "",
+                        "father_name": "",
+                        "cif_number": "096610722",
+                        "account_number": "20230716020233",
+                        "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+                        "address": "Branch KOCHI CENTRAL Code 61510",
+                        "account_opened": "16/07/2015",
+                        "pan_number": "ASHPM0716F",
+                        "date_of_issue": "16/07/2015",
+                        "hindi_bank_name": "एचडीएफसी बैंक",
+                        "branch_code": "61510",
+                        "email": "hdfc.0006789@bank.co.in",
+                        "phone": "07745330",
+                        "micr": "436516312",
+                        "relationship_label": "",
+                        "mop": "SINGLE",
+                        "nom_reg_no": "00000656096",
+                        "continuation": "CONTINUATION",
+                        "branch_manager_stamp_present": true
+                    },
+                    "classification": {
+                        "document_type": "passbook",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "passbook",
+                            "total_fields_checked": 22,
+                            "valid_fields": 20,
+                            "invalid_fields": 2,
+                            "fields_with_warnings": 1,
+                            "ready_to_save": false,
+                            "requires_review": true
+                        },
+                        "field_results": {
+                            "bank_name": {
+                                "value": "HDFC Bank",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "branch_name": {
+                                "value": "Kochi Central",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "ifsc": {
+                                "value": "HDFC0006789",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_holder": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "cif_number": {
+                                "value": "096610722",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_number": {
+                                "value": "20230716020233",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_type": {
+                                "value": "REGULAR SAVINGS BANK ACCOUNT",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "Branch KOCHI CENTRAL Code 61510",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_opened": {
+                                "value": "16/07/2015",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pan_number": {
+                                "value": "ASHPM0716F",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_issue": {
+                                "value": "16/07/2015",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_bank_name": {
+                                "value": "एचडीएफसी बैंक",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "branch_code": {
+                                "value": "61510",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "email": {
+                                "value": "hdfc.0006789@bank.co.in",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "phone": {
+                                "value": "07745330",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "micr": {
+                                "value": "436516312",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "mop": {
+                                "value": "SINGLE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "nom_reg_no": {
+                                "value": "00000656096",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "continuation": {
+                                "value": "CONTINUATION",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "branch_manager_stamp_present": {
+                                "value": true,
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 100.0,
+                        "matched_fields": 18,
+                        "total_fields": 18,
+                        "fields": {
+                            "bank_name": {
+                                "expected": "HDFC Bank",
+                                "extracted": "HDFC Bank",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_bank_name": {
+                                "expected": "एचडीएफसी बैंक",
+                                "extracted": "एचडीएफसी बैंक",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "branch_name": {
+                                "expected": "Kochi Central",
+                                "extracted": "Kochi Central",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "branch_code": {
+                                "expected": "61510",
+                                "extracted": "61510",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "email": {
+                                "expected": "hdfc.0006789@bank.co.in",
+                                "extracted": "hdfc.0006789@bank.co.in",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "phone": {
+                                "expected": "07745330",
+                                "extracted": "07745330",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "micr": {
+                                "expected": "436516312",
+                                "extracted": "436516312",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "ifsc": {
+                                "expected": "HDFC0006789",
+                                "extracted": "HDFC0006789",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "account_holder": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "cif_number": {
+                                "expected": "096610722",
+                                "extracted": "096610722",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "account_number": {
+                                "expected": "20230716020233",
+                                "extracted": "20230716020233",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "account_type": {
+                                "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                                "extracted": "REGULAR SAVINGS BANK ACCOUNT",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "address": {
+                                "expected": "",
+                                "extracted": "Branch KOCHI CENTRAL Code 61510",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "mop": {
+                                "expected": "SINGLE",
+                                "extracted": "SINGLE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "account_opened": {
+                                "expected": "16/07/2015",
+                                "extracted": "16/07/2015",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "nom_reg_no": {
+                                "expected": "00000656096",
+                                "extracted": "00000656096",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "pan_number": {
+                                "expected": "ASHPM0716F",
+                                "extracted": "ASHPM0716F",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "date_of_issue": {
+                                "expected": "16/07/2015",
+                                "extracted": "16/07/2015",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "continuation": {
+                                "expected": "CONTINUATION",
+                                "extracted": "CONTINUATION",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "branch_manager_stamp_present": {
+                                "expected": true,
+                                "extracted": true,
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "Branch: KOCHI CENTRAL Code: 61510\nएचडीएफसी बैंक HDFC Bank\nEmail: hdfc.0006789@bank.co.in Buss. Hrs: 10:00-16:00\nHDFC\nPhone No.: 07745330 MICR: 436516312\nIFSC: HDFC0006789\nCIF Number : 096610722 MOP : SINGLE\nAccount No. : 20230716020233 A/c Opening Dt: 16/07/2015\nA/c Type : REGULAR SAVINGS BANK ACCOUNT Nom Reg No : 00000656096\nCustomer's PAN: ASHPM0716F\nDate of Issue : 16/07/2015\nCONTINUATION\nशाखा प्रबंधक\nBranch Manager",
+                    "processing_time_seconds": 0.0173
+                },
+                "pypdf": {
+                    "extracted_data": {
+                        "bank_name": "HDFC Bank",
+                        "branch_name": "Kochi Central",
+                        "ifsc": "HDFC0006789",
+                        "account_holder": "",
+                        "father_name": "",
+                        "cif_number": "096610722",
+                        "account_number": "20230716020233",
+                        "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+                        "address": "Branch KOCHI CENTRAL",
+                        "account_opened": "16/07/2015",
+                        "pan_number": "ASHPM0716F",
+                        "date_of_issue": "16/07/2015",
+                        "hindi_bank_name": "एचडीएफसी बैंक",
+                        "branch_code": "61510",
+                        "email": "hdfc.0006789@bank.co.in",
+                        "phone": "07745330",
+                        "micr": "436516312",
+                        "relationship_label": "",
+                        "mop": "SINGLE",
+                        "nom_reg_no": "00000656096",
+                        "continuation": "CONTINUATION",
+                        "branch_manager_stamp_present": true
+                    },
+                    "classification": {
+                        "document_type": "passbook",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "passbook",
+                            "total_fields_checked": 22,
+                            "valid_fields": 20,
+                            "invalid_fields": 2,
+                            "fields_with_warnings": 1,
+                            "ready_to_save": false,
+                            "requires_review": true
+                        },
+                        "field_results": {
+                            "bank_name": {
+                                "value": "HDFC Bank",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "branch_name": {
+                                "value": "Kochi Central",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "ifsc": {
+                                "value": "HDFC0006789",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_holder": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "cif_number": {
+                                "value": "096610722",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_number": {
+                                "value": "20230716020233",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_type": {
+                                "value": "REGULAR SAVINGS BANK ACCOUNT",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "Branch KOCHI CENTRAL",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_opened": {
+                                "value": "16/07/2015",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pan_number": {
+                                "value": "ASHPM0716F",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_issue": {
+                                "value": "16/07/2015",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_bank_name": {
+                                "value": "एचडीएफसी बैंक",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "branch_code": {
+                                "value": "61510",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "email": {
+                                "value": "hdfc.0006789@bank.co.in",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "phone": {
+                                "value": "07745330",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "micr": {
+                                "value": "436516312",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "mop": {
+                                "value": "SINGLE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "nom_reg_no": {
+                                "value": "00000656096",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "continuation": {
+                                "value": "CONTINUATION",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "branch_manager_stamp_present": {
+                                "value": true,
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 100.0,
+                        "matched_fields": 18,
+                        "total_fields": 18,
+                        "fields": {
+                            "bank_name": {
+                                "expected": "HDFC Bank",
+                                "extracted": "HDFC Bank",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_bank_name": {
+                                "expected": "एचडीएफसी बैंक",
+                                "extracted": "एचडीएफसी बैंक",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "branch_name": {
+                                "expected": "Kochi Central",
+                                "extracted": "Kochi Central",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "branch_code": {
+                                "expected": "61510",
+                                "extracted": "61510",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "email": {
+                                "expected": "hdfc.0006789@bank.co.in",
+                                "extracted": "hdfc.0006789@bank.co.in",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "phone": {
+                                "expected": "07745330",
+                                "extracted": "07745330",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "micr": {
+                                "expected": "436516312",
+                                "extracted": "436516312",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "ifsc": {
+                                "expected": "HDFC0006789",
+                                "extracted": "HDFC0006789",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "account_holder": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "cif_number": {
+                                "expected": "096610722",
+                                "extracted": "096610722",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "account_number": {
+                                "expected": "20230716020233",
+                                "extracted": "20230716020233",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "account_type": {
+                                "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                                "extracted": "REGULAR SAVINGS BANK ACCOUNT",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "address": {
+                                "expected": "",
+                                "extracted": "Branch KOCHI CENTRAL",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "mop": {
+                                "expected": "SINGLE",
+                                "extracted": "SINGLE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "account_opened": {
+                                "expected": "16/07/2015",
+                                "extracted": "16/07/2015",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "nom_reg_no": {
+                                "expected": "00000656096",
+                                "extracted": "00000656096",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "pan_number": {
+                                "expected": "ASHPM0716F",
+                                "extracted": "ASHPM0716F",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "date_of_issue": {
+                                "expected": "16/07/2015",
+                                "extracted": "16/07/2015",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "continuation": {
+                                "expected": "CONTINUATION",
+                                "extracted": "CONTINUATION",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "branch_manager_stamp_present": {
+                                "expected": true,
+                                "extracted": true,
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "एचडीएफसी बैंक\nHDFC Bank\nHDFC\nBranch: KOCHI CENTRAL\nCode: 61510\nEmail: hdfc.0006789@bank.co.in\nBuss. Hrs: 10:00-16:00\nPhone No.: 07745330\nMICR: 436516312\nIFSC: HDFC0006789\nCIF Number    :\n096610722\nAccount No.   :\n20230716020233\nA/c Type      :\nREGULAR SAVINGS BANK ACCOUNT\nMOP           :\nSINGLE\nA/c Opening Dt:\n16/07/2015\nNom Reg No    :\n00000656096\nCustomer's PAN:\nASHPM0716F\nDate of Issue :\n16/07/2015\nCONTINUATION\nशाखा प्रबंधक\nBranch Manager",
+                    "processing_time_seconds": 0.005
+                },
+                "pymupdf": {
+                    "extracted_data": {
+                        "bank_name": "HDFC Bank",
+                        "branch_name": "Kochi Central",
+                        "ifsc": "HDFC0006789",
+                        "account_holder": "",
+                        "father_name": "",
+                        "cif_number": "096610722",
+                        "account_number": "20230716020233",
+                        "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+                        "address": "Branch KOCHI CENTRAL",
+                        "account_opened": "16/07/2015",
+                        "pan_number": "ASHPM0716F",
+                        "date_of_issue": "16/07/2015",
+                        "hindi_bank_name": "एचडीएफसी बैंक",
+                        "branch_code": "61510",
+                        "email": "hdfc.0006789@bank.co.in",
+                        "phone": "07745330",
+                        "micr": "436516312",
+                        "relationship_label": "",
+                        "mop": "SINGLE",
+                        "nom_reg_no": "00000656096",
+                        "continuation": "CONTINUATION",
+                        "branch_manager_stamp_present": true
+                    },
+                    "classification": {
+                        "document_type": "passbook",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "passbook",
+                            "total_fields_checked": 22,
+                            "valid_fields": 20,
+                            "invalid_fields": 2,
+                            "fields_with_warnings": 1,
+                            "ready_to_save": false,
+                            "requires_review": true
+                        },
+                        "field_results": {
+                            "bank_name": {
+                                "value": "HDFC Bank",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "branch_name": {
+                                "value": "Kochi Central",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "ifsc": {
+                                "value": "HDFC0006789",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_holder": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "cif_number": {
+                                "value": "096610722",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_number": {
+                                "value": "20230716020233",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_type": {
+                                "value": "REGULAR SAVINGS BANK ACCOUNT",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "Branch KOCHI CENTRAL",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_opened": {
+                                "value": "16/07/2015",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pan_number": {
+                                "value": "ASHPM0716F",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_issue": {
+                                "value": "16/07/2015",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_bank_name": {
+                                "value": "एचडीएफसी बैंक",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "branch_code": {
+                                "value": "61510",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "email": {
+                                "value": "hdfc.0006789@bank.co.in",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "phone": {
+                                "value": "07745330",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "micr": {
+                                "value": "436516312",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "mop": {
+                                "value": "SINGLE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "nom_reg_no": {
+                                "value": "00000656096",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "continuation": {
+                                "value": "CONTINUATION",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "branch_manager_stamp_present": {
+                                "value": true,
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 100.0,
+                        "matched_fields": 18,
+                        "total_fields": 18,
+                        "fields": {
+                            "bank_name": {
+                                "expected": "HDFC Bank",
+                                "extracted": "HDFC Bank",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_bank_name": {
+                                "expected": "एचडीएफसी बैंक",
+                                "extracted": "एचडीएफसी बैंक",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "branch_name": {
+                                "expected": "Kochi Central",
+                                "extracted": "Kochi Central",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "branch_code": {
+                                "expected": "61510",
+                                "extracted": "61510",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "email": {
+                                "expected": "hdfc.0006789@bank.co.in",
+                                "extracted": "hdfc.0006789@bank.co.in",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "phone": {
+                                "expected": "07745330",
+                                "extracted": "07745330",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "micr": {
+                                "expected": "436516312",
+                                "extracted": "436516312",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "ifsc": {
+                                "expected": "HDFC0006789",
+                                "extracted": "HDFC0006789",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "account_holder": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "cif_number": {
+                                "expected": "096610722",
+                                "extracted": "096610722",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "account_number": {
+                                "expected": "20230716020233",
+                                "extracted": "20230716020233",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "account_type": {
+                                "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                                "extracted": "REGULAR SAVINGS BANK ACCOUNT",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "address": {
+                                "expected": "",
+                                "extracted": "Branch KOCHI CENTRAL",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "mop": {
+                                "expected": "SINGLE",
+                                "extracted": "SINGLE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "account_opened": {
+                                "expected": "16/07/2015",
+                                "extracted": "16/07/2015",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "nom_reg_no": {
+                                "expected": "00000656096",
+                                "extracted": "00000656096",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "pan_number": {
+                                "expected": "ASHPM0716F",
+                                "extracted": "ASHPM0716F",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "date_of_issue": {
+                                "expected": "16/07/2015",
+                                "extracted": "16/07/2015",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "continuation": {
+                                "expected": "CONTINUATION",
+                                "extracted": "CONTINUATION",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "branch_manager_stamp_present": {
+                                "expected": true,
+                                "extracted": true,
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "एचडीएफसी बैंक\nHDFC Bank\nHDFC\nBranch: KOCHI CENTRAL\nCode: 61510\nEmail: hdfc.0006789@bank.co.in\nBuss. Hrs: 10:00-16:00\nPhone No.: 07745330\nMICR: 436516312\nIFSC: HDFC0006789\nCIF Number    :\n096610722\nAccount No.   :\n20230716020233\nA/c Type      :\nREGULAR SAVINGS BANK ACCOUNT\nMOP           :\nSINGLE\nA/c Opening Dt:\n16/07/2015\nNom Reg No    :\n00000656096\nCustomer's PAN:\nASHPM0716F\nDate of Issue :\n16/07/2015\nCONTINUATION\nशाखा प्रबंधक\nBranch Manager",
+                    "processing_time_seconds": 0.0027
+                },
+                "pdfminer": {
+                    "extracted_data": {
+                        "bank_name": "HDFC Bank",
+                        "branch_name": "Kochi Central",
+                        "ifsc": "HDFC0006789",
+                        "account_holder": "",
+                        "father_name": "",
+                        "cif_number": "096610722",
+                        "account_number": "20230716020233",
+                        "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+                        "address": "Branch KOCHI CENTRAL",
+                        "account_opened": "16/07/2015",
+                        "pan_number": "ASHPM0716F",
+                        "date_of_issue": "16/07/2015",
+                        "hindi_bank_name": "एचडीएफसी बै",
+                        "branch_code": "61510",
+                        "email": "hdfc.0006789@bank.co.in",
+                        "phone": "07745330",
+                        "micr": "436516312",
+                        "relationship_label": "",
+                        "mop": "SINGLE",
+                        "nom_reg_no": "00000656096",
+                        "continuation": "CONTINUATION",
+                        "branch_manager_stamp_present": true
+                    },
+                    "classification": {
+                        "document_type": "passbook",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "passbook",
+                            "total_fields_checked": 22,
+                            "valid_fields": 20,
+                            "invalid_fields": 2,
+                            "fields_with_warnings": 1,
+                            "ready_to_save": false,
+                            "requires_review": true
+                        },
+                        "field_results": {
+                            "bank_name": {
+                                "value": "HDFC Bank",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "branch_name": {
+                                "value": "Kochi Central",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "ifsc": {
+                                "value": "HDFC0006789",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_holder": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "cif_number": {
+                                "value": "096610722",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_number": {
+                                "value": "20230716020233",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_type": {
+                                "value": "REGULAR SAVINGS BANK ACCOUNT",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "Branch KOCHI CENTRAL",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "account_opened": {
+                                "value": "16/07/2015",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pan_number": {
+                                "value": "ASHPM0716F",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_issue": {
+                                "value": "16/07/2015",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_bank_name": {
+                                "value": "एचडीएफसी बै",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "branch_code": {
+                                "value": "61510",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "email": {
+                                "value": "hdfc.0006789@bank.co.in",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "phone": {
+                                "value": "07745330",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "micr": {
+                                "value": "436516312",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "mop": {
+                                "value": "SINGLE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "nom_reg_no": {
+                                "value": "00000656096",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "continuation": {
+                                "value": "CONTINUATION",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "branch_manager_stamp_present": {
+                                "value": true,
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 100.0,
+                        "matched_fields": 18,
+                        "total_fields": 18,
+                        "fields": {
+                            "bank_name": {
+                                "expected": "HDFC Bank",
+                                "extracted": "HDFC Bank",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_bank_name": {
+                                "expected": "एचडीएफसी बैंक",
+                                "extracted": "एचडीएफसी बै",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 91.67
+                            },
+                            "branch_name": {
+                                "expected": "Kochi Central",
+                                "extracted": "Kochi Central",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "branch_code": {
+                                "expected": "61510",
+                                "extracted": "61510",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "email": {
+                                "expected": "hdfc.0006789@bank.co.in",
+                                "extracted": "hdfc.0006789@bank.co.in",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "phone": {
+                                "expected": "07745330",
+                                "extracted": "07745330",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "micr": {
+                                "expected": "436516312",
+                                "extracted": "436516312",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "ifsc": {
+                                "expected": "HDFC0006789",
+                                "extracted": "HDFC0006789",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "account_holder": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "cif_number": {
+                                "expected": "096610722",
+                                "extracted": "096610722",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "account_number": {
+                                "expected": "20230716020233",
+                                "extracted": "20230716020233",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "account_type": {
+                                "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                                "extracted": "REGULAR SAVINGS BANK ACCOUNT",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "address": {
+                                "expected": "",
+                                "extracted": "Branch KOCHI CENTRAL",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "mop": {
+                                "expected": "SINGLE",
+                                "extracted": "SINGLE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "account_opened": {
+                                "expected": "16/07/2015",
+                                "extracted": "16/07/2015",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "nom_reg_no": {
+                                "expected": "00000656096",
+                                "extracted": "00000656096",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "pan_number": {
+                                "expected": "ASHPM0716F",
+                                "extracted": "ASHPM0716F",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "date_of_issue": {
+                                "expected": "16/07/2015",
+                                "extracted": "16/07/2015",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "continuation": {
+                                "expected": "CONTINUATION",
+                                "extracted": "CONTINUATION",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "branch_manager_stamp_present": {
+                                "expected": true,
+                                "extracted": true,
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "एचडीएफसी बै\nंक\nBranch: KOCHI CENTRAL\nEmail: hdfc.0006789@bank.co.in\nPhone No.: 07745330\nIFSC: HDFC0006789\nCode: 61510\nBuss. Hrs: 10:00-16:00\nMICR: 436516312\nHDFC Bank\nHDFC\nCIF Number    :\n096610722\nMOP           :\nSINGLE\nAccount No.   :\n20230716020233\nA/c Opening Dt:\n16/07/2015\nA/c Type      :\nREGULAR SAVINGS BANK ACCOUNT\nNom Reg No    :\n00000656096\nCustomer's PAN:\nASHPM0716F\nDate of Issue :\n16/07/2015\nCONTINUATION\nशाखा प्रबंधक\nBranch Manager",
+                    "processing_time_seconds": 0.0151
+                }
+            }
+        }
+    }
+}

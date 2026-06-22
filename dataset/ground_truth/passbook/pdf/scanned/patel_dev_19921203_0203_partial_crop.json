@@ -1,0 +1,31 @@
+{
+    "pdf_type": "scanned",
+    "variant": "partial_crop",
+    "pages": {
+        "1": "passbook"
+    },
+    "passbook": {
+        "bank_name": "ICICI Bank",
+        "hindi_bank_name": "आईसीआईसीआई बैंक",
+        "branch_name": "Ahmedabad CG Road",
+        "branch_code": "61765",
+        "email": "icic.0009012@bank.co.in",
+        "phone": "08001495",
+        "micr": "304518868",
+        "ifsc": "ICIC0009012",
+        "account_holder": "Mr. Dev Patel",
+        "relationship_label": "S/O",
+        "father_name": "Harish Patel",
+        "cif_number": "096639983",
+        "account_number": "19921203020344",
+        "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+        "address": "88 CG Road Ahmedabad Gujarat 380009",
+        "mop": "SINGLE",
+        "account_opened": "03/12/2014",
+        "nom_reg_no": "00000659344",
+        "pan_number": "DEVPJ1203K",
+        "date_of_issue": "03/12/2014",
+        "continuation": "CONTINUATION",
+        "branch_manager_stamp_present": true
+    }
+}

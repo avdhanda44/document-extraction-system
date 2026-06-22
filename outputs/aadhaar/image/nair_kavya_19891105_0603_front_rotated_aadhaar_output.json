@@ -1,0 +1,511 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/aadhaar/image/nair_kavya_19891105_0603_front_rotated.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/aadhaar/image/nair_kavya_19891105_0603_front_rotated.json",
+        "side": "front",
+        "quality": "rotated"
+    },
+    "ground_truth": {
+        "aadhaar_number": "0603 3667 5670",
+        "vid": "",
+        "name": "Kavya Nair",
+        "hindi_name": "काव्या नायर",
+        "date_of_birth": "1989-11-05",
+        "year_of_birth": "",
+        "gender": "FEMALE"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {},
+            "classification": {
+                "document_type": "unknown",
+                "confidence_percent": 28.57,
+                "confidence_level": "low"
+            },
+            "validation": {
+                "summary": {
+                    "total_fields_checked": 0,
+                    "valid_fields": 0,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true,
+                    "note": "Document type is unknown, so validation could not run."
+                },
+                "field_results": {}
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0603 3667 5670",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Kavya Nair",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_name": {
+                        "expected": "काव्या नायर",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1989-11-05",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "OF\nजन्म त्थि /\nPHOTO\n0603\nआदमी का\nभारत\nसरकार\nGOVERNMENT\nINDIA\nकाव्या\nनायर\nKavya\nNair\nDOB\n1989-11-05\nमहाला\nFemale\nSAMPLE\n3667\n5670\nआधार\nआम\nअधकिार",
+            "processing_time_seconds": 3.9762
+        },
+        "tesseract": {
+            "extracted_data": {},
+            "classification": {
+                "document_type": "unknown",
+                "confidence_percent": 14.29,
+                "confidence_level": "low"
+            },
+            "validation": {
+                "summary": {
+                    "total_fields_checked": 0,
+                    "valid_fields": 0,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true,
+                    "note": "Document type is unknown, so validation could not run."
+                },
+                "field_results": {}
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0603 3667 5670",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Kavya Nair",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_name": {
+                        "expected": "काव्या नायर",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1989-11-05",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "FT तथि9 008 . 1989-14-05\nWET / £, emale\n\nSAMPLE PHOTO",
+            "processing_time_seconds": 0.4492
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "aadhaar_number": "0603 3667 5670",
+                "name": "Kavya Nair",
+                "gender": "FEMALE",
+                "vid": "",
+                "hindi_name": "सत्पमेव जपे",
+                "date_of_birth": "1989-11-05",
+                "year_of_birth": ""
+            },
+            "classification": {
+                "document_type": "aadhaar_front",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_front",
+                    "total_fields_checked": 7,
+                    "valid_fields": 7,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0603 3667 5670",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Kavya Nair",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "gender": {
+                        "value": "FEMALE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_name": {
+                        "value": "सत्पमेव जपे",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1989-11-05",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "year_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 80.0,
+                "matched_fields": 4,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0603 3667 5670",
+                        "extracted": "0603 3667 5670",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Kavya Nair",
+                        "extracted": "Kavya Nair",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "काव्या नायर",
+                        "extracted": "सत्पमेव जपे",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 18.18
+                    },
+                    "date_of_birth": {
+                        "expected": "1989-11-05",
+                        "extracted": "1989-11-05",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "FEMALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "RARR\nGOVERNMENT OF INDIA\noqn zro\nKavya Nair\nafDOB:1989-11-05\nHfeT/Female\nSAMPLE PHOTO\n0603 3667 5670\n- 3TH 3 可 3TE\n3TET\nभारत सरकार\nसत्पमेव जपे\n:\nकाव्या नायर\nजन्म तरथि 7 DOB : 1989-11-05\nमहला/Female\n- आम आदमी का अधकार\nआधार",
+            "processing_time_seconds": 11.135
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "aadhaar_number": "0603 3667 5670",
+                "name": "Kavya Nair",
+                "gender": "FEMALE",
+                "vid": "",
+                "hindi_name": "",
+                "date_of_birth": "1989-11-05",
+                "year_of_birth": ""
+            },
+            "classification": {
+                "document_type": "aadhaar_front",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_front",
+                    "total_fields_checked": 7,
+                    "valid_fields": 7,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0603 3667 5670",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Kavya Nair",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "gender": {
+                        "value": "FEMALE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "date_of_birth": {
+                        "value": "1989-11-05",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "year_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 80.0,
+                "matched_fields": 4,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0603 3667 5670",
+                        "extracted": "0603 3667 5670",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Kavya Nair",
+                        "extracted": "Kavya Nair",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "काव्या नायर",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1989-11-05",
+                        "extracted": "1989-11-05",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "FEMALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "HRHR\nGOVERNMENT OFINDIA\nbll bble\nKavya Nair\n可 aff/ DOB : 1989-11-05\nHeT / Female\nSAMPLEPHOTO\n0603 3667 5670\n3IT",
+            "processing_time_seconds": 0.3824
+        },
+        "doctr": {
+            "extracted_data": {},
+            "classification": {
+                "document_type": "unknown",
+                "confidence_percent": 28.57,
+                "confidence_level": "low"
+            },
+            "validation": {
+                "summary": {
+                    "total_fields_checked": 0,
+                    "valid_fields": 0,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true,
+                    "note": "Document type is unknown, so validation could not run."
+                },
+                "field_results": {}
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0603 3667 5670",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Kavya Nair",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_name": {
+                        "expected": "काव्या नायर",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1989-11-05",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "PORr ah\nHRG ROR\nGOVERNMENT\nOPIORIT TRYR\nOFINDIA\nKavya Nair\nU-1H arefy DOB:\n1989-11-05\nH6T / Female\nSAMPLE PHOTO\n0603 3667\n5670\n3TETR\n- 3H 31647 a\nCT 3TETPR",
+            "processing_time_seconds": 2.0585
+        }
+    }
+}

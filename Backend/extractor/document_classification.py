@@ -71,6 +71,41 @@ pan_card_schema = {
 }
 
 
+passbook_schema = {
+    "bank_name": ["Bank", "Bank Name"],
+    "hindi_bank_name": ["Bank"],
+    "branch_name": ["Branch"],
+    "branch_code": ["Code", "Branch Code"],
+    "email": ["Email"],
+    "phone": ["Phone No.", "Phone"],
+    "micr": ["MICR"],
+    "ifsc": ["IFSC"],
+    "account_holder": ["Name"],
+    "relationship_label": ["S/D/H/o", "S/O", "D/O", "H/O"],
+    "father_name": ["S/D/H/o", "Father Name"],
+    "cif_number": ["CIF Number"],
+    "account_number": ["Account No.", "Account Number"],
+    "account_type": ["A/c Type", "Account Type"],
+    "address": ["Address"],
+    "mop": ["MOP"],
+    "account_opened": ["A/c Opening Dt", "Account Opening Date"],
+    "nom_reg_no": ["Nom Reg No", "Nomination Registration Number"],
+    "pan_number": ["Customer's PAN", "PAN"],
+    "date_of_issue": ["Date of Issue"],
+    "continuation": ["CONTINUATION"],
+    "branch_manager_stamp_present": ["Branch Manager", "शाखा प्रबंधक"],
+}
+
+
+invoice_schema = {
+    "company": ["Company", "CASH SALES", "INVOICE", "TAX INVOICE", "Receipt"],
+    "date": ["Date", "Daie", "Invoice Date"],
+    "address": ["Address", "Jalan", "Taman", "Lot", "No."],
+    "total": ["Total Sales", "Grand Total", "Amount", "Total", "CASH"],
+    "source_image": ["Source Image"],
+}
+
+
 # All document schemas are kept here.
 # Later, if we add PAN card or another form, we will add it in this dictionary.
 document_schemas = {
@@ -78,6 +113,8 @@ document_schemas = {
     "aadhaar_front": aadhaar_front_schema,
     "aadhaar_back": aadhaar_back_schema,
     "pan_card": pan_card_schema,
+    "passbook": passbook_schema,
+    "invoice": invoice_schema,
 }
 
 

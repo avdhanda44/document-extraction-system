@@ -1,0 +1,39 @@
+{
+    "pdf_type": "digital",
+    "variant": "partial_content",
+    "pages": {
+        "1": "passbook"
+    },
+    "intentionally_unavailable_fields": {
+        "passbook": [
+            "account_holder",
+            "relationship_label",
+            "father_name",
+            "address"
+        ]
+    },
+    "passbook": {
+        "bank_name": "HDFC Bank",
+        "hindi_bank_name": "एचडीएफसी बैंक",
+        "branch_name": "Kochi Central",
+        "branch_code": "61510",
+        "email": "hdfc.0006789@bank.co.in",
+        "phone": "07745330",
+        "micr": "436516312",
+        "ifsc": "HDFC0006789",
+        "account_holder": "",
+        "relationship_label": "",
+        "father_name": "",
+        "cif_number": "096610722",
+        "account_number": "20230716020233",
+        "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+        "address": "",
+        "mop": "SINGLE",
+        "account_opened": "16/07/2015",
+        "nom_reg_no": "00000656096",
+        "pan_number": "ASHPM0716F",
+        "date_of_issue": "16/07/2015",
+        "continuation": "CONTINUATION",
+        "branch_manager_stamp_present": true
+    }
+}

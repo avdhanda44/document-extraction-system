@@ -1,0 +1,43 @@
+{
+    "pdf_type": "digital",
+    "variant": "rotated_page",
+    "pages": {
+        "1": "front",
+        "2": "back"
+    },
+    "intentionally_unavailable_fields": {
+        "front": [],
+        "back": []
+    },
+    "front": {
+        "aadhaar_number": "0601 3665 5668",
+        "vid": "",
+        "name": "Aarav Mehta",
+        "hindi_name": "आरव मेहता",
+        "date_of_birth": "1991-03-18",
+        "year_of_birth": "",
+        "gender": "MALE"
+    },
+    "back": {
+        "aadhaar_number": "0601 3665 5668",
+        "vid": "",
+        "relationship_label": "S/O",
+        "care_of": "",
+        "father_name": "Suresh Mehta",
+        "husband_name": "",
+        "hindi_relationship_label": "पुत्र",
+        "hindi_care_of": "",
+        "hindi_father_name": "सुरेश मेहता",
+        "hindi_husband_name": "",
+        "address": "14 Lotus Park Road Pune Maharashtra 411001",
+        "hindi_address": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+        "hindi_address_lines": [
+            "पता:",
+            "पुत्र: सुरेश मेहता",
+            "14, लोटस पार्क रोड",
+            "पुणे, महाराष्ट्र",
+            "411001"
+        ],
+        "pincode": "411001"
+    }
+}

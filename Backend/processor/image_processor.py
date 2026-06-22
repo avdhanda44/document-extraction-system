@@ -1,14 +1,21 @@
 from pathlib import Path
 from tempfile import TemporaryDirectory
+import importlib.util
+import os
 
 import easyocr
 from pdf2image import convert_from_path
 
 
+PROJECT_FOLDER = Path(__file__).resolve().parents[2]
+os.environ.setdefault("DOCTR_CACHE_DIR", str(PROJECT_FOLDER / ".doctr-cache"))
+
 # EasyOCR takes time to start.
 # I keep it as None first, then create it once only when OCR is really needed.
 easyocr_reader = None
 paddle_ocr = {}
+rapidocr_reader = None
+doctr_predictor = None
 tesseract_available = False
 tesseract_languages = None
 
@@ -44,6 +51,34 @@ def get_paddle_ocr(language="en"):
         paddle_ocr[language] = PaddleOCR(use_angle_cls=False, lang=language)
 
     return paddle_ocr[language]
+
+
+def get_rapidocr_reader():
+    global rapidocr_reader
+
+    if rapidocr_reader is None:
+        try:
+            from rapidocr import RapidOCR
+        except ImportError as error:
+            raise RuntimeError("RapidOCR is not installed. Install rapidocr first.") from error
+
+        rapidocr_reader = RapidOCR()
+
+    return rapidocr_reader
+
+
+def get_doctr_predictor():
+    global doctr_predictor
+
+    if doctr_predictor is None:
+        try:
+            from doctr.models import ocr_predictor
+        except ImportError as error:
+            raise RuntimeError("docTR is not installed. Install python-doctr[torch] first.") from error
+
+        doctr_predictor = ocr_predictor(pretrained=True)
+
+    return doctr_predictor
 
 
 def check_tesseract_available():
@@ -92,7 +127,21 @@ def get_tesseract_language_config():
 
 def get_available_ocr_models():
     # These are the OCR engines this processor knows how to run.
-    return ["easyocr", "tesseract", "paddleocr"]
+    models = ["easyocr"]
+
+    if check_tesseract_available():
+        models.append("tesseract")
+
+    if importlib.util.find_spec("paddleocr") and importlib.util.find_spec("paddle"):
+        models.append("paddleocr")
+
+    if importlib.util.find_spec("rapidocr") and importlib.util.find_spec("onnxruntime"):
+        models.append("rapidocr")
+
+    if importlib.util.find_spec("doctr") and importlib.util.find_spec("torch"):
+        models.append("doctr")
+
+    return models
 
 
 def read_image_for_processing(image_path):
@@ -217,6 +266,35 @@ def extract_text_from_image_paddleocr(image_path, preprocessing_mode="none"):
     raise RuntimeError(f"PaddleOCR failed: {'; '.join(errors)}")
 
 
+def extract_text_from_image_rapidocr(image_path, preprocessing_mode="none"):
+    # RapidOCR uses compact ONNX models and runs efficiently on CPU.
+    reader = get_rapidocr_reader()
+
+    with TemporaryDirectory() as temporary_folder:
+        ocr_image_path = get_ocr_image_path(image_path, preprocessing_mode, temporary_folder)
+        result = reader(str(ocr_image_path))
+
+    text_lines = [str(text).strip() for text in (result.txts or ()) if str(text).strip()]
+    return "\n".join(text_lines)
+
+
+def extract_text_from_image_doctr(image_path, preprocessing_mode="none"):
+    # docTR combines document text detection and recognition using PyTorch.
+    try:
+        from doctr.io import DocumentFile
+    except ImportError as error:
+        raise RuntimeError("docTR is not installed. Install python-doctr[torch] first.") from error
+
+    predictor = get_doctr_predictor()
+
+    with TemporaryDirectory() as temporary_folder:
+        ocr_image_path = get_ocr_image_path(image_path, preprocessing_mode, temporary_folder)
+        document = DocumentFile.from_images(str(ocr_image_path))
+        result = predictor(document)
+
+    return result.render().strip()
+
+
 def extract_text_lines_from_paddle_results(results):
     text_lines = []
 
@@ -270,6 +348,12 @@ def extract_text_from_image(image_path, model_name="easyocr", preprocessing_mode
 
     if model_name == "paddleocr":
         return extract_text_from_image_paddleocr(image_path, preprocessing_mode)
+
+    if model_name == "rapidocr":
+        return extract_text_from_image_rapidocr(image_path, preprocessing_mode)
+
+    if model_name == "doctr":
+        return extract_text_from_image_doctr(image_path, preprocessing_mode)
 
     raise ValueError(f"Unknown OCR model: {model_name}")
 

@@ -1,0 +1,1729 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/passbook/image/patel_dev_19921203_0203_rotated.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/passbook/image/patel_dev_19921203_0203_rotated.json",
+        "side": "front",
+        "quality": "rotated"
+    },
+    "ground_truth": {
+        "bank_name": "ICICI Bank",
+        "hindi_bank_name": "आईसीआईसीआई बैंक",
+        "branch_name": "Ahmedabad CG Road",
+        "branch_code": "61765",
+        "email": "icic.0009012@bank.co.in",
+        "phone": "08001495",
+        "micr": "304518868",
+        "ifsc": "ICIC0009012",
+        "account_holder": "Mr. Dev Patel",
+        "relationship_label": "S/O",
+        "father_name": "Harish Patel",
+        "cif_number": "096639983",
+        "account_number": "19921203020344",
+        "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+        "address": "88 CG Road Ahmedabad Gujarat 380009",
+        "mop": "SINGLE",
+        "account_opened": "03/12/2014",
+        "nom_reg_no": "00000659344",
+        "pan_number": "DEVPJ1203K",
+        "date_of_issue": "03/12/2014",
+        "continuation": "CONTINUATION",
+        "branch_manager_stamp_present": true
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "bank_name": "",
+                "branch_name": "Ahmedabad Cg Road",
+                "ifsc": "ADCG0ADBUSS",
+                "account_holder": "Mr Dev Patel",
+                "father_name": "",
+                "cif_number": "000006593",
+                "account_number": "19921203020344",
+                "account_type": "GUJARAT ३८०००९",
+                "address": "Branch AHMEDABAD CG ROAD",
+                "account_opened": "03/12/2014",
+                "pan_number": "SSHRS1000I",
+                "date_of_issue": "03/12/2014",
+                "hindi_bank_name": "ः ७६५",
+                "branch_code": "",
+                "email": "",
+                "phone": "08001495",
+                "micr": "304518868",
+                "relationship_label": "S/O",
+                "mop": "MR",
+                "nom_reg_no": "096639983",
+                "continuation": "CONTINUATION",
+                "branch_manager_stamp_present": true
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 20,
+                    "invalid_fields": 2,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "Ahmedabad Cg Road",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "ADCG0ADBUSS",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "Mr Dev Patel",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "000006593",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "19921203020344",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "GUJARAT ३८०००९",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "Branch AHMEDABAD CG ROAD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "03/12/2014",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "SSHRS1000I",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "03/12/2014",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "ः ७६५",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_code": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "email": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "phone": {
+                        "value": "08001495",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "micr": {
+                        "value": "304518868",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "relationship_label": {
+                        "value": "S/O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "mop": {
+                        "value": "MR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "nom_reg_no": {
+                        "value": "096639983",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "continuation": {
+                        "value": "CONTINUATION",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 45.45,
+                "matched_fields": 10,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "ICICI Bank",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "आईसीआईसीआई बैंक",
+                        "extracted": "ः ७६५",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 10.0
+                    },
+                    "branch_name": {
+                        "expected": "Ahmedabad CG Road",
+                        "extracted": "Ahmedabad Cg Road",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_code": {
+                        "expected": "61765",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "email": {
+                        "expected": "icic.0009012@bank.co.in",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "08001495",
+                        "extracted": "08001495",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "micr": {
+                        "expected": "304518868",
+                        "extracted": "304518868",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "ifsc": {
+                        "expected": "ICIC0009012",
+                        "extracted": "ADCG0ADBUSS",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_holder": {
+                        "expected": "Mr. Dev Patel",
+                        "extracted": "Mr Dev Patel",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "S/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "father_name": {
+                        "expected": "Harish Patel",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "cif_number": {
+                        "expected": "096639983",
+                        "extracted": "000006593",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_number": {
+                        "expected": "19921203020344",
+                        "extracted": "19921203020344",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "GUJARAT ३८०००९",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 28.57
+                    },
+                    "address": {
+                        "expected": "88 CG Road Ahmedabad Gujarat 380009",
+                        "extracted": "Branch AHMEDABAD CG ROAD",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 50.85
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "MR",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0.0
+                    },
+                    "account_opened": {
+                        "expected": "03/12/2014",
+                        "extracted": "03/12/2014",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000659344",
+                        "extracted": "096639983",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "pan_number": {
+                        "expected": "DEVPJ1203K",
+                        "extracted": "SSHRS1000I",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_issue": {
+                        "expected": "03/12/2014",
+                        "extracted": "03/12/2014",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "CONTINUATION",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "Codeः 61७६५\nICICI\nBranch: AHMEDABAD CG ROAD\nBuss Hrs: 10:०० \nICICI\nआईसीआईसीआई बैंक\nEmail: ICIC \n.ooo9o12@bank co.in\nMICR: 304518868\nPhone No :\n08001495\nIFSC:\n: ICICO009012\nSTNGLE\nMOP\nMr\nDev Patel\nDt :\n03/12/2014\nName\nA/C\nopening\nHARISH   PATEL\n00000659344\nS/D/H/o\nNOm\nReg\nNO\nNumber\n096639983\nCustomer\nPAN :\nDEVPJ120३K\nAccount\nNO .\n19921203020344\nDate\nof\nLssue\n03/12/2014\nREGULAR SAVINGS BANK ACCOUNT\nA/c Type\nGujarat   ३८०००९\nCONTINUATION\n88\ncG Road Ahmedabad\nAddress\nशाखा\nBranch Manager\n16:00\nCLF\nपरबधक",
+            "processing_time_seconds": 10.2712
+        },
+        "tesseract": {
+            "extracted_data": {
+                "bank_name": "",
+                "branch_name": "",
+                "ifsc": "ADCG0ADEMAI",
+                "account_holder": "Mr. Dev Patel",
+                "father_name": "",
+                "cif_number": "096639983",
+                "account_number": "9921203020344",
+                "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+                "address": "88 CG Road Ahmedabad Gujarat 380009",
+                "account_opened": "03/12/2014",
+                "pan_number": "INGLE8080H",
+                "date_of_issue": "03/12/2014",
+                "hindi_bank_name": "आईसीआईसीआई बैंक",
+                "branch_code": "61765",
+                "email": "icic.0009012@bank.co.in",
+                "phone": "",
+                "micr": "",
+                "relationship_label": "S/O",
+                "mop": "FY SINGLE",
+                "nom_reg_no": "00000659344",
+                "continuation": "CONTINUATION",
+                "branch_manager_stamp_present": true
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 19,
+                    "invalid_fields": 3,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "ADCG0ADEMAI",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "Mr. Dev Patel",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "096639983",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "9921203020344",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "REGULAR SAVINGS BANK ACCOUNT",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "88 CG Road Ahmedabad Gujarat 380009",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "03/12/2014",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "INGLE8080H",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "03/12/2014",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "आईसीआईसीआई बैंक",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_code": {
+                        "value": "61765",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "email": {
+                        "value": "icic.0009012@bank.co.in",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "phone": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "micr": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "relationship_label": {
+                        "value": "S/O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "mop": {
+                        "value": "FY SINGLE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "nom_reg_no": {
+                        "value": "00000659344",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "continuation": {
+                        "value": "CONTINUATION",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 63.64,
+                "matched_fields": 14,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "ICICI Bank",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "आईसीआईसीआई बैंक",
+                        "extracted": "आईसीआईसीआई बैंक",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_name": {
+                        "expected": "Ahmedabad CG Road",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_code": {
+                        "expected": "61765",
+                        "extracted": "61765",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "email": {
+                        "expected": "icic.0009012@bank.co.in",
+                        "extracted": "icic.0009012@bank.co.in",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "phone": {
+                        "expected": "08001495",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "micr": {
+                        "expected": "304518868",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "ifsc": {
+                        "expected": "ICIC0009012",
+                        "extracted": "ADCG0ADEMAI",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_holder": {
+                        "expected": "Mr. Dev Patel",
+                        "extracted": "Mr. Dev Patel",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "S/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "father_name": {
+                        "expected": "Harish Patel",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "cif_number": {
+                        "expected": "096639983",
+                        "extracted": "096639983",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_number": {
+                        "expected": "19921203020344",
+                        "extracted": "9921203020344",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "REGULAR SAVINGS BANK ACCOUNT",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "address": {
+                        "expected": "88 CG Road Ahmedabad Gujarat 380009",
+                        "extracted": "88 CG Road Ahmedabad Gujarat 380009",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "FY SINGLE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "account_opened": {
+                        "expected": "03/12/2014",
+                        "extracted": "03/12/2014",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000659344",
+                        "extracted": "00000659344",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "pan_number": {
+                        "expected": "DEVPJ1203K",
+                        "extracted": "INGLE8080H",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_issue": {
+                        "expected": "03/12/2014",
+                        "extracted": "03/12/2014",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "CONTINUATION",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "आईसीआईसीआई बैंक\n\n______ >> 5 ण>्यण एटा  ग्य् AHMEDABAD CG ROAD\nEmail: icic.0009012@bank.co.in\n\nCode: 61765\n\nBuss. Hrs: 10:00-16:00\n\nee eee No.: 08001495 ICR: 304518868\nIFSC: ICIC( 12.\n\nName Mr. Dev Patel MOP FY SINGLE\n8/0/8/० HARISH PATEL A/c Opening Dt? 03/12/2014\nCIF Number 096639983 Nom Reg No? 00000659344\nAccount No. 9921203020344 customer's PAN: DEVPJ1203K\na/e Type REGULAR SAVINGS BANK ACCOUNT pate of Issue * 03/12/2014\nAddress 88 CG Road Ahmedabad Gujarat 380009 CONTINUATION\n\nशाखा प्रबंधक\n\nBranch Managet",
+            "processing_time_seconds": 1.0934
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "bank_name": "",
+                "branch_name": "Ahmedabad Cg Road",
+                "ifsc": "ICIC0009012",
+                "account_holder": "Mr. Dev Patel",
+                "father_name": "Harish Patel",
+                "cif_number": "096639983",
+                "account_number": "19921203020344",
+                "account_type": "DATE OF ISSUE",
+                "address": "88 CG Road Ahmedabad Gujarat 380009",
+                "account_opened": "03/12/2014",
+                "pan_number": "DEVPJ1203K",
+                "date_of_issue": "03/12/2014",
+                "hindi_bank_name": "आईसीआईसीआई बैंक",
+                "branch_code": "61765",
+                "email": "icic.0009012@bank.co.in",
+                "phone": "08001495",
+                "micr": "304518868",
+                "relationship_label": "S/O",
+                "mop": "SINGLE",
+                "nom_reg_no": "00000659344",
+                "continuation": "CONTINUATION",
+                "branch_manager_stamp_present": true
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 21,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "Ahmedabad Cg Road",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "ICIC0009012",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "Mr. Dev Patel",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "Harish Patel",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "096639983",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "19921203020344",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "DATE OF ISSUE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "88 CG Road Ahmedabad Gujarat 380009",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "03/12/2014",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "DEVPJ1203K",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "03/12/2014",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "आईसीआईसीआई बैंक",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_code": {
+                        "value": "61765",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "email": {
+                        "value": "icic.0009012@bank.co.in",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "phone": {
+                        "value": "08001495",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "micr": {
+                        "value": "304518868",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "relationship_label": {
+                        "value": "S/O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "mop": {
+                        "value": "SINGLE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "nom_reg_no": {
+                        "value": "00000659344",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "continuation": {
+                        "value": "CONTINUATION",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 90.91,
+                "matched_fields": 20,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "ICICI Bank",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "आईसीआईसीआई बैंक",
+                        "extracted": "आईसीआईसीआई बैंक",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_name": {
+                        "expected": "Ahmedabad CG Road",
+                        "extracted": "Ahmedabad Cg Road",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_code": {
+                        "expected": "61765",
+                        "extracted": "61765",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "email": {
+                        "expected": "icic.0009012@bank.co.in",
+                        "extracted": "icic.0009012@bank.co.in",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "phone": {
+                        "expected": "08001495",
+                        "extracted": "08001495",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "micr": {
+                        "expected": "304518868",
+                        "extracted": "304518868",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "ifsc": {
+                        "expected": "ICIC0009012",
+                        "extracted": "ICIC0009012",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_holder": {
+                        "expected": "Mr. Dev Patel",
+                        "extracted": "Mr. Dev Patel",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "S/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "father_name": {
+                        "expected": "Harish Patel",
+                        "extracted": "Harish Patel",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "cif_number": {
+                        "expected": "096639983",
+                        "extracted": "096639983",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_number": {
+                        "expected": "19921203020344",
+                        "extracted": "19921203020344",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "DATE OF ISSUE",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 9.76
+                    },
+                    "address": {
+                        "expected": "88 CG Road Ahmedabad Gujarat 380009",
+                        "extracted": "88 CG Road Ahmedabad Gujarat 380009",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "SINGLE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "account_opened": {
+                        "expected": "03/12/2014",
+                        "extracted": "03/12/2014",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000659344",
+                        "extracted": "00000659344",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "pan_number": {
+                        "expected": "DEVPJ1203K",
+                        "extracted": "DEVPJ1203K",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "date_of_issue": {
+                        "expected": "03/12/2014",
+                        "extracted": "03/12/2014",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "CONTINUATION",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "3TH3TH\nBranch: AHMEDABAD CG ROAD\nCode: 61765\nICICI\nEmail: icic.0009012@bank.co.in\nBuss. Hrs: 10:00-16:00\nPhone No.: 08001495\nMICR: 304518868\nIFSC: ICIC0009012\nName\n:\nMr. Dev Patel\nMOP\nSINGLE\nS/D/H/o\nHARISH PATEL\nA/c Opening Dt:\n03/12/2014\nCIF Number\n096639983\nNom Reg No\n00000659344\nAccount No. :\n19921203020344\nCustomer's PAN:\nDEVPJ1203K\nA/c Type\nDate of Issue :\nREGULAR SAVINGS BANK ACCOUNT\nAddress\n88 CG Road Ahmedabad Gujarat 380009\nCONTINUATION\nTTT\nBranch Manager\nआईसीआईसीआई बैंक\nS/D/H/0\nAccount No.\n88 CG Road Ahmedabad Gujarat 38o009\nशाखा प्रबंधक",
+            "processing_time_seconds": 62.5752
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "bank_name": "",
+                "branch_name": "Ahmedabadcgroad",
+                "ifsc": "ICIC0009012",
+                "account_holder": "Mr.Dev Patel",
+                "father_name": "",
+                "cif_number": "096639983",
+                "account_number": "19921203020344",
+                "account_type": "CONTINUATION",
+                "address": "",
+                "account_opened": "03/12/2014",
+                "pan_number": "DEVPJ1203K",
+                "date_of_issue": "03/12/2014",
+                "hindi_bank_name": "",
+                "branch_code": "61765",
+                "email": "",
+                "phone": "08001495",
+                "micr": "304518868",
+                "relationship_label": "S/O",
+                "mop": "NAME",
+                "nom_reg_no": "096639983",
+                "continuation": "CONTINUATION",
+                "branch_manager_stamp_present": true
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 19,
+                    "invalid_fields": 3,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "Ahmedabadcgroad",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "ICIC0009012",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "Mr.Dev Patel",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "096639983",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "19921203020344",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "CONTINUATION",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "03/12/2014",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "DEVPJ1203K",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "03/12/2014",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "branch_code": {
+                        "value": "61765",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "email": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "phone": {
+                        "value": "08001495",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "micr": {
+                        "value": "304518868",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "relationship_label": {
+                        "value": "S/O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "mop": {
+                        "value": "NAME",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "nom_reg_no": {
+                        "value": "096639983",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "continuation": {
+                        "value": "CONTINUATION",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 63.64,
+                "matched_fields": 14,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "ICICI Bank",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "आईसीआईसीआई बैंक",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_name": {
+                        "expected": "Ahmedabad CG Road",
+                        "extracted": "Ahmedabadcgroad",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 93.75
+                    },
+                    "branch_code": {
+                        "expected": "61765",
+                        "extracted": "61765",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "email": {
+                        "expected": "icic.0009012@bank.co.in",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "08001495",
+                        "extracted": "08001495",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "micr": {
+                        "expected": "304518868",
+                        "extracted": "304518868",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "ifsc": {
+                        "expected": "ICIC0009012",
+                        "extracted": "ICIC0009012",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_holder": {
+                        "expected": "Mr. Dev Patel",
+                        "extracted": "Mr.Dev Patel",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "S/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "father_name": {
+                        "expected": "Harish Patel",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "cif_number": {
+                        "expected": "096639983",
+                        "extracted": "096639983",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_number": {
+                        "expected": "19921203020344",
+                        "extracted": "19921203020344",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "CONTINUATION",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 20.0
+                    },
+                    "address": {
+                        "expected": "88 CG Road Ahmedabad Gujarat 380009",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "NAME",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 40.0
+                    },
+                    "account_opened": {
+                        "expected": "03/12/2014",
+                        "extracted": "03/12/2014",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000659344",
+                        "extracted": "096639983",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "pan_number": {
+                        "expected": "DEVPJ1203K",
+                        "extracted": "DEVPJ1203K",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "date_of_issue": {
+                        "expected": "03/12/2014",
+                        "extracted": "03/12/2014",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "CONTINUATION",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "ICICI\nCode:61765\nICICI\nBranch:AHMEDABADCGROAD\nBuss.Hrs:10:00-16:00\n3IT33\nEmailicic.0009012@bank.co.in\nMICR:304518868\nPhone No.: 08001495\nIFSC:ICIC0009012\nSINGLE\nMOP\n：\nName\n：\nMr.Dev Patel\nA/c Opening Dt:\n03/12/2014\nHARISH PATEL\n00000659344\nS/D/H/o\n：\nNom Reg No\nCIF Number\n：\n096639983\nCustomer's PAN:\nDEVPJ1203K\nAccount No.\n：\n19921203020344\nDate of Issue:\n03/12/2014\nREGULARSAVINGSBANKACCOUNT\nA/cType\nCONTINUATION\n88CGRoadAhmedabadGujarat380009\nAddress\n：\nBranch Manager",
+            "processing_time_seconds": 1.0115
+        },
+        "doctr": {
+            "extracted_data": {
+                "bank_name": "",
+                "branch_name": "Ahmedabad Cg Road",
+                "ifsc": "ICIC0009012",
+                "account_holder": "Mr. Dev Patel",
+                "father_name": "Harish Patel",
+                "cif_number": "096639983",
+                "account_number": "19921203020344",
+                "account_type": "GUJARAT 380009 CONTINUATION",
+                "address": "ATRET graers",
+                "account_opened": "03/12/2014",
+                "pan_number": "DEVPJ1203K",
+                "date_of_issue": "03/12/2014",
+                "hindi_bank_name": "",
+                "branch_code": "61765",
+                "email": "icic.009012@bank.co",
+                "phone": "08001495",
+                "micr": "304518868",
+                "relationship_label": "S/O",
+                "mop": "SINGLE",
+                "nom_reg_no": "00000659344",
+                "continuation": "CONTINUATION",
+                "branch_manager_stamp_present": true
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 21,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 1,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "Ahmedabad Cg Road",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "ICIC0009012",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "Mr. Dev Patel",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "Harish Patel",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "096639983",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "19921203020344",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "GUJARAT 380009 CONTINUATION",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "ATRET graers",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "03/12/2014",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "DEVPJ1203K",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "03/12/2014",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "branch_code": {
+                        "value": "61765",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "email": {
+                        "value": "icic.009012@bank.co",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "phone": {
+                        "value": "08001495",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "micr": {
+                        "value": "304518868",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "relationship_label": {
+                        "value": "S/O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "mop": {
+                        "value": "SINGLE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "nom_reg_no": {
+                        "value": "00000659344",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "continuation": {
+                        "value": "CONTINUATION",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 77.27,
+                "matched_fields": 17,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "ICICI Bank",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "आईसीआईसीआई बैंक",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_name": {
+                        "expected": "Ahmedabad CG Road",
+                        "extracted": "Ahmedabad Cg Road",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_code": {
+                        "expected": "61765",
+                        "extracted": "61765",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "email": {
+                        "expected": "icic.0009012@bank.co.in",
+                        "extracted": "icic.009012@bank.co",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "08001495",
+                        "extracted": "08001495",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "micr": {
+                        "expected": "304518868",
+                        "extracted": "304518868",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "ifsc": {
+                        "expected": "ICIC0009012",
+                        "extracted": "ICIC0009012",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_holder": {
+                        "expected": "Mr. Dev Patel",
+                        "extracted": "Mr. Dev Patel",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "S/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "father_name": {
+                        "expected": "Harish Patel",
+                        "extracted": "Harish Patel",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "cif_number": {
+                        "expected": "096639983",
+                        "extracted": "096639983",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_number": {
+                        "expected": "19921203020344",
+                        "extracted": "19921203020344",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "GUJARAT 380009 CONTINUATION",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 40.0
+                    },
+                    "address": {
+                        "expected": "88 CG Road Ahmedabad Gujarat 380009",
+                        "extracted": "ATRET graers",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 12.77
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "SINGLE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "account_opened": {
+                        "expected": "03/12/2014",
+                        "extracted": "03/12/2014",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000659344",
+                        "extracted": "00000659344",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "pan_number": {
+                        "expected": "DEVPJ1203K",
+                        "extracted": "DEVPJ1203K",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "date_of_issue": {
+                        "expected": "03/12/2014",
+                        "extracted": "03/12/2014",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "CONTINUATION",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "Code: 61765\nICICI\nBranch: AHMEDABAD CG ROAD\nBuss. Hrs: 10:00-16:00\nICICI\nSTESSTTERTSTE dcp\nEmail: icic.009012@bank.co.n\nMICR: 304518868\nPhone No.: 08001495\nIFSC: ICIC0009012\nMOP\n:\nSINGLE\nName\n:\nMr. Dev Patel\nA/c Opening Dt:\n03/12/2014\nS/D/H/o\n:\nHARISH PATEL\nNom Reg No :\n00000659344\nCIF Number :\n096639983\nCustomer's PAN:\nDEVPJ1203K\nAccount No. :\n19921203020344\nDate of Issue :\n03/12/2014\nREGULAR SAVINGS BANK ACCOUNT\nA/c Type\n:\nGujarat 380009 CONTINUATION\n:\n88 CG Road Ahmedabad\nAddress\nATRET graers\nBranch Manager",
+            "processing_time_seconds": 3.1368
+        }
+    }
+}

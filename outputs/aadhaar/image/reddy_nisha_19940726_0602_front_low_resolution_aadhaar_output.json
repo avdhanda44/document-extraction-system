@@ -1,0 +1,664 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/aadhaar/image/reddy_nisha_19940726_0602_front_low_resolution.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/aadhaar/image/reddy_nisha_19940726_0602_front_low_resolution.json",
+        "side": "front",
+        "quality": "low_resolution"
+    },
+    "ground_truth": {
+        "aadhaar_number": "0602 3666 5669",
+        "vid": "",
+        "name": "Nisha Reddy",
+        "hindi_name": "निशा रेड्डी",
+        "date_of_birth": "",
+        "year_of_birth": "1994",
+        "gender": "FEMALE"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "aadhaar_number": "0602 3666 5669",
+                "name": "Nisha Reddy",
+                "gender": "FEMALE",
+                "vid": "",
+                "hindi_name": "नभा रेडडी",
+                "date_of_birth": "",
+                "year_of_birth": ""
+            },
+            "classification": {
+                "document_type": "aadhaar_front",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_front",
+                    "total_fields_checked": 7,
+                    "valid_fields": 7,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0602 3666 5669",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Nisha Reddy",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "gender": {
+                        "value": "FEMALE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_name": {
+                        "value": "नभा रेडडी",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "year_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 80.0,
+                "matched_fields": 4,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0602 3666 5669",
+                        "extracted": "0602 3666 5669",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Nisha Reddy",
+                        "extracted": "Nisha Reddy",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "निशा रेड्डी",
+                        "extracted": "नभा रेडडी",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 80.0
+                    },
+                    "date_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "year_of_birth": {
+                        "expected": "1994",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "FEMALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "मारत सरकार\nGOVERNMENT OF INDIA\nनभा रेडडी\nNisha Reddy\nजनन यनप / Year or Birth : १९९४\nमटला / Female\n0602 3666 5669\nआधार\nआम आदमी का अधकिार",
+            "processing_time_seconds": 3.194
+        },
+        "tesseract": {
+            "extracted_data": {
+                "aadhaar_number": "0602 3666 5669",
+                "name": "Nisha Reddy",
+                "gender": "",
+                "vid": "",
+                "hindi_name": "नशि रेड्डी",
+                "date_of_birth": "",
+                "year_of_birth": "1994"
+            },
+            "classification": {
+                "document_type": "aadhaar_front",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_front",
+                    "total_fields_checked": 7,
+                    "valid_fields": 6,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0602 3666 5669",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Nisha Reddy",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "gender": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_name": {
+                        "value": "नशि रेड्डी",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "year_of_birth": {
+                        "value": "1994",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 80.0,
+                "matched_fields": 4,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0602 3666 5669",
+                        "extracted": "0602 3666 5669",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Nisha Reddy",
+                        "extracted": "Nisha Reddy",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "निशा रेड्डी",
+                        "extracted": "नशि रेड्डी",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 85.71
+                    },
+                    "date_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "year_of_birth": {
+                        "expected": "1994",
+                        "extracted": "1994",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "नशि रेड्डी\nNisha Reddy\n\n6 जन्‌म यर्‌ष / Year of Birth : 1994\na महलि /Ferale\n\n0602 3666 5669\n\nआधार - आम आदमी का अधकिार",
+            "processing_time_seconds": 0.5038
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "aadhaar_number": "0602 3666 5669",
+                "name": "Nisha Reddy",
+                "gender": "FEMALE",
+                "vid": "",
+                "hindi_name": "भारत",
+                "date_of_birth": "",
+                "year_of_birth": "1994"
+            },
+            "classification": {
+                "document_type": "aadhaar_front",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_front",
+                    "total_fields_checked": 7,
+                    "valid_fields": 7,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0602 3666 5669",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Nisha Reddy",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "gender": {
+                        "value": "FEMALE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_name": {
+                        "value": "भारत",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "year_of_birth": {
+                        "value": "1994",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 80.0,
+                "matched_fields": 4,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0602 3666 5669",
+                        "extracted": "0602 3666 5669",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Nisha Reddy",
+                        "extracted": "Nisha Reddy",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "निशा रेड्डी",
+                        "extracted": "भारत",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 26.67
+                    },
+                    "date_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "year_of_birth": {
+                        "expected": "1994",
+                        "extracted": "1994",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "FEMALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "GOVERNMENT OF INDIA\nfan tas\nNisha Reddy\n/ Year of Birth : 1994\ngfer / Female\nSAMPLE PHOTO\n0602 3666 5669\n3TTETR\n- 3TTH 3ITGT3TETR\n2\nभारत\nसरकार\n:\nनशा\nरेड्डी\nNisha\nReddy\nS\nजन्म\nवर्ष\nYear of Birth : 1994\nमहलिा\n/Female\n0602\n3666\n5669\nआदमी\nआम\nका\nअधकार\nआधार",
+            "processing_time_seconds": 10.988
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "aadhaar_number": "0602 3666 5669",
+                "name": "Nisha Reddy",
+                "gender": "FEMALE",
+                "vid": "",
+                "hindi_name": "",
+                "date_of_birth": "",
+                "year_of_birth": "1994"
+            },
+            "classification": {
+                "document_type": "aadhaar_front",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_front",
+                    "total_fields_checked": 7,
+                    "valid_fields": 7,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0602 3666 5669",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Nisha Reddy",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "gender": {
+                        "value": "FEMALE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "date_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "year_of_birth": {
+                        "value": "1994",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 80.0,
+                "matched_fields": 4,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0602 3666 5669",
+                        "extracted": "0602 3666 5669",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Nisha Reddy",
+                        "extracted": "Nisha Reddy",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "निशा रेड्डी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "year_of_birth": {
+                        "expected": "1994",
+                        "extracted": "1994",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "FEMALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "中\nGOVERNMENTOFINDIA\nNisha Reddy\n可 / Year of Birth: 1994\ngfetT/Female\n060236665669\n3TET\n3T33",
+            "processing_time_seconds": 0.4023
+        },
+        "doctr": {
+            "extracted_data": {
+                "aadhaar_number": "0602 3666 5669",
+                "name": "Nisha Reddy",
+                "gender": "FEMALE",
+                "vid": "",
+                "hindi_name": "",
+                "date_of_birth": "",
+                "year_of_birth": "1994"
+            },
+            "classification": {
+                "document_type": "aadhaar_front",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_front",
+                    "total_fields_checked": 7,
+                    "valid_fields": 7,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0602 3666 5669",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Nisha Reddy",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "gender": {
+                        "value": "FEMALE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "date_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "year_of_birth": {
+                        "value": "1994",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 80.0,
+                "matched_fields": 4,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0602 3666 5669",
+                        "extracted": "0602 3666 5669",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Nisha Reddy",
+                        "extracted": "Nisha Reddy",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "निशा रेड्डी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "year_of_birth": {
+                        "expected": "1994",
+                        "extracted": "1994",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "gender": {
+                        "expected": "FEMALE",
+                        "extracted": "FEMALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "HRA ROR\n-\nGOVERNMENT OF INDIA-\nTTAIT (66\nNisha Reddy\n' ar/Year of Birth : 1994\nHeleT / Female\nSAMPLEPTOTO\n0602 3666 5669\n3TER\n- 31H 31GHT cl 3eR",
+            "processing_time_seconds": 2.2711
+        }
+    }
+}

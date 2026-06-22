@@ -1,0 +1,735 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/pan/image/chatterjee_rahul_19881206_0703_front_blurred.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/pan/image/chatterjee_rahul_19881206_0703_front_blurred.json",
+        "side": "front",
+        "quality": "blurred"
+    },
+    "ground_truth": {
+        "pan_number": "KLMPC9364T",
+        "name": "Rahul Chatterjee",
+        "hindi_name": "राहुल चटर्जी",
+        "father_name": "Subhash Chatterjee",
+        "hindi_father_name": "सुभाष चटर्जी",
+        "date_of_birth": "1988-12-06",
+        "signature_present": true,
+        "card_issue_date_text": "15112021"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "pan_number": "KLMPC9364T",
+                "name": "CewmanrniAccovnt Wumor",
+                "father_name": "",
+                "date_of_birth": "",
+                "hindi_name": "आयकर वाभाग",
+                "hindi_father_name": "आारत सरकार",
+                "signature_present": false,
+                "card_issue_date_text": ""
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 6,
+                    "invalid_fields": 2,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "KLMPC9364T",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "CewmanrniAccovnt Wumor",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "आयकर वाभाग",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_father_name": {
+                        "value": "आारत सरकार",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "signature_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "card_issue_date_text": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 12.5,
+                "matched_fields": 1,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KLMPC9364T",
+                        "extracted": "KLMPC9364T",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Rahul Chatterjee",
+                        "extracted": "CewmanrniAccovnt Wumor",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 15.79
+                    },
+                    "hindi_name": {
+                        "expected": "राहुल चटर्जी",
+                        "extracted": "आयकर वाभाग",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 18.18
+                    },
+                    "father_name": {
+                        "expected": "Subhash Chatterjee",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुभाष चटर्जी",
+                        "extracted": "आारत सरकार",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 18.18
+                    },
+                    "date_of_birth": {
+                        "expected": "1988-12-06",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "आयकर वाभाग\nआारत सरकार\nINCOME TAA DEPARTMENI\nGOV . OFINOIA\nरेठा उयण णाठ\nCewmanrniAccovnt Wumor\nKLMPC9364T\n7~c\n~ख\"0\n१५फ",
+            "processing_time_seconds": 9.6964
+        },
+        "tesseract": {
+            "extracted_data": {
+                "pan_number": "KLMPC9364T",
+                "name": "",
+                "father_name": "",
+                "date_of_birth": "",
+                "hindi_name": "आयकर वभिग भारत सरकार",
+                "hindi_father_name": "कार ह",
+                "signature_present": false,
+                "card_issue_date_text": ""
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 5,
+                    "invalid_fields": 3,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "KLMPC9364T",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "आयकर वभिग भारत सरकार",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_father_name": {
+                        "value": "कार ह",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "signature_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "card_issue_date_text": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 12.5,
+                "matched_fields": 1,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KLMPC9364T",
+                        "extracted": "KLMPC9364T",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Rahul Chatterjee",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_name": {
+                        "expected": "राहुल चटर्जी",
+                        "extracted": "आयकर वभिग भारत सरकार",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 18.75
+                    },
+                    "father_name": {
+                        "expected": "Subhash Chatterjee",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुभाष चटर्जी",
+                        "extracted": "कार ह",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 23.53
+                    },
+                    "date_of_birth": {
+                        "expected": "1988-12-06",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "आयकर वभिग 2 भारत सरकार\nINCOME TAX DEPARTMENT — GOVT. OF INDIA\n\nawe? 2a aw कार ह\n\nPermanent Account Number (\n\nKLMPC9364T",
+            "processing_time_seconds": 0.4339
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "pan_number": "KLMPC9364T",
+                "name": "SUBHASH CHATTERJEE",
+                "father_name": "SUBHASH CHATTERJEE",
+                "date_of_birth": "1988-12-06",
+                "hindi_name": "वभाग",
+                "hindi_father_name": "आयकर",
+                "signature_present": "",
+                "card_issue_date_text": "15112021"
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 50.0,
+                "confidence_level": "medium"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 8,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 1,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "KLMPC9364T",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "SUBHASH CHATTERJEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "SUBHASH CHATTERJEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1988-12-06",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "वभाग",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_father_name": {
+                        "value": "आयकर",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "signature_present": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "card_issue_date_text": {
+                        "value": "15112021",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 4,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KLMPC9364T",
+                        "extracted": "KLMPC9364T",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Rahul Chatterjee",
+                        "extracted": "SUBHASH CHATTERJEE",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 70.59
+                    },
+                    "hindi_name": {
+                        "expected": "राहुल चटर्जी",
+                        "extracted": "वभाग",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 12.5
+                    },
+                    "father_name": {
+                        "expected": "Subhash Chatterjee",
+                        "extracted": "SUBHASH CHATTERJEE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुभाष चटर्जी",
+                        "extracted": "आयकर",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 12.5
+                    },
+                    "date_of_birth": {
+                        "expected": "1988-12-06",
+                        "extracted": "1988-12-06",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "15112021",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "3TR0√\nf\nINCOME TAX DEPARTMENT\nGOVT. OF INDIA\nPermanent Account Number\nKLMPC9364T\n/NAm\nRAHUL CHATTERJEE\nnpaeczé\nu wlet/Father's Name\n15112021\nSUBHASH CHATTERJEE\nve itete\nDate of Birth\n06/12/1988\nC\nवभाग\nआयकर\nभारत\nसरकार\nINCOME\nTAX\nDEPARTMENT\nGOVT.\nOF\nINDIA\nस्थायी\nलेखा संख्या\nकारट\nPermanent\nAccount\nNumber\nRAHUL\nCHATTERJEE\n15102021\nSUBKASH",
+            "processing_time_seconds": 23.9349
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "pan_number": "KLMPC9364T",
+                "name": "",
+                "father_name": "",
+                "date_of_birth": "1988-12-06",
+                "hindi_name": "",
+                "hindi_father_name": "",
+                "signature_present": false,
+                "card_issue_date_text": ""
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 6,
+                    "invalid_fields": 2,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "KLMPC9364T",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1988-12-06",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "signature_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "card_issue_date_text": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 2,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KLMPC9364T",
+                        "extracted": "KLMPC9364T",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Rahul Chatterjee",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_name": {
+                        "expected": "राहुल चटर्जी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Subhash Chatterjee",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुभाष चटर्जी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1988-12-06",
+                        "extracted": "1988-12-06",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "INCOMETAXDEPARTMENT\nGOVT.OFINDIA\nPermanent Account Number\nKLMPC9364T\nRAHULCHATTERJEE\nSUBHASHCHATTERJEE\n06/12/1988",
+            "processing_time_seconds": 1.5695
+        },
+        "doctr": {
+            "extracted_data": {
+                "pan_number": "KLMPC9364T",
+                "name": "HRd RAR",
+                "father_name": "eerat Ral aaur",
+                "date_of_birth": "1988-12-06",
+                "hindi_name": "",
+                "hindi_father_name": "",
+                "signature_present": false,
+                "card_issue_date_text": ""
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 8,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "KLMPC9364T",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "HRd RAR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "eerat Ral aaur",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1988-12-06",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "signature_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "card_issue_date_text": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 2,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "KLMPC9364T",
+                        "extracted": "KLMPC9364T",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Rahul Chatterjee",
+                        "extracted": "HRd RAR",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 26.09
+                    },
+                    "hindi_name": {
+                        "expected": "राहुल चटर्जी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Subhash Chatterjee",
+                        "extracted": "eerat Ral aaur",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 12.5
+                    },
+                    "hindi_father_name": {
+                        "expected": "सुभाष चटर्जी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1988-12-06",
+                        "extracted": "1988-12-06",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "31144 aTT\nHRd RAR\na\nINCOME TAX DEPARTMENT\nGOVT.OF INDIA\neerat Ral aaur  -\nPermanent Account Number I\nKLMPC9364T\nCNam\nRAHUL CHATTERJEE\nae\n- - Nam\n511\nSUBHASH CHATTERJEE\nrare\nen\nDate -\n1 \n06/12/1988",
+            "processing_time_seconds": 6.9053
+        }
+    }
+}

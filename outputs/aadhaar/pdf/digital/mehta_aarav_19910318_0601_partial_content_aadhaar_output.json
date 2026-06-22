@@ -1,0 +1,1612 @@
+{
+    "pdf": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/aadhaar/pdf/digital/mehta_aarav_19910318_0601_partial_content.pdf",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/aadhaar/pdf/digital/mehta_aarav_19910318_0601_partial_content.json",
+        "pdf_type": "digital",
+        "variant": "partial_content",
+        "page_count": 2,
+        "pages": {
+            "1": "front",
+            "2": "back"
+        }
+    },
+    "ground_truth": {
+        "pdf_type": "digital",
+        "variant": "partial_content",
+        "pages": {
+            "1": "front",
+            "2": "back"
+        },
+        "intentionally_unavailable_fields": {
+            "front": [
+                "name",
+                "hindi_name"
+            ],
+            "back": [
+                "relationship_label",
+                "hindi_relationship_label",
+                "father_name",
+                "hindi_father_name"
+            ]
+        },
+        "front": {
+            "aadhaar_number": "0601 3665 5668",
+            "vid": "",
+            "name": "",
+            "hindi_name": "",
+            "date_of_birth": "1991-03-18",
+            "year_of_birth": "",
+            "gender": "MALE"
+        },
+        "back": {
+            "aadhaar_number": "0601 3665 5668",
+            "vid": "",
+            "relationship_label": "",
+            "care_of": "",
+            "father_name": "",
+            "husband_name": "",
+            "hindi_relationship_label": "",
+            "hindi_care_of": "",
+            "hindi_father_name": "",
+            "hindi_husband_name": "",
+            "address": "14 Lotus Park Road Pune Maharashtra 411001",
+            "hindi_address": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+            "hindi_address_lines": [
+                "पता:",
+                "पुत्र: सुरेश मेहता",
+                "14, लोटस पार्क रोड",
+                "पुणे, महाराष्ट्र",
+                "411001"
+            ],
+            "pincode": "411001"
+        }
+    },
+    "page_results": {
+        "1": {
+            "page_label": "front",
+            "ground_truth": {
+                "aadhaar_number": "0601 3665 5668",
+                "vid": "",
+                "name": "",
+                "hindi_name": "",
+                "date_of_birth": "1991-03-18",
+                "year_of_birth": "",
+                "gender": "MALE"
+            },
+            "extractors": {
+                "pdfplumber": {
+                    "extracted_data": {
+                        "aadhaar_number": "0601 3665 5668",
+                        "name": "",
+                        "gender": "MALE",
+                        "vid": "",
+                        "hindi_name": "",
+                        "date_of_birth": "1991-03-18",
+                        "year_of_birth": ""
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_front",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_front",
+                            "total_fields_checked": 7,
+                            "valid_fields": 6,
+                            "invalid_fields": 1,
+                            "fields_with_warnings": 3,
+                            "ready_to_save": false,
+                            "requires_review": true
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0601 3665 5668",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "gender": {
+                                "value": "MALE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "date_of_birth": {
+                                "value": "1991-03-18",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "year_of_birth": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 100.0,
+                        "matched_fields": 3,
+                        "total_fields": 3,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0601 3665 5668",
+                                "extracted": "0601 3665 5668",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "date_of_birth": {
+                                "expected": "1991-03-18",
+                                "extracted": "1991-03-18",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "year_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "gender": {
+                                "expected": "MALE",
+                                "extracted": "MALE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "भारत सरकार\nGOVERNMENT OF INDIA\nजन्म तिथि / DOB : 1991-03-18\nपुरुष / Male\nSAMPLE PHOTO\n0601 3665 5668\nआधार - आम आदमी का अधिकार",
+                    "processing_time_seconds": 0.0081
+                },
+                "pypdf": {
+                    "extracted_data": {
+                        "aadhaar_number": "0601 3665 5668",
+                        "name": "",
+                        "gender": "MALE",
+                        "vid": "",
+                        "hindi_name": "",
+                        "date_of_birth": "1991-03-18",
+                        "year_of_birth": ""
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_front",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_front",
+                            "total_fields_checked": 7,
+                            "valid_fields": 6,
+                            "invalid_fields": 1,
+                            "fields_with_warnings": 3,
+                            "ready_to_save": false,
+                            "requires_review": true
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0601 3665 5668",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "gender": {
+                                "value": "MALE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "date_of_birth": {
+                                "value": "1991-03-18",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "year_of_birth": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 100.0,
+                        "matched_fields": 3,
+                        "total_fields": 3,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0601 3665 5668",
+                                "extracted": "0601 3665 5668",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "date_of_birth": {
+                                "expected": "1991-03-18",
+                                "extracted": "1991-03-18",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "year_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "gender": {
+                                "expected": "MALE",
+                                "extracted": "MALE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "भारत सरकार\nGOVERNMENT OF INDIA\nSAMPLE PHOTO\nजन्म तिथि / DOB : 1991-03-18\nपुरुष / Male\n0601 3665 5668\nआधार\n- आम आदमी का अधिकार",
+                    "processing_time_seconds": 0.0028
+                },
+                "pymupdf": {
+                    "extracted_data": {
+                        "aadhaar_number": "0601 3665 5668",
+                        "name": "",
+                        "gender": "MALE",
+                        "vid": "",
+                        "hindi_name": "",
+                        "date_of_birth": "1991-03-18",
+                        "year_of_birth": ""
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_front",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_front",
+                            "total_fields_checked": 7,
+                            "valid_fields": 6,
+                            "invalid_fields": 1,
+                            "fields_with_warnings": 3,
+                            "ready_to_save": false,
+                            "requires_review": true
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0601 3665 5668",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "gender": {
+                                "value": "MALE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "date_of_birth": {
+                                "value": "1991-03-18",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "year_of_birth": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 100.0,
+                        "matched_fields": 3,
+                        "total_fields": 3,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0601 3665 5668",
+                                "extracted": "0601 3665 5668",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "date_of_birth": {
+                                "expected": "1991-03-18",
+                                "extracted": "1991-03-18",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "year_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "gender": {
+                                "expected": "MALE",
+                                "extracted": "MALE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "भारत सरकार\nGOVERNMENT OF INDIA\nSAMPLE PHOTO\nजन्म तिथि / DOB : 1991-03-18\nपुरुष / Male\n0601 3665 5668\nआधार\n- आम आदमी का अधिकार",
+                    "processing_time_seconds": 0.0016
+                },
+                "pdfminer": {
+                    "extracted_data": {
+                        "aadhaar_number": "0601 3665 5668",
+                        "name": "",
+                        "gender": "MALE",
+                        "vid": "",
+                        "hindi_name": "",
+                        "date_of_birth": "1991-03-18",
+                        "year_of_birth": ""
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_front",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_front",
+                            "total_fields_checked": 7,
+                            "valid_fields": 6,
+                            "invalid_fields": 1,
+                            "fields_with_warnings": 3,
+                            "ready_to_save": false,
+                            "requires_review": true
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0601 3665 5668",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "gender": {
+                                "value": "MALE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "date_of_birth": {
+                                "value": "1991-03-18",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "year_of_birth": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 100.0,
+                        "matched_fields": 3,
+                        "total_fields": 3,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0601 3665 5668",
+                                "extracted": "0601 3665 5668",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "date_of_birth": {
+                                "expected": "1991-03-18",
+                                "extracted": "1991-03-18",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "year_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "gender": {
+                                "expected": "MALE",
+                                "extracted": "MALE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "भारत सरकार\nGOVERNMENT OF INDIA\nजन्म तिथि / DOB : 1991-03-18\nपुरुष / Male\nSAMPLE PHOTO\n0601 3665 5668\nआधार\n- आम आदमी का अधिकार",
+                    "processing_time_seconds": 0.007
+                }
+            }
+        },
+        "2": {
+            "page_label": "back",
+            "ground_truth": {
+                "aadhaar_number": "0601 3665 5668",
+                "vid": "",
+                "relationship_label": "",
+                "care_of": "",
+                "father_name": "",
+                "husband_name": "",
+                "hindi_relationship_label": "",
+                "hindi_care_of": "",
+                "hindi_father_name": "",
+                "hindi_husband_name": "",
+                "address": "14 Lotus Park Road Pune Maharashtra 411001",
+                "hindi_address": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+                "hindi_address_lines": [
+                    "पता:",
+                    "पुत्र: सुरेश मेहता",
+                    "14, लोटस पार्क रोड",
+                    "पुणे, महाराष्ट्र",
+                    "411001"
+                ],
+                "pincode": "411001"
+            },
+            "extractors": {
+                "pdfplumber": {
+                    "extracted_data": {
+                        "aadhaar_number": "0601 3665 5668",
+                        "address": "411001",
+                        "pincode": "411001",
+                        "vid": "",
+                        "relationship_label": "",
+                        "care_of": "",
+                        "father_name": "",
+                        "husband_name": "",
+                        "hindi_relationship_label": "",
+                        "hindi_care_of": "",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "",
+                        "hindi_address": "14, लोटस पार्क रोड Pune, Maharashtra पुणे, महाराष्ट्र 411001",
+                        "hindi_address_lines": [
+                            "पता:",
+                            "14, लोटस पार्क रोड Pune, Maharashtra",
+                            "पुणे, महाराष्ट्र 411001"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 9,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0601 3665 5668",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "411001",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "411001",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_address": {
+                                "value": "14, लोटस पार्क रोड Pune, Maharashtra पुणे, महाराष्ट्र 411001",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "पता:",
+                                    "14, लोटस पार्क रोड Pune, Maharashtra",
+                                    "पुणे, महाराष्ट्र 411001"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 60.0,
+                        "matched_fields": 3,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0601 3665 5668",
+                                "extracted": "0601 3665 5668",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "address": {
+                                "expected": "14 Lotus Park Road Pune Maharashtra 411001",
+                                "extracted": "411001",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 25.0
+                            },
+                            "hindi_address": {
+                                "expected": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+                                "extracted": "14, लोटस पार्क रोड Pune, Maharashtra पुणे, महाराष्ट्र 411001",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "पुत्र: सुरेश मेहता",
+                                    "14, लोटस पार्क रोड",
+                                    "पुणे, महाराष्ट्र",
+                                    "411001"
+                                ],
+                                "extracted": [
+                                    "पता:",
+                                    "14, लोटस पार्क रोड Pune, Maharashtra",
+                                    "पुणे, महाराष्ट्र 411001"
+                                ],
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 72.73
+                            },
+                            "pincode": {
+                                "expected": "411001",
+                                "extracted": "411001",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "भारतीय विशिष्ट पहचान प्राधिकरण\nUNIQUE IDENTIFICATION AUTHORITY OF INDIA\nपता: 14, Lotus Park Road\n14, लोटस पार्क रोड Pune, Maharashtra\nपुणे, महाराष्ट्र 411001\n411001\n0601 3665 5668\nP.O. Box No. 1947,\n1947\nhelp@uidai.gov.in www.uidai.gov.in\nBengaluru-560 001\n1800 180 1947",
+                    "processing_time_seconds": 0.0081
+                },
+                "pypdf": {
+                    "extracted_data": {
+                        "aadhaar_number": "0601 3665 5668",
+                        "address": "411001",
+                        "pincode": "411001",
+                        "vid": "",
+                        "relationship_label": "",
+                        "care_of": "",
+                        "father_name": "",
+                        "husband_name": "",
+                        "hindi_relationship_label": "",
+                        "hindi_care_of": "",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "",
+                        "hindi_address": "14, लोटस पार्क रोड पुणे, महाराष्ट्र 411001",
+                        "hindi_address_lines": [
+                            "पता:",
+                            "14, लोटस पार्क रोड",
+                            "पुणे, महाराष्ट्र",
+                            "411001"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 9,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0601 3665 5668",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "411001",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "411001",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_address": {
+                                "value": "14, लोटस पार्क रोड पुणे, महाराष्ट्र 411001",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "पता:",
+                                    "14, लोटस पार्क रोड",
+                                    "पुणे, महाराष्ट्र",
+                                    "411001"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 80.0,
+                        "matched_fields": 4,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0601 3665 5668",
+                                "extracted": "0601 3665 5668",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "address": {
+                                "expected": "14 Lotus Park Road Pune Maharashtra 411001",
+                                "extracted": "411001",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 25.0
+                            },
+                            "hindi_address": {
+                                "expected": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+                                "extracted": "14, लोटस पार्क रोड पुणे, महाराष्ट्र 411001",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "पुत्र: सुरेश मेहता",
+                                    "14, लोटस पार्क रोड",
+                                    "पुणे, महाराष्ट्र",
+                                    "411001"
+                                ],
+                                "extracted": [
+                                    "पता:",
+                                    "14, लोटस पार्क रोड",
+                                    "पुणे, महाराष्ट्र",
+                                    "411001"
+                                ],
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 83.02
+                            },
+                            "pincode": {
+                                "expected": "411001",
+                                "extracted": "411001",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "भारतीय विशिष्ट पहचान प्राधिकरण\nUNIQUE IDENTIFICATION AUTHORITY OF INDIA\nपता:\n14, लोटस पार्क रोड\nपुणे, महाराष्ट्र\n411001\n14, Lotus Park Road\nPune, Maharashtra\n411001\n0601 3665 5668\n1947\n1800 180 1947\nhelp@uidai.gov.in\nwww.uidai.gov.in\nP.O. Box No. 1947,\nBengaluru-560 001",
+                    "processing_time_seconds": 0.0028
+                },
+                "pymupdf": {
+                    "extracted_data": {
+                        "aadhaar_number": "0601 3665 5668",
+                        "address": "411001",
+                        "pincode": "411001",
+                        "vid": "",
+                        "relationship_label": "",
+                        "care_of": "",
+                        "father_name": "",
+                        "husband_name": "",
+                        "hindi_relationship_label": "",
+                        "hindi_care_of": "",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "",
+                        "hindi_address": "14, लोटस पार्क रोड पुणे, महाराष्ट्र 411001",
+                        "hindi_address_lines": [
+                            "पता:",
+                            "14, लोटस पार्क रोड",
+                            "पुणे, महाराष्ट्र",
+                            "411001"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 9,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0601 3665 5668",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "411001",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "411001",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_address": {
+                                "value": "14, लोटस पार्क रोड पुणे, महाराष्ट्र 411001",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "पता:",
+                                    "14, लोटस पार्क रोड",
+                                    "पुणे, महाराष्ट्र",
+                                    "411001"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 80.0,
+                        "matched_fields": 4,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0601 3665 5668",
+                                "extracted": "0601 3665 5668",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "address": {
+                                "expected": "14 Lotus Park Road Pune Maharashtra 411001",
+                                "extracted": "411001",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 25.0
+                            },
+                            "hindi_address": {
+                                "expected": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+                                "extracted": "14, लोटस पार्क रोड पुणे, महाराष्ट्र 411001",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "पुत्र: सुरेश मेहता",
+                                    "14, लोटस पार्क रोड",
+                                    "पुणे, महाराष्ट्र",
+                                    "411001"
+                                ],
+                                "extracted": [
+                                    "पता:",
+                                    "14, लोटस पार्क रोड",
+                                    "पुणे, महाराष्ट्र",
+                                    "411001"
+                                ],
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 83.02
+                            },
+                            "pincode": {
+                                "expected": "411001",
+                                "extracted": "411001",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "भारतीय विशिष्ट पहचान प्राधिकरण\nUNIQUE IDENTIFICATION AUTHORITY OF INDIA\nपता:\n14, लोटस पार्क रोड\nपुणे, महाराष्ट्र\n411001\n14, Lotus Park Road\nPune, Maharashtra\n411001\n0601 3665 5668\n1947\n1800 180 1947\nhelp@uidai.gov.in\nwww.uidai.gov.in\nP.O. Box No. 1947,\nBengaluru-560 001",
+                    "processing_time_seconds": 0.0016
+                },
+                "pdfminer": {
+                    "extracted_data": {
+                        "aadhaar_number": "0601 3665 5668",
+                        "address": "411001",
+                        "pincode": "411001",
+                        "vid": "",
+                        "relationship_label": "",
+                        "care_of": "",
+                        "father_name": "",
+                        "husband_name": "",
+                        "hindi_relationship_label": "",
+                        "hindi_care_of": "",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "",
+                        "hindi_address": "14, लोटस पार्क रोड पुणे, महाराष्ट्र 411001",
+                        "hindi_address_lines": [
+                            "पता:",
+                            "14, लोटस पार्क रोड",
+                            "पुणे, महाराष्ट्र",
+                            "411001"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 9,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0601 3665 5668",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "411001",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "411001",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_address": {
+                                "value": "14, लोटस पार्क रोड पुणे, महाराष्ट्र 411001",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "पता:",
+                                    "14, लोटस पार्क रोड",
+                                    "पुणे, महाराष्ट्र",
+                                    "411001"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 80.0,
+                        "matched_fields": 4,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0601 3665 5668",
+                                "extracted": "0601 3665 5668",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "address": {
+                                "expected": "14 Lotus Park Road Pune Maharashtra 411001",
+                                "extracted": "411001",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 25.0
+                            },
+                            "hindi_address": {
+                                "expected": "14 लोटस पार्क रोड पुणे महाराष्ट्र 411001",
+                                "extracted": "14, लोटस पार्क रोड पुणे, महाराष्ट्र 411001",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "पुत्र: सुरेश मेहता",
+                                    "14, लोटस पार्क रोड",
+                                    "पुणे, महाराष्ट्र",
+                                    "411001"
+                                ],
+                                "extracted": [
+                                    "पता:",
+                                    "14, लोटस पार्क रोड",
+                                    "पुणे, महाराष्ट्र",
+                                    "411001"
+                                ],
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 83.02
+                            },
+                            "pincode": {
+                                "expected": "411001",
+                                "extracted": "411001",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "भारतीय विशिष्ट पहचान प्राधिकरण\nUNIQUE IDENTIFICATION AUTHORITY OF INDIA\nपता:\n14, लोटस पार्क रोड\nपुणे, महाराष्ट्र\n411001\n14, Lotus Park Road\nPune, Maharashtra\n411001\n0601 3665 5668\n1947\n1800 180 1947\nhelp@uidai.gov.in\nwww.uidai.gov.in\nP.O. Box No. 1947,\nBengaluru-560 001",
+                    "processing_time_seconds": 0.007
+                }
+            }
+        }
+    }
+}

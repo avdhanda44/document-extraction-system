@@ -1,0 +1,20 @@
+{
+    "pdf_type": "digital",
+    "variant": "low_contrast_text",
+    "pages": {
+        "1": "front"
+    },
+    "intentionally_unavailable_fields": {
+        "front": []
+    },
+    "front": {
+        "pan_number": "EFGPK7012M",
+        "name": "Ishaan Kulkarni",
+        "hindi_name": "ईशान कुलकर्णी",
+        "father_name": "Vivek Kulkarni",
+        "hindi_father_name": "विवेक कुलकर्णी",
+        "date_of_birth": "1993-02-17",
+        "signature_present": true,
+        "card_issue_date_text": "15112021"
+    }
+}

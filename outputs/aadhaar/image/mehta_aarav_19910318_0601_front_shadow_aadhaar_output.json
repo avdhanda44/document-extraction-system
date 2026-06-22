@@ -1,0 +1,664 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/aadhaar/image/mehta_aarav_19910318_0601_front_shadow.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/aadhaar/image/mehta_aarav_19910318_0601_front_shadow.json",
+        "side": "front",
+        "quality": "shadow"
+    },
+    "ground_truth": {
+        "aadhaar_number": "0601 3665 5668",
+        "vid": "",
+        "name": "Aarav Mehta",
+        "hindi_name": "आरव मेहता",
+        "date_of_birth": "1991-03-18",
+        "year_of_birth": "",
+        "gender": "MALE"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "aadhaar_number": "0601 3665 5668",
+                "name": "Aarav Mehta",
+                "gender": "MALE",
+                "vid": "",
+                "hindi_name": "आरव",
+                "date_of_birth": "1991-03-18",
+                "year_of_birth": ""
+            },
+            "classification": {
+                "document_type": "aadhaar_front",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_front",
+                    "total_fields_checked": 7,
+                    "valid_fields": 7,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0601 3665 5668",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Aarav Mehta",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "gender": {
+                        "value": "MALE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_name": {
+                        "value": "आरव",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1991-03-18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "year_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 80.0,
+                "matched_fields": 4,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0601 3665 5668",
+                        "extracted": "0601 3665 5668",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Aarav Mehta",
+                        "extracted": "Aarav Mehta",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "आरव मेहता",
+                        "extracted": "आरव",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 50.0
+                    },
+                    "date_of_birth": {
+                        "expected": "1991-03-18",
+                        "extracted": "1991-03-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "MALE",
+                        "extracted": "MALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "भारत सरकार\nGOVERNMENT OF INDIA\nआरव\nAarav Mehta\nजनम ताथा\nDCB : 1991-03-18\nपुरष\nMale\nSAMPLE PHOTO\n0601 3665 5668\nआधार\nआम आदमी का अधकिार\nमहत",
+            "processing_time_seconds": 3.0702
+        },
+        "tesseract": {
+            "extracted_data": {
+                "aadhaar_number": "0601 3665 5668",
+                "name": "Aarav Mehta",
+                "gender": "",
+                "vid": "",
+                "hindi_name": "मेहता",
+                "date_of_birth": "1991-03-1",
+                "year_of_birth": ""
+            },
+            "classification": {
+                "document_type": "aadhaar_front",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_front",
+                    "total_fields_checked": 7,
+                    "valid_fields": 6,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0601 3665 5668",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Aarav Mehta",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "gender": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_name": {
+                        "value": "मेहता",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1991-03-1",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "year_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 40.0,
+                "matched_fields": 2,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0601 3665 5668",
+                        "extracted": "0601 3665 5668",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Aarav Mehta",
+                        "extracted": "Aarav Mehta",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "आरव मेहता",
+                        "extracted": "मेहता",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 71.43
+                    },
+                    "date_of_birth": {
+                        "expected": "1991-03-18",
+                        "extracted": "1991-03-1",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "MALE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "aw मेहता\nAarav Mehta\n\nO or afaf7 DOB : 1991-03-1\n\n‘SAMPLE PHOTO.\n\n0601 3665 5668\n- आम आदमी का अधकिर",
+            "processing_time_seconds": 0.5157
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "aadhaar_number": "0601 3665 5668",
+                "name": "Aarav Mehta",
+                "gender": "MALE",
+                "vid": "",
+                "hindi_name": "जपने",
+                "date_of_birth": "1991-03-18",
+                "year_of_birth": ""
+            },
+            "classification": {
+                "document_type": "aadhaar_front",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_front",
+                    "total_fields_checked": 7,
+                    "valid_fields": 7,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0601 3665 5668",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Aarav Mehta",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "gender": {
+                        "value": "MALE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_name": {
+                        "value": "जपने",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1991-03-18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "year_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 80.0,
+                "matched_fields": 4,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0601 3665 5668",
+                        "extracted": "0601 3665 5668",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Aarav Mehta",
+                        "extracted": "Aarav Mehta",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "आरव मेहता",
+                        "extracted": "जपने",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 15.38
+                    },
+                    "date_of_birth": {
+                        "expected": "1991-03-18",
+                        "extracted": "1991-03-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "MALE",
+                        "extracted": "MALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "HRAROR\nGOVERNMENT OF INDIA\n3\nAarav Mehta\nDOB:1991-03-18\n/Male\nSAMPLE PHOTO\n0601 3665 5668\n- 3H 3H可 3E\n3ET\nभारत सरकार\nजपने\n:\nआरव मेहता\nजन्म तथि 7 D0B : 1991-03-18\nपुरुष /Male\n- आम आदमी का अधकार\nआधार",
+            "processing_time_seconds": 9.2806
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "aadhaar_number": "0601 3665 5668",
+                "name": "",
+                "gender": "MALE",
+                "vid": "",
+                "hindi_name": "",
+                "date_of_birth": "1991-03-18",
+                "year_of_birth": ""
+            },
+            "classification": {
+                "document_type": "aadhaar_front",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_front",
+                    "total_fields_checked": 7,
+                    "valid_fields": 6,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0601 3665 5668",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "gender": {
+                        "value": "MALE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "date_of_birth": {
+                        "value": "1991-03-18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "year_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 60.0,
+                "matched_fields": 3,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0601 3665 5668",
+                        "extracted": "0601 3665 5668",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Aarav Mehta",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_name": {
+                        "expected": "आरव मेहता",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1991-03-18",
+                        "extracted": "1991-03-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "MALE",
+                        "extracted": "MALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "HR\nGOVERNMENT OFINDIA\n3Rq\nAaravMehta\n可H aff/ D0B : 1991-03-18\n/Male\nSAMPLE PHOTO\n0601 3665 5668\n3TT\n- 333",
+            "processing_time_seconds": 0.2723
+        },
+        "doctr": {
+            "extracted_data": {
+                "aadhaar_number": "0601 3665 5668",
+                "name": "Aarav Mehta",
+                "gender": "MALE",
+                "vid": "",
+                "hindi_name": "",
+                "date_of_birth": "1991-03-18",
+                "year_of_birth": ""
+            },
+            "classification": {
+                "document_type": "aadhaar_front",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "aadhaar_front",
+                    "total_fields_checked": 7,
+                    "valid_fields": 7,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "aadhaar_number": {
+                        "value": "0601 3665 5668",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Aarav Mehta",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "gender": {
+                        "value": "MALE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "vid": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "date_of_birth": {
+                        "value": "1991-03-18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "year_of_birth": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 80.0,
+                "matched_fields": 4,
+                "total_fields": 5,
+                "fields": {
+                    "aadhaar_number": {
+                        "expected": "0601 3665 5668",
+                        "extracted": "0601 3665 5668",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "vid": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "name": {
+                        "expected": "Aarav Mehta",
+                        "extracted": "Aarav Mehta",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "आरव मेहता",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1991-03-18",
+                        "extracted": "1991-03-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "year_of_birth": {
+                        "expected": "",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "ground truth value not present"
+                    },
+                    "gender": {
+                        "expected": "MALE",
+                        "extracted": "MALE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "HRA ROR\n-\nEGRI an\nGOVERNMENTOF - INDIA\n3TRA HodT\nAarav Mehta\nUTH dretl DOB: 1991-03-18\nYyq / Male\nSAMPLE PHOTO\n0601 3665 5668\n3TER\n- 31H 31GHT cpT 3TeTR",
+            "processing_time_seconds": 1.9132
+        }
+    }
+}

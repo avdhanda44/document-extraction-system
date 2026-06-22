@@ -85,6 +85,44 @@ document_validation_rules = {
             "card_issue_date_text",
         ],
     },
+    "passbook": {
+        "required": [
+            "bank_name",
+            "branch_name",
+            "ifsc",
+            "account_holder",
+            "father_name",
+            "cif_number",
+            "account_number",
+            "account_type",
+            "address",
+            "account_opened",
+            "pan_number",
+            "date_of_issue",
+        ],
+        "optional": [
+            "hindi_bank_name",
+            "branch_code",
+            "email",
+            "phone",
+            "micr",
+            "relationship_label",
+            "mop",
+            "nom_reg_no",
+            "continuation",
+            "branch_manager_stamp_present",
+        ],
+    },
+    "invoice": {
+        "required": [
+            "company",
+            "date",
+            "address",
+            "total",
+            "source_image",
+        ],
+        "optional": [],
+    },
 }
 
 
@@ -217,6 +255,92 @@ def check_pan_number(pan_number):
     return False, "PAN number must match format AAAAA9999A", ""
 
 
+def check_ifsc(ifsc):
+    ifsc = (ifsc or "").strip().upper()
+
+    if ifsc == "":
+        return False, "Required field missing", ""
+
+    ifsc = re.sub(r"[^A-Z0-9]", "", ifsc)
+
+    if re.match(r"^[A-Z]{4}0[A-Z0-9]{6}$", ifsc):
+        return True, "", ""
+
+    return False, "IFSC must match format AAAA0999999", ""
+
+
+def check_micr(micr):
+    micr = (micr or "").strip()
+
+    if micr == "":
+        return True, "", "Optional field missing"
+
+    digits_only = re.sub(r"\D", "", micr)
+
+    if len(digits_only) == 9:
+        return True, "", ""
+
+    return False, "MICR must have exactly 9 digits", ""
+
+
+def check_account_number(account_number):
+    account_number = (account_number or "").strip()
+
+    if account_number == "":
+        return False, "Required field missing", ""
+
+    digits_only = re.sub(r"\D", "", account_number)
+
+    if 9 <= len(digits_only) <= 18:
+        return True, "", ""
+
+    return False, "Account number must have 9 to 18 digits", ""
+
+
+def check_numeric_identifier(value, field_label, required=True):
+    value = (value or "").strip()
+
+    if value == "":
+        if required:
+            return False, "Required field missing", ""
+        return True, "", "Optional field missing"
+
+    if re.sub(r"\D", "", value):
+        return True, "", ""
+
+    return False, f"{field_label} must contain digits", ""
+
+
+def check_boolean_or_text(value):
+    if isinstance(value, bool):
+        return True, "", ""
+
+    value = str(value or "").strip()
+
+    if value == "":
+        return True, "", "Optional field missing"
+
+    if value.casefold() in {"true", "false", "yes", "no", "present", "missing"}:
+        return True, "", ""
+
+    return False, "Value must be boolean-like", ""
+
+
+def check_invoice_total(total):
+    total = (total or "").strip()
+
+    if total == "":
+        return False, "Required field missing", ""
+
+    total = total.replace(",", "")
+    total = re.sub(r"^[A-Za-z$]+", "", total).strip()
+
+    if re.match(r"^\d+(?:\.\d{2})?$", total):
+        return True, "", ""
+
+    return False, "Total must be a valid amount", ""
+
+
 def get_required_and_optional_fields(document_type, schema):
     # Use rules for only the document type selected by document classification.
     if document_type in document_validation_rules:
@@ -253,6 +377,33 @@ def check_field_format(field_name, value):
 
     if field_name == "pan_number":
         return check_pan_number(value)
+
+    if field_name == "ifsc":
+        return check_ifsc(value)
+
+    if field_name == "micr":
+        return check_micr(value)
+
+    if field_name == "account_number":
+        return check_account_number(value)
+
+    if field_name == "cif_number":
+        return check_numeric_identifier(value, "CIF number")
+
+    if field_name == "nom_reg_no":
+        return check_numeric_identifier(value, "Nomination registration number", required=False)
+
+    if field_name == "branch_code":
+        return check_numeric_identifier(value, "Branch code", required=False)
+
+    if field_name in ["account_opened", "date_of_issue"]:
+        return check_date(value)
+
+    if field_name == "branch_manager_stamp_present":
+        return check_boolean_or_text(value)
+
+    if field_name == "total":
+        return check_invoice_total(value)
 
     return True, "", ""
 

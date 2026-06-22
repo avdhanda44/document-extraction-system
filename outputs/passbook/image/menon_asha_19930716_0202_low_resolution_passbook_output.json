@@ -1,0 +1,1417 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/passbook/image/menon_asha_19930716_0202_low_resolution.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/passbook/image/menon_asha_19930716_0202_low_resolution.json",
+        "side": "front",
+        "quality": "low_resolution"
+    },
+    "ground_truth": {
+        "bank_name": "HDFC Bank",
+        "hindi_bank_name": "एचडीएफसी बैंक",
+        "branch_name": "Kochi Central",
+        "branch_code": "61510",
+        "email": "hdfc.0006789@bank.co.in",
+        "phone": "07745330",
+        "micr": "436516312",
+        "ifsc": "HDFC0006789",
+        "account_holder": "Ms. Asha Menon",
+        "relationship_label": "D/O",
+        "father_name": "Madhav Menon",
+        "cif_number": "096610722",
+        "account_number": "20230716020233",
+        "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+        "address": "42 MG Road Kochi Kerala 682016",
+        "mop": "SINGLE",
+        "account_opened": "16/07/2015",
+        "nom_reg_no": "00000656096",
+        "pan_number": "ASHPM0716F",
+        "date_of_issue": "16/07/2015",
+        "continuation": "CONTINUATION",
+        "branch_manager_stamp_present": true
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {},
+            "classification": {
+                "document_type": "unknown",
+                "confidence_percent": 0.0,
+                "confidence_level": "low"
+            },
+            "validation": {
+                "summary": {
+                    "total_fields_checked": 0,
+                    "valid_fields": 0,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true,
+                    "note": "Document type is unknown, so validation could not run."
+                },
+                "field_results": {}
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "HDFC Bank",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "एचडीएफसी बैंक",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_name": {
+                        "expected": "Kochi Central",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_code": {
+                        "expected": "61510",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "email": {
+                        "expected": "hdfc.0006789@bank.co.in",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "07745330",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "micr": {
+                        "expected": "436516312",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "ifsc": {
+                        "expected": "HDFC0006789",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_holder": {
+                        "expected": "Ms. Asha Menon",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "relationship_label": {
+                        "expected": "D/O",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Madhav Menon",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "cif_number": {
+                        "expected": "096610722",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_number": {
+                        "expected": "20230716020233",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "42 MG Road Kochi Kerala 682016",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_opened": {
+                        "expected": "16/07/2015",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000656096",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "pan_number": {
+                        "expected": "ASHPM0716F",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_issue": {
+                        "expected": "16/07/2015",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "एयडीएफरी यक\n0\"cro0 0400^-\nCर\nHDFC\n\n0\"0\n72**220\nte= =\n6LA2Lप7\nAड प 0 ८५०\nOीvt८el7\nCi\n7+\nCuutlor४4\n\n\"\n1777\n472\"770\"347100\n\nा! 7\nA\" Uग\n9\n[39144911\n- *+\n00?]*0\nCU५lv-AणU+",
+            "processing_time_seconds": 10.2153
+        },
+        "tesseract": {
+            "extracted_data": {},
+            "classification": {
+                "document_type": "unknown",
+                "confidence_percent": 20.0,
+                "confidence_level": "low"
+            },
+            "validation": {
+                "summary": {
+                    "total_fields_checked": 0,
+                    "valid_fields": 0,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true,
+                    "note": "Document type is unknown, so validation could not run."
+                },
+                "field_results": {}
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "HDFC Bank",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "एचडीएफसी बैंक",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_name": {
+                        "expected": "Kochi Central",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_code": {
+                        "expected": "61510",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "email": {
+                        "expected": "hdfc.0006789@bank.co.in",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "07745330",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "micr": {
+                        "expected": "436516312",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "ifsc": {
+                        "expected": "HDFC0006789",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_holder": {
+                        "expected": "Ms. Asha Menon",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "relationship_label": {
+                        "expected": "D/O",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Madhav Menon",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "cif_number": {
+                        "expected": "096610722",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_number": {
+                        "expected": "20230716020233",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "42 MG Road Kochi Kerala 682016",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_opened": {
+                        "expected": "16/07/2015",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000656096",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "pan_number": {
+                        "expected": "ASHPM0716F",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_issue": {
+                        "expected": "16/07/2015",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "Bronce SOC CENTRAL\n\nCote Oe\n\nएचडीएफसी ae bat ih SO ie oo # ft on \"OED em HOF\nविफल tee की 74830 cn ane ot?\n~~ <owe\n\n— . Me Aste Meer — * sims\n\nnawwe . mY Se Ave Cpenang Ot. 44/91/1915\n\nclr mater . ॥#&# 10133 काम he मम . _>33०0०0०% Ove\n\noem + pease? earegs) या] mere\n\nwe tr . EOL AS GAVIMES BA88 ROOT Cate of fewer # 44/91/2७1%\n\nebb wee . 47 कर Beet Beets Revels Serer ८0411##4# NOM",
+            "processing_time_seconds": 1.6209
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "bank_name": "",
+                "branch_name": "Kochi Central",
+                "ifsc": "HDFC000ET9",
+                "account_holder": "Ms. Ashe Menon",
+                "father_name": "",
+                "cif_number": "096610722",
+                "account_number": "20230716020233",
+                "account_type": "",
+                "address": "42 MC Moad Rochi Recala 682016",
+                "account_opened": "14/01/2015",
+                "pan_number": "RNAPM0716F",
+                "date_of_issue": "16/07/2015",
+                "hindi_bank_name": "एथडीएफसी",
+                "branch_code": "",
+                "email": "",
+                "phone": "07745330",
+                "micr": "436516312",
+                "relationship_label": "D/O",
+                "mop": "",
+                "nom_reg_no": "00000614096",
+                "continuation": "CONTINUATION",
+                "branch_manager_stamp_present": false
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 18,
+                    "invalid_fields": 4,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "Kochi Central",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "HDFC000ET9",
+                        "valid": false,
+                        "error": "IFSC must match format AAAA0999999",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "Ms. Ashe Menon",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "096610722",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "20230716020233",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "42 MC Moad Rochi Recala 682016",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "14/01/2015",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "RNAPM0716F",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "16/07/2015",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "एथडीएफसी",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_code": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "email": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "phone": {
+                        "value": "07745330",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "micr": {
+                        "value": "436516312",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "relationship_label": {
+                        "value": "D/O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "mop": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "nom_reg_no": {
+                        "value": "00000614096",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "continuation": {
+                        "value": "CONTINUATION",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 45.45,
+                "matched_fields": 10,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "HDFC Bank",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "एचडीएफसी बैंक",
+                        "extracted": "एथडीएफसी",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 66.67
+                    },
+                    "branch_name": {
+                        "expected": "Kochi Central",
+                        "extracted": "Kochi Central",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_code": {
+                        "expected": "61510",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "email": {
+                        "expected": "hdfc.0006789@bank.co.in",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "07745330",
+                        "extracted": "07745330",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "micr": {
+                        "expected": "436516312",
+                        "extracted": "436516312",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "ifsc": {
+                        "expected": "HDFC0006789",
+                        "extracted": "HDFC000ET9",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_holder": {
+                        "expected": "Ms. Asha Menon",
+                        "extracted": "Ms. Ashe Menon",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 92.31
+                    },
+                    "relationship_label": {
+                        "expected": "D/O",
+                        "extracted": "D/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "father_name": {
+                        "expected": "Madhav Menon",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "cif_number": {
+                        "expected": "096610722",
+                        "extracted": "096610722",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_number": {
+                        "expected": "20230716020233",
+                        "extracted": "20230716020233",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "42 MG Road Kochi Kerala 682016",
+                        "extracted": "42 MC Moad Rochi Recala 682016",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 83.33
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_opened": {
+                        "expected": "16/07/2015",
+                        "extracted": "14/01/2015",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000656096",
+                        "extracted": "00000614096",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "pan_number": {
+                        "expected": "ASHPM0716F",
+                        "extracted": "RNAPM0716F",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_issue": {
+                        "expected": "16/07/2015",
+                        "extracted": "16/07/2015",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "CONTINUATION",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "grsgu\nBranch: KOCHI CENTRAL\nCodle 61510\nHDFC\nEmait hdic ccocrmg@tank. ca.in\nBuss. Hes: 10:00-10:00\nPhone No: 07745330\nMICR: 436516312\nIFSC HDFCO00ET9\nName\ni\nMo. Asha Menon\nHOP\nSINLE\n8/b/B/o\nHADHAY MHn\nA/c opening bt.\n14/01/2015\nii\nCIF Rumber\n096610722\nNom Reg No\n00000614096\nAccourA No.\n20230716020233\nCustones' a PRN\nAPM0716F\nA/e Type\nREUAR VI B a\nDate of lesse\n16/07/2015\nAddress\n42 MC Moad Rochi Recala 682016\nCONTINUATION\n2\nEiranch\nएथडीएफसी\nबैक\nBnNCh: KOCHI CENTRAL\nCode s1510\nHDFO\nEeait nt; soocrmgtank ca in\nBuss. Hes: Tb2b-1 10\nPhoe Nn: r745330\nMICR: 43651512\nIFSC HDFC00E\nMs. Ashe Menon\nMO\nSINKLE\nMACIVMNON\nA/c opening tta\n0H410733\n00000414016\nLE\n28236716826233\nCOLROMEE'& PR\nAPMDT16\nREGLAR BAINCE- BMNE ACCONT\nDate od 1sae\n16/01/3015\nL HC m RoM ReEaa S82014\nCONTIMUATION",
+            "processing_time_seconds": 41.1018
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "bank_name": "",
+                "branch_name": "",
+                "ifsc": "BNCH0CHICEN",
+                "account_holder": "Ms. Aahe Menon",
+                "father_name": "",
+                "cif_number": "096610133",
+                "account_number": "20236716820233",
+                "account_type": "",
+                "address": "Bnch KOCHI CENTRAL",
+                "account_opened": "16/01/2015",
+                "pan_number": "",
+                "date_of_issue": "14/07/2015",
+                "hindi_bank_name": "",
+                "branch_code": "",
+                "email": "",
+                "phone": "",
+                "micr": "",
+                "relationship_label": "D/O",
+                "mop": "",
+                "nom_reg_no": "00000414094",
+                "continuation": "",
+                "branch_manager_stamp_present": false
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 17,
+                    "invalid_fields": 5,
+                    "fields_with_warnings": 8,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "BNCH0CHICEN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "Ms. Aahe Menon",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "096610133",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "20236716820233",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "Bnch KOCHI CENTRAL",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "16/01/2015",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "14/07/2015",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "branch_code": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "email": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "phone": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "micr": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "relationship_label": {
+                        "value": "D/O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "mop": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "nom_reg_no": {
+                        "value": "00000414094",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "continuation": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 9.09,
+                "matched_fields": 2,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "HDFC Bank",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "एचडीएफसी बैंक",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_name": {
+                        "expected": "Kochi Central",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_code": {
+                        "expected": "61510",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "email": {
+                        "expected": "hdfc.0006789@bank.co.in",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "07745330",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "micr": {
+                        "expected": "436516312",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "ifsc": {
+                        "expected": "HDFC0006789",
+                        "extracted": "BNCH0CHICEN",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_holder": {
+                        "expected": "Ms. Asha Menon",
+                        "extracted": "Ms. Aahe Menon",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 84.62
+                    },
+                    "relationship_label": {
+                        "expected": "D/O",
+                        "extracted": "D/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "father_name": {
+                        "expected": "Madhav Menon",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "cif_number": {
+                        "expected": "096610722",
+                        "extracted": "096610133",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_number": {
+                        "expected": "20230716020233",
+                        "extracted": "20236716820233",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "42 MG Road Kochi Kerala 682016",
+                        "extracted": "Bnch KOCHI CENTRAL",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 45.83
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_opened": {
+                        "expected": "16/07/2015",
+                        "extracted": "16/01/2015",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000656096",
+                        "extracted": "00000414094",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "pan_number": {
+                        "expected": "ASHPM0716F",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_issue": {
+                        "expected": "16/07/2015",
+                        "extracted": "14/07/2015",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "Bnch: KOCHI CENTRAL\nCode\nHDFO\nBu. Hrs: 2:0:16:0\nPhoneNe:ET745330\nMICR: 4365 M012\nIFSC: HDFCD00K(T)\nMs. Aahe Menon\na/8/9/8\nMADIAV MENIOBI\nAc opening Dts\n16/01/2015\nCIF SoRber\n096610133\nSoe keg tio\n00000414094\n20236716820233\nCoNOReEs_FBMx\nADPM0T162\nA/e Type\nECUARRAIECBBURDCGIST\nDate -cdTesse\n14/07/2015\n2G  K  R2\nCONTIMUATION",
+            "processing_time_seconds": 0.8334
+        },
+        "doctr": {
+            "extracted_data": {
+                "bank_name": "",
+                "branch_name": "",
+                "ifsc": "ANCT0CHICEN",
+                "account_holder": "Ms Ashe Menon",
+                "father_name": "",
+                "cif_number": "000004040",
+                "account_number": "20230716020233",
+                "account_type": "",
+                "address": "",
+                "account_opened": "14/01/2015",
+                "pan_number": "",
+                "date_of_issue": "14/07/2019",
+                "hindi_bank_name": "",
+                "branch_code": "",
+                "email": "",
+                "phone": "",
+                "micr": "",
+                "relationship_label": "D/O",
+                "mop": "",
+                "nom_reg_no": "00000404014",
+                "continuation": "",
+                "branch_manager_stamp_present": true
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 16,
+                    "invalid_fields": 6,
+                    "fields_with_warnings": 7,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "ANCT0CHICEN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "Ms Ashe Menon",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "000004040",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "20230716020233",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "14/01/2015",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "14/07/2019",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "branch_code": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "email": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "phone": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "micr": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "relationship_label": {
+                        "value": "D/O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "mop": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "nom_reg_no": {
+                        "value": "00000404014",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "continuation": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 18.18,
+                "matched_fields": 4,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "HDFC Bank",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "एचडीएफसी बैंक",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_name": {
+                        "expected": "Kochi Central",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_code": {
+                        "expected": "61510",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "email": {
+                        "expected": "hdfc.0006789@bank.co.in",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "07745330",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "micr": {
+                        "expected": "436516312",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "ifsc": {
+                        "expected": "HDFC0006789",
+                        "extracted": "ANCT0CHICEN",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_holder": {
+                        "expected": "Ms. Asha Menon",
+                        "extracted": "Ms Ashe Menon",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 92.31
+                    },
+                    "relationship_label": {
+                        "expected": "D/O",
+                        "extracted": "D/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "father_name": {
+                        "expected": "Madhav Menon",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "cif_number": {
+                        "expected": "096610722",
+                        "extracted": "000004040",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_number": {
+                        "expected": "20230716020233",
+                        "extracted": "20230716020233",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "42 MG Road Kochi Kerala 682016",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_opened": {
+                        "expected": "16/07/2015",
+                        "extracted": "14/01/2015",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000656096",
+                        "extracted": "00000404014",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "pan_number": {
+                        "expected": "ASHPM0716F",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_issue": {
+                        "expected": "16/07/2015",
+                        "extracted": "14/07/2019",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "44\nDranct: MOCHI CENTRAL\nCode Sue\nqustquren\nHDF9\n- N auregat 4an\nbas Hs 10201020\nPorc\nPhone  eTes3o\nMICR 4051312\nESC HORCEDERE\nNume\nMs Ashe Menon\nMOR\nsIE\nwDWe\nMCHV 1\nNC openang Dta\n14/01/2015\ncIF Muater\nOHAIOTT\nNoa keg -\n00000404014\nAOCOLEA 4\n20230716020233\nCaso-Ce Pala\nAeMorier\nMe TYP\nBOCUEAR BWI BAAE ACCOUNT\nDate et tese .\n14/07/2019\nMan e\na MG - Foa Ferala 482314\nCOMTINUATION\n- F\nBranch Manager",
+            "processing_time_seconds": 2.9628
+        }
+    }
+}

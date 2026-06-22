@@ -1,0 +1,31 @@
+{
+    "pdf_type": "scanned",
+    "variant": "overexposed",
+    "pages": {
+        "1": "passbook"
+    },
+    "passbook": {
+        "bank_name": "HDFC Bank",
+        "hindi_bank_name": "एचडीएफसी बैंक",
+        "branch_name": "Kochi Central",
+        "branch_code": "61510",
+        "email": "hdfc.0006789@bank.co.in",
+        "phone": "07745330",
+        "micr": "436516312",
+        "ifsc": "HDFC0006789",
+        "account_holder": "Ms. Asha Menon",
+        "relationship_label": "D/O",
+        "father_name": "Madhav Menon",
+        "cif_number": "096610722",
+        "account_number": "20230716020233",
+        "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+        "address": "42 MG Road Kochi Kerala 682016",
+        "mop": "SINGLE",
+        "account_opened": "16/07/2015",
+        "nom_reg_no": "00000656096",
+        "pan_number": "ASHPM0716F",
+        "date_of_issue": "16/07/2015",
+        "continuation": "CONTINUATION",
+        "branch_manager_stamp_present": true
+    }
+}

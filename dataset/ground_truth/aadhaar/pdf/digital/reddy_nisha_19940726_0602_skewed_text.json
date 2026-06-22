@@ -1,0 +1,43 @@
+{
+    "pdf_type": "digital",
+    "variant": "skewed_text",
+    "pages": {
+        "1": "front",
+        "2": "back"
+    },
+    "intentionally_unavailable_fields": {
+        "front": [],
+        "back": []
+    },
+    "front": {
+        "aadhaar_number": "0602 3666 5669",
+        "vid": "",
+        "name": "Nisha Reddy",
+        "hindi_name": "निशा रेड्डी",
+        "date_of_birth": "",
+        "year_of_birth": "1994",
+        "gender": "FEMALE"
+    },
+    "back": {
+        "aadhaar_number": "0602 3666 5669",
+        "vid": "",
+        "relationship_label": "C/O",
+        "care_of": "Venkatesh Reddy",
+        "father_name": "",
+        "husband_name": "",
+        "hindi_relationship_label": "मार्फत",
+        "hindi_care_of": "वेंकटेश रेड्डी",
+        "hindi_father_name": "",
+        "hindi_husband_name": "",
+        "address": "82 Lake View Colony Hyderabad Telangana 500081",
+        "hindi_address": "82 लअकए वइएव कओलओञ हैदराबाद तएलअङअनअ 500081",
+        "hindi_address_lines": [
+            "पता:",
+            "मार्फत: वेंकटेश रेड्डी",
+            "82, लअकए वइएव कओलओञ",
+            "हैदराबाद, तएलअङअनअ",
+            "500081"
+        ],
+        "pincode": "500081"
+    }
+}

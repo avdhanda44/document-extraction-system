@@ -1,0 +1,619 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/pan/image/kulkarni_ishaan_19930217_0701_front_blurred.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/pan/image/kulkarni_ishaan_19930217_0701_front_blurred.json",
+        "side": "front",
+        "quality": "blurred"
+    },
+    "ground_truth": {
+        "pan_number": "EFGPK7012M",
+        "name": "Ishaan Kulkarni",
+        "hindi_name": "ईशान कुलकर्णी",
+        "father_name": "Vivek Kulkarni",
+        "hindi_father_name": "विवेक कुलकर्णी",
+        "date_of_birth": "1993-02-17",
+        "signature_present": true,
+        "card_issue_date_text": "15112021"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {},
+            "classification": {
+                "document_type": "unknown",
+                "confidence_percent": 0.0,
+                "confidence_level": "low"
+            },
+            "validation": {
+                "summary": {
+                    "total_fields_checked": 0,
+                    "valid_fields": 0,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true,
+                    "note": "Document type is unknown, so validation could not run."
+                },
+                "field_results": {}
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "EFGPK7012M",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "name": {
+                        "expected": "Ishaan Kulkarni",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_name": {
+                        "expected": "ईशान कुलकर्णी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Vivek Kulkarni",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_father_name": {
+                        "expected": "विवेक कुलकर्णी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1993-02-17",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "आयकर वभाग\nNdwo\n*90*^0\"^*17\ncovtsO wow\n~~*~\nEr6\"(70120",
+            "processing_time_seconds": 3.995
+        },
+        "tesseract": {
+            "extracted_data": {},
+            "classification": {
+                "document_type": "unknown",
+                "confidence_percent": 0.0,
+                "confidence_level": "low"
+            },
+            "validation": {
+                "summary": {
+                    "total_fields_checked": 0,
+                    "valid_fields": 0,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true,
+                    "note": "Document type is unknown, so validation could not run."
+                },
+                "field_results": {}
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "EFGPK7012M",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "name": {
+                        "expected": "Ishaan Kulkarni",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_name": {
+                        "expected": "ईशान कुलकर्णी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Vivek Kulkarni",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_father_name": {
+                        "expected": "विवेक कुलकर्णी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1993-02-17",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "आयकर aftr 4 भारत RTeTT\nCOME TAX OfPARTWENT GOVT. OF INDIA\nowe? ’@ eawerr\n\nPo mere A met mee\n\nआए आज... ed",
+            "processing_time_seconds": 0.6669
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "pan_number": "EFGPK7012M",
+                "name": "SHAAN KUKARN",
+                "father_name": "VIVEK KUKARN",
+                "date_of_birth": "",
+                "hindi_name": "वभिाग",
+                "hindi_father_name": "आयकर",
+                "signature_present": false,
+                "card_issue_date_text": ""
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 7,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "EFGPK7012M",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "SHAAN KUKARN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "VIVEK KUKARN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "वभिाग",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_father_name": {
+                        "value": "आयकर",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "signature_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "card_issue_date_text": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 37.5,
+                "matched_fields": 3,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "EFGPK7012M",
+                        "extracted": "EFGPK7012M",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Ishaan Kulkarni",
+                        "extracted": "SHAAN KUKARN",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 88.89
+                    },
+                    "hindi_name": {
+                        "expected": "ईशान कुलकर्णी",
+                        "extracted": "वभिाग",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 11.11
+                    },
+                    "father_name": {
+                        "expected": "Vivek Kulkarni",
+                        "extracted": "VIVEK KUKARN",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 92.31
+                    },
+                    "hindi_father_name": {
+                        "expected": "विवेक कुलकर्णी",
+                        "extracted": "आयकर",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 22.22
+                    },
+                    "date_of_birth": {
+                        "expected": "1993-02-17",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "31T4OaT\naR\nINCOME TAX DEPARTMENT\nGOVT. OF INDIA\nPermanent Account Nu\nEFGPK7012M\nSHAAN KUKARN\ntera\nVIVEK KUKARN\nवभिाग\nआयकर\nभारत\nसरकार\nINCOME\nTAX\nDEPARTMENIT\nGOVT.\nOF\nINDIA\nएायभेखा संव्प कारत\nPermanent Account",
+            "processing_time_seconds": 14.0635
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "pan_number": "EFGPK7012M",
+                "name": "",
+                "father_name": "",
+                "date_of_birth": "",
+                "hindi_name": "",
+                "hindi_father_name": "",
+                "signature_present": false,
+                "card_issue_date_text": ""
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 5,
+                    "invalid_fields": 3,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "EFGPK7012M",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "signature_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "card_issue_date_text": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 12.5,
+                "matched_fields": 1,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "EFGPK7012M",
+                        "extracted": "EFGPK7012M",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Ishaan Kulkarni",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_name": {
+                        "expected": "ईशान कुलकर्णी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Vivek Kulkarni",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_father_name": {
+                        "expected": "विवेक कुलकर्णी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1993-02-17",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "H\nINCOMETAXDEPARTMENT\nGOVT.OFINDIA\nEFGPK7012M",
+            "processing_time_seconds": 0.3888
+        },
+        "doctr": {
+            "extracted_data": {
+                "pan_number": "EFGPK7012M",
+                "name": "",
+                "father_name": "",
+                "date_of_birth": "",
+                "hindi_name": "",
+                "hindi_father_name": "",
+                "signature_present": false,
+                "card_issue_date_text": ""
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 5,
+                    "invalid_fields": 3,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "EFGPK7012M",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "signature_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "card_issue_date_text": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 12.5,
+                "matched_fields": 1,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "EFGPK7012M",
+                        "extracted": "EFGPK7012M",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Ishaan Kulkarni",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_name": {
+                        "expected": "ईशान कुलकर्णी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Vivek Kulkarni",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_father_name": {
+                        "expected": "विवेक कुलकर्णी",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1993-02-17",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "344r atT\nuRd R\nINCOME TAX DEPARTMENT\nGOVT.OF INDIA\nPe- - -\nEFGPK7012M\n- -\n- -\n-\n- \n- - - -\n-\n- - -\n- 1\nse",
+            "processing_time_seconds": 2.3504
+        }
+    }
+}

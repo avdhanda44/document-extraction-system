@@ -1,0 +1,1729 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/passbook/image/iyer_kabir_19891222_0201_blurred.png",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/passbook/image/iyer_kabir_19891222_0201_blurred.json",
+        "side": "front",
+        "quality": "blurred"
+    },
+    "ground_truth": {
+        "bank_name": "State Bank of India",
+        "hindi_bank_name": "भारतीय स्टेट बैंक",
+        "branch_name": "Chennai Main",
+        "branch_code": "61255",
+        "email": "sbin.0004567@bank.co.in",
+        "phone": "07489165",
+        "micr": "568513756",
+        "ifsc": "SBIN0004567",
+        "account_holder": "Mr. Kabir Iyer",
+        "relationship_label": "S/O",
+        "father_name": "Suresh Iyer",
+        "cif_number": "096581461",
+        "account_number": "31026166816901",
+        "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+        "address": "17B Lake View Road Chennai Tamil Nadu 600041",
+        "mop": "SINGLE",
+        "account_opened": "22/12/2011",
+        "nom_reg_no": "00000652848",
+        "pan_number": "KABPI2212M",
+        "date_of_issue": "22/12/2011",
+        "continuation": "CONTINUATION",
+        "branch_manager_stamp_present": true
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "bank_name": "State Bank of India",
+                "branch_name": "",
+                "ifsc": "",
+                "account_holder": "",
+                "father_name": "",
+                "cif_number": "",
+                "account_number": "",
+                "account_type": "",
+                "address": "",
+                "account_opened": "",
+                "pan_number": "",
+                "date_of_issue": "",
+                "hindi_bank_name": "भारतीय सटेट देक",
+                "branch_code": "",
+                "email": "",
+                "phone": "",
+                "micr": "",
+                "relationship_label": "",
+                "mop": "",
+                "nom_reg_no": "",
+                "continuation": "",
+                "branch_manager_stamp_present": false
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 11,
+                    "invalid_fields": 11,
+                    "fields_with_warnings": 9,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "State Bank of India",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "भारतीय सटेट देक",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_code": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "email": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "phone": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "micr": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "relationship_label": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "mop": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "nom_reg_no": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "continuation": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 9.09,
+                "matched_fields": 2,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "State Bank of India",
+                        "extracted": "State Bank of India",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "भारतीय स्टेट बैंक",
+                        "extracted": "भारतीय सटेट देक",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 81.25
+                    },
+                    "branch_name": {
+                        "expected": "Chennai Main",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_code": {
+                        "expected": "61255",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "email": {
+                        "expected": "sbin.0004567@bank.co.in",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "07489165",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "micr": {
+                        "expected": "568513756",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "ifsc": {
+                        "expected": "SBIN0004567",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_holder": {
+                        "expected": "Mr. Kabir Iyer",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Suresh Iyer",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "cif_number": {
+                        "expected": "096581461",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_number": {
+                        "expected": "31026166816901",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "17B Lake View Road Chennai Tamil Nadu 600041",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_opened": {
+                        "expected": "22/12/2011",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000652848",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "pan_number": {
+                        "expected": "KABPI2212M",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_issue": {
+                        "expected": "22/12/2011",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "C\n@\nभारतीय सटेट देक\n$t13\na)e^9\n%9 @****3\nvJJ८J४७७७७\n6u \n1\n\n\n0\n/3\n\nvणJv७9\n0",
+            "processing_time_seconds": 8.7123
+        },
+        "tesseract": {
+            "extracted_data": {
+                "bank_name": "State Bank of India",
+                "branch_name": "",
+                "ifsc": "WEER0C0WNTB",
+                "account_holder": "io Eee ewe or ms eee",
+                "father_name": "",
+                "cif_number": "",
+                "account_number": "",
+                "account_type": "",
+                "address": "1 Lake View Road Chennai Tamil SaduCOwTua TON",
+                "account_opened": "",
+                "pan_number": "",
+                "date_of_issue": "",
+                "hindi_bank_name": "भारतीय सूटेट बैक",
+                "branch_code": "",
+                "email": "",
+                "phone": "",
+                "micr": "",
+                "relationship_label": "",
+                "mop": "",
+                "nom_reg_no": "",
+                "continuation": "",
+                "branch_manager_stamp_present": false
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 14,
+                    "invalid_fields": 8,
+                    "fields_with_warnings": 9,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "State Bank of India",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "WEER0C0WNTB",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "io Eee ewe or ms eee",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "1 Lake View Road Chennai Tamil SaduCOwTua TON",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "भारतीय सूटेट बैक",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_code": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "email": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "phone": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "micr": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "relationship_label": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "mop": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "nom_reg_no": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "continuation": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 13.64,
+                "matched_fields": 3,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "State Bank of India",
+                        "extracted": "State Bank of India",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "भारतीय स्टेट बैंक",
+                        "extracted": "भारतीय सूटेट बैक",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 90.91
+                    },
+                    "branch_name": {
+                        "expected": "Chennai Main",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_code": {
+                        "expected": "61255",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "email": {
+                        "expected": "sbin.0004567@bank.co.in",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "07489165",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "micr": {
+                        "expected": "568513756",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "ifsc": {
+                        "expected": "SBIN0004567",
+                        "extracted": "WEER0C0WNTB",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_holder": {
+                        "expected": "Mr. Kabir Iyer",
+                        "extracted": "io Eee ewe or ms eee",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 24.24
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Suresh Iyer",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "cif_number": {
+                        "expected": "096581461",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_number": {
+                        "expected": "31026166816901",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "17B Lake View Road Chennai Tamil Nadu 600041",
+                        "extracted": "1 Lake View Road Chennai Tamil SaduCOwTua TON",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 78.65
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_opened": {
+                        "expected": "22/12/2011",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000652848",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "pan_number": {
+                        "expected": "KABPI2212M",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_issue": {
+                        "expected": "22/12/2011",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "भारतीय सूटेट बैक\n\ncr weer\nmocownt Be. +\nae te .\n\nio 7 Eee @ewe or ms eee\nwel Cre ss aoe\n« wemee\nhe er — ‘\neen tree Ae pening Oe\n0७७ %+ 1 461 — 0० के. .\n33३ ५३६७ ५३७७१. Cortener« Pate\nOLAS SAVINGS RARE ACCOUNT ere of leew +\n\n1 हक Lake View Road Chennai Tamil SaduCOwTua TON\n९०७९1)\n\nsims\nnun\n0७७७-७५ ५2७५०\n&+##13221\nnae",
+            "processing_time_seconds": 1.1456
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "bank_name": "State Bank of India",
+                "branch_name": "Chennai Main",
+                "ifsc": "MAIN0DE6125",
+                "account_holder": "Mr. Kabir Iyer",
+                "father_name": "Suresh Iyer",
+                "cif_number": "096581461",
+                "account_number": "31026166816901",
+                "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+                "address": "17B Lake View Road Chenna1 Tam11 NaduCONTINUATION",
+                "account_opened": "22/12/2011",
+                "pan_number": "SCSBN0004S",
+                "date_of_issue": "22/12/2011",
+                "hindi_bank_name": "भारतीय",
+                "branch_code": "61256",
+                "email": "",
+                "phone": "",
+                "micr": "568513756",
+                "relationship_label": "S/O",
+                "mop": "SINGLE",
+                "nom_reg_no": "00000652848",
+                "continuation": "CONTINUATION",
+                "branch_manager_stamp_present": false
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 22,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "State Bank of India",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "Chennai Main",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "MAIN0DE6125",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "Mr. Kabir Iyer",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "Suresh Iyer",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "096581461",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "31026166816901",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "REGULAR SAVINGS BANK ACCOUNT",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "17B Lake View Road Chenna1 Tam11 NaduCONTINUATION",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "22/12/2011",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "SCSBN0004S",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "22/12/2011",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "भारतीय",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_code": {
+                        "value": "61256",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "email": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "phone": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "micr": {
+                        "value": "568513756",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "relationship_label": {
+                        "value": "S/O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "mop": {
+                        "value": "SINGLE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "nom_reg_no": {
+                        "value": "00000652848",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "continuation": {
+                        "value": "CONTINUATION",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 68.18,
+                "matched_fields": 15,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "State Bank of India",
+                        "extracted": "State Bank of India",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "भारतीय स्टेट बैंक",
+                        "extracted": "भारतीय",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 52.17
+                    },
+                    "branch_name": {
+                        "expected": "Chennai Main",
+                        "extracted": "Chennai Main",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_code": {
+                        "expected": "61255",
+                        "extracted": "61256",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "email": {
+                        "expected": "sbin.0004567@bank.co.in",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "07489165",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "micr": {
+                        "expected": "568513756",
+                        "extracted": "568513756",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "ifsc": {
+                        "expected": "SBIN0004567",
+                        "extracted": "MAIN0DE6125",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_holder": {
+                        "expected": "Mr. Kabir Iyer",
+                        "extracted": "Mr. Kabir Iyer",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "S/O",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "father_name": {
+                        "expected": "Suresh Iyer",
+                        "extracted": "Suresh Iyer",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "cif_number": {
+                        "expected": "096581461",
+                        "extracted": "096581461",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_number": {
+                        "expected": "31026166816901",
+                        "extracted": "31026166816901",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "REGULAR SAVINGS BANK ACCOUNT",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "address": {
+                        "expected": "17B Lake View Road Chennai Tamil Nadu 600041",
+                        "extracted": "17B Lake View Road Chenna1 Tam11 NaduCONTINUATION",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 73.12
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "SINGLE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "account_opened": {
+                        "expected": "22/12/2011",
+                        "extracted": "22/12/2011",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000652848",
+                        "extracted": "00000652848",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "pan_number": {
+                        "expected": "KABPI2212M",
+                        "extracted": "SCSBN0004S",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_issue": {
+                        "expected": "22/12/2011",
+                        "extracted": "22/12/2011",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "CONTINUATION",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "Branch: CHENNAI MAIN\nCode: 61256\nState\nEmail sbin 0004567@hanik.co in\nBuss. Hers: 10:00-16:00\nPhone No. 07489165\nMICR 568513756\nWFSC: SBIN0004567\nName\nMr. Kabir lyer\nMOP\nSINGLE\nB/D/B/o\nSURESH IYER\nA/c Opening Dt:\n22/12/2011\nCIF Number\n096581461\nNom Reg No:\n00000652848\nAccount No..\n31026166816901\nCustomer's PAN:\nKABP12212H\nA/c Type\nREGULAR SAVINGS BANK ACCOUNT\nDate of Issue :\nAddress\n17B Lake View Road Chenna1 Tam11 NaduCONTINUATION\n600041\naar qren\nBranch Mana\nभारतीय\nस्टेट\nबैक\nBranch: CHENNAMAN\nEmat sbin 00045670bark.cein\nBuss. Hs: 10.00-10:00\nPhone Ne: 07489165\nMICR S685137S6\nFSC SBN0004S67\n:\nSRESN\nTYER\nA/e opening Dts\nNom Reg No\nKABP12212N\nREGULAR SAVINGS MANK ACCOUNT\nDate of Iesue :\n178 Lake View Road Chennat Tanil SaducoNTINuAnON\nBanh",
+            "processing_time_seconds": 65.9429
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "bank_name": "",
+                "branch_name": "Chennai Man",
+                "ifsc": "IMAN0DE6125",
+                "account_holder": "",
+                "father_name": "Hili Rs Gos Eopening De",
+                "cif_number": "199185960",
+                "account_number": "",
+                "account_type": "",
+                "address": "Branch CHENNAI MAN",
+                "account_opened": "22/12/2011",
+                "pan_number": "",
+                "date_of_issue": "22/12/2011",
+                "hindi_bank_name": "",
+                "branch_code": "61255",
+                "email": "",
+                "phone": "",
+                "micr": "568513750",
+                "relationship_label": "",
+                "mop": "SINGLE",
+                "nom_reg_no": "00000652848",
+                "continuation": "CONTINUATION",
+                "branch_manager_stamp_present": false
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 17,
+                    "invalid_fields": 5,
+                    "fields_with_warnings": 5,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "Chennai Man",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "IMAN0DE6125",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "Hili Rs Gos Eopening De",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "199185960",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "Branch CHENNAI MAN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "22/12/2011",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "22/12/2011",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "branch_code": {
+                        "value": "61255",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "email": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "phone": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "micr": {
+                        "value": "568513750",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "relationship_label": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "mop": {
+                        "value": "SINGLE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "nom_reg_no": {
+                        "value": "00000652848",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "continuation": {
+                        "value": "CONTINUATION",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 31.82,
+                "matched_fields": 7,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "State Bank of India",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "भारतीय स्टेट बैंक",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_name": {
+                        "expected": "Chennai Main",
+                        "extracted": "Chennai Man",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 95.65
+                    },
+                    "branch_code": {
+                        "expected": "61255",
+                        "extracted": "61255",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "email": {
+                        "expected": "sbin.0004567@bank.co.in",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "07489165",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "micr": {
+                        "expected": "568513756",
+                        "extracted": "568513750",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "ifsc": {
+                        "expected": "SBIN0004567",
+                        "extracted": "IMAN0DE6125",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_holder": {
+                        "expected": "Mr. Kabir Iyer",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Suresh Iyer",
+                        "extracted": "Hili Rs Gos Eopening De",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 17.65
+                    },
+                    "cif_number": {
+                        "expected": "096581461",
+                        "extracted": "199185960",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_number": {
+                        "expected": "31026166816901",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "17B Lake View Road Chennai Tamil Nadu 600041",
+                        "extracted": "Branch CHENNAI MAN",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 45.16
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "SINGLE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "account_opened": {
+                        "expected": "22/12/2011",
+                        "extracted": "22/12/2011",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000652848",
+                        "extracted": "00000652848",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "pan_number": {
+                        "expected": "KABPI2212M",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_issue": {
+                        "expected": "22/12/2011",
+                        "extracted": "22/12/2011",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "CONTINUATION",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "Branch:CHENNAI MAN\nCode:61255\nState\nBss.Hs:10:00-16:00\n900\nMICR:568513750\nFKCSE\nSINGLE\n8/D/8/0\nHILI RS3GOS\neopening\nDE\n22/12/2011\n199185960\nNon Reg\n00000652848\nMe-Type\nRECULAR SAVINGS MANK AOCOUN\nDate of\nIesue\n22/12/2011\nNsdress\n178 Lake VievRoad\nTamLl\nCONTINUATION\n600041",
+            "processing_time_seconds": 1.3527
+        },
+        "doctr": {
+            "extracted_data": {
+                "bank_name": "",
+                "branch_name": "",
+                "ifsc": "IMAN0DE6125",
+                "account_holder": "",
+                "father_name": "",
+                "cif_number": "096501461",
+                "account_number": "31020106810001",
+                "account_type": "",
+                "address": "Branch CHENNAI MAN",
+                "account_opened": "22/12/2011",
+                "pan_number": "",
+                "date_of_issue": "22/12/2011",
+                "hindi_bank_name": "",
+                "branch_code": "61256",
+                "email": "",
+                "phone": "",
+                "micr": "",
+                "relationship_label": "",
+                "mop": "",
+                "nom_reg_no": "00000652848",
+                "continuation": "CONTINUATION",
+                "branch_manager_stamp_present": false
+            },
+            "classification": {
+                "document_type": "passbook",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "passbook",
+                    "total_fields_checked": 22,
+                    "valid_fields": 16,
+                    "invalid_fields": 6,
+                    "fields_with_warnings": 7,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "bank_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "branch_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "ifsc": {
+                        "value": "IMAN0DE6125",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_holder": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "cif_number": {
+                        "value": "096501461",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_number": {
+                        "value": "31020106810001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_type": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "Branch CHENNAI MAN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "account_opened": {
+                        "value": "22/12/2011",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "pan_number": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "date_of_issue": {
+                        "value": "22/12/2011",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_bank_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "branch_code": {
+                        "value": "61256",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "email": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "phone": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "micr": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "relationship_label": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "mop": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "nom_reg_no": {
+                        "value": "00000652848",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "continuation": {
+                        "value": "CONTINUATION",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "branch_manager_stamp_present": {
+                        "value": false,
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 18.18,
+                "matched_fields": 4,
+                "total_fields": 22,
+                "fields": {
+                    "bank_name": {
+                        "expected": "State Bank of India",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "hindi_bank_name": {
+                        "expected": "भारतीय स्टेट बैंक",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_name": {
+                        "expected": "Chennai Main",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "branch_code": {
+                        "expected": "61255",
+                        "extracted": "61256",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "email": {
+                        "expected": "sbin.0004567@bank.co.in",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "phone": {
+                        "expected": "07489165",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "micr": {
+                        "expected": "568513756",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "ifsc": {
+                        "expected": "SBIN0004567",
+                        "extracted": "IMAN0DE6125",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_holder": {
+                        "expected": "Mr. Kabir Iyer",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "relationship_label": {
+                        "expected": "S/O",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Suresh Iyer",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "cif_number": {
+                        "expected": "096581461",
+                        "extracted": "096501461",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_number": {
+                        "expected": "31026166816901",
+                        "extracted": "31020106810001",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_type": {
+                        "expected": "REGULAR SAVINGS BANK ACCOUNT",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "17B Lake View Road Chennai Tamil Nadu 600041",
+                        "extracted": "Branch CHENNAI MAN",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 45.16
+                    },
+                    "mop": {
+                        "expected": "SINGLE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "account_opened": {
+                        "expected": "22/12/2011",
+                        "extracted": "22/12/2011",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "nom_reg_no": {
+                        "expected": "00000652848",
+                        "extracted": "00000652848",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "pan_number": {
+                        "expected": "KABPI2212M",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_issue": {
+                        "expected": "22/12/2011",
+                        "extracted": "22/12/2011",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "continuation": {
+                        "expected": "CONTINUATION",
+                        "extracted": "CONTINUATION",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "branch_manager_stamp_present": {
+                        "expected": true,
+                        "extracted": false,
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    }
+                }
+            },
+            "raw_text": "das\nBranch CHENNAI MAN\nCode 61256\nHRata ACC\nState\n-\nE sbnocome/gaacen\nBa H 10001000\n-\nnere No o/e91es\nMCR wasuane\nISC senco0me?\nsue\nM. Kaber hyer\nMP\nsIcuE\ns/0//e\nsuEsa ITE\nMe opening DEE\n22/12/2011\ncIF sater\n096501461\n- Res a\n00000652848\nAccount :\n31020106810001\nCustomer'e PANE\nMABP12212M\nMe Type\nMCULM BAVINCA MAK ACCOUNT\nDate et leese .\n22/12/2011\nAdress\n178 Late View Boad Chensal Tanil NAd-CONTINUATION\n600041\n- 1\nBanc Manage",
+            "processing_time_seconds": 6.267
+        }
+    }
+}

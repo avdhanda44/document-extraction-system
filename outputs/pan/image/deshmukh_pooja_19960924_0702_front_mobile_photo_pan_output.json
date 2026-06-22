@@ -1,0 +1,735 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/pan/image/deshmukh_pooja_19960924_0702_front_mobile_photo.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/pan/image/deshmukh_pooja_19960924_0702_front_mobile_photo.json",
+        "side": "front",
+        "quality": "mobile_photo"
+    },
+    "ground_truth": {
+        "pan_number": "HIJPD8246R",
+        "name": "Pooja Deshmukh",
+        "hindi_name": "पूजा देशमुख",
+        "father_name": "Mahesh Deshmukh",
+        "hindi_father_name": "महेश देशमुख",
+        "date_of_birth": "1996-09-24",
+        "signature_present": true,
+        "card_issue_date_text": "15112021"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "pan_number": "HIJPDBZAGR",
+                "name": "POOJA DESHMUKH",
+                "father_name": "MAHESH DESHMUKH",
+                "date_of_birth": "1996-09-24",
+                "hindi_name": "पूजा",
+                "hindi_father_name": "स्थायी लेखा संख्या कार्ड",
+                "signature_present": true,
+                "card_issue_date_text": "15112021"
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 87.5,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 7,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "HIJPDBZAGR",
+                        "valid": false,
+                        "error": "PAN number must match format AAAAA9999A",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "POOJA DESHMUKH",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "MAHESH DESHMUKH",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1996-09-24",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "पूजा",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_father_name": {
+                        "value": "स्थायी लेखा संख्या कार्ड",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "signature_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "card_issue_date_text": {
+                        "value": "15112021",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 62.5,
+                "matched_fields": 5,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "HIJPD8246R",
+                        "extracted": "HIJPDBZAGR",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "name": {
+                        "expected": "Pooja Deshmukh",
+                        "extracted": "POOJA DESHMUKH",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "पूजा देशमुख",
+                        "extracted": "पूजा",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 53.33
+                    },
+                    "father_name": {
+                        "expected": "Mahesh Deshmukh",
+                        "extracted": "MAHESH DESHMUKH",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_father_name": {
+                        "expected": "महेश देशमुख",
+                        "extracted": "स्थायी लेखा संख्या कार्ड",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 17.14
+                    },
+                    "date_of_birth": {
+                        "expected": "1996-09-24",
+                        "extracted": "1996-09-24",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "15112021",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "आयकर वाभाग\nभारत सरकार\nINCOME TAX DEPARTMENT\n+u R\nGOVT. OF INDIA\nस्थायी लेखा संख्या कार्ड\nPermanent Account Number\nHIJPDBZAGR\nनाम / Name\nPOOJA DESHMUKH\nपूजा\nपता का नाम\nFather s Name\nMAHESH DESHMUKH\n15112021\nमहेश\nजनम की तारीखा\nDate of Birth\nहसताकपर\n24/09/1996\n Signature\nदेशमुख\nदेशमुख",
+            "processing_time_seconds": 5.6381
+        },
+        "tesseract": {
+            "extracted_data": {
+                "pan_number": "HIJPD8246R",
+                "name": "MAHESH DESHMUKH",
+                "father_name": "MAHESH DESHMUKH",
+                "date_of_birth": "1996-09-24",
+                "hindi_name": "महेश देशमुख",
+                "hindi_father_name": "स्थायी लेखा संख्या कार् ड",
+                "signature_present": true,
+                "card_issue_date_text": "15112021"
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 75.0,
+                "confidence_level": "medium"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 8,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "HIJPD8246R",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "MAHESH DESHMUKH",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "MAHESH DESHMUKH",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1996-09-24",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "महेश देशमुख",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_father_name": {
+                        "value": "स्थायी लेखा संख्या कार् ड",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "signature_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "card_issue_date_text": {
+                        "value": "15112021",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 62.5,
+                "matched_fields": 5,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "HIJPD8246R",
+                        "extracted": "HIJPD8246R",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Pooja Deshmukh",
+                        "extracted": "MAHESH DESHMUKH",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 68.97
+                    },
+                    "hindi_name": {
+                        "expected": "पूजा देशमुख",
+                        "extracted": "महेश देशमुख",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 63.64
+                    },
+                    "father_name": {
+                        "expected": "Mahesh Deshmukh",
+                        "extracted": "MAHESH DESHMUKH",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_father_name": {
+                        "expected": "महेश देशमुख",
+                        "extracted": "स्थायी लेखा संख्या कार् ड",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 16.67
+                    },
+                    "date_of_birth": {
+                        "expected": "1996-09-24",
+                        "extracted": "1996-09-24",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "15112021",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "आयकर FART & भारतसरकार भारत सरकार\nINCOME TAX DEPARTMENT: GOVT. OF INDIA\n\nस्थायी लेखा संख्या कार्‌ड\n\nPermanent Account Number ( r\n\nHIJPD8246R\n\nPOOJA DESHMUKH\nपूजा देशमुख\n\nपति का नाम / Father's Name 15112021\nMAHESH DESHMUKH\nमहेश देशमुख\n\nजनम की तारीख/\n\nDate of Birth\n24/09/1996\n\nSSS cS RCE\n\nहसूताकूषर / Signature",
+            "processing_time_seconds": 0.9268
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "pan_number": "HIJPD8246R",
+                "name": "POOJA DESHMUKH",
+                "father_name": "MAHESH DESHMUKH",
+                "date_of_birth": "1996-09-04",
+                "hindi_name": "रूजा",
+                "hindi_father_name": "वभाग",
+                "signature_present": true,
+                "card_issue_date_text": "15112021"
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 75.0,
+                "confidence_level": "medium"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 8,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "HIJPD8246R",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "POOJA DESHMUKH",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "MAHESH DESHMUKH",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1996-09-04",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "रूजा",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_father_name": {
+                        "value": "वभाग",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "signature_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "card_issue_date_text": {
+                        "value": "15112021",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 62.5,
+                "matched_fields": 5,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "HIJPD8246R",
+                        "extracted": "HIJPD8246R",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Pooja Deshmukh",
+                        "extracted": "POOJA DESHMUKH",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "पूजा देशमुख",
+                        "extracted": "रूजा",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 40.0
+                    },
+                    "father_name": {
+                        "expected": "Mahesh Deshmukh",
+                        "extracted": "MAHESH DESHMUKH",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_father_name": {
+                        "expected": "महेश देशमुख",
+                        "extracted": "वभाग",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0.0
+                    },
+                    "date_of_birth": {
+                        "expected": "1996-09-24",
+                        "extracted": "1996-09-04",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "15112021",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "3R\n北\nINCOME TAX DEPARTMENT\nT R\nGOVT. OF INDIA\nPermanent Account Number\nHIJPD8246R\n/Name\nPOOJA DESHMUKH\nFather's Name\n15112021\nMAHESH DESHMUKH\nate of Birth\ndi/ Signature\n4/09/1996\nआयकर\nवभाग\nभारत सरकार\nINCOME\nTAX\nDEPARTMENT\nसरकार\nस्थायी\nलेखा\nसंख्या कार्ड\nनाम/Name\nPOOJA\nDESHMUKH\nरूजा\nदेशमुख\nपतिा\nका नाम/ Father's Name\nMAHESH\nमहेश\nतनम\nकी तारीखा\nate\nof Birth\nहस्ताक्षर ISignature",
+            "processing_time_seconds": 14.9613
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "pan_number": "HIJPD8246R",
+                "name": "Date of Birth",
+                "father_name": "MAHESHDESHMUKH 15112021",
+                "date_of_birth": "1996-09-24",
+                "hindi_name": "",
+                "hindi_father_name": "",
+                "signature_present": true,
+                "card_issue_date_text": "15112021"
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 62.5,
+                "confidence_level": "medium"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 8,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "HIJPD8246R",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "Date of Birth",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "MAHESHDESHMUKH 15112021",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1996-09-24",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "signature_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "card_issue_date_text": {
+                        "value": "15112021",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 4,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "HIJPD8246R",
+                        "extracted": "HIJPD8246R",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Pooja Deshmukh",
+                        "extracted": "Date of Birth",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 22.22
+                    },
+                    "hindi_name": {
+                        "expected": "पूजा देशमुख",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Mahesh Deshmukh",
+                        "extracted": "MAHESHDESHMUKH 15112021",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 73.68
+                    },
+                    "hindi_father_name": {
+                        "expected": "महेश देशमुख",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1996-09-24",
+                        "extracted": "1996-09-24",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "15112021",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "lhlhcbhlle\nINCOMETAXDEPARTMENT\nGOVT.OFINDIA\nPermanent Account Number\nHIJPD8246R\n/Name\nPOOJADESHMUKH\nqfatT/Father'sName\nMAHESHDESHMUKH\n15112021\nDate of Birth\n/Signature\n24/09/1996",
+            "processing_time_seconds": 0.7355
+        },
+        "doctr": {
+            "extracted_data": {
+                "pan_number": "HIJPD8246R",
+                "name": "POOJA DESHMUKH",
+                "father_name": "MAHESH DESHMUKH",
+                "date_of_birth": "1996-09-24",
+                "hindi_name": "",
+                "hindi_father_name": "",
+                "signature_present": true,
+                "card_issue_date_text": "15112021"
+            },
+            "classification": {
+                "document_type": "pan_card",
+                "confidence_percent": 62.5,
+                "confidence_level": "medium"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "pan_card",
+                    "total_fields_checked": 8,
+                    "valid_fields": 8,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "pan_number": {
+                        "value": "HIJPD8246R",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "name": {
+                        "value": "POOJA DESHMUKH",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "father_name": {
+                        "value": "MAHESH DESHMUKH",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date_of_birth": {
+                        "value": "1996-09-24",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "hindi_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "hindi_father_name": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "signature_present": {
+                        "value": true,
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "card_issue_date_text": {
+                        "value": "15112021",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 6,
+                "total_fields": 8,
+                "fields": {
+                    "pan_number": {
+                        "expected": "HIJPD8246R",
+                        "extracted": "HIJPD8246R",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "name": {
+                        "expected": "Pooja Deshmukh",
+                        "extracted": "POOJA DESHMUKH",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_name": {
+                        "expected": "पूजा देशमुख",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "father_name": {
+                        "expected": "Mahesh Deshmukh",
+                        "extracted": "MAHESH DESHMUKH",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "hindi_father_name": {
+                        "expected": "महेश देशमुख",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date_of_birth": {
+                        "expected": "1996-09-24",
+                        "extracted": "1996-09-24",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "signature_present": {
+                        "expected": true,
+                        "extracted": true,
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "card_issue_date_text": {
+                        "expected": "15112021",
+                        "extracted": "15112021",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    }
+                }
+            },
+            "raw_text": "31pYOR ATATTT\nHRd HOR\nINCOME TAX DEPARTMENT à - FR\nGOVT.OF INDIA\nTATAT MAT HIGHT CRE\nPermanent Account Number (\n-\nHIJPD8246R\nT4/Name\nPOOJA DESHMUKH\nquit carper\ngfar at HTH/ Father's Name\nMAHESH DESHMUKH\n15112021\nHEAT Paryer\nVAH it ARTGl\nDate of Birth\nBediar /Signature\n24/09/1996",
+            "processing_time_seconds": 2.4569
+        }
+    }
+}

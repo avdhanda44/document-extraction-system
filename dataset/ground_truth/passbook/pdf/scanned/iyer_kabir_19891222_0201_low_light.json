@@ -1,0 +1,31 @@
+{
+    "pdf_type": "scanned",
+    "variant": "low_light",
+    "pages": {
+        "1": "passbook"
+    },
+    "passbook": {
+        "bank_name": "State Bank of India",
+        "hindi_bank_name": "भारतीय स्टेट बैंक",
+        "branch_name": "Chennai Main",
+        "branch_code": "61255",
+        "email": "sbin.0004567@bank.co.in",
+        "phone": "07489165",
+        "micr": "568513756",
+        "ifsc": "SBIN0004567",
+        "account_holder": "Mr. Kabir Iyer",
+        "relationship_label": "S/O",
+        "father_name": "Suresh Iyer",
+        "cif_number": "096581461",
+        "account_number": "31026166816901",
+        "account_type": "REGULAR SAVINGS BANK ACCOUNT",
+        "address": "17B Lake View Road Chennai Tamil Nadu 600041",
+        "mop": "SINGLE",
+        "account_opened": "22/12/2011",
+        "nom_reg_no": "00000652848",
+        "pan_number": "KABPI2212M",
+        "date_of_issue": "22/12/2011",
+        "continuation": "CONTINUATION",
+        "branch_manager_stamp_present": true
+    }
+}

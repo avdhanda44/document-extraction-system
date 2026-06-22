@@ -1,0 +1,17 @@
+{
+    "pdf_type": "scanned",
+    "variant": "jpeg_heavy_compression",
+    "pages": {
+        "1": "front"
+    },
+    "front": {
+        "pan_number": "HIJPD8246R",
+        "name": "Pooja Deshmukh",
+        "hindi_name": "पूजा देशमुख",
+        "father_name": "Mahesh Deshmukh",
+        "hindi_father_name": "महेश देशमुख",
+        "date_of_birth": "1996-09-24",
+        "signature_present": true,
+        "card_issue_date_text": "15112021"
+    }
+}

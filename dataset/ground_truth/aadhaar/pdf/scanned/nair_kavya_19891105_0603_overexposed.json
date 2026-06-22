@@ -1,0 +1,38 @@
+{
+    "pdf_type": "scanned",
+    "pages": {
+        "1": "front",
+        "2": "back"
+    },
+    "front": {
+        "aadhaar_number": "0603 3667 5670",
+        "vid": "",
+        "name": "Kavya Nair",
+        "hindi_name": "काव्या नायर",
+        "date_of_birth": "1989-11-05",
+        "year_of_birth": "",
+        "gender": "FEMALE"
+    },
+    "back": {
+        "aadhaar_number": "0603 3667 5670",
+        "vid": "",
+        "relationship_label": "W/O",
+        "care_of": "",
+        "father_name": "",
+        "husband_name": "Rohit Nair",
+        "hindi_relationship_label": "पत्नी",
+        "hindi_care_of": "",
+        "hindi_father_name": "",
+        "hindi_husband_name": "रोहित नायर",
+        "address": "27 Marine Drive Kochi Kerala 682031",
+        "hindi_address": "27 मअरइनए दरइवए कओचइ कएरअलअ 682031",
+        "hindi_address_lines": [
+            "पता:",
+            "पत्नी: रोहित नायर",
+            "27, मअरइनए दरइवए",
+            "कओचइ, कएरअलअ",
+            "682031"
+        ],
+        "pincode": "682031"
+    }
+}

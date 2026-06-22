@@ -1,0 +1,25 @@
+{
+    "pdf_type": "digital",
+    "variant": "partial_content",
+    "pages": {
+        "1": "front"
+    },
+    "intentionally_unavailable_fields": {
+        "front": [
+            "name",
+            "hindi_name",
+            "father_name",
+            "hindi_father_name"
+        ]
+    },
+    "front": {
+        "pan_number": "KLMPC9364T",
+        "name": "",
+        "hindi_name": "",
+        "father_name": "",
+        "hindi_father_name": "",
+        "date_of_birth": "1988-12-06",
+        "signature_present": true,
+        "card_issue_date_text": "15112021"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "pdf_type": "scanned",
+    "variant": "skewed",
+    "pages": {
+        "1": "front"
+    },
+    "front": {
+        "pan_number": "KLMPC9364T",
+        "name": "Rahul Chatterjee",
+        "hindi_name": "राहुल चटर्जी",
+        "father_name": "Subhash Chatterjee",
+        "hindi_father_name": "सुभाष चटर्जी",
+        "date_of_birth": "1988-12-06",
+        "signature_present": true,
+        "card_issue_date_text": "15112021"
+    }
+}

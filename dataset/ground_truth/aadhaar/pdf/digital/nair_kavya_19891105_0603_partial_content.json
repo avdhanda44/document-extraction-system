@@ -1,0 +1,51 @@
+{
+    "pdf_type": "digital",
+    "variant": "partial_content",
+    "pages": {
+        "1": "front",
+        "2": "back"
+    },
+    "intentionally_unavailable_fields": {
+        "front": [
+            "name",
+            "hindi_name"
+        ],
+        "back": [
+            "relationship_label",
+            "hindi_relationship_label",
+            "husband_name",
+            "hindi_husband_name"
+        ]
+    },
+    "front": {
+        "aadhaar_number": "0603 3667 5670",
+        "vid": "",
+        "name": "",
+        "hindi_name": "",
+        "date_of_birth": "1989-11-05",
+        "year_of_birth": "",
+        "gender": "FEMALE"
+    },
+    "back": {
+        "aadhaar_number": "0603 3667 5670",
+        "vid": "",
+        "relationship_label": "",
+        "care_of": "",
+        "father_name": "",
+        "husband_name": "",
+        "hindi_relationship_label": "",
+        "hindi_care_of": "",
+        "hindi_father_name": "",
+        "hindi_husband_name": "",
+        "address": "27 Marine Drive Kochi Kerala 682031",
+        "hindi_address": "27 मअरइनए दरइवए कओचइ कएरअलअ 682031",
+        "hindi_address_lines": [
+            "पता:",
+            "पत्नी: रोहित नायर",
+            "27, मअरइनए दरइवए",
+            "कओचइ, कएरअलअ",
+            "682031"
+        ],
+        "pincode": "682031"
+    }
+}
