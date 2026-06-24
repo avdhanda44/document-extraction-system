@@ -1,7 +1,13 @@
 import unittest
+from pathlib import Path
+from unittest.mock import patch
 
 from Backend.json_generator import get_sheet_rows_and_headers
-from main import compare_with_ground_truth, extract_invoice_fields_from_text
+from main import (
+    compare_with_ground_truth,
+    extract_invoice_fields_from_text,
+    process_document_pdf_folder,
+)
 
 
 class InvoiceComparisonTests(unittest.TestCase):
@@ -93,6 +99,32 @@ class InvoiceReportTests(unittest.TestCase):
         self.assertEqual(
             sheets[2]["rows"][1]["complete record rate (%)"],
             100,
+        )
+
+
+class ScannedPdfOutputTests(unittest.TestCase):
+    @patch("main.save_accuracy_excel")
+    @patch("main.list_document_pdfs", return_value=[])
+    @patch("main.get_available_ocr_models", return_value=["tesseract"])
+    def test_scanned_pdf_report_uses_scanned_output_folder(
+        self,
+        _get_models,
+        _list_pdfs,
+        save_accuracy_excel,
+    ):
+        save_accuracy_excel.return_value = Path("report.xlsx")
+
+        process_document_pdf_folder(
+            "aadhaar",
+            Path("dataset/generated_docs/aadhaar/pdf/scanned"),
+            Path("dataset/ground_truth/aadhaar/pdf/scanned"),
+            object(),
+            "aadhaar_pdf_model_accuracy.xlsx",
+        )
+
+        self.assertEqual(
+            save_accuracy_excel.call_args.kwargs["output_format"],
+            "pdf/scanned",
         )
 
 

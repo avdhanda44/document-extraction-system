@@ -170,7 +170,8 @@ Batch outputs are saved under:
 
 ```text
 outputs/<document_type>/image/
-outputs/<document_type>/pdf/
+outputs/<document_type>/pdf/scanned/
+outputs/<document_type>/pdf/digital/
 ```
 
 Each output folder contains matching JSON files and an Excel report. Reports contain `accuracy`, `quality_front`, `quality_back`, and `summary` sheets with model accuracy and processing times.
@@ -180,10 +181,10 @@ outputs/aadhaar/image/aadhaar_model_accuracy.xlsx
 outputs/pan/image/pan_model_accuracy.xlsx
 outputs/passbook/image/passbook_model_accuracy.xlsx
 outputs/invoice/image/invoice_model_accuracy.xlsx
-outputs/aadhaar/pdf/aadhaar_pdf_model_accuracy.xlsx
-outputs/pan/pdf/pan_pdf_model_accuracy.xlsx
-outputs/passbook/pdf/passbook_pdf_model_accuracy.xlsx
-outputs/invoice/pdf/invoice_pdf_model_accuracy.xlsx
+outputs/aadhaar/pdf/scanned/aadhaar_pdf_model_accuracy.xlsx
+outputs/pan/pdf/scanned/pan_pdf_model_accuracy.xlsx
+outputs/passbook/pdf/scanned/passbook_pdf_model_accuracy.xlsx
+outputs/invoice/pdf/scanned/invoice_pdf_model_accuracy.xlsx
 outputs/aadhaar/pdf/digital/aadhaar_digital_pdf_extractor_accuracy.xlsx
 outputs/pan/pdf/digital/pan_digital_pdf_extractor_accuracy.xlsx
 outputs/passbook/pdf/digital/passbook_digital_pdf_extractor_accuracy.xlsx
@@ -196,6 +197,8 @@ outputs/
 └── <document_type>/
     ├── image/
     ├── pdf/
+    │   ├── scanned/
+    │   └── digital/
     └── docx/
 ```
 
@@ -251,6 +254,10 @@ Invoice batch reports contain:
 - `accuracy`: per-image model accuracy and processing time
 - `field_accuracy`: average accuracy and similarity for each evaluated field
 - `summary`: average accuracy, speed, failures, and complete-record rate by model
+
+Scanned PDF JSON and Excel reports are saved under
+`outputs/<document_type>/pdf/scanned/`. Digital PDF reports are saved under
+`outputs/<document_type>/pdf/digital/`.
 
 ## Extraction Logic
 

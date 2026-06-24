@@ -61,6 +61,10 @@ outputs/*
 !outputs/invoice/image/.gitkeep
 !outputs/invoice/pdf/
 !outputs/invoice/pdf/.gitkeep
+!outputs/invoice/pdf/scanned/
+!outputs/invoice/pdf/scanned/.gitkeep
+!outputs/invoice/pdf/digital/
+!outputs/invoice/pdf/digital/.gitkeep
 !outputs/invoice/docx/
 !outputs/invoice/docx/.gitkeep
 outputs 2/

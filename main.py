@@ -1924,6 +1924,7 @@ def process_document_pdf_folder(
     ground_truth_folder,
     process_model,
     excel_file_name,
+    output_format="pdf/scanned",
 ):
     model_names = get_available_ocr_models()
     excel_rows = []
@@ -2014,14 +2015,12 @@ def process_document_pdf_folder(
             "ground_truth": ground_truth,
             "page_results": pdf_page_outputs,
         }
-        relative_parent = pdf_path.relative_to(pdfs_folder).parent
-        output_format = Path("pdf") / relative_parent
         json_outputs.append(
             save_document_json_file(
                 pdf_path,
                 final_json,
                 document_name,
-                file_format=str(output_format),
+                file_format=output_format,
             )
         )
 
@@ -2030,7 +2029,7 @@ def process_document_pdf_folder(
         model_names,
         file_name=excel_file_name,
         output_subfolder=document_name,
-        output_format="pdf",
+        output_format=output_format,
     )
 
     return {
@@ -2290,8 +2289,8 @@ def process_passbook_pdf_folder():
 def process_invoice_pdf_folder():
     return process_document_pdf_folder(
         "invoice",
-        invoice_pdfs_folder,
-        invoice_pdf_ground_truth_folder,
+        invoice_pdfs_folder / "scanned",
+        invoice_pdf_ground_truth_folder / "scanned",
         process_invoice_image_with_model,
         "invoice_pdf_model_accuracy.xlsx",
     )
@@ -2387,7 +2386,8 @@ Output cleanup:
 Outputs:
   Single file JSON: outputs/<document_type>/<format>/<input_file_name>_output.json
   Batch image reports: outputs/<document_type>/image/
-  Batch PDF reports: outputs/<document_type>/pdf/
+  Scanned PDF reports: outputs/<document_type>/pdf/scanned/
+  Digital PDF reports: outputs/<document_type>/pdf/digital/
 """.strip()
     )
 
