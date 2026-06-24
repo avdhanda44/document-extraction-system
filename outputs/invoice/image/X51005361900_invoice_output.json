@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51005361900.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51005361900.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "TEO HENG STATIONERY & BOOKS",
+        "date": "23/01/2018",
+        "address": "NO.53,JALAN BESAR,45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+        "total": "18.00",
+        "source_image": "X51005361900.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "TED HENG STATIDNERY & BDDKS",
+                "date": "23/01/2018",
+                "address": "IO. 53. JALAN BESAR 4580D 8ATANG BERJUNITAL SELANGOR DARUL EHSAN TEI 03-3271 9072 FAY 03-3271 7481",
+                "total": "3271.90",
+                "source_image": "X51005361900.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TED HENG STATIDNERY & BDDKS",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "23/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "IO. 53. JALAN BESAR 4580D 8ATANG BERJUNITAL SELANGOR DARUL EHSAN TEI 03-3271 9072 FAY 03-3271 7481",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "3271.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005361900.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "TEO HENG STATIONERY & BOOKS",
+                        "extracted": "TED HENG STATIDNERY & BDDKS",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 84.0
+                    },
+                    "date": {
+                        "expected": "23/01/2018",
+                        "extracted": "23/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.53,JALAN BESAR,45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                        "extracted": "IO. 53. JALAN BESAR 4580D 8ATANG BERJUNITAL SELANGOR DARUL EHSAN TEI 03-3271 9072 FAY 03-3271 7481",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 71.34
+                    },
+                    "total": {
+                        "expected": "18.00",
+                        "extracted": "3271.90",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005361900.jpg",
+                        "extracted": "X51005361900.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "TED HENG STATIDNERY & BDDKS\n/001451837-1/1\nIO. ५३. JALAN BESAR ४५८०D 8ATANG BERJUNITAl\nSELANGOR DARUL EHSAN\nTEI-\n03-3271 9072\nFAY\n03-3271 7481\nGST No\n000681913856\nSIMPIHILD 'AKINVOI( 'l\nCASH\nReceipt No.\nC$1801/27037\nDate\n23/01/2018\nAMOUNT\nITLI\nQTY\nUP\nDISC%\n(RI)\nTP-24\n5\n1.32\n0.00\n6.60\nDOUBLE SIDED TISSUE TAPE 1८MIl\n9557546631393\n5\n2.08\n0.00\n10.38\nG SOFT ६ML QUICK DRY CORRECTION PEN\nTotal\n16.98\nSUB-TOAL (EX )\n16.98\nTUTAL TAX\n1.02\nROUNDING\n0.00\nTO'AL\n18.00\nCASH\n18.00\nCHANGIE\n0.00\nGST SUMMARY\nAlOLD\nIAY\nTAx CODL\n%\n(RIa)\n(mli)\nSR\n6.00\n16.98\n1.02\nTOTAE\n16.98\n1.02\nwota:\n*) Indicatea The Item Sold Has Been Related\nTo GST (Goods & Services Tax)\nGODDS SOLD ARE NOT RETURNABLE\nTHANK YOU\nQty\np5)2L2m>\n२ 3\nJAN\n२०i",
+            "processing_time_seconds": 38.5444
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "TED HENG STATIONERY & BOOKS",
+                "date": "23/01/2018",
+                "address": "NO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                "total": "1.02",
+                "source_image": "X51005361900.jpg",
+                "receipt_number": "CS1801/27037",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TED HENG STATIONERY & BOOKS",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "23/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "1.02",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005361900.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS1801/27037",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "TEO HENG STATIONERY & BOOKS",
+                        "extracted": "TED HENG STATIONERY & BOOKS",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 96.0
+                    },
+                    "date": {
+                        "expected": "23/01/2018",
+                        "extracted": "23/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.53,JALAN BESAR,45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                        "extracted": "NO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "18.00",
+                        "extracted": "1.02",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005361900.jpg",
+                        "extracted": "X51005361900.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "TED HENG STATIONERY & BOOKS\n\n(001451637-M)\nNO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI\nSELANGOR DARUL EHSAN\nTEL : 03-3271 9872 FAX; 03-3271 9481\nGST No. : 0006897913856\n\nSIMPLIFIED TAX INVOICE\n\nCASH\n\nReceipt No.: CS1801/27037 Date: 23/01/2018\n\ncid ary GE piety AMODNT\nTP-24 5 132 0.00 6.80 «\n- DOUBLE SIDED TISSUE TAPE 18MM\n\n9557546631393 5 2.08 0.00 10.38 +\n- G SOFT 6ML QUICK DRY CORRECTION PEN\nTotal Qty. : ®) 16.98\n\n>\nAIP 16.98\n\nSUB-TOTATSEX) > 5\n\nएछाओ ७ i ef | 1.02\nROUNDING _ Ay 5 “/१५ 0.00\nTOTAL : ४४ / 48.00\nCASH ar —/18.00\nCHANGE “i 0.00\n\n८5\n\n| ७श SUMMARY | SUMMARY\n\nTAX CODE % को r Gp\n\nSR 6.00 16.98 1.02\nTOTAL : 16.98 1.02\n\nNote: (*) indicated The Item Sold Has Been Related\nTo GST (Goods & Services Tax).\n\nGOODS SOLD ARE NOT RETURNABLE,\nTHANK YOU.",
+            "processing_time_seconds": 2.0003
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "TED HENG STATIONERY & BOOKS",
+                "date": "23/01/2018",
+                "address": "NO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                "total": "3271.98",
+                "source_image": "X51005361900.jpg",
+                "receipt_number": "CS1801/27037",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TED HENG STATIONERY & BOOKS",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "23/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "3271.98",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005361900.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS1801/27037",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "TEO HENG STATIONERY & BOOKS",
+                        "extracted": "TED HENG STATIONERY & BOOKS",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 96.0
+                    },
+                    "date": {
+                        "expected": "23/01/2018",
+                        "extracted": "23/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.53,JALAN BESAR,45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                        "extracted": "NO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "18.00",
+                        "extracted": "3271.98",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005361900.jpg",
+                        "extracted": "X51005361900.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "TED HENG STATIONERY & BOOKS\n(001451637-M)\nNO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI\nSELANGOR DARUL EHSAN\nTEL:03-3271 9872\nFAX:03-3271 9481\nGST No.: 000689913856\nSIMPLIFIEDTAXINVOICE\nCASH\nReceipt No.: CS1801/27037\nDate: 23/01/2018\nAMOUNT\nITEM\nQTY\nU/P\nDISC%\n(RM)\nTP-24\n5\n1.32\n0.00\n6.60*\n- DOUBLE SIDED TISSUE TAPE 18MM\n9557546631393\n2.08\n10.38*\n- G SOFT 6ML QUICK DRY CORRECTION PEN\nTotal Qty. :\n16.98\n10\nSUB-TOTAL (EX)\nTOTAL TAX\nJAN· 2010\n1.02\nROUNDING\nTOTAL\n18.00\nCHANGE\nGST SUMMARY\nTAX\nTAX CODE\n%\nSR\n6.00\nTOTAL :\nNote: (*) Indicated The Item Sold Has Been Related\nTo GST (Goods & Services Tax).\nGOODS SOLD ARE NOT RETURNABLE,\nTHANK YOU.",
+            "processing_time_seconds": 71.8526
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "TEO HENG STATIONERY & BOOKS",
+                "date": "23/01/2018",
+                "address": "NO.53,JALANBESAR,45600BATANG BERJUNTAI SELANGORDARULEHSAN",
+                "total": "18.00",
+                "source_image": "X51005361900.jpg",
+                "receipt_number": "CS1801/27037",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TEO HENG STATIONERY & BOOKS",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "23/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO.53,JALANBESAR,45600BATANG BERJUNTAI SELANGORDARULEHSAN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "18.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005361900.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS1801/27037",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "TEO HENG STATIONERY & BOOKS",
+                        "extracted": "TEO HENG STATIONERY & BOOKS",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "23/01/2018",
+                        "extracted": "23/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.53,JALAN BESAR,45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                        "extracted": "NO.53,JALANBESAR,45600BATANG BERJUNTAI SELANGORDARULEHSAN",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 96.61
+                    },
+                    "total": {
+                        "expected": "18.00",
+                        "extracted": "18.00",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51005361900.jpg",
+                        "extracted": "X51005361900.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "TEO HENG STATIONERY & BOOKS\n(001451637-M)\nNO.53,JALANBESAR,45600BATANG BERJUNTAI\nSELANGORDARULEHSAN\nTEL:03-32719872FAX:03-32719481\nGST No.:000689913856\nSIMPLIPIED TAXINYOICE\nCASH\nReceipt No.:CS1801/27037\nDate:23/01/2018\nITEM\nQTY\nU/P\nDISC%\n(RM)\nTP-24\n5\n.32\n0.00\n6.60\n-DOUBLESIDED\nTISSUE\nTAPE18MM\n9557546631393\n5\n2.08\n0.00\n10.38\n-GSOFT6MLQUICKDRYCORRECTIONPEN\nTotal Qty.:\n10\n16.98\nAI\n16.98\nTOTALTAX\n1.02\nROUNDING\n0.00\nTOTAL\n18.00\nCASH\n18.00\nCHANGE\n0.00\nGSTSUMMARY\nTAXCODE\n%\nAMOUNT\n(RM)\n(RM)\nTAX\nSR\n6.00\n16.98\n1.02\nTOTAL:\n16.98\n1.02\nNote:()Indicated TheItemSoldHasBeenRelated\nToGST(Goods&ServicesTax).\nGOODSSOLDARENOTRETURNABLE\nTHANKYOU.",
+            "processing_time_seconds": 1.6855
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "TEI HENG STATIONERY E BOOKS",
+                "date": "23/01/2018",
+                "address": "NO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                "total": "3271.98",
+                "source_image": "X51005361900.jpg",
+                "receipt_number": "CS1801/27037",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TEI HENG STATIONERY E BOOKS",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "23/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "3271.98",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005361900.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS1801/27037",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "TEO HENG STATIONERY & BOOKS",
+                        "extracted": "TEI HENG STATIONERY E BOOKS",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 92.31
+                    },
+                    "date": {
+                        "expected": "23/01/2018",
+                        "extracted": "23/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.53,JALAN BESAR,45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                        "extracted": "NO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI SELANGOR DARUL EHSAN",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "18.00",
+                        "extracted": "3271.98",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005361900.jpg",
+                        "extracted": "X51005361900.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "TEI HENG STATIONERY E BOOKS\n(001451637-M)\nNO. 53, JALAN BESAR, 45600 BATANG BERJUNTAI\nSELANGOR DARUL EHSAN\nTEL: 03-3271 9872 FAX: 03-3271 9481\nGST No.:000689913856\nSIMPLIFIED TAX INVOIC E\nCASH\nReceipt No.: CS1801/27037 Date: 23/01/2018\nITEM QTY UP DISC% AMOUNT (RM)\nTP-24\n5 1.32 0.00\n6.60*\n- DOUBLE SIDED TISSUE TAPE 18MM\n9557546631393 5 2.08 0.00\n10.38*\n-G SOFT 6ML QUICK DRY CORRECTION PEN\nTotal Qty. :\n16.98\na\nSUB-TOTALKEX)\nSr 0\n16.98\nTOTAL TAX\n1.02\nROUNDING\n0.00\nTOTAL\nUrd\n18.00\nCASH\n18.00\nCHANGE\n0.00\nGST SUMMARY\nTAX CODE %\nAMOUNT\nTAX\n(RM)\n(RM)\nSR\n6.00\n16.98\n1.02\nTOTAL :\n16.98\n1.02\nNote: (\") Indicated The Item Sold Has Been Related\nTo GST (Goods & Services Tax).\nGOODS SOLD ARE NOT RETURNABLE,\nTHANK YOU.",
+            "processing_time_seconds": 3.987
+        }
+    }
+}

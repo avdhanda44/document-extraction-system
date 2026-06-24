@@ -1,0 +1,625 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51005577192.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51005577192.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "FY EAGLE ENTERPRISE",
+        "date": "04/12/2017",
+        "address": "NO. 42, JALAN PBS 14/11, TAMAN PERINDUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+        "total": "7.00",
+        "source_image": "X51005577192.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {},
+            "classification": {
+                "document_type": "unknown",
+                "confidence_percent": 10.0,
+                "confidence_level": "low"
+            },
+            "validation": {
+                "summary": {
+                    "total_fields_checked": 0,
+                    "valid_fields": 0,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true,
+                    "note": "Document type is unknown, so validation could not run."
+                },
+                "field_results": {}
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "FY EAGLE ENTERPRISE",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date": {
+                        "expected": "04/12/2017",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "NO. 42, JALAN PBS 14/11, TAMAN PERINDUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "total": {
+                        "expected": "7.00",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005577192.jpg",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "*\nEEL\nErErE==\nIDZIE६-\n+t -\nRrtliu5la\nTi: FE ८a४-\nTai\nAlaT EEif :\ndaai a REltपमय ;\nsa ADk\nTL Jeagaata Fae Tarasaztaz\n[7 !!: ड़1s:515622*\nT#  TH!DECE\nELETPT # CSDDDउIIBD LATEE Da/12/2D17\nSALEEFEPED\nTTHE;  १५३1४६DD\nCAEHTEF\nLaEr\nTTEl\n?7ो\n]!!7\nAग़ZLi T\n(En )\n{Rf )\n प \n12037\n7,50\n7-D!\nSaTAFE DrF ABHxatY CLEAR B FY)-ELS\nTDTAL   QlfATITY\nज़L!R-TDTAL\n+\nc\nTLSC\ntar\n0\n००\nRDLD T1:\nDप ३ _\n7\n०\n६\nLEf r\nTt\nL.acaE\nZ\nCST   SUHinfr\nCDDE\nArDLi!T\n३३\nTA:/ सग़T\nफ \n२३४०\n+=7म\nTAE TDTAL :\n7=4ख़\nGOEDE  StlD_ARE NDT RETLRNIABLE ;\nT!!l:TDL:=",
+            "processing_time_seconds": 18.0909
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "CASHTER 2 USER",
+                "date": "04/12/2017",
+                "address": "",
+                "total": "0.40",
+                "source_image": "X51005577192.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "0.40",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 9,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "company": {
+                        "value": "CASHTER 2 USER",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "04/12/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "0.40",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005577192.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "0.40",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "FY EAGLE ENTERPRISE",
+                        "extracted": "CASHTER 2 USER",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 36.36
+                    },
+                    "date": {
+                        "expected": "04/12/2017",
+                        "extracted": "04/12/2017",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO. 42, JALAN PBS 14/11, TAMAN PERINDUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "total": {
+                        "expected": "7.00",
+                        "extracted": "0.40",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005577192.jpg",
+                        "extracted": "X51005577192.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "RECEIPT #2 CSO0031180 DATEs 04/12/2017\nSALESPERSON : TIME: 15214200\nCASHTER 2 USER\nITEM QTY L/P ANQUNT\n(RK) (RH)\n2 3.50\nTAPE OPP 4BKHNBOY CLEAR(E.PY\n\nTOTAL QUANTITY 2\n\nSUB-TOTAL\nGISC\nGST\n\nROUNDING\n\nTAX TOTAL: 0.40\n\nGOONS SOLD ARE NOT RETURNABLE,\nTHANK YOU.",
+            "processing_time_seconds": 1.1569
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "FY EAGLE ENTERPRISE",
+                "date": "4/12/2017",
+                "address": "NO. 42, JALAN PBS 14/11 TAMAN PERINDUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                "total": "7.00",
+                "source_image": "X51005577192.jpg",
+                "receipt_number": "CS0003118O",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "FY EAGLE ENTERPRISE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "4/12/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO. 42, JALAN PBS 14/11 TAMAN PERINDUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "7.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005577192.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS0003118O",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "FY EAGLE ENTERPRISE",
+                        "extracted": "FY EAGLE ENTERPRISE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "04/12/2017",
+                        "extracted": "4/12/2017",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO. 42, JALAN PBS 14/11, TAMAN PERINDUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "NO. 42, JALAN PBS 14/11 TAMAN PERINDUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "7.00",
+                        "extracted": "7.00",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51005577192.jpg",
+                        "extracted": "X51005577192.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "FY EAGLE ENTERPRISE\n002065464-X\nNO. 42, JALAN PBS 14/11\nTAMAN PERINDUSTRIAN BUKIT SERDANG,\n43300 SERI KEMBANGAN,\nSELANGOR\nTEL:03-89433143 FAX: 03-89433143\nGST NO: 001663156224\nTAX INVOICE\nRECEIPT #: CS0003118O DATE: O4/12/2017\nSALESPERSON\nTIME: 15:14:00\n口\nCASHIER : USER\nITEM\nQTY\nU/P\nAMOUNT\n(RM)\n12089\n2\n3.50\n7.00\nSR:TAPE OPP 48MMX8OY CLEAR(B.PY)-ECS\nTOTAL QUANTITY\nSUB-TOTAL\n6.60\nDISC\n0.00\nGST\n0.40\nROUNDING\nTOTAL\nCASH\nCIIANGE\nGST SUMMARY\nCODE\nTAX/AMT\nSR\n~0\nTAX TOTAL:\nGOODS SOLD ARE NOT RETURNABLE,\nTHANK YOU.",
+            "processing_time_seconds": 14.4489
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "FYEAGLE ENTERFRISE",
+                "date": "04/12/2017",
+                "address": "NO.42,JALAN PBS 14/11 TAMAN PERINOUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                "total": "7.00",
+                "source_image": "X51005577192.jpg",
+                "receipt_number": "CS00031180",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "FYEAGLE ENTERFRISE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "04/12/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO.42,JALAN PBS 14/11 TAMAN PERINOUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "7.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005577192.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS00031180",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "FY EAGLE ENTERPRISE",
+                        "extracted": "FYEAGLE ENTERFRISE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 91.89
+                    },
+                    "date": {
+                        "expected": "04/12/2017",
+                        "extracted": "04/12/2017",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO. 42, JALAN PBS 14/11, TAMAN PERINDUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "NO.42,JALAN PBS 14/11 TAMAN PERINOUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 98.82
+                    },
+                    "total": {
+                        "expected": "7.00",
+                        "extracted": "7.00",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51005577192.jpg",
+                        "extracted": "X51005577192.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "FYEAGLE ENTERFRISE\n002065464-X\nNO.42,JALAN PBS 14/11\nTAMAN PERINOUSTRIAN BUKIT SERDANG,\n43300 SERI KEMBANGAN,\nSELANGOR\nTEL:03-89433143 FAX: 03-89433143\nGST N0:001663156224\nTAX INVOICE\nRECEIPT #: CS00031180 DATE: 04/12/2017\nSALESPERSON :\nTIME:15:14:00\nCASHIER :USER\nITEY\n0TY\nU/P\nAMOUNT\n(RM)\n(RM)\n12089\n2\n3.50\n7.00\nSR:TAFE OPP 48MMX80Y CLEAR(B.FY)-ECS\nTOTAL QUANTITY\n2\nSUB-TOTAL\n6.60\n3S10\n0.00\n6ST\n0.40\nROUNDING\n0.00\nTOTAL\n700\nCASH\n700\nCIANGE\n0.00\nGST SUMMARY\nCODE\nINOORV\n%\nTAX/AMT\nSR\n6.60\n6\n0.40\nTAX TOTAL:\n0.40\nGOODS SOLD ARE NOT RETURNABLE,\nTHANK YOU.",
+            "processing_time_seconds": 1.2454
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "ENTERPRISE",
+                "date": "04/12/2017",
+                "address": "NO. 42, JALAN PBS 14/11, TAMAN PERINDUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                "total": "7.00",
+                "source_image": "X51005577192.jpg",
+                "receipt_number": "CS00031180",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "ENTERPRISE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "04/12/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO. 42, JALAN PBS 14/11, TAMAN PERINDUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "7.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005577192.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS00031180",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "FY EAGLE ENTERPRISE",
+                        "extracted": "ENTERPRISE",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 68.97
+                    },
+                    "date": {
+                        "expected": "04/12/2017",
+                        "extracted": "04/12/2017",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO. 42, JALAN PBS 14/11, TAMAN PERINDUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "NO. 42, JALAN PBS 14/11, TAMAN PERINDUSTRIAN BUKIT SERDANG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "7.00",
+                        "extracted": "7.00",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51005577192.jpg",
+                        "extracted": "X51005577192.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "V\nFY EAGLE\nENTERPRISE\n002065464-X\nNO. 42, JALAN PBS 14/11,\nTAMAN PERINDUSTRIAN BUKIT SERDANG,\n43300 SERI KEMBANGAN,\nSELANGOR\nTEL: 03-89433143 FAX: 03-89433143\nGST NO: 001663156224\nTAX INVOICE\nRECEIPT #: CS00031180 DATE: 04/12/2017\nSALESPERSON :\nTIME: 15:14:00\nCASHIER : USER\nITEM\nQTY\nU/P\nAMOUNT\n(RM)\n(RM)\n12089\n2\n3.50\n7.00\nSR:TAPE OPP 48MMX80Y CLEAR(B.PY)-ECS\nTOTAL QUANTITY\n2\nSUB-TOTAL\n6.60\nDISC\n0.00\nGST\n0.40\nROUNDING\n0.00\nTOTAL\n7-00\nCASH\n7-00\nCHANGE\n0.00\nGST SUMMARY\nCODE\nAMOUNT\n%\nTAX/AMT\nSR\n6.60\n6\n0.40\nTAX TOTAL:\n0.40\nGOODS SOLD ARE NOT RETURNABLE,\nTHANK YOU.",
+            "processing_time_seconds": 3.0411
+        }
+    }
+}

@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51006414394.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51006414394.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "RESTORAN SIAM VILLAGE",
+        "date": "27/04/2018",
+        "address": "NO.8,JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+        "total": "275.90",
+        "source_image": "X51006414394.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "RESTORAN SIAN VILLAGE",
+                "date": "27/04/2018",
+                "address": "NO. 8, JALAN PERNAS 10 7 PERMAS 81750 JOHOR BAHRU.",
+                "total": "275.90",
+                "source_image": "X51006414394.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 5,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "RESTORAN SIAN VILLAGE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "27/04/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO. 8, JALAN PERNAS 10 7 PERMAS 81750 JOHOR BAHRU.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "275.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006414394.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "RESTORAN SIAM VILLAGE",
+                        "extracted": "RESTORAN SIAN VILLAGE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 95.24
+                    },
+                    "date": {
+                        "expected": "27/04/2018",
+                        "extracted": "27/04/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.8,JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                        "extracted": "NO. 8, JALAN PERNAS 10 7 PERMAS 81750 JOHOR BAHRU.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 92.93
+                    },
+                    "total": {
+                        "expected": "275.90",
+                        "extracted": "275.90",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006414394.jpg",
+                        "extracted": "X51006414394.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "ऐ\nRESTORAN SIAN VILLAGE\nNo. 8, Jalan Pernas 1० ७\nPermas\n81750 Johor Bahru.\nTel; 013-7279552\nCash Receipt\nHQ\nTable\nBill No: 1८६३\nSevr By\n1n1a11age1-'\nCreate Time\n27/04/2018\nQty\nDescriptlon\n'lotal (RN)\n_\nBCO०1 CLAIPOT FIOFU\n18.90\n2\nCOO4 STIR RED CURRY\n37.80\n@RM18.90\n२\nDROOlC THAT ICE TEA\n13.80\nCRM6.90\n*\nDROOZC THAI ICE GREEJ\n13.80\nORN I6.9O\nSDOO२ THIALI STYLE\n16.00\n!ACACIALEAF\nSQOO३L STEAMED SQUIDS\n32.00\n2\nTO०२S SPICY THAI TOM\n50.00\nAFOOD (J)\nORN25.00\nYoO1 FRIED KANGKUNG\n16.90\nVOO२ SFRIED KAILAN\n18.90\nDFISH\n2\nWOO३ THAI STLE\n31.80\nPRAWT\nQRN!5.90\n1३\nWOO6 WHITE RICE (PER\n26.00\nFILL )\nQRM2.0O\n28\nSUBTOTAL :\n275.90\nType\n11\nQty \n२८\nBill Total\n275.90\nRounding Adj\n0.00\nNET TOTAL\n275.90\nCASH\n275.90\nThank You!\nPlease Come Again\n110108e7~\n/0c!0\n]ay2:",
+            "processing_time_seconds": 45.603
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "SEVR BY MANAGER",
+                "date": "27/04/2018",
+                "address": "BILL NO 1863 SEVR BY MANAGER FF RESTORAN SIAM VILLAGE NO. 8, JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                "total": "275.90",
+                "source_image": "X51006414394.jpg",
+                "receipt_number": "1863",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "SEVR BY MANAGER",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "27/04/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "BILL NO 1863 SEVR BY MANAGER FF RESTORAN SIAM VILLAGE NO. 8, JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "275.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006414394.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "1863",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "RESTORAN SIAM VILLAGE",
+                        "extracted": "SEVR BY MANAGER",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 38.89
+                    },
+                    "date": {
+                        "expected": "27/04/2018",
+                        "extracted": "27/04/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.8,JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                        "extracted": "BILL NO 1863 SEVR BY MANAGER FF RESTORAN SIAM VILLAGE NO. 8, JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "275.90",
+                        "extracted": "275.90",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006414394.jpg",
+                        "extracted": "X51006414394.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "HO\nBill No: 1863\n\nSevr By: manager-\n\nff\n\nRESTORAN SIAM VILLAGE\nNo. 8, Jalan Permas 10/7,\nPermas Jaya, 81750 Johor Bahru.\nTel: 013-7279552\n\n_ Cash Receipt\n\nCreate Time: 27/04/2018\n\nTable\n\nTotal (RM)\n\n13.80\n\n13.80\n\n16.00\n\n32,00\n\n50.00\n\n16.90\n18.90\n\n31.80\n\n26.00\n\nQty Description\n1 80001 CLAYPOT F/TOFU\n2 0004 STIR RED CURRY\n@RM18.90\n2 DROOIC THAI ICE TEA\n@RM6.90\n2 DR002C THAI ICE GREEN\n(@RM6.90\n1 SD002 THAI STYLE\n/ACACIA LEAF\n1 $Q003L STEAMED SQUIDS\nI\n2 10025 SPICY THAI TOM\nAFOOD (3)\n@RM25.00\n1 ५००1 FRIED KANGKUNG\n1 V002 S/FRIED KAILAN\nD FISH\n2 W003 THAI STYLE\nPRAWN\n@RM15.90\n13 W006 WHITE RICE (PER\nFILL)\n@RM2.00\n28 SUBTOTAL:\nType: 11 Qty: 28\n\nBill Total :\nRounding Adj. :\n\nNET TOTAL ;\nCASH\n\nThank You!\n\n0.00\n\n275.90\n\nPlease Come Again\n\nmandager-",
+            "processing_time_seconds": 3.7943
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "RESTORAN SIAM VILLAGE",
+                "date": "27/04/2018",
+                "address": "NO. 8, JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                "total": "275.90",
+                "source_image": "X51006414394.jpg",
+                "receipt_number": "1863",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "RESTORAN SIAM VILLAGE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "27/04/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO. 8, JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "275.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006414394.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "1863",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "RESTORAN SIAM VILLAGE",
+                        "extracted": "RESTORAN SIAM VILLAGE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "27/04/2018",
+                        "extracted": "27/04/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.8,JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                        "extracted": "NO. 8, JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "275.90",
+                        "extracted": "275.90",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006414394.jpg",
+                        "extracted": "X51006414394.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "A04106\nRESTORAN SIAM VILLAGE\nNo. 8, Jalan Permas 10/7,\nPermas Jaya, 81750 Johor Bahru.\nTel: 013-7279552\nCash Receipt\nHQ\nTable\nBill No: 1863\nSevr By : manager-\nCreate Time : 27/04/2018\nQty Description\nTotal (RM)\nBC001 CLAYPOT F/TOFU\n1\n18.90\n2\nC004 STIR RED CURRY\n37.80\n@RM18.90\nDR001C THAI ICE TEA\n13.80\n@RM6.90\nDR002C THAI ICE GREEN\n11\nSD002 THAI STYLE\n16.00\n/ACACIA LEAF\nSQ003L STEAMED SQUIDS\n32.00\nT002S SPICY THAI TOM\n50.00\nAFOOD (S)\n@RM25.00\nV001 FRIED KANGKUNG\n16.90\nV002 S/FRIED KAILAN\nD FISH\nW003 THAI STYLE\n31.80\nPRAWN\n@RM15.90\nW006 WHITE RICE (PER\n13\n26.00\nFILL)\n@RM2.00\n28\nSUBTOTAL:\n275.90\nType: 11\nQty: 28\nBill Total :\n0.00\nRounding Adj. :\nNET TOTAL :\nCASH\nThank You!\nPlease Come Again\nmanager-",
+            "processing_time_seconds": 145.5072
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "RESTORAN SIAM VILLAGE",
+                "date": "27/04/2018",
+                "address": "NO. 8, JALAN PERMAS 10/7, PENMAS JAYA, 81750 JOHOR BAHRU.",
+                "total": "275.90",
+                "source_image": "X51006414394.jpg",
+                "receipt_number": "1863",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "RESTORAN SIAM VILLAGE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "27/04/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO. 8, JALAN PERMAS 10/7, PENMAS JAYA, 81750 JOHOR BAHRU.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "275.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006414394.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "1863",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "RESTORAN SIAM VILLAGE",
+                        "extracted": "RESTORAN SIAM VILLAGE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "27/04/2018",
+                        "extracted": "27/04/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.8,JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                        "extracted": "NO. 8, JALAN PERMAS 10/7, PENMAS JAYA, 81750 JOHOR BAHRU.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "275.90",
+                        "extracted": "275.90",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006414394.jpg",
+                        "extracted": "X51006414394.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "RESTORAN SIAM VILLAGE\nNo. 8, Jalan Permas 10/7,\nPenmas Jaya, 81750 Johor Bahru.\nTel: 013-7279552\nCash Receipt\nHO\nTable\nBill No: 1863\n5\nSevr By : manager-\nCreate Time :27/04/2018\nQty\nDescriptlon\nTotal (RM)\n1\nBC001 CLAYPOT F/TOFU\n18.90\n2\nC004 STIR RED CURRY\n37.80\n@ORM18.90\n2\nDR001C THAI ICE TEA\n13.80\n@RM6.90\n2\nDR002C THAIICE GREEN\n13.80\n@RM6.90\n1\nSD002 THAI STYLE\n16.00\n/ACACIALEAF\nSQ003L STEAMED SQUIIDS\n32.00\n1\n2\nT002S SPICY THAI TOM\n50.00\nAFOOD (S)\n@RM25.00\nV001 FRIED KANGKUNG\n16.90\n1\nV002 S/FRIED KAILAN\n18.90\nD FISH\n2\nW003 THAI STYLE\n31.80\nPRAWN\n@RM15.90\n13\nW006 WHITE RICE (PER\n26.00\nFILL)\n@RM2.00\n28\nSUBTOTAL:\n275.90\nType :\n11\nQly: 28\nBill Total :\n275.90\nRounding Adj. :\n0.00\nNET TOTAL :\n275.90\nCASH\n275.90\nThank You!\nPlease Cone Again\nmanager-",
+            "processing_time_seconds": 2.4902
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "RESTORAN SIAM VILLAGE",
+                "date": "27/04/2018",
+                "address": "NO. 8, JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                "total": "275.90",
+                "source_image": "X51006414394.jpg",
+                "receipt_number": "1863",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "RESTORAN SIAM VILLAGE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "27/04/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO. 8, JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "275.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006414394.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "1863",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "RESTORAN SIAM VILLAGE",
+                        "extracted": "RESTORAN SIAM VILLAGE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "27/04/2018",
+                        "extracted": "27/04/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.8,JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                        "extracted": "NO. 8, JALAN PERMAS 10/7, PERMAS JAYA, 81750 JOHOR BAHRU.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "275.90",
+                        "extracted": "275.90",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006414394.jpg",
+                        "extracted": "X51006414394.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "A04106\nRESTORAN SIAM VILLAGE\nNo. 8, Jalan Permas 10/7,\nPermas Jaya, 81750 Johor Bahru.\nTel: 013-7279552\nCash Receipt\nHQ\nTable\nBill No: 1863\nSevr By : manager-\n5\nCreate Time : 27/04/2018\nQty Descriptlon\nTotal (RM)\nBC001 CLAYPOT F/TOFU\n18.90\n2 C004 STIR RED CURRY\n37.80\n@RM18.90\n2 DROO1C THAI ICE TEA\n13.80\n@RM6.90\n2 DROO2C THAI ICE GREEN\n13.80\n@RM6.90\nSD002 THAI STYLE\n16.00\n/ACACIA LEAF\n1 SQ003L STEAMED SQUIDS\n32.00\nI\n2 TOO2S SPICY THAI TOM\n50.00\nAFOOD (S)\n@RM25.00\n1 V001 FRIED KANGKUNG\n16.90\nV002 S/FRIED KAILAN\n18.90\nDFISH\n2 W003 THAI STYLE\n31.80\nPRAWN\n@RM15.90\n13 W006 WHITE RICE (PER\n26.00\nFILL)\n@RM2.00\n28\nSUBTOTAL:\n275.90\nType : 11\nQty : 28\nBill Total :\n275.90\nRounding Adj. :\n0.00\nNET TOTAL :\n275.90\nCASH\n275.90\nThank You!\nPlease Come Again\nmanager-",
+            "processing_time_seconds": 5.4286
+        }
+    }
+}

@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51008142060.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51008142060.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "KEDAI PAPAN YEW CHUAN",
+        "date": "26/05/2018",
+        "address": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR",
+        "total": "121.90",
+        "source_image": "X51008142060.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "KEDAI PAPAN YEW CHUAN",
+                "date": "26/05/2018",
+                "address": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR.",
+                "total": "121.90",
+                "source_image": "X51008142060.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "KEDAI PAPAN YEW CHUAN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "26/05/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "121.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51008142060.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "KEDAI PAPAN YEW CHUAN",
+                        "extracted": "KEDAI PAPAN YEW CHUAN",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "26/05/2018",
+                        "extracted": "26/05/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR",
+                        "extracted": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "121.90",
+                        "extracted": "121.90",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51008142060.jpg",
+                        "extracted": "X51008142060.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "KEDAI PAPAN YEW CHUAN\n(0005583085-K)\nLOT २७६ JALAN BANTING\n४३80० DENGKIL, SELANGOR.\nTEL : 03-87686092\nFAX\n03-87686092\nGST ID : 000781500416\nTAX INVOICE\nBill To\nSUCI ALAM JAYA TRANSPORT\nNO 1 JALAN AMAN 2\nTAMAN DESA ४३८००\nDENGKIL SELANGOR\n017-6057770\nDoc No\nC$00013125\nDate:   26/05/2018\nCashier\nUSER\nTime:\n11:22:00\nSalesperson\nRef .\n(GST)\n(GST)\nItem\nSIPrice\nSIPrice\nAmount\nTax\n100588\n5\n23.00\n२४ 38\n121.90\nSR\nSILING PRIMP 1X९ (B)\nToial\n121.90\nTotal Sales ( Excluding GST)\n115.00\nDiscount\n0.00\nTotal GST\n6.90\nRounding\n0.00\nTotal Sales (nclusivo of GST)\n121.90\nCASH\n121.90\nChange\n0.00\nGST SUMMARY\nTax Code\n%\nAmt KRM)\nTax IRM)\nSR\n6\n115.00\n6.90\nTotal\n115.00\n6.90\nGOODS SOLD ARE NOT RETURNABLE THANK YOU\nREPRINT\nOty\nQty",
+            "processing_time_seconds": 20.4646
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "PAPAN YEW CHUAN",
+                "date": "",
+                "address": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR.",
+                "total": "6.90",
+                "source_image": "X51008142060.jpg",
+                "receipt_number": "",
+                "subtotal": "121.90",
+                "tax": "121.90",
+                "discount": "0.00",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 9,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 1,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "company": {
+                        "value": "PAPAN YEW CHUAN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "6.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51008142060.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "121.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "tax": {
+                        "value": "121.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "0.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "KEDAI PAPAN YEW CHUAN",
+                        "extracted": "PAPAN YEW CHUAN",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 83.33
+                    },
+                    "date": {
+                        "expected": "26/05/2018",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR",
+                        "extracted": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "121.90",
+                        "extracted": "6.90",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51008142060.jpg",
+                        "extracted": "X51008142060.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": ": PAPAN YEW CHUAN\n(0005683085-K)\n\nLOT 276 JALAN BANTING\n43800 DENGKIL, SELANGOR.\n\nTEL : 03-87686092 FAX  03-87686092\nGST ID : 000781500416\n\n_TAX INVOICE __\n\nBill To:\n\nSUC] ALAM JAYA TRANSPORT\nNO 1 JALAN AMAN 2\n\nTAMAN DESA 43800\n\nDENGKIL SELANGOR\n017-6057770\n‘Doc No. 7 CS00013125 7 Bate” 2670572018\nCashier USER Time: 11:22:00\nSalesperson : Ref.:\nee (687) (GST) -\ntem 99५ S/Price__S/Price_ Amount 18५\n100588 5 23.00 24.38 121.90 SR\nSILING PRIMP 1X9 (8)\n~~ Total Qty: aT\nTotal Sales (Excluding GST) : 115.00\nDiscount : 0.00\nTotalGST : 6.90\nRounding : 0.00\n\nTotal Sales (Inclusive of GST) : 121.90\nCASH : 121.90\n\nChange : 0.00\nnail\nTax Code % Amt(RM) Tax (RM)\nSR 6 115.00 6.90\nTotal: __ 115.00 6.90\n\nGOODS SOLD ARE NOT RETURNABLE, THANK YOU\nBee RE-PRINT **\ney =a",
+            "processing_time_seconds": 3.9922
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "KEDAI PAPAN YEW CHUAN",
+                "date": "26/05/2018",
+                "address": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR",
+                "total": "121.90",
+                "source_image": "X51008142060.jpg",
+                "receipt_number": "CS00013125",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "KEDAI PAPAN YEW CHUAN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "26/05/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "121.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51008142060.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS00013125",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "KEDAI PAPAN YEW CHUAN",
+                        "extracted": "KEDAI PAPAN YEW CHUAN",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "26/05/2018",
+                        "extracted": "26/05/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR",
+                        "extracted": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "121.90",
+                        "extracted": "121.90",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51008142060.jpg",
+                        "extracted": "X51008142060.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "KEDAI PAPAN YEW CHUAN\n(0005583085-K)\nLOT 276 JALAN BANTING\n43800 DENGKIL, SELANGOR\nTEL:03-87686092\nFAX03-87686092\nGSTID:000781500416\nTAX INVOICE\nBill To :\nSUCI ALAM JAYA TRANSPORT\nNO 1 JALAN AMAN 2\nTAMAN DESA 43800\nDENGKIL SELANGOR\n017-6057770\nDoc No.\nCS00013125\nDate: 26/05/2018\nCashier\nUSER\nTime: 11:22:00\nSalesperson\nRef.:\n(GST)\nItem\nQty\nS/Price\nAmount\nTax\n100588\n5\n23.00\n24.38\n121.90\nSR\nSILING PRIMP 1X9 (B)\nTotal Qty:\nTotal Sales (Excluding GST) :\n115.00\nDiscount :\n0.00\nTotal GST :\n6.90\nRounding\nTotal Sales (Inclusive of GST) :\nCASH :\nChange :\nGST SUMMARY\nTax Code\n%\nAmt (RM)\nTax(RM)\n6\nTotal :\nGOODS SOLD ARE NOT RETURNABLE, THANK YOU.\n**RE-PRINT **",
+            "processing_time_seconds": 21.1389
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "KEDAI PAPAN YEW CHUAN",
+                "date": "26/05/2018",
+                "address": "43800DENGKIL,SELANGOR",
+                "total": "121.90",
+                "source_image": "X51008142060.jpg",
+                "receipt_number": "CS00013125",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "KEDAI PAPAN YEW CHUAN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "26/05/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "43800DENGKIL,SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "121.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51008142060.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS00013125",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "KEDAI PAPAN YEW CHUAN",
+                        "extracted": "KEDAI PAPAN YEW CHUAN",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "26/05/2018",
+                        "extracted": "26/05/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR",
+                        "extracted": "43800DENGKIL,SELANGOR",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 64.62
+                    },
+                    "total": {
+                        "expected": "121.90",
+                        "extracted": "121.90",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51008142060.jpg",
+                        "extracted": "X51008142060.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "KEDAI PAPAN YEW CHUAN\n(0005583085-K)\nLOT276JALANBANTING\n43800DENGKIL,SELANGOR\nTEL:03-87686092\nFAX:03-87686092\nGSTID:000781500416\nTAXINVOICE\nBill To:\nSUCIALAMJAYATRANSPORT\nNO1JALANAMAN2\nTAMANDESA43800\nDENGKILSELANGOR\n017-6057770\nDoc No.\nCS00013125\nDate:26/05/2018\nCashier\nUSER\nTime:11:22:00\nSalesperson:\nRef..\n(GST)\n(GST)\nItem\nQty\nS/Price\nS/Price\nAmount\nTax\n100588\n5.\n23.00\n24.38\n121.90\nSR\nSILINGPRIMP1X9(B)\nTotal Qty:\n5\n121.90\nTotal Sales(ExcludingGST):\n115.00\nDiscount:\n0.00\nTotal GST\n6.90\nRounding\n1：\n0.00\nTotal Sales(Inclusive of GsT):\n121.90\nCASH:\n121.90\nChange:\n0.00\nGST SUMMARY\nTax Code\n%\nAmt(RM)\nTax(RM)\nSR\n6\n115.00\n6.90\nTotal:\n115.00\n6.90\nGOODSSOLDARENOTRETURNABLE,THANKYOU.\n**RE-PRINT**",
+            "processing_time_seconds": 1.7068
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "KEDAI PAPAN YEW CHUAN",
+                "date": "26/05/2018",
+                "address": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR.",
+                "total": "121.90",
+                "source_image": "X51008142060.jpg",
+                "receipt_number": "CS00013125",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "KEDAI PAPAN YEW CHUAN",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "26/05/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "121.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51008142060.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS00013125",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "KEDAI PAPAN YEW CHUAN",
+                        "extracted": "KEDAI PAPAN YEW CHUAN",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "26/05/2018",
+                        "extracted": "26/05/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR",
+                        "extracted": "LOT 276 JALAN BANTING 43800 DENGKIL, SELANGOR.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "121.90",
+                        "extracted": "121.90",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51008142060.jpg",
+                        "extracted": "X51008142060.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "KEDAI PAPAN YEW CHUAN\n(0005583085-K)\nLOT 276 JALAN BANTING\n43800 DENGKIL, SELANGOR.\nTEL : 03-87686092\nFAX : 03-87686092\nGST ID: 000781500416\nTAX INVOICE\nBill To:\nSUCI ALAM JAYA TRANSPORT\nNO 1 JALAN AMAN 2\nTAMAN DESA 43800\nDENGKIL SELANGOR\n017-6057770\nDoc No.\nCS00013125\nDate: 26/05/2018\nCashier\nUSER\nTime: 11:22:00\nSalesperson\nRef.:\n(GST)\n(GST)\nItem\nQty\nS/Price S/Price\nAmount\nTax\n100588\n5\n23.00\n24.38\n121.90\nSR\nSILING PRIMP 1X9 (B)\nTotal Qty:\n5\n121.90\nTotal Sales (Excluding GST) :\n115.00\nDiscount :\n0.00\nTotal GST :\n6.90\nRounding :\n0.00\nTotal Sales (Inclusive of GST) :\n121.90\nCASH :\n121.90\nChange :\n0.00\nGST SUMMARY\nTax Code\n%\nAmt(RM)\nTax(RM)\nSR\n6\n115.00\n6.90\nTotal :\n115.00\n6.90\nGOODS SOLD ARE NOT RETURNABLE, THANK YOU.\n** RE-PRINT **",
+            "processing_time_seconds": 4.435
+        }
+    }
+}

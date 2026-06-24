@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51005719873.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51005719873.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "CT281 - TEALIVE SHELL KEPONG OTTOGO ENTERPRISE",
+        "date": "21/01/2018",
+        "address": "SHELL STATION PT15944, MUKIM BATU, JLN BESAR KEPONG",
+        "total": "RM8.60",
+        "source_image": "X51005719873.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "YOUR ORDER NUMBER IS",
+                "date": "21/01/2018",
+                "address": "38710 001018802176 SHIELL STATIODN PT15O44 MUKIM BAIU, JIN BESAR KEPONG COUNTER 7290 TAKE AWAY BILL NO 39402 495",
+                "total": "1018.15",
+                "source_image": "X51005719873.jpg",
+                "receipt_number": "39402",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "YOUR ORDER NUMBER IS",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "21/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "38710 001018802176 SHIELL STATIODN PT15O44 MUKIM BAIU, JIN BESAR KEPONG COUNTER 7290 TAKE AWAY BILL NO 39402 495",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "1018.15",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005719873.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "39402",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "CT281 - TEALIVE SHELL KEPONG OTTOGO ENTERPRISE",
+                        "extracted": "YOUR ORDER NUMBER IS",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 25.0
+                    },
+                    "date": {
+                        "expected": "21/01/2018",
+                        "extracted": "21/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "SHELL STATION PT15944, MUKIM BATU, JLN BESAR KEPONG",
+                        "extracted": "38710 001018802176 SHIELL STATIODN PT15O44 MUKIM BAIU, JIN BESAR KEPONG COUNTER 7290 TAKE AWAY BILL NO 39402 495",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 57.5
+                    },
+                    "total": {
+                        "expected": "RM8.60",
+                        "extracted": "1018.15",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005719873.jpg",
+                        "extracted": "X51005719873.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "Your order number is\n7290\ntealive\nCT281\nTealive Shell Kepong\nOttogo Enterorise\n002570632-/\n38710:001018802176\nSHIELL STATIODN PT15O४4 Mukim\nBaiu,\nJIn Besar Kepong\nTAX INVOICE\nCounter ७२९०\nTake Away\nBill No\n39402^495\nCOMPETED\nDate:\n21/01/2018\n15 46;09\nSaies Remarks\nltem Nlame\nPrice(RI\nFazelnut Coco\n7 5०\nSF\nPear|\n1.10\nSub Total\nRMB ६०\nRounding\nRlD 0O\nToral Sales Incl GST @ ६%\nRMB.60\nCash\n8.60\nTendered\n9.00\nChange\n0.40\nCode\nAmount\nSR @ ६%\n8.12\n0.48\nYou have just missed out 8 points\nSign uD for a Tealive UniTea Card\ntoday to enjoy exclusive member\npromotions and collect BPoints to\nredeem on future purchases\nThank You Please Come Again\nPrinied at:21 /1018 15:46:09\nQt y\nTax",
+            "processing_time_seconds": 20.0471
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "OTTOGO ENTERPRISE",
+                "date": "21/01/2018",
+                "address": "BILL NO 3940244955 COMPLETED DATE 21/01/2018 15 46 09 SALES REMARKS. HAZELNUT COCO -L 1 150 SR PEARL 1 1.10",
+                "total": "8.60",
+                "source_image": "X51005719873.jpg",
+                "receipt_number": "3940244955",
+                "subtotal": "8.60",
+                "tax": "8.60",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 1,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "OTTOGO ENTERPRISE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "21/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "BILL NO 3940244955 COMPLETED DATE 21/01/2018 15 46 09 SALES REMARKS. HAZELNUT COCO -L 1 150 SR PEARL 1 1.10",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "8.60",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005719873.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "3940244955",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "8.60",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "tax": {
+                        "value": "8.60",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "CT281 - TEALIVE SHELL KEPONG OTTOGO ENTERPRISE",
+                        "extracted": "OTTOGO ENTERPRISE",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 55.74
+                    },
+                    "date": {
+                        "expected": "21/01/2018",
+                        "extracted": "21/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "SHELL STATION PT15944, MUKIM BATU, JLN BESAR KEPONG",
+                        "extracted": "BILL NO 3940244955 COMPLETED DATE 21/01/2018 15 46 09 SALES REMARKS. HAZELNUT COCO -L 1 150 SR PEARL 1 1.10",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 24.68
+                    },
+                    "total": {
+                        "expected": "RM8.60",
+                        "extracted": "8.60",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51005719873.jpg",
+                        "extracted": "X51005719873.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "है\n\nt |\n\nealive\n\nCT281 - Tealive Shell Kepong\nOttogo Enterprise\n\n002570632-X\n\nGST 1D:001018802176\nSHELL STATION PT15944, Mukim\nBatu,\nJin Besar Kepong\n\nTAX INVOICE\nCounter: 7290 Take Away\nBill No: 3940244955 COMPLETED\nDate: 21/01/2018 15 46 09\nSales Remarks.\n\nItemName ty Price(RM)\n\nHazelnut Coco -L 1 150 SR\n‘Pearl 1 1.10\n\nकक Sub Total = RM8.60\nRounding RMO.00\n\nTotal Sales Incl GST @ 6% RM8 60\n\nCash 8.60\n\nTendered 9.00\n\nChange 0.40\nCode Amount Tax\nSR @ 6% 8.12 0.48\n\nYou have just missed out 8 points\n\nSign up for a Tealive UniTea Card\n\ntoday to enjoy exclusive member\n\npromotions and collect BPoints to\nredeem on future purchases\n\nThank You Please Come Again\nPrinted at:21/01/2018 15:46:09",
+            "processing_time_seconds": 2.0016
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "OTTOGO ENTERPRISE",
+                "date": "21/01/2018",
+                "address": "JLN BESAR KEPONG COUNTER 7290 TAKE AWAY BILL NO 394024495 COMPLETED",
+                "total": "9.00",
+                "source_image": "X51005719873.jpg",
+                "receipt_number": "394024495",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "OTTOGO ENTERPRISE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "21/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "JLN BESAR KEPONG COUNTER 7290 TAKE AWAY BILL NO 394024495 COMPLETED",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "9.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005719873.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "394024495",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "CT281 - TEALIVE SHELL KEPONG OTTOGO ENTERPRISE",
+                        "extracted": "OTTOGO ENTERPRISE",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 55.74
+                    },
+                    "date": {
+                        "expected": "21/01/2018",
+                        "extracted": "21/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "SHELL STATION PT15944, MUKIM BATU, JLN BESAR KEPONG",
+                        "extracted": "JLN BESAR KEPONG COUNTER 7290 TAKE AWAY BILL NO 394024495 COMPLETED",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 37.5
+                    },
+                    "total": {
+                        "expected": "RM8.60",
+                        "extracted": "9.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005719873.jpg",
+                        "extracted": "X51005719873.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "Your order number is\n7290\ntealive\nCT281 - Tealive Shell Kepong\nOttogo Enterprise\n002570632-X\nGST ID:001018802176\nSHELL STATION PT15944, Mukim\nBatu,\nJln Besar Kepong\nTAX INVOICE\nCounter: 7290\nTake Away\nBill No:\n394024495\nCOMPLETED\nDate:\n21/01/2018\n154609\nSales Remarks.\nItem Name\nQty Price(RM)\nHazelnut Coco -L\n1\n750\nSR\n:Pearl\n1.10\nSub Total\nRM8.60\nRounding\nRM0.00\nTotal Sales Incl GST @ 6%\nCash\n8.60\nTendered\n9.00\nChange\n0.40\nCode\nAmount\nTax\nSR @ 6%\n8.12\n0.48\nYou have just missed out 8 points\nSign up for a Tealive UniTea Card\ntoday to enjoy exclusive member\npromotions and collect BPoints to\nredeem on future purchases\nThank You Please Come Again",
+            "processing_time_seconds": 18.2997
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "YOUR ORDER NUMBER IS",
+                "date": "21/01/2018",
+                "address": "BILL NO 394024495 COMPLETED DATE 21/01/2018 15.46 09",
+                "total": "15.46",
+                "source_image": "X51005719873.jpg",
+                "receipt_number": "394024495",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "YOUR ORDER NUMBER IS",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "21/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "BILL NO 394024495 COMPLETED DATE 21/01/2018 15.46 09",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "15.46",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005719873.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "394024495",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "CT281 - TEALIVE SHELL KEPONG OTTOGO ENTERPRISE",
+                        "extracted": "YOUR ORDER NUMBER IS",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 25.0
+                    },
+                    "date": {
+                        "expected": "21/01/2018",
+                        "extracted": "21/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "SHELL STATION PT15944, MUKIM BATU, JLN BESAR KEPONG",
+                        "extracted": "BILL NO 394024495 COMPLETED DATE 21/01/2018 15.46 09",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 29.7
+                    },
+                    "total": {
+                        "expected": "RM8.60",
+                        "extracted": "15.46",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005719873.jpg",
+                        "extracted": "X51005719873.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "Your order number is\n7290\ntealive\nCT281-TealiveShellKepong\nOttogoEnterprise\n002570632-X\nGSTID:001018802176\nSHELLSTATIONPT15944.Mukim\nBatu,\nJIn BesarKepong\nTAX INVOICE\nCounter:7290\nTakeAway\nBill No\n394024495\nCOMPLETED\nDate:\n21/01/2018\n15.46:09\nSalesRemarks.\nItem Name\nQty Price(RM)\nHazelnutCoco-L\n1\n750\nSR\n:Pearl\n1\n1.10\nSub Total\nRM8.60\nRounding\nRM0.00\nTotal SalesIncl GST@6%\nRM8.60\nCash\n8.60\nTendered\n9.00\nChange\n0.40\nCode\nAmount\nTax\nSR@6%\n8.12\n0.48\nYouhavejustmissedout8points\nSignupforaTealiveUniTeaCard\ntoday toenjoyexclusivemember\npromotionsand collectBPointsto\nredeem on future purchases\nThankYouPlease Come Again\nPrintedat:21/01/201815:46:09",
+            "processing_time_seconds": 1.2743
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "OTTOGO ENTERPRISE",
+                "date": "21/01/2018",
+                "address": "JLN BESAR KEPONG COUNTER 7290 TAKE AWAY BILL NO 394024495 COMPLETED",
+                "total": "2018.15",
+                "source_image": "X51005719873.jpg",
+                "receipt_number": "394024495",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "OTTOGO ENTERPRISE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "21/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "JLN BESAR KEPONG COUNTER 7290 TAKE AWAY BILL NO 394024495 COMPLETED",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.15",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005719873.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "394024495",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "CT281 - TEALIVE SHELL KEPONG OTTOGO ENTERPRISE",
+                        "extracted": "OTTOGO ENTERPRISE",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 55.74
+                    },
+                    "date": {
+                        "expected": "21/01/2018",
+                        "extracted": "21/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "SHELL STATION PT15944, MUKIM BATU, JLN BESAR KEPONG",
+                        "extracted": "JLN BESAR KEPONG COUNTER 7290 TAKE AWAY BILL NO 394024495 COMPLETED",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 37.5
+                    },
+                    "total": {
+                        "expected": "RM8.60",
+                        "extracted": "2018.15",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005719873.jpg",
+                        "extracted": "X51005719873.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "Your order number is\n7290\ntealive\nCT281 - Tealive Shell Kepong\nOttogo Enterprise\n002570632-X\nGST ID:001018802176\nSHELL STATION PT15944, Mukim\nBatu,\nJln Besar Kepong\nTAX INVOICE\nCounter: 7290\nTake Away\nBill No:\n394024495\nCOMPLETED\nDate:\n21/01/2018\n15: 46 09\nSales Remarks.\nItem Name\nQty Price(RM)\nHazelnut Coco -L\n1\n7 50 SR\nPearl\n1\n1.10\nSub Total\nRM8 60\nRounding\nRMO.00\nTotal Sales Incl GST @ 6%\nRM8.60\nCash\n8.60\nTendered\n9.00\nChange\n0.40\nCode\nAmount\nTax\nSR @ 6%\n8.12\n0.48\nYou have just missed out 8 points\nSign up for a Tealive UniTea Card\ntoday to enjoy exclusive member\npromotions and collect BPoints to\nredeem on future purchases\nThank You Please Come Again\nPrintedat:21/01/2018 15:46:09",
+            "processing_time_seconds": 3.4382
+        }
+    }
+}

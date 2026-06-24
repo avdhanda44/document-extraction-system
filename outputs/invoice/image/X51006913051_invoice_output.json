@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51006913051.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51006913051.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "THE TOAST F&B SDN BHD",
+        "date": "11/05/2018",
+        "address": "LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750 JOHOR BAHRU JOHOR",
+        "total": "31.00",
+        "source_image": "X51006913051.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "THE TOAST FXB SDN BRD (965752-7)",
+                "date": "11/05/2018",
+                "address": "LOT 2110&Z111 JAJLAA PEFMAS UTARA BANDAI BARU FERMAS 81750.J0 0R BAHRU JOHOR",
+                "total": "2018.08",
+                "source_image": "X51006913051.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "THE TOAST FXB SDN BRD (965752-7)",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "11/05/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 2110&Z111 JAJLAA PEFMAS UTARA BANDAI BARU FERMAS 81750.J0 0R BAHRU JOHOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.08",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006913051.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "THE TOAST F&B SDN BHD",
+                        "extracted": "THE TOAST FXB SDN BRD (965752-7)",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 74.51
+                    },
+                    "date": {
+                        "expected": "11/05/2018",
+                        "extracted": "11/05/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750 JOHOR BAHRU JOHOR",
+                        "extracted": "LOT 2110&Z111 JAJLAA PEFMAS UTARA BANDAI BARU FERMAS 81750.J0 0R BAHRU JOHOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 88.74
+                    },
+                    "total": {
+                        "expected": "31.00",
+                        "extracted": "2018.08",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006913051.jpg",
+                        "extracted": "X51006913051.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "peoe\nTHE TOAST FXB SDN BrD (965752-7)\nLOT 211०&Z111 JAJLAA PEFMAS UTARA\nBANDAI? BARU FERMAS\n81750.J0!0R BAHRU JOHOR\nTel: 07-3886880\nGST ID Nvo 00?069684928\nTAX INVOIE\n#33418053885\n11/05/2018\nS/P: POS\n=O८ PMS\nWairi In\nFre ble\"\n=7\n|1:6|11\naty\nIJ.Price\nDisc\nPlmount\n711\nWVM TUNA\n5.0०\n0.00\n5.00\n224\nCANTONESE\n^\n10.00\n0.00\n10.00 $\n2!202\nTIA KAIVPIJNIG\n10.40\n0.00\n10.40 $\n301\nROFI\nHOT\n2.80\n0.00\n5.60 $\nToti Items:\nE='\nSub Total:\n31.00\nIes$ DDiscourit:\n0.00\nRounc;\n0.00\nTotal DLe (GS\" Inre):\n31.00\nPelld :\nCosh\n51,00\nCllang@\n20.00\n>c 348%**%==**\n$:3$7(6%}\n29.24\n1.76\nPlaase Come Agnin!\n11/05/2018 08:35:58 pm",
+            "processing_time_seconds": 56.2152
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "THE TOAST F&B SDN BHD (955/52-1 )",
+                "date": "11/05/2018",
+                "address": "LOT 211082111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750 JOHOR BAHRU JOHOR",
+                "total": "31.00",
+                "source_image": "X51006913051.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "31.00",
+                "discount": "0.00",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "THE TOAST F&B SDN BHD (955/52-1 )",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "11/05/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 211082111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750 JOHOR BAHRU JOHOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "31.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006913051.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "31.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "0.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "THE TOAST F&B SDN BHD",
+                        "extracted": "THE TOAST F&B SDN BHD (955/52-1 )",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "11/05/2018",
+                        "extracted": "11/05/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750 JOHOR BAHRU JOHOR",
+                        "extracted": "LOT 211082111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750 JOHOR BAHRU JOHOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 98.67
+                    },
+                    "total": {
+                        "expected": "31.00",
+                        "extracted": "31.00",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006913051.jpg",
+                        "extracted": "X51006913051.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "THE TOAST F&B SDN BHD (955/52-1 )\nLOT 211082111 JALAN PERMAS UTARA\nBANDAR BARU PERMAS\n81750 JOHOR BAHRU JOHOR\nTel 07-388682\nGST ID No 002069884028\n\nTAX INVOICE\n\ngate,\n\nउठ418059885 11/05/2018\nS/F: POS Loc: PMS\nWaik In\nTable!) 2\ntei Qty U.Price | Dise Amount\n711 WM TUNA\n1 B00 09.00 500 &\nood CANTONESE\n7 40.00 0.00 10.00 5\n2202 TIA KAMPUNG\n| 10.40 0.00 10.405\na0 KOFI - HOT\n2 2 80 0.00 5.60\nTotal Items: 4\nSub Total: 37,00\nLess Discount: 0.00\nRound: 0.00\nTotal Due (GST Ine): 31.00\nPaid: “वैशी | 571.00\nChange: 20.00\nS:(38T(6%) 29.24 1.76\n\nPlaase Come Again!\n\n41/08/2018 08:35:58 pm",
+            "processing_time_seconds": 5.2646
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "THE TOAST F&B SDN BHD (965752-T)",
+                "date": "11/05/2018",
+                "address": "LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750 JOHOR BAHRU JOHOR",
+                "total": "2018.08",
+                "source_image": "X51006913051.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 5,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "THE TOAST F&B SDN BHD (965752-T)",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "11/05/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750 JOHOR BAHRU JOHOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.08",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006913051.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "THE TOAST F&B SDN BHD",
+                        "extracted": "THE TOAST F&B SDN BHD (965752-T)",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "11/05/2018",
+                        "extracted": "11/05/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750 JOHOR BAHRU JOHOR",
+                        "extracted": "LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750 JOHOR BAHRU JOHOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "31.00",
+                        "extracted": "2018.08",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006913051.jpg",
+                        "extracted": "X51006913051.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "Au5089\nTHE TOAST F&B SDN BHD (965752-T)\nLOT 2110&2111 JALAN PERMAS UTARA\nBANDAR BARU PERMAS\n81750 JOHOR BAHRU JOHOR\nTel: 07-3886880\nGST ID No 002069884928\nTAX INVOICE\nPS8418053885\n11/05/2018\nS/P: POS\nLoc: PMS\nWalk In\nTable:\n27\nItem\nQty U.Price Disc\nAmount\n711\nWM TUNA\n5.00 S\n5.00 0.00\n1\n224\nCANTONESE\n1 10.00 0.00\n10.00 S\n220Z\nT/A KAMPUNG\n10.40 0.00\n10.40 S\n301\nKOPI-HOT\n5.60 S\n2\n2.80 0.00\nTotal Items: 4\nSub Total:\n31.00\n0.00\nLess Discount:\nRound:\nTotal Due (GST Inc):\nPaid:\nCash\n51.00\n20.00\nChange:\n29.24\n1.76\nS:GST(6%)\nPlease Come Again!\n11/05/2018 08:35:58 pm",
+            "processing_time_seconds": 153.5087
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "THE TOAST F&B SDN BHD (965752-1)",
+                "date": "11/05/2018",
+                "address": "LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750.JOHORBAHRUJOFIOR TE 07-3886880",
+                "total": "2018.08",
+                "source_image": "X51006913051.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 5,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "THE TOAST F&B SDN BHD (965752-1)",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "11/05/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750.JOHORBAHRUJOFIOR TE 07-3886880",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.08",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006913051.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "THE TOAST F&B SDN BHD",
+                        "extracted": "THE TOAST F&B SDN BHD (965752-1)",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "11/05/2018",
+                        "extracted": "11/05/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750 JOHOR BAHRU JOHOR",
+                        "extracted": "LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750.JOHORBAHRUJOFIOR TE 07-3886880",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 88.34
+                    },
+                    "total": {
+                        "expected": "31.00",
+                        "extracted": "2018.08",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006913051.jpg",
+                        "extracted": "X51006913051.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "THE TOAST F&B SDN BHD (965752-1)\nLOT 2110&2111 JALAN PERMAS UTARA\nBANDAR BARU PERMAS\n81750.JOHORBAHRUJOFIOR\nTe:07-3886880\nGST ID No 002069884928\nTAX INVOICE\nPS8418053885\n11/05/2018\nS/P: POS\nLoc: PMS\nWaikIn\n:01021\n27\nHem\nQty U.Price .Disc\nAmount\n711\nWM TUNA\n1.\n5.000.00\n5.00 S\n224\nCANTONESE\n1\n10.000.00\n10.00 S\n220Z\nT/A KAMPUNG\n1\n10.400.00\n10.40 S\n301\nKOPI-HOT\n2\n2.80\n0.00\n5.60 S\nTotal Items:4\n:1e101 4n9\n31.00\nless Discount:\n0.00\nRound:\n0.00\nTotal Due (GsT Ino):\n31.00\nuseo :ped\n51.00\nChange:\n20.00\nS:057(6%)\n29.24\n1.76\nPlebsa Come Again!\n11/05/2018 08:35:58 pm",
+            "processing_time_seconds": 3.2693
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "THE TOAST F&B SDN BHD (965752-T)",
+                "date": "11/05/2018",
+                "address": "LOT 211082111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750. JOHOR BAHRU JOHOR",
+                "total": "2018.08",
+                "source_image": "X51006913051.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 5,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "THE TOAST F&B SDN BHD (965752-T)",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "11/05/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 211082111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750. JOHOR BAHRU JOHOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.08",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006913051.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "THE TOAST F&B SDN BHD",
+                        "extracted": "THE TOAST F&B SDN BHD (965752-T)",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "11/05/2018",
+                        "extracted": "11/05/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 2110&2111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750 JOHOR BAHRU JOHOR",
+                        "extracted": "LOT 211082111 JALAN PERMAS UTARA BANDAR BARU PERMAS 81750. JOHOR BAHRU JOHOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 98.67
+                    },
+                    "total": {
+                        "expected": "31.00",
+                        "extracted": "2018.08",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006913051.jpg",
+                        "extracted": "X51006913051.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "Ausneg\nTHE TOAST F&B SDN BHD (965752-T)\nLOT 211082111 JALAN PERMAS UTARA\nBANDAR BARU PERMAS\n81750. JOHOR BAHRU JOHOR\nTel: 07-3886880\nGST ID No 002069884928\nTAX INVOICE\nPS8418053885\n11/05/2018\nS/P: POS\nLoc: PMS\nWaik In\nTable:\n27\nItem Qty U.Price Disc Amount\n711\nWM TUNA\n1 5.00 0.00\n5.00 S\n224\nCANTONESE\n1 10.00 0.00 10.00 S\n220Z\nTIA KAMPUNG\n1 10.40 0.00 10.40 S\n301\nKOPI - HOT\n2 2.80 0.00\n5.60 S\nTotal Items: 4\nSub Total:\n31.00\nLess Discount:\n0.00\nRound:\n0.00\nTotal Due (GST Inc):\n31.00\nPaid: Cash\n51.00\nChange:\n20.00\nS:GST(6%)\n29.24\n1.76\nPlease Come Again!\n11/05/2018 08:35:58 pm",
+            "processing_time_seconds": 7.7972
+        }
+    }
+}

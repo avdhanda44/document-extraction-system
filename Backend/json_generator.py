@@ -143,7 +143,122 @@ def collect_sheet_string_values(headers, rows):
     return values
 
 
-def get_sheet_rows_and_headers(rows, model_names):
+def make_invoice_field_summary_rows(rows, model_names):
+    field_names = sorted({
+        field_name
+        for row in rows
+        for model_fields in row.get("__field_results", {}).values()
+        for field_name, result in model_fields.items()
+        if result.get("used_for_accuracy")
+    })
+    field_rows = []
+
+    for field_name in field_names:
+        field_row = {"field": field_name}
+        evaluated_counts = []
+
+        for model_name in model_names:
+            results = [
+                row.get("__field_results", {}).get(model_name, {}).get(field_name)
+                for row in rows
+            ]
+            results = [result for result in results if result and result.get("used_for_accuracy")]
+            evaluated_counts.append(len(results))
+            matched_count = sum(bool(result.get("match")) for result in results)
+            similarities = [
+                result.get("similarity_percent", 100 if result.get("match") else 0)
+                for result in results
+            ]
+            field_row[f"{model_name} accuracy (%)"] = (
+                round(matched_count / len(results) * 100, 2) if results else 0
+            )
+            field_row[f"{model_name} average similarity (%)"] = (
+                round(sum(similarities) / len(similarities), 2) if similarities else 0
+            )
+
+        field_row["evaluated images"] = max(evaluated_counts, default=0)
+        field_rows.append(field_row)
+
+    return field_rows
+
+
+def make_invoice_model_summary_rows(rows, model_names):
+    summary_rows = []
+
+    for model_name in model_names:
+        scores = [
+            row.get(model_name)
+            for row in rows
+            if isinstance(row.get(model_name), (int, float))
+        ]
+        times = [
+            row.get(f"{model_name} processing time (seconds)")
+            for row in rows
+            if isinstance(row.get(f"{model_name} processing time (seconds)"), (int, float))
+        ]
+        failures = sum(
+            bool(row.get("__model_failed", {}).get(model_name))
+            for row in rows
+        )
+        complete_records = sum(
+            bool(row.get("__model_complete", {}).get(model_name))
+            for row in rows
+        )
+        summary_rows.append({
+            "model": model_name,
+            "image count": len(rows),
+            "average accuracy (%)": round(sum(scores) / len(scores), 2) if scores else 0,
+            "average processing time (seconds)": round(sum(times) / len(times), 4) if times else 0,
+            "failures": failures,
+            "complete records": complete_records,
+            "complete record rate (%)": (
+                round(complete_records / len(rows) * 100, 2) if rows else 0
+            ),
+        })
+
+    return summary_rows
+
+
+def get_invoice_sheet_rows_and_headers(rows, model_names):
+    time_headers = [f"{model_name} processing time (seconds)" for model_name in model_names]
+    accuracy_headers = ["image address"] + list(model_names) + time_headers
+    field_headers = ["field", "evaluated images"]
+
+    for model_name in model_names:
+        field_headers.extend([
+            f"{model_name} accuracy (%)",
+            f"{model_name} average similarity (%)",
+        ])
+
+    summary_headers = [
+        "model",
+        "image count",
+        "average accuracy (%)",
+        "average processing time (seconds)",
+        "failures",
+        "complete records",
+        "complete record rate (%)",
+    ]
+
+    return [
+        {"name": "accuracy", "headers": accuracy_headers, "rows": rows},
+        {
+            "name": "field_accuracy",
+            "headers": field_headers,
+            "rows": make_invoice_field_summary_rows(rows, model_names),
+        },
+        {
+            "name": "summary",
+            "headers": summary_headers,
+            "rows": make_invoice_model_summary_rows(rows, model_names),
+        },
+    ]
+
+
+def get_sheet_rows_and_headers(rows, model_names, report_profile=None):
+    if report_profile == "invoice":
+        return get_invoice_sheet_rows_and_headers(rows, model_names)
+
     time_headers = [f"{model_name} processing time (seconds)" for model_name in model_names]
     headers = (
         ["image address", "document side", "image quality category"]
@@ -301,8 +416,9 @@ def save_accuracy_excel(
     file_name="aadhaar_model_accuracy.xlsx",
     output_subfolder=None,
     output_format=None,
+    report_profile=None,
 ):
-    sheets = get_sheet_rows_and_headers(rows, model_names)
+    sheets = get_sheet_rows_and_headers(rows, model_names, report_profile)
     string_values = []
 
     for sheet in sheets:

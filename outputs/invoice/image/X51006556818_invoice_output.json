@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51006556818.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51006556818.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "GARDENIA BAKERIES (KL) SDN BHD",
+        "date": "03/09/2017",
+        "address": "LOT 3, JALAN PELABUR 23/1, 40300 SHAH ALAM, SELANGOR.",
+        "total": "29.59",
+        "source_image": "X51006556818.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "KL )SDN BLLIZTTTS6 X",
+                "date": "03/03/2017",
+                "address": "40 00 SHAN LLIM, SELANGOR /EL 0 554 .228 4 0.3 55421 13 T L I OTIL26100D4 ADJUSTIIENT IITE CASH INV NO 7903F7LL JALAN 17501",
+                "total": "40.00",
+                "source_image": "X51006556818.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "KL )SDN BLLIZTTTS6 X",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "03/03/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "40 00 SHAN LLIM, SELANGOR /EL 0 554 .228 4 0.3 55421 13 T L I OTIL26100D4 ADJUSTIIENT IITE CASH INV NO 7903F7LL JALAN 17501",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "40.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006556818.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "GARDENIA BAKERIES (KL) SDN BHD",
+                        "extracted": "KL )SDN BLLIZTTTS6 X",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 40.0
+                    },
+                    "date": {
+                        "expected": "03/09/2017",
+                        "extracted": "03/03/2017",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 3, JALAN PELABUR 23/1, 40300 SHAH ALAM, SELANGOR.",
+                        "extracted": "40 00 SHAN LLIM, SELANGOR /EL 0 554 .228 4 0.3 55421 13 T L I OTIL26100D4 ADJUSTIIENT IITE CASH INV NO 7903F7LL JALAN 17501",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 30.0
+                    },
+                    "total": {
+                        "expected": "29.59",
+                        "extracted": "40.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006556818.jpg",
+                        "extracted": "X51006556818.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "taklkula Barrllls\nKl )SDN Bllizttts6 X\n0i 3\nlalan Pelahulr २ 1\n4० ०0 Shan llim, Selangor\n/el: 0 554?.228\n|#4:0.3 55421?13\nt$l !I\nOtil26100D4|)\nTAX INNYOICE\nADJUSTIIENT IITE\nCash Inv No : ७९०३F७ll\nVl:05 ]4\nDcit \n03/03/2017\n/AKASSA? FRESH IARNET SDN BHD\nGROUNI  FLOOR\nI0\nJALAN\n5$\n15/48\n:17501:)\nSUBANG JAYA ,\nSELAFGOR\nVlI5: Azlan(3737\n[)|): 03/09/2017\n१l:27\nDescr'1 tton\nUP Ls >\nL॰ -\nSuL८\nAIIItCKII)\n७. ८ -\nTIHTTE\n2.13\n43\nTHOL ElEAL\n२ .78\n13 .%-\n](|.|80\n2. ९२\n8.91\nBOtIZ   SAVER\n97\n8 _ 91\nTotal O suppl ies :\n29.59\nCR - CFIOCLT\n0 . 72\nCL\nTotal 6% supplies (excl. GST):\nGST:\nTotal G% suplies (Inc  GST) :\n0.00\nTotal O% supplies :\n२९. 5९\nTotal Payoble\n29.59\n६. ९ .०.E\nReceived above Joods\nLn  Jood\nDI'dlel\nCwlaLLLOr .\nThe\nIeLLDLent\nof  Gardena\nDroducts\nL$\nre uLred\nto illorr\nriecessaIy adJus thent>\n०\nLts\n1nyut\nt८^\nclत1nrs\nOा\nthe\nbas1c of\nthr\nad jus thients\nShoka1\n]11\nthis\nTax\nInvoLCc\nAd Jus tuerit\nNotट\nISIOMERSCOPY",
+            "processing_time_seconds": 35.3024
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "GARDENIA BAKERIES (KE) SDN 8111) (1293886 4)",
+                "date": "63/03/201",
+                "address": "40300 SHAH ALII, SELANGOR 19 775 423228 1154 73- 55423213 GSE ED 00088 1399040 CASH INV NO. 79311 VI05 14 DATE 63/03/201 MAKASSAR FRESH MARKET SDN BHO GROUND FLOOR, NO. 4 & 6, JALAN SS 15/48, 4750 SUBANG JAYA, SELANGOR",
+                "total": "29.59",
+                "source_image": "X51006556818.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "0.00",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "GARDENIA BAKERIES (KE) SDN 8111) (1293886 4)",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "63/03/201",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "40300 SHAH ALII, SELANGOR 19 775 423228 1154 73- 55423213 GSE ED 00088 1399040 CASH INV NO. 79311 VI05 14 DATE 63/03/201 MAKASSAR FRESH MARKET SDN BHO GROUND FLOOR, NO. 4 & 6, JALAN SS 15/48, 4750 SUBANG JAYA, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "29.59",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006556818.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "0.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "GARDENIA BAKERIES (KL) SDN BHD",
+                        "extracted": "GARDENIA BAKERIES (KE) SDN 8111) (1293886 4)",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 71.64
+                    },
+                    "date": {
+                        "expected": "03/09/2017",
+                        "extracted": "63/03/201",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 3, JALAN PELABUR 23/1, 40300 SHAH ALAM, SELANGOR.",
+                        "extracted": "40300 SHAH ALII, SELANGOR 19 775 423228 1154 73- 55423213 GSE ED 00088 1399040 CASH INV NO. 79311 VI05 14 DATE 63/03/201 MAKASSAR FRESH MARKET SDN BHO GROUND FLOOR, NO. 4 & 6, JALAN SS 15/48, 4750 SUBANG JAYA, SELANGOR",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 40.0
+                    },
+                    "total": {
+                        "expected": "29.59",
+                        "extracted": "29.59",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006556818.jpg",
+                        "extracted": "X51006556818.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "GARDENIA BAKERIES (KE) SDN 8111) (1293886 ४)\nalan Polabur 231\n40300 Shah Alii, Selangor\n1९: ७७५ 423228 115४:॥७3- 55423213\nGSE ED 00088 1399040\n\nTAX INVOICE / ADJUSTHENT NOTE\n\nCash Inv No.: 79311!\n\nVi05 14 Date; 63/03/201\n\nMAKASSAR FRESH MARKET SDN BHO\n\nGROUND FLOOR, NO. 4 & 6,\nJALAN SS 15/48,\n\n4750) SUBANG JAYA, SELANGOR\n४॥:७5: Azlan(3737)\n\n11:27\n\n0.९. WHITE\nWHOLEMEAL = 2.7; § 0 ७9 5\n0०.९ JUMBO 2.97 3 0 @ 3\nBONZ SAVER 2.97 3 ७ 60 3\n\nTotal % suppl\n\nCR-CHOCLT 0७.7 € 6 छ\n\nTotal 6% supplies (excl. GST)\nGST:\n\nTotal 6% supplies (Inc. GST): 0.00\n\nTotal 0 supplies: 29.99\n\nTotal Payable: — 29.59\n\nE.&.@.E.\nReceived above goods in good order condition.\nThe recipient of Gardenia'’s products 1s\nrequired to make necessary adjustments to its\ninput tax claims, on the basic of the\nadjustments shown 11 this Tax Invoice /\nAdjustnent Note\n\nCUSTOMER'S COPY",
+            "processing_time_seconds": 7.1511
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "GARDENIA BAKERIES (KL) SDN BHD (139386 X)",
+                "date": "03/09/2017",
+                "address": "LOT 3, JALAN PELABUR 23/1, 40300 SHAH ALAM, SELANGOR.",
+                "total": "29.59",
+                "source_image": "X51006556818.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 5,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "GARDENIA BAKERIES (KL) SDN BHD (139386 X)",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "03/09/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 3, JALAN PELABUR 23/1, 40300 SHAH ALAM, SELANGOR.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "29.59",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006556818.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "GARDENIA BAKERIES (KL) SDN BHD",
+                        "extracted": "GARDENIA BAKERIES (KL) SDN BHD (139386 X)",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "03/09/2017",
+                        "extracted": "03/09/2017",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 3, JALAN PELABUR 23/1, 40300 SHAH ALAM, SELANGOR.",
+                        "extracted": "LOT 3, JALAN PELABUR 23/1, 40300 SHAH ALAM, SELANGOR.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "29.59",
+                        "extracted": "29.59",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006556818.jpg",
+                        "extracted": "X51006556818.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "GARDENIA BAKERIES (KL) SDN BHD (139386 X)\nLot 3, Jalan Pelabur 23/1,\n40300 Shah Alam, Selangor.\nTel: 03 55423228 Fax:03- 55423213\nGST 1D:000381399040\nTAX INVOICE / ADJUSTMENT NOTE\nCash Inv No.: 7903F711\nVE0514\nDate: 03/09/2017\nMAKASSAR FRESH MARKET SDN BHD\nGROUND FLOOR, NO. 4 & 6,\nJALAN SS 15/4B,\n47500SUBANG JAYA, SELANGOR\nVE05: Azlan(3737)\nDD: 03/09/2017\n11:27\nDescription\nU.P\nIss\nExc\nD Sale\nAmt (RH)\nO.C. WHITE\n2.13\n0\n1\n-1\nWHOLEMEAL\n2.78\n5\n13.90\nO.C JUMBO\n2.97\n3\n8.91\nBONZ SAVER\nTotal 0% supplies:\n29.59\nCR-CHOCLT\n0.72\n6\n6 0\n0.00\nTotal6% supplies (excl.GST):\nGST:\nTotal 6% supplies (Inc. GST):\nTotal Payable:\nE.&.0.E.\nReceived above goods in good order condition.\nThe recipient of Gardenia's products is\nrequired to make necessary adjustments to its\ninput tax claims, on the basic of the\nadjustments shown in this Tax Invoice\nAdjustment Note\nCUSTOMER'S COPY",
+            "processing_time_seconds": 24.1564
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "MAKASSARFRESHMARKETSDN BHD",
+                "date": "03/09/2017",
+                "address": "LOT3,JALAN PEIABUR231, 40300SHAH ALAM,SELANGOR.",
+                "total": "29.59",
+                "source_image": "X51006556818.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 5,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "MAKASSARFRESHMARKETSDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "03/09/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT3,JALAN PEIABUR231, 40300SHAH ALAM,SELANGOR.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "29.59",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006556818.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "GARDENIA BAKERIES (KL) SDN BHD",
+                        "extracted": "MAKASSARFRESHMARKETSDN BHD",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 48.15
+                    },
+                    "date": {
+                        "expected": "03/09/2017",
+                        "extracted": "03/09/2017",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 3, JALAN PELABUR 23/1, 40300 SHAH ALAM, SELANGOR.",
+                        "extracted": "LOT3,JALAN PEIABUR231, 40300SHAH ALAM,SELANGOR.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 93.62
+                    },
+                    "total": {
+                        "expected": "29.59",
+                        "extracted": "29.59",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006556818.jpg",
+                        "extracted": "X51006556818.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "GARDENIABAKERIES(KL.)SDNBHD(1B9386X)\nLot3,Jalan Peiabur231,\n40300Shah Alam,Selangor.\nTel:03-55423228 ax:03-55423213\nGST1D:000381399040\nTAXINVOICE/ADJUSTMENTNOTE\nCash Inv No.:7903F711\nVE0514\nDate:03/09/2017\nMAKASSARFRESHMARKETSDN BHD\nGROUNDFLOOR,NO.4&6,\nJALAN SS 1S/4B,\n475OSUBANGJAYA,SELANGOR\nVE05:Azlan(3737)\nDD:03/09/2017\n11:27\nDescription\nU.P\nIss\nExC\nD\nSale\nAmt(R)\nO.C.WHITE\n2.13\n0\n1\nC\n-1\n2.1B\nWHOLEMEAL\n2.78\n5\nS\n13.90\n0.CJUMBO\n2.97\n3\n3\n8.91\nBONZSAVER\n2.97\n3\n#\n3\n168\nTotal 0% supplies:\n29.59\nCR-CHOCLT\n0.72\n6\n0.00\nTotal 6% supplies (excl. GST):\n0.00\nGST:\n0.00\nTotal 6% supplies （Inc.GST):\n0.00\nTotal 0%supplies:\n29.59\nTotal Payable:\n29.59\nE.&.0.E.\nReceivedabovegoodsingoodordercndition.\nTherecipientofGardenia'sproducts1s\nrequired tomakenecessaryadjustmentstoits\ninputtaxclains，onthebasicofthe\nadjustmentsshowinthisTaxInvotce\nAdjustmentNote\nCUSTOMER'SCOPY",
+            "processing_time_seconds": 5.2222
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "MAKASSAR FRESH MARKET SDN BHD",
+                "date": "03/09/2017",
+                "address": "LOT 3, LALAN PELABUR 23/1, 40300 SHAH ALAN, SELANGOR.",
+                "total": "29.59",
+                "source_image": "X51006556818.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "MAKASSAR FRESH MARKET SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "03/09/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 3, LALAN PELABUR 23/1, 40300 SHAH ALAN, SELANGOR.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "29.59",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006556818.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "GARDENIA BAKERIES (KL) SDN BHD",
+                        "extracted": "MAKASSAR FRESH MARKET SDN BHD",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 52.63
+                    },
+                    "date": {
+                        "expected": "03/09/2017",
+                        "extracted": "03/09/2017",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 3, JALAN PELABUR 23/1, 40300 SHAH ALAM, SELANGOR.",
+                        "extracted": "LOT 3, LALAN PELABUR 23/1, 40300 SHAH ALAN, SELANGOR.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 95.92
+                    },
+                    "total": {
+                        "expected": "29.59",
+                        "extracted": "29.59",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006556818.jpg",
+                        "extracted": "X51006556818.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "GARDENIA BAKERIES(KLISDN BHDI139386 X)\nLot 3, lalan Pelabur 23/1,\n40300 Shah Alan, Selangor.\nTel: 03 55423228 kax:03 55423213\nGST - ID: 000381399040\nTAX INVOICE / ADJUSTMENT NOTE\nCash Inv No.: 7903F711\nVE0S14\nDate: 03/09/2017\nMAKASSAR FRESH MARKET SDN BHD\nGROUND FLOOR, NO. 4 & 6,\nJALAN SS 15/4B,\n47500 SUBANG JAYA, SELANGOR\nVEOS: Azlan(3737)\nDD: 03/09/2017\n11:27\nDescription U.P Iss Exc D Sale Amt (RM)\n0.C. WHITE\n2.13\n0\n1 0\n-1\n13\nWHOLEMEAL\n2.78\n5\n0 0\n5\n13.90\n0.C JUMBO\n2.97\n3\n0 0\n3\n8.91\nBONZ SAVER 2.97\n3\n0 0\n3\n8.91\nTotal 0% supplies:\n29.59\nCR-CHOCLT\n0.72\n6\n6 0\n0\n0.00\nTotal 6% supplies (excl. GST):\n0.00\nGST:\n0.00\nTotal 6% supplies (Inc. GST):\n0.00\nTotal 0% supplies:\n29.59\nTotal Payable:\n29.59\nE.&.0.E.\nReceived above goods in good order Condition.\nThe recipient of Gardenia's products 15\nrequired to make necessary adjus tments to its\ninput tax clams, on the basic of the\nadjus tments shown 1n this Tax Invoice /\nAdjus tment Note\nCUSTOMER'S COPY",
+            "processing_time_seconds": 7.1799
+        }
+    }
+}

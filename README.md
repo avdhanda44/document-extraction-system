@@ -241,7 +241,16 @@ The PAN schema extracts PAN number, English and Hindi names, father name, date o
 
 The passbook schema extracts banking fields such as bank name, branch details, IFSC, MICR, account holder, account number, PAN, address, account opening date, issue date, and branch manager stamp presence.
 
-The invoice schema extracts company, date, address, total amount, and source image.
+The invoice schema extracts company, date, address, receipt number, subtotal,
+tax, discount, total, currency, and source image. The current invoice ground
+truth evaluates company, date, address, and total; source-image metadata is not
+counted as model accuracy.
+
+Invoice batch reports contain:
+
+- `accuracy`: per-image model accuracy and processing time
+- `field_accuracy`: average accuracy and similarity for each evaluated field
+- `summary`: average accuracy, speed, failures, and complete-record rate by model
 
 ## Extraction Logic
 
@@ -294,6 +303,7 @@ OCR engines used by the code:
 - EasyOCR is the default image OCR engine.
 - Tesseract is used when installed and available through `pytesseract`.
 - PaddleOCR is used when `paddleocr` and `paddlepaddle` are installed.
+- Invoice batches run PaddleOCR in English-only mode for this English receipt dataset.
 - RapidOCR uses ONNX Runtime as an additional CPU-oriented comparison model.
 - docTR provides a PyTorch document text detection and recognition pipeline.
 

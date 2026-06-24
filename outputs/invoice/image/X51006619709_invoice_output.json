@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51006619709.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51006619709.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "MR. D.I.Y. (KUCHAI) SDN BHD",
+        "date": "24-01-16",
+        "address": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+        "total": "RM 57.40",
+        "source_image": "X51006619709.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "TR DLSL (RUCHAL ) SDNY BHD",
+                "date": "21-01-16",
+                "address": "LOT LDSI-A & LBSI-B JALAN KPR RAVASAN PERIHDUSTRIAN BALAKONG DZ300 SERT KERRANGAIL SELANGDR DST TLL HD E",
+                "total": "16.11",
+                "source_image": "X51006619709.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TR DLSL (RUCHAL ) SDNY BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "21-01-16",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT LDSI-A & LBSI-B JALAN KPR RAVASAN PERIHDUSTRIAN BALAKONG DZ300 SERT KERRANGAIL SELANGDR DST TLL HD E",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "16.11",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006619709.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (KUCHAI) SDN BHD",
+                        "extracted": "TR DLSL (RUCHAL ) SDNY BHD",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 69.57
+                    },
+                    "date": {
+                        "expected": "24-01-16",
+                        "extracted": "21-01-16",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "LOT LDSI-A & LBSI-B JALAN KPR RAVASAN PERIHDUSTRIAN BALAKONG DZ300 SERT KERRANGAIL SELANGDR DST TLL HD E",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 71.88
+                    },
+                    "total": {
+                        "expected": "RM 57.40",
+                        "extracted": "16.11",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006619709.jpg",
+                        "extracted": "X51006619709.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "TR= Dlsl॰ (RUCHAL ) SDNY BHD\nLo-RE6 : 750441\"l\nLOT LDSI-A & lBSI-B JALAN KPR ठ#\nRAVASAN PERIHDUSTRIAN BALAKONG\ndz३00 SERT KErRANGAIl; SELANGDR\n(DST\nTll hD\nE\n0004737?2512)\n(KEPONG )\n-TAX INUDILE\nTISSUE HOLDER Z-o6#rVS\n#5\n\"L22-32\n10/120\n9088477\n२ *\n5.30\n10.60\nHODK   1526#\n#5\n1512/3-32/\n36/380\n9068722\n२ *\n2:30\n4-60\nPLALEYAT 1४५#\n+$\n[F31\n20/300\n?062301\n२ *\n1 .90\n3.80\nFURNITURE S/HAT २PLS 32४3#\n४$\n1F13-22/3\n24/360\n9067630\n२ )\n2.50\n5-00\nPARTTTIDN IDT२ IDCh\n#$\n1812\n12!72\n4947?89710729\n२ %\n7.30\n14=60\nCNY TIELO AODZa Z४Cn\n*$\n)E11-22\n30\n8711489\nlX 1० १०\n10.9०\nENT DECD ROOBH २lCh\n+$\nE21\n6०\n8711488\n1 ^\n7.90\n7:90\nFREE २०l४ Cllf RED PACKET\n+$\n99292\n ?\n० . ००\nD०D\nTtel [ 5)\n6\nOty( =)\n\"\n+3\nTDTAL\nTNCL\nGSTOor\nRH 5७ . ४०\nCASH\nRH  LOD . DD\nCHANGE\nRf   ४२a ६०\nGST Loa included in total\nRri ३. २५\n21-01-16 11:44  SHD1  BDO३\nT1 R000379771\nDFENATOR KPL\nRASHUDEV NEUPANE\nEXLHANGE ARE ALLDVED IITHJN\n_\nIAY TLTH RELEIPT\nSTRCTLY ND CASH REFUND#",
+            "processing_time_seconds": 50.0446
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "MR. D.1. . KUCHAI) SIN BHD",
+                "date": "12/3-32",
+                "address": "LOT 1851-A & 1851-B, JALAN KPB 4, KAWASAN PERINIUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                "total": "3.25",
+                "source_image": "X51006619709.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "3.25",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "MR. D.1. . KUCHAI) SIN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "12/3-32",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 1851-A & 1851-B, JALAN KPB 4, KAWASAN PERINIUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "3.25",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006619709.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "3.25",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (KUCHAI) SDN BHD",
+                        "extracted": "MR. D.1. . KUCHAI) SIN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 86.36
+                    },
+                    "date": {
+                        "expected": "24-01-16",
+                        "extracted": "12/3-32",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "LOT 1851-A & 1851-B, JALAN KPB 4, KAWASAN PERINIUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 97.78
+                    },
+                    "total": {
+                        "expected": "RM 57.40",
+                        "extracted": "3.25",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006619709.jpg",
+                        "extracted": "X51006619709.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "हे So Se वश a 5...\n. '\n\nMR. D.1.¥. {KUCHAI) SIN BHD\nCo-REG: 750441-W\nLOT 1851-A & 1851-B, JALAN KPB 4,\nKAWASAN PERINIUSTRIAN BALAKONG,\n43300 SERI KEMBANGAN, SELANGOR\n(GST I No :000473792512)\n(KEPONG)\n-TAX INVOICE-\n\nTISSUE HOLDER Z-448%#VS KS\nMC22-32 - 10/120\n9048477 2X 5.30 10.60\nHOOK 15268 xS\nNG12/3-32/ - 36/360\n9068722 2X 2.30 4.60\nPLACEMAT 1458 ¥5\nIFSi - 20/300\n90462301 2X 1.90 3.80\nFURNITURE S/MAT 2PCS 32434 «S\nMF13-22/3 - 24/360\n9067630 2X 2,50 5.00\nPARTITION 1072 10CH xS\n1812 - 12/72\n4947989310729 2X 7.30 14.60\nCNY 1:00 #0028॥ 260॥ KS\nXE11-22 - 30\n8711449 1 ४ 10.90 10.90\nCNY DECO ADGIH 210K KS\n[६21 - 40\n8711448 1 3४ 97.98: 790\nFREE 2016 CNY RED PACKET xS\n99292 i xX 0.00 06.00\nItem(s) : 8 Qty{s) : 13\nTOTAL INCL. 98868 RM 57.40\nCASH RM 100,00\nCHANGE RM 42.40\n\nGST @6% included in total RM 3.25\n24-01-16 11:44 SHO1 BOOZ = 7T1 RDOO379771\nse. KPC - BASHUDEY NEUPANE\n\nEXCHANGE ARE ALLOWED WITHIN\n3 DAY WITH RECEIPT.\nSTRICTLY NO CASH REFUND,",
+            "processing_time_seconds": 4.8781
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "MR. D.I.Y. (KUCHAI) SDN BHD",
+                "date": "12/3-32",
+                "address": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                "total": "1072.10",
+                "source_image": "X51006619709.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "MR. D.I.Y. (KUCHAI) SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "12/3-32",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "1072.10",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006619709.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (KUCHAI) SDN BHD",
+                        "extracted": "MR. D.I.Y. (KUCHAI) SDN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "24-01-16",
+                        "extracted": "12/3-32",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "RM 57.40",
+                        "extracted": "1072.10",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006619709.jpg",
+                        "extracted": "X51006619709.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "MR. D.I.Y. (KUCHAI) SDN BHD\nCo-REG:750441-W\nLOT 1851-A & 1851-B, JALAN KPB 6,\nKAWASAN PERINDUSTRIAN BALAKONG,\n43300 SERI KEMBANGAN, SELANGOR\n(GST ID No :000473792512)\n(KEPONG)\n-TAX INVOICE-\nTISSUE HOLDER Z-66#*VS\n*S\nMC22-32 - 10/120\n9068477\n2 X 5.30 10.60\nHOOK 1526#\nMG12/3-32/ - 36/360\n9068722\n2 X 2.30\n4.60\nPLACEMAT 145#\nIF31 - 20/300\n9062301\n2 X 1.90\n3.80\nFURNITURE S/MAT 2PCS 3243#\nMF13-22/3 - 24/360\n9067630\n2 X 2.50\n5.00\nPARTITION 1072 10CM\nIA12 - 12/72\n4947989310729\n2 X 7.30\n14.60\nCNY DECO A002H 26CM\nXE11-22 - 30\n8711469\n1 X 10.90\n10.90\nCNY DECO AO03H 21CM\nIE21 - 60\n1 X\n7.90\n8711468\nFREE 2016 CNY RED PACKET\n0.00\n99292\nQty(s) : 13\nItem(s) : 8\nRM 57.40\nTOTAL INCL。 GST06%\nRM 100.00\nCASH\nRM 42.60\nCHANGE\nRM 3.25\nGST 06% included in total\nT1 R000379771\n24-01-16 11:44 SH01 B003\nOPERATOR KPC - BASHUDEV NEUPANE\nEXCHANGE ARE ALLOWED WITHIN\n3 DAY WITH RECEIPT.\nSTRICTLY NO CASH REFUND.",
+            "processing_time_seconds": 28.6119
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "MR.D.I.Y.(KUCHAI) SDN BHD",
+                "date": "22-32-10",
+                "address": "LOT 1851-A& 1851-B,JALAN KPB 6 KAWASAN PERINDUSTRIAN BALAKONG 43300 SERI KEMBANGAN, SELANGOR",
+                "total": "1072.10",
+                "source_image": "X51006619709.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 5,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "MR.D.I.Y.(KUCHAI) SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "22-32-10",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 1851-A& 1851-B,JALAN KPB 6 KAWASAN PERINDUSTRIAN BALAKONG 43300 SERI KEMBANGAN, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "1072.10",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006619709.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (KUCHAI) SDN BHD",
+                        "extracted": "MR.D.I.Y.(KUCHAI) SDN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "24-01-16",
+                        "extracted": "22-32-10",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "LOT 1851-A& 1851-B,JALAN KPB 6 KAWASAN PERINDUSTRIAN BALAKONG 43300 SERI KEMBANGAN, SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "RM 57.40",
+                        "extracted": "1072.10",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006619709.jpg",
+                        "extracted": "X51006619709.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "MR.D.I.Y.(KUCHAI) SDN BHD\nCo-REG:750441-W\nLOT 1851-A& 1851-B,JALAN KPB 6\nKAWASAN PERINDUSTRIAN BALAKONG\n43300 SERI KEMBANGAN, SELANGOR\n（GST ID No :000473792512）\n(KEPONG)\n-TAX INVOICE-\nTISSUE HOLDER Z-66#*V9\n*S\nMC22-32-10/120\n9068477\n2X5.3010.60\nH00K 1526#\nS*\nMG12/3-32/-36/360\n9068722\n2X2.30\n4.60\nPLACEMAT 145#\n*S\nIF31-20/300\n9062301\n2X1.90\n3.80\nFURNITURE S/MAT 2PCS 3243#\n*S\nMF13-22/3-24/360\n9067630\n2X2.50\n5.00\nPARTITI0N 1072 10CM\n*S\nIA12-12/72\n4947989310729\n2X7.3014.60\nCNY DEC0 A002# 26CM\n*S\nXE11-22-30\n8711469\n1X10.9010.90\nCNY DEC0 A003# 21CM\n*S\nIE21-60\n8711468\n1X7.90\n7.90\nFREE 2016 CNY RED PACKET\nS*\n99292\n1X0.00\n0.00\nItem(s):8\nQty(s)：13\nTOTALINCL.GST@6%\nRM57.40\nCASH\nRM100.00\nCHANGE\nRM42.60\nGST @6% included in total\nRM3.25\n24-01-16 11:44SH01 R003\nT1 R000379771\nOPERATOR KPC- BASHUDEV NEUPANE\nEXCHANGE ARE ALLOWED WITHIN\n3DAY WITH RECEIPT.\nSTRICTLY NO CASH REFUND",
+            "processing_time_seconds": 3.3764
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "MR. D.I.Y. (KUCHAI) SDN BHD",
+                "date": "12/3-32",
+                "address": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                "total": "1072.10",
+                "source_image": "X51006619709.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "MR. D.I.Y. (KUCHAI) SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "12/3-32",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "1072.10",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006619709.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (KUCHAI) SDN BHD",
+                        "extracted": "MR. D.I.Y. (KUCHAI) SDN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "24-01-16",
+                        "extracted": "12/3-32",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "RM 57.40",
+                        "extracted": "1072.10",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006619709.jpg",
+                        "extracted": "X51006619709.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "MR. D.I.Y. (KUCHAI) SDN BHD\nCo-REG:750441-W\nLOT 1851-A & 1851-B, JALAN KPB 6,\nKAWASAN PERINDUSTRIAN BALAKONG,\n43300 SERI KEMBANGAN, SELANGOR\n(GST ID No :000473792512)\n(KEPONG)\n-TAX INVOICE-\nTISSUE HOLDER Z-66#*VS\n*S\nMC22-32 - 10/120\n9068477\n2 X 5.30 10.60\nHOOK 1526#\n*S\nMG12/3-32/ - 36/360\n9068722\n2 X 2.30\n4.60\nPLACEMAT 145#\n*S\nIF31 - 20/300\n9062301\n2 X 1.90\n3.80\nFURNITURE S/MAT 2PCS 3243#\n*S\nMF13-22/3 - 24/360\n9067630\n2X 2.50\n5.00\nPARTITION 1072 10CM\n*S\nIA12 - 12/72\n4947989310729\n2 X 7.30 14.60\nCNY DECO A002# 26CM\n*S\nXE11-22 - 30\n8711469\n1 X 10.90 10.90\nCNY DECO A003# 21CM\n*S\nIE21 - 60\n8711468\n1 X 7.90\n7.90\nFREE 2016 CNY RED PACKET\n*S\n99292\n1 X 0.00\n0.00\nItem(s) : 8\nQty(s) : 13\nTOTAL INCL. GSTE6%\nRM 57.40\nCASH\nRM 100.00\nCHANGE\nRM 42.60\nGST 06% included in total\nRM 3.25\n24-01-16 11:44 SHO1 B003\nT1 R000379771\nOPERATOR KPC - BASHUDEV NEUPANE\nEXCHANGE ARE ALLOWED WITHIN\n3 DAY WITH RECEIPT.\nSTRICTLY NO CASH REFUND,",
+            "processing_time_seconds": 8.907
+        }
+    }
+}

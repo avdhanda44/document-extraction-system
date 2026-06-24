@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51005757324.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51005757324.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "MR. D.I.Y. (M) SDN BHD",
+        "date": "25-03-18",
+        "address": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+        "total": "50.80",
+        "source_image": "X51005757324.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "(I) SDN BHD",
+                "date": "25-03-18",
+                "address": "LOT 1851- 0 1851-8 JALAN KPB 6 KALASAN PERTNDUSTRJAN BALAKONG 43300 SERL KE IBANGAN SELANGOR",
+                "total": "1.12",
+                "source_image": "X51005757324.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "(I) SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "25-03-18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 1851- 0 1851-8 JALAN KPB 6 KALASAN PERTNDUSTRJAN BALAKONG 43300 SERL KE IBANGAN SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "1.12",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005757324.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (M) SDN BHD",
+                        "extracted": "(I) SDN BHD",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 66.67
+                    },
+                    "date": {
+                        "expected": "25-03-18",
+                        "extracted": "25-03-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "LOT 1851- 0 1851-8 JALAN KPB 6 KALASAN PERTNDUSTRJAN BALAKONG 43300 SERL KE IBANGAN SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 91.71
+                    },
+                    "total": {
+                        "expected": "50.80",
+                        "extracted": "1.12",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005757324.jpg",
+                        "extracted": "X51005757324.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "31&030:7\nlR\nD.[.Y.\n(I) SDN BHD\n(CO .REG\n860671-0)\nLOT\n18५1-^\n0\n1851-8\nJALAN KPB 6\nKAlASAN PERTNDUSTRJAN BALAKONG\n43३00  SERL KE IBANGAN\nSELANGOR\nGST\n-०\nNo\n000306020352)\n(IOT   PUCHONG )\n-TAX\n-NYOJCE-\nTRAC\nORY\nTRON   TR-2३1IR\n-1200||($R)\n\n+$\nIA१०\n१२\n9555493002853\n२६ . ९०\n२६ . ९०\nSTNGLF BFOSHEE1\nSET\n90:: 188+20C1\n#$\n0052-63\n२०\n9034713\n7\n( २३ . ९०\n२३ . ९०\nTten ( s )\n२\naty(s )\n२\nTota 1\nInc |\nGST@6%\nR५   ५० .8०\nCASH\nRi   5१ .००\nCHANGE\nRI 0.२०\nGST O६% included\nin total\nRi 2 . ८८\n25-03-18\n१8:४7\nSHO 1\n7186\nT१  R0001 १२४१५\nOPERATOR\nTRATNEE CASHJER\nEXCHANGE\nARE  ALLONED ITTHIN\nच\nOAY  IJTH RECEIPT\nSTRICTL/\nNO  CASH REFUND",
+            "processing_time_seconds": 10.8216
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "MR. O.T.Y. (M) SDN BHD",
+                "date": "25-03-18",
+                "address": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                "total": "2.88",
+                "source_image": "X51005757324.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "2.88",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "MR. O.T.Y. (M) SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "25-03-18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2.88",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005757324.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "2.88",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (M) SDN BHD",
+                        "extracted": "MR. O.T.Y. (M) SDN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 88.89
+                    },
+                    "date": {
+                        "expected": "25-03-18",
+                        "extracted": "25-03-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "50.80",
+                        "extracted": "2.88",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005757324.jpg",
+                        "extracted": "X51005757324.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "31&0205+ _\n\nMR. O.T.Y. (M) SDN BHD\n(CO.REG :860671-D)\nLOT 1851-A & 1851-B, JALAN KPB 6,\nKAWASAN PERINDUSTRIAN BALAKONG,\n43300 SERI KEMBANGAN, SELANGOR\n(GST ID No :000306020352)\n(101 PUCHONG)\n-TAX INVOICE-\nTRAC DRY IRON TR-2311R -1200W(SR) N +S\nWAIO - 12\n\n9555493002853 1 26.90 26.90\nSINGLE BFOSHEET SET 90%*188+20CM +9\n५052-63 - 20\n\n9034713 1 X 23.90 23.90\nItem(s) : 2 Qty(s) : 2\nTotal Incl. GST@6% RM 50.80\nCASH RM 51.00\nCHANGE RM 0.20\n\nGST @6% included in total RM 2.88\n\n25-03-18 18:47 SHO1 7186 11 १000112415\nOPERATOR TRAINEE CASHIER\n\nEXCHANGE ARE ALLOWED WITHIN\n7 DAY WITH RECEIPT.\nSTRICTLY NO CASH REFUND.",
+            "processing_time_seconds": 1.7757
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "MR. D.I.Y. (M) SDN BHD",
+                "date": "52-63-20",
+                "address": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                "total": "51.00",
+                "source_image": "X51005757324.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "MR. D.I.Y. (M) SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "52-63-20",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "51.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005757324.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (M) SDN BHD",
+                        "extracted": "MR. D.I.Y. (M) SDN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "25-03-18",
+                        "extracted": "52-63-20",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "50.80",
+                        "extracted": "51.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005757324.jpg",
+                        "extracted": "X51005757324.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "MR. D.I.Y. (M) SDN BHD\n(CO.REG :860671-D)\nLOT 1851-A & 1851-B, JALAN KPB 6,\nKAWASAN PERINDUSTRIAN BALAKONG,\n43300 SERI KEMBANGAN, SELANGOR\n(GST ID No :000306020352)\n(IOI PUCHONG)\n-TAX INVOICE-\nTRAC DRY IRON TR-231IR -1200W(SR) N\n*S\nWA10 - 12\n9555493002853\n1\n26.90\nSINGLE BEDSHEET SET 90*188+20CM\nJD52-63-20\n9034713\n1 X 23.90 23.90\nItem(s) : 2\nQty(s) : 2\nTotal Incl. GST@6%\nRM 50.80\nCASH\nRM 51.00\nCHANGE\nRM 0.20\nGST @6% included in total\nRM 2.88\n25-03-18 18:47 SH01 ZJ86\nT1 R000112415\nOPERATOR TRAINEE CASHIER\nEXCHANGE ARE ALLOWED WITHIN\n7 DAY WITH RECEIPT.\nSTRICTLY NO CASH REFUND.",
+            "processing_time_seconds": 10.8518
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "MR. D.I.Y. (M) SDN BHD",
+                "date": "52-63-20",
+                "address": "L0T 1851-A & 1851-B,JALAN KPB6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN,SELANGOR",
+                "total": "51.00",
+                "source_image": "X51005757324.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "MR. D.I.Y. (M) SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "52-63-20",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "L0T 1851-A & 1851-B,JALAN KPB6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN,SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "51.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005757324.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (M) SDN BHD",
+                        "extracted": "MR. D.I.Y. (M) SDN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "25-03-18",
+                        "extracted": "52-63-20",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "L0T 1851-A & 1851-B,JALAN KPB6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN,SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 98.32
+                    },
+                    "total": {
+                        "expected": "50.80",
+                        "extracted": "51.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005757324.jpg",
+                        "extracted": "X51005757324.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "31803057\nMR. D.I.Y. (M) SDN BHD\n(CO.REG :860671-D)\nL0T 1851-A & 1851-B,JALAN KPB6,\nKAWASAN PERINDUSTRIAN BALAKONG,\n43300 SERI KEMBANGAN,SELANGOR\n(GST ID NO :000306020352)\n(IOI PUCHONG)\n-TAX INVOICE-\nTRAC DRY IR0N TR-231IR -120OW(SR) N\n*S\nWA10-12\n9555493002853\n1\n26.90\n26.90\nSINGLE BFDSHEET SET 90*188+20CM\n*S\nJD52-63-20\n9034713\n1X 23.90\n23.90\nItem(s) : 2\nQty(s) : 2\nTotal Incl.GSI@6%\nRM 50.80\nCASH\nRM 51.00\nCHANGE\nRM0.20\nGST @6% included in total\nRM 2.88\n*一\n25-03-18 18:47 SH01ZJ86\nT1 R000112415\nOPERATOR TRAINEE CASHIER\nEXCHANGE ARE ALLOWED WITHIN\n7 DAY WITH RECEIPT.\nSTRICTLY NO CASH REFUND.",
+            "processing_time_seconds": 1.1772
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "MR. D.I.Y. (M) SDN BHD",
+                "date": "25-03-18",
+                "address": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                "total": "51.00",
+                "source_image": "X51005757324.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "MR. D.I.Y. (M) SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "25-03-18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "51.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005757324.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (M) SDN BHD",
+                        "extracted": "MR. D.I.Y. (M) SDN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "25-03-18",
+                        "extracted": "25-03-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "50.80",
+                        "extracted": "51.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005757324.jpg",
+                        "extracted": "X51005757324.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "31803057\nMR. D.I.Y. (M) SDN BHD\n-\n(CO.REG 860671-D)\nLOT 1851-A & 1851-B, JALAN KPB 6,\nKAWASAN PERINDUSTRIAN BALAKONG,\n43300 SERI KEMBANGAN, SELANGOR\n(GST ID No 000306020352)\n(IOI PUCHONG)\n-TAX INVOICE-\nTRAC DRY IRON TR-231IR -1200W(SR) N\n*S\nWA10 I- 12\n9555493002853\n1\n26.90\n26.90\nSINGLE BEDSHEET SET 90*188+20CM\n*S\nJD52-63 - 20\n9034713\n1 X 23.90\n23.90\nItem(s) : 2\nQty(s) : 2\nTotal Incl. GST@6%\nRM 50.80\nCASH\nRM 51.00\nCHANGE\nRM 0.20\nGST @6% included in total\nRM 2.88\n- -\n-*\n25-03-18 18:47 SH01 ZJ86\nT1 R000112415\nOPERATOR TRAINEE CASHIER\nEXCHANGE ARE ALLOWED WITHIN\n7 DAY WITH RECEIPT.\nSTRICTLY NO CASH REFUND.",
+            "processing_time_seconds": 3.5469
+        }
+    }
+}

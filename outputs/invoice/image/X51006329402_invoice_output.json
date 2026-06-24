@@ -1,0 +1,625 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51006329402.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51006329402.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "SEGI CASH & CARRY SDN. BHD.",
+        "date": "06/04/17",
+        "address": "PT17920 SEK U9, SHAH ALAM",
+        "total": "50.45",
+        "source_image": "X51006329402.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "GONIDS SAIA FR LT RETURNATLE",
+                "date": "08/04/17",
+                "address": "",
+                "total": "6705042.77",
+                "source_image": "X51006329402.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 9,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "company": {
+                        "value": "GONIDS SAIA FR LT RETURNATLE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "08/04/17",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "6705042.77",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006329402.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SEGI CASH & CARRY SDN. BHD.",
+                        "extracted": "GONIDS SAIA FR LT RETURNATLE",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 23.53
+                    },
+                    "date": {
+                        "expected": "06/04/17",
+                        "extracted": "08/04/17",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "PT17920 SEK U9, SHAH ALAM",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "total": {
+                        "expected": "50.45",
+                        "extracted": "6705042.77",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006329402.jpg",
+                        "extracted": "X51006329402.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "Rer   ५७ :\n-\n!7=743057!1?81\nGonids  Saia fr : lt ReturnatLE:\nT\n22/\nezi Casl : Carry Sdr. .Bhl.\nF:177:0 Ezx If\nglah Ria\nGST Reg Ilz\n0017515456%\n05/==200207!421?7\n08/04/17 11:433#\nPZSHT: Rफ़k }TSH4SH\n11|_\n? :\n11.5{\n२3.00 5\nYLGHTY YRK BLEAZH -DL\n२ * 11 5?\n२३ ऐ० $\nfIE;ZA SDHYEXET CJTTAEE ३DZ३\n! x ५४५\n५ -४५ $\nRD ०१ :te५:\n5\nTotal -nzz  GST:F:\n६२ . 4५\n?35*3\"\n%::\n#:::Li३:\nE२ :२८\nEl arlie :Fili\n7:3-\nHisset Foint Today:  47\nSarvez hi ASHDK क़UiiAf\n*#* 5E!  S!l!a!!\ntः   EpiJa\nक़ड़Dirt !RH :\nTaऐ !\n-\nt६ .-i\n47-६0\n२.३५\nRer :e: DDa!:?6705042.77\n5702= 5511 !!=\nla!  feturnatlz :\n7!",
+            "processing_time_seconds": 14.4482
+        },
+        "tesseract": {
+            "extracted_data": {},
+            "classification": {
+                "document_type": "unknown",
+                "confidence_percent": 0.0,
+                "confidence_level": "low"
+            },
+            "validation": {
+                "summary": {
+                    "total_fields_checked": 0,
+                    "valid_fields": 0,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true,
+                    "note": "Document type is unknown, so validation could not run."
+                },
+                "field_results": {}
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SEGI CASH & CARRY SDN. BHD.",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date": {
+                        "expected": "06/04/17",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "PT17920 SEK U9, SHAH ALAM",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "total": {
+                        "expected": "50.45",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006329402.jpg",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "Bo\n\nfoods Sold ?\n\n= uf\n\ne Mor 0\n\nO5/se200209/42193 06/04/17 11:43an\n\nuw\n\n23,00\n\nt Today: 47\n\nSHOR RUNAR",
+            "processing_time_seconds": 1.2995
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "SEGI CASH & CARRY SDN. BHD.",
+                "date": "06/04/17",
+                "address": "REF NO 0 00696305041961 8008 P SEGI CASH & CARRY SDN. BHD. PT17920 SEK U9, SHAH ALAM",
+                "total": "50.45",
+                "source_image": "X51006329402.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "SEGI CASH & CARRY SDN. BHD.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "06/04/17",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "REF NO 0 00696305041961 8008 P SEGI CASH & CARRY SDN. BHD. PT17920 SEK U9, SHAH ALAM",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "50.45",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006329402.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SEGI CASH & CARRY SDN. BHD.",
+                        "extracted": "SEGI CASH & CARRY SDN. BHD.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "06/04/17",
+                        "extracted": "06/04/17",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "PT17920 SEK U9, SHAH ALAM",
+                        "extracted": "REF NO 0 00696305041961 8008 P SEGI CASH & CARRY SDN. BHD. PT17920 SEK U9, SHAH ALAM",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "50.45",
+                        "extracted": "50.45",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006329402.jpg",
+                        "extracted": "X51006329402.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "Ref No: 0 00696305041961\nGoods Sold Ara. Not Returnable. T0\n8008\n(P)\nSegi Cash & Carry Sdn. Bhd.\nPt17920 Sek U9, Shah Alam\nGST Reg No : 001951645696\n05/se200209/42193\n06/04/17 11:43am\nMIGHTY MARK DISHWASH 11L\n23.00 S\n2 x 11.50\nMIGHTY MARK BLEACH 10L\n2 × 11.50\nGARDENIA SOMMERSET COTTAGE 300G\n1 × 4.45\n4.45 S\nNo of itens: 5\nTotal Incl. GST:RM\n50.45\nMaster xxxxxxxxxxxx9113:\nChange:RM\n0.00\nMissed Point Today: 47\nServed by ASHOK KUMAR\n京家家水 GST Summary 家***水*****\nGST Code\nAmount(RM)\nTax(RM)\nS 06.0%\n47.60\n2.85\n水京京本家库本求家京京家本本水水本本本京本本本水本京水家家水水京本家本家\nRef No: 00600696305042193",
+            "processing_time_seconds": 11.4548
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "EGI CASH & CARRY SDN.BHD.",
+                "date": "06/04/1711",
+                "address": "REF NO 000696305041961 EGI CASH & CARRY SDN.BHD. FT17920 SEK U9.SHAH ALAM",
+                "total": "50.45",
+                "source_image": "X51006329402.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "EGI CASH & CARRY SDN.BHD.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "06/04/1711",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "REF NO 000696305041961 EGI CASH & CARRY SDN.BHD. FT17920 SEK U9.SHAH ALAM",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "50.45",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006329402.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SEGI CASH & CARRY SDN. BHD.",
+                        "extracted": "EGI CASH & CARRY SDN.BHD.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 97.78
+                    },
+                    "date": {
+                        "expected": "06/04/17",
+                        "extracted": "06/04/1711",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "PT17920 SEK U9, SHAH ALAM",
+                        "extracted": "REF NO 000696305041961 EGI CASH & CARRY SDN.BHD. FT17920 SEK U9.SHAH ALAM",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 80.0
+                    },
+                    "total": {
+                        "expected": "50.45",
+                        "extracted": "50.45",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006329402.jpg",
+                        "extracted": "X51006329402.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "Ref No: 000696305041961\nGoods Sold Ars.Not Returnable. TO\negi Cash & Carry Sdn.Bhd.\nFt17920 Sek U9.Shah Alam\nGST Req No:001951645696\n05/se200209/42193\n06/04/1711:43am\nMIGHTY MARK DISHWASH·11L\n2 x 11.50\n23.005\nMIGHTY MARK BLEACH 1OL\n2x 11.50\n23.00S\nGARDENIA SOHMERSET COTTAGE 3OOG\n1x4.45\n4.45 S\nNo ofitems:5\nTotal Incl. GST:RM\n50.45\nMaster xxxxxxy\nXXXxx9113:\n50.45\nChangesRM\n0.00\nMissed Foint Today: 47\nServed by ASHOK KUMAR\n*********************\nGST Code\nAnount(RM)Tax(RH)\nS06.0%\n47.60\n.2.85\n*****京****\n************\nRef No: 00600696305042193\nGoods Sold Are Not Returnable.TQ",
+            "processing_time_seconds": 1.3052
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "GEGI CASH & CARRY SDN. BHD.",
+                "date": "06/04/17",
+                "address": "REF NO 0 00696305041961 WO8H GEGI CASH & CARRY SDN. BHD. P 17920 SEK 19, SHAH ALAM",
+                "total": "50.45",
+                "source_image": "X51006329402.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "GEGI CASH & CARRY SDN. BHD.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "06/04/17",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "REF NO 0 00696305041961 WO8H GEGI CASH & CARRY SDN. BHD. P 17920 SEK 19, SHAH ALAM",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "50.45",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006329402.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SEGI CASH & CARRY SDN. BHD.",
+                        "extracted": "GEGI CASH & CARRY SDN. BHD.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 95.65
+                    },
+                    "date": {
+                        "expected": "06/04/17",
+                        "extracted": "06/04/17",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "PT17920 SEK U9, SHAH ALAM",
+                        "extracted": "REF NO 0 00696305041961 WO8H GEGI CASH & CARRY SDN. BHD. P 17920 SEK 19, SHAH ALAM",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 60.0
+                    },
+                    "total": {
+                        "expected": "50.45",
+                        "extracted": "50.45",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006329402.jpg",
+                        "extracted": "X51006329402.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "Ref No: 0\n00696305041961\nGoods Sold Ar: Not Returnable. TO\nWo8h\nGegi Cash & Carry Sdn. Bhd.\nP+17920 Sek 19, Shah Alam\nGST Reg No : 001951645696\n05/se200209/42193\n06/04/17 11:43am\nMIGHTY MARK DISHWASH\n11L\n2 X 11.50\n23.00 S\nMIGHTY MARK BLEACH 10L\n2 X 11,50\n23.00 S.\nGARDENIA SOMMERSET COTTAGE 300G\n1 X 4.45\n4.45 S\nNo of itens: 5\nTotal Incl. GST:RM\n50.45\nMaster\nKXY - X X9113:\n50.45\nChange:RM\n0.00\nMissed Point Today: 47\nServed by ASHOK KUMAR\ni X I I X XX GST Suamary XX -\nGST Code\nAmount(RM)\nTax(RM)\nS 06.0%\n47.60\n2.85 V\nRef No: 00600696305042193\nGoods Sold Are Not Returnable. TO",
+            "processing_time_seconds": 3.4047
+        }
+    }
+}

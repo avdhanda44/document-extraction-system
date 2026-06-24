@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51005719886.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51005719886.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "SUNFISH",
+        "date": "05/01/2018",
+        "address": "22 LRG PERUSAHAAN 4 KIMPAL INDS.PARK B.CAVES",
+        "total": "28.70",
+        "source_image": "X51005719886.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "KJNPAL TNDS PARK B CAVES",
+                "date": "05/01/2018",
+                "address": "10256 TIBLT 4 SALTED F RICE 8.50 3RRJED 3GG",
+                "total": "2018.13",
+                "source_image": "X51005719886.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "KJNPAL TNDS PARK B CAVES",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "05/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "10256 TIBLT 4 SALTED F RICE 8.50 3RRJED 3GG",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.13",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005719886.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SUNFISH",
+                        "extracted": "KJNPAL TNDS PARK B CAVES",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 12.9
+                    },
+                    "date": {
+                        "expected": "05/01/2018",
+                        "extracted": "05/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "22 LRG PERUSAHAAN 4 KIMPAL INDS.PARK B.CAVES",
+                        "extracted": "10256 TIBLT 4 SALTED F RICE 8.50 3RRJED 3GG",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 20.69
+                    },
+                    "total": {
+                        "expected": "28.70",
+                        "extracted": "2018.13",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005719886.jpg",
+                        "extracted": "X51005719886.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "SUIF-SH\n<484297-1|>\n२२ LRG PERUSAYAAN\n4\nKJNPAL TNDS PARK B CAVES\nTEL\n03-61855633\nID\n10256\nTiBLt\n4^\nSALTED F RICE\n8.50\n३rRJED ३GG\n1 .8०\nNAST LEHAN TRUrtiiik\n९.६८\nSOYA CTNDA J\n4.30\nLARGE\n\nTCE  TEA\n4.30\nSUBTOTAL\n२8 . ७0\nRM CaSH\n100.00;\nCHANGE\n७१ . ३०\nTND ६% GST\n1 .62\nTAX JNOTCE\n#001-001-0934-0001 05/01/2018 13:30-R\nGST\n002008047616\nTHANK YOU",
+            "processing_time_seconds": 11.0827
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "KIMPAL INDS.PARK B.CAVES",
+                "date": "30 SUBTOTAL 28",
+                "address": "10258 NO FAL TABLE I SALTED F.RICE 6.50",
+                "total": "431.11",
+                "source_image": "X51005719886.jpg",
+                "receipt_number": "001-001-0934-0001",
+                "subtotal": "28.70",
+                "tax": "1.62",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 1,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "KIMPAL INDS.PARK B.CAVES",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "30 SUBTOTAL 28",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "10258 NO FAL TABLE I SALTED F.RICE 6.50",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "431.11",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005719886.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "001-001-0934-0001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "28.70",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "tax": {
+                        "value": "1.62",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SUNFISH",
+                        "extracted": "KIMPAL INDS.PARK B.CAVES",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 12.9
+                    },
+                    "date": {
+                        "expected": "05/01/2018",
+                        "extracted": "30 SUBTOTAL 28",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "22 LRG PERUSAHAAN 4 KIMPAL INDS.PARK B.CAVES",
+                        "extracted": "10258 NO FAL TABLE I SALTED F.RICE 6.50",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 26.51
+                    },
+                    "total": {
+                        "expected": "28.70",
+                        "extracted": "431.11",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005719886.jpg",
+                        "extracted": "X51005719886.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "\"\n<484297 -M>\n22 LRG PERUSAHAAN 4\nKIMPAL INDS.PARK B.CAVES\nTEL : 03-61855688\n\n10258\n\nNO\n\nFal\nTABLE I\nSALTED F.RICE 6.50\n@FRIED EGG 1.90\nNAST LEMAK 00४31 11) 9.60\nSOYA CINCAU 4.30\nLARGE / ICE TEA 4,30\nSUBTOTAL 28.70\nRM CASH 100 0G\nCHANGE 71.36\nINC 6% GST 1.62\n\nTAX INVOICE\n#001-001-0934-0001 Behe 13:30-R\n\nGST : 002008047616\n| THANK YOU\n\n'",
+            "processing_time_seconds": 1.3107
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "KIMPAL INDS.PARK B.CAVES",
+                "date": "05/01/2018",
+                "address": "NO 10256 TABLE 12 SALTED F.RICE 8.50",
+                "total": "2018.13",
+                "source_image": "X51005719886.jpg",
+                "receipt_number": "001-001-0934-0001",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "KIMPAL INDS.PARK B.CAVES",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "05/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO 10256 TABLE 12 SALTED F.RICE 8.50",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.13",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005719886.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "001-001-0934-0001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SUNFISH",
+                        "extracted": "KIMPAL INDS.PARK B.CAVES",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 12.9
+                    },
+                    "date": {
+                        "expected": "05/01/2018",
+                        "extracted": "05/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "22 LRG PERUSAHAAN 4 KIMPAL INDS.PARK B.CAVES",
+                        "extracted": "NO 10256 TABLE 12 SALTED F.RICE 8.50",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 17.5
+                    },
+                    "total": {
+                        "expected": "28.70",
+                        "extracted": "2018.13",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005719886.jpg",
+                        "extracted": "X51005719886.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "SUNFISH\n<484297-M>\n22 LRG PERUSAHAAN 4\nKIMPAL INDS.PARK B.CAVES\nTEL : 03-61855688\nNO\n10256\nTABLE\n12\nSALTED F.RICE\n8.50\nêFRIED EGG\n1.80\nNASI LEMAK DRUMSTICK\n9.80\nSOYA CINCAU\n4.30\nLARGE / ICE TEA\nSUBTOTAL\n28.70\nRM CASH\n100.00℃\nCHANGE\n71.30\nINC 6% GST\n1.62\nTAX INVOICE\n#001-001-0934-0001 05/01/2018 13:30-R\nGST : 002008047616\nTHANKYOU",
+            "processing_time_seconds": 10.457
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "KIMPAL INDS.PARK B.CAVES",
+                "date": "05/01/2018",
+                "address": "NO 10256 TABLE 12 SALTED F.RICE 8.50",
+                "total": "2018.13",
+                "source_image": "X51005719886.jpg",
+                "receipt_number": "001-001-0934-0001",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "KIMPAL INDS.PARK B.CAVES",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "05/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO 10256 TABLE 12 SALTED F.RICE 8.50",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.13",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005719886.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "001-001-0934-0001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SUNFISH",
+                        "extracted": "KIMPAL INDS.PARK B.CAVES",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 12.9
+                    },
+                    "date": {
+                        "expected": "05/01/2018",
+                        "extracted": "05/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "22 LRG PERUSAHAAN 4 KIMPAL INDS.PARK B.CAVES",
+                        "extracted": "NO 10256 TABLE 12 SALTED F.RICE 8.50",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 17.5
+                    },
+                    "total": {
+                        "expected": "28.70",
+                        "extracted": "2018.13",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005719886.jpg",
+                        "extracted": "X51005719886.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "SUNFISH\n<484297-M>\n22LRG PERUSAHAAN4\nKIMPAL INDS.PARK B.CAVES\nTEL:03-61855688\nNO\n10256\nTABLE\n12\nSALTED F.RICE\n8.50\neFRIED EGG\n1.80\nNASI LEMAK DRUMSTICK\n9.80\nSOYA CINCAU\n4.30\nLARGE/ ICE TEA\n4.30\nSUBTOTAL\n28.70\nRM CASH\n100.000\nCHANGE\n71.30\nINC 6%GST\n1.62\nTAX INVOICE\n#001-001-0934-0001 05/01/2018 13:30-R\nGST_:002008047616\nTHANK YOU",
+            "processing_time_seconds": 0.751
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "KIMPAL INDS.PARK B.CAVES",
+                "date": "05/01/2018",
+                "address": "NO 10256 TABLE 12 SALTED F.RICE 8.50",
+                "total": "2018.13",
+                "source_image": "X51005719886.jpg",
+                "receipt_number": "001-001-0934-0001",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "KIMPAL INDS.PARK B.CAVES",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "05/01/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO 10256 TABLE 12 SALTED F.RICE 8.50",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.13",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005719886.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "001-001-0934-0001",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SUNFISH",
+                        "extracted": "KIMPAL INDS.PARK B.CAVES",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 12.9
+                    },
+                    "date": {
+                        "expected": "05/01/2018",
+                        "extracted": "05/01/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "22 LRG PERUSAHAAN 4 KIMPAL INDS.PARK B.CAVES",
+                        "extracted": "NO 10256 TABLE 12 SALTED F.RICE 8.50",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 17.5
+                    },
+                    "total": {
+                        "expected": "28.70",
+                        "extracted": "2018.13",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005719886.jpg",
+                        "extracted": "X51005719886.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "SUNFISH\n<484297-M>\n22 LRG PERUSAHAAN 4\nKIMPAL INDS.PARK B.CAVES\nTEL : 03-61855688\nNO\n10256\nTABLE\n12\nSALTED F.RICE\n8.50\nEFRIED EGG\n1.80\nNASI LEMAK DRUMSTIOK\n9.80\nSOYA CINCAU\n4.30\nLARGE / ICE TEA\n4.30\nSUBTOTAL\n28.70\nRM CASH\n100.000\nCHANGE\n71.30\nINC 6% GST\n1.62\nTAX INVOICE\n#001-001-0934-0001 05/01/2018 13:30-R\n(\nGST : 002008047616\nTHANK YOU",
+            "processing_time_seconds": 2.5986
+        }
+    }
+}

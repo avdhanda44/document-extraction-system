@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X00016469672.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X00016469672.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "SOON HUAT MACHINERY ENTERPRISE",
+        "date": "11/01/2019",
+        "address": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+        "total": "327.00",
+        "source_image": "X00016469672.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "SOON HUAT MACHINERY ENTERPRISE",
+                "date": "11/01/2019",
+                "address": "NO 53 J/LAN PUTRA 1 TAMAN SRI PUTRA 8 1200 JOHOR BAHRU 0 07",
+                "total": "327.00",
+                "source_image": "X00016469672.jpg",
+                "receipt_number": "CS00004040",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "SOON HUAT MACHINERY ENTERPRISE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "11/01/2019",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO 53 J/LAN PUTRA 1 TAMAN SRI PUTRA 8 1200 JOHOR BAHRU 0 07",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "327.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X00016469672.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS00004040",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SOON HUAT MACHINERY ENTERPRISE",
+                        "extracted": "SOON HUAT MACHINERY ENTERPRISE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "11/01/2019",
+                        "extracted": "11/01/2019",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+                        "extracted": "NO 53 J/LAN PUTRA 1 TAMAN SRI PUTRA 8 1200 JOHOR BAHRU 0 07",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 89.83
+                    },
+                    "total": {
+                        "expected": "327.00",
+                        "extracted": "327.00",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X00016469672.jpg",
+                        "extracted": "X00016469672.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "tan\nyee\nSOON HUAT MACHINERY ENTERPRISE\n*0|10352019-K1\nNO 53 J/LAN PUTRA 1\nTAMAN SRI PUTRA\n8 1२०० JOHOR BAHRU\n]0=07\nTEL\n07-5547360 /016-7993391\nFAX * 07-5624059\nSOONHUAT२OOOQHOTMAIL COM\nGST ID\n002116837376\nCASH SALES\nDoc No\nCS00004040\nDaie\n11/01/2019\nCashier\nUSER\nTime\n09:44:00\nSalesperson\nRei\nItem\nQty\nSiPrice\nS Price\nAmount\nTan\n1072\n00.00\n८० ००\n8० 0०\nREPAIR ENGINE POLJER SPRAYER ( IUNIT)\nworkmanshiip & service\n70549\n1६0.00\n160.00\n/६0.0०\nGIANT ६०६ OVERFLOW ASSY\n1071\n१ / DU\n१७ D०\n१७ U०\nENGINE OIL\n70791\n१० ००\n१० ००\n१० ००\nGREASE FOR TOOLS 4OML (AKODAI\n70837\n6.00\nEY२O PLUG ChIAMPION\n1643\n८ ००\n8.00\n ००\nSTARTER TALI\n70197\n10.00\n१० 0०\n10.0०\nEY२० STARTER HANDLE\n70561\n18.00\n18 0०\n36.00\nFIDAO IL COTIN\nToial Ohy\n327 00\nTolal Sales\n327.00\nDiscouni\n0०\n3^7.00\nToial\n0.00\nRounding\n0.00\nTotal Sales\n327.00\nCASH\n327.00\nChange\n0.00\nGOODS SOLD ARE NOT RETURNABLE THANK YOU\nchay",
+            "processing_time_seconds": 15.398
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "SOON HUAT MACHINERY ENTERPRISE",
+                "date": "11/01/2019",
+                "address": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+                "total": "327.00",
+                "source_image": "X00016469672.jpg",
+                "receipt_number": "S00004040",
+                "subtotal": "327.00",
+                "tax": "",
+                "discount": "0.00",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "SOON HUAT MACHINERY ENTERPRISE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "11/01/2019",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "327.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X00016469672.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "S00004040",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "327.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "0.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SOON HUAT MACHINERY ENTERPRISE",
+                        "extracted": "SOON HUAT MACHINERY ENTERPRISE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "11/01/2019",
+                        "extracted": "11/01/2019",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+                        "extracted": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "327.00",
+                        "extracted": "327.00",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X00016469672.jpg",
+                        "extracted": "X00016469672.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "tan chay yee\n\nSOON HUAT MACHINERY ENTERPRISE\n(JM0352019-K)\nNO.53 JALAN PUTRA 1,\nTAMAN SRI PUTRA,\n81200 JOHOR BAHRU\nJOHOR\nTEL : 07-5547360 /016-7993391 FAX : 07-5624059\nSOONHUAT2000@HOTMAIL.COM\nGST ID : 002116837376\n\neee 55 CASHSALES ee\nDoc No. s00004040 Date: 11/01/2019\n\nCashier USER Time: 09:44:00\nRet.\n\nSale!\n\ntem _090 8iPrice S/Price Amount _Tax\n1072 1 80.00 10 80.00\nREPAIR ENGINE POWER SPRAYER (1UNIT)\n\nworkmanship & service\n\n70349 1 160.00 160.00 160.00\nGIANT 606 OVERFLOW ASSY\n1071 1 17.00. 17.0 17.00\nENGINE 01\n70791 1 1000 1000 10.00\nGREASE FOR TOOLS 40ML (AKODA)\n70637 1 6.00... 600 6.00\nEY20 PLUG CHAMPION\n1643 1 goo 8.00 8.00\nSTARTER TALI\n70197 1 10.00. 10.00 10.00\nEY20 STARTER HANDLE\n70561 2 18.00. 10.00 36.00\n॥1040 1L COTIN\nTotal Qt onc 327 00\nTotalSales ; 327.09\nDiscount 0.00\nTotal 0.00\nRounding 0,00\n\nTotal Sales : 327.00\n\nCASH : 327.00\nChange : 0.00\n\nGOODS SOLD ARE NOT RETURNABLE, THANK YOU.",
+            "processing_time_seconds": 1.1116
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "SOON HUAT MACHINERY ENTERPRISE",
+                "date": "11/01/2019",
+                "address": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA 81200 JOHOR BAHRU JOHOR",
+                "total": "327.00",
+                "source_image": "X00016469672.jpg",
+                "receipt_number": "CS00004040",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "SOON HUAT MACHINERY ENTERPRISE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "11/01/2019",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA 81200 JOHOR BAHRU JOHOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "327.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X00016469672.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS00004040",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SOON HUAT MACHINERY ENTERPRISE",
+                        "extracted": "SOON HUAT MACHINERY ENTERPRISE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "11/01/2019",
+                        "extracted": "11/01/2019",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+                        "extracted": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA 81200 JOHOR BAHRU JOHOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "327.00",
+                        "extracted": "327.00",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X00016469672.jpg",
+                        "extracted": "X00016469672.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "tan chay yee\nSOON HUAT MACHINERY ENTERPRISE\n(JM0352019-K)\nNO.53 JALAN PUTRA 1,\nTAMAN SRI PUTRA\n81200 JOHOR BAHRU\nJOHOR\nTEL:07-5547360/016-7993391\nFAX:07-5624059\nSOONHUAT2000@HOTMAIL.COM\nGST ID: 002116837376\nCASH SALES\nDoc No.\nCS00004040\nDate: 11/01/2019\nCashier\nUSER\nTime: 09:44:00\nSalesperson\nRef.:\nItem\nQty\nS/Price\nAmount\nTax\n1072\n1\n80.00\nREPAIR ENGINE POWER SPRAYER (1UNIT)\nworkmanship & service\n70549\n160.00\nGIANT 606 OVERFLOW ASSY\n1071\n17.00\nENGINE OIL\n70791\n10.00\nGREASE FOR TOOLS 40ML (AKODA)\n70637\n6.00\nEY20 PLUG CHAMPION\n1643\n8.00\nSTARTER TALI\n70197\nEY20 STARTER HANDLE\n70561\n2\n18.00\n36.00\nHD40 1L COTIN\nTotal Qty\n9\n327 00\nTotal Sales\n327.00\nDiscount\n0.00\nTotal\nRounding\nTotal Sales :\nCASH:\nChange:",
+            "processing_time_seconds": 19.9518
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "TAN CHAY YEE",
+                "date": "11/01/2019",
+                "address": "NO.53JALANPUTRA1. TAMANSRIPUTRA. 81200JOHORBAHRU JOHOR",
+                "total": "327.00",
+                "source_image": "X00016469672.jpg",
+                "receipt_number": "CS00004040",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TAN CHAY YEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "11/01/2019",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO.53JALANPUTRA1. TAMANSRIPUTRA. 81200JOHORBAHRU JOHOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "327.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X00016469672.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS00004040",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SOON HUAT MACHINERY ENTERPRISE",
+                        "extracted": "TAN CHAY YEE",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 38.1
+                    },
+                    "date": {
+                        "expected": "11/01/2019",
+                        "extracted": "11/01/2019",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+                        "extracted": "NO.53JALANPUTRA1. TAMANSRIPUTRA. 81200JOHORBAHRU JOHOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 93.69
+                    },
+                    "total": {
+                        "expected": "327.00",
+                        "extracted": "327.00",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X00016469672.jpg",
+                        "extracted": "X00016469672.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "tan chay yee\nSOONHUATMACHINERYENTERPRISE\n(JM0352019-K)\nNO.53JALANPUTRA1.\nTAMANSRIPUTRA.\n81200JOHORBAHRU\nJOHOR\nTEL:07-5547360/016-7993391\nFAX:07-5624059\nSOONHUAT2000@HOTMAIL.COM\nGSTID:002116837376\nCASH SALES\nDocNo.\n：CS00004040\nDate:11/01/2019\nCashier\nUSER\nTime:09:44:00\nSalesperson:\nRef..\nItem\nQty\nS/Price\nS/Price\nAmount\nTax\n1072\n1\n80.00\n80.00\n80.00\nREPAIRENGINEPOWERSPRAYER(1UNIT)\nworkmanship&service\n70549\n1\n160.00\n160.00\n160.00\nGIANT606OVERFLOWASSY\n1071\n1\n17.00\n17.00\n17.00\nENGINEOIL\n70791\n1\n10.00\n10.00\n10.00\nGREASEFORTOOLS40ML(AKODA)\n70637\n1\n6.00\n6.00\n6.00\nEY20PLUGCHAMPION\n1643\n1\n8.00\n8.00\n8.00\nSTARTER TALI\n70197\n1\n10.00\n10.00\n10.00\nEY20STARTERHANDLE\n70561\n2\n18.00\n18.00\n36.00\nHD401LCOTIN\nTotal Qty\n32700\nTotal Sales:\n327.00\nDiscount:\n0.00\n327.00\nTotal:\n0.00\nRounding:\n0.00\nTotal Sales:\n327.00\nCASH:\n327.00\nChange:\n0.00\nGOODSSOLDARENOTRETURNABLETHANKYOU",
+            "processing_time_seconds": 2.0422
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "SOON HUAT MACHINERY ENTERPRISE",
+                "date": "11/01/2019",
+                "address": "NO.53 JALAN PUTRA, 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+                "total": "327.00",
+                "source_image": "X00016469672.jpg",
+                "receipt_number": "CS00004040",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "SOON HUAT MACHINERY ENTERPRISE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "11/01/2019",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "NO.53 JALAN PUTRA, 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "327.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X00016469672.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS00004040",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SOON HUAT MACHINERY ENTERPRISE",
+                        "extracted": "SOON HUAT MACHINERY ENTERPRISE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "11/01/2019",
+                        "extracted": "11/01/2019",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO.53 JALAN PUTRA 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+                        "extracted": "NO.53 JALAN PUTRA, 1, TAMAN SRI PUTRA, 81200 JOHOR BAHRU JOHOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "327.00",
+                        "extracted": "327.00",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X00016469672.jpg",
+                        "extracted": "X00016469672.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "tan chay yee\nSOON HUAT MACHINERY ENTERPRISE\n(JM0352019-K)\nNO.53 JALAN PUTRA, 1,\nTAMAN SRI PUTRA,\n81200 JOHOR BAHRU\nJOHOR\nTEL à 07-5547360/016-7993391\nFAX: 07-5624059\nSOONHUAT2000@HOTMAILCCOM\nGST ID : 002116837376\nCASH SALES\nDoc No.\nCS00004040\nDate: 11/01/2019\nCashier\nUSER\nTime: 09:44:00\nSalesperson :\nRef.:\nItem\nQty\nS/Price S/Price\nAmount Tax\n1072\n1\n80.00\n80.00\n80.00\nREPAIR ENGINE POWER SPRAYER (1UNIT)\nworkmanship & service\n70549\n1\n160.00\n160.00\n160.00\nGIANT 606 OVERFLOW ASSY\n1071\n1\n17.00\n17.00\n17.00\nENGINE OIL\n70791\n1\n10.00\n10.00\n10.00\nGREASE FOR TOOLS 40ML (AKODA)\n70637\n1\n6.00\n6.00\n6.00\nEY20 PLUG CHAMPION\n1643\n1\n8.00\n8.00\n8.00\nSTARTER TALI\n70197\n1\n10.00\n10.00\n10.00\nEY20 STARTER HANDLE\n70561\n2\n18.00\n18.00\n36.00\nHD40 1L COTIN\nTotal Qty:\n9\n327 00\nTotal Sales :\n327.00\nDiscount :\n0.00\n327.00\nTotal :\n0.00\nRounding :\n0.00\nTotal Sales :\n327.00\nCASH :\n327.00\nChange :\n0.00\nGOODS SOLD ARE NOT RETURNABLE, THANK YOU.",
+            "processing_time_seconds": 7.658
+        }
+    }
+}

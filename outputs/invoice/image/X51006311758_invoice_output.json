@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51006311758.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51006311758.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "TONYMOLY VIVA CITY",
+        "date": "29/03/2018",
+        "address": "UNIT L1-044B, VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK.",
+        "total": "100.60",
+        "source_image": "X51006311758.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "TONYMOLY UIA CITY",
+                "date": "29/03/2018",
+                "address": "TONYLLY SHOP 95874 UNIT LI -044B. UIACITY EGAMALL. JALAN HAN ALNL 93350 KUCHING SARANAK. TIL ID",
+                "total": "2018.70",
+                "source_image": "X51006311758.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TONYMOLY UIA CITY",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "29/03/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "TONYLLY SHOP 95874 UNIT LI -044B. UIACITY EGAMALL. JALAN HAN ALNL 93350 KUCHING SARANAK. TIL ID",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.70",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006311758.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "TONYMOLY VIVA CITY",
+                        "extracted": "TONYMOLY UIA CITY",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 91.43
+                    },
+                    "date": {
+                        "expected": "29/03/2018",
+                        "extracted": "29/03/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "UNIT L1-044B, VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK.",
+                        "extracted": "TONYLLY SHOP 95874 UNIT LI -044B. UIACITY EGAMALL. JALAN HAN ALNL 93350 KUCHING SARANAK. TIL ID",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 74.68
+                    },
+                    "total": {
+                        "expected": "100.60",
+                        "extracted": "2018.70",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006311758.jpg",
+                        "extracted": "X51006311758.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "TONYMOLY UIA CITY\n(TONYLLY SHOP (९५8७४) )\nUNIT Li -044B.\nUIACITY   EGAMALL.\nJALAN HAN ALNl\n93350  KUCHING   SARANAK.\nTil ID\n000349356032\nTax invoice\nTERHINAL\n880\nSALES AO.\n?807949\nSALES DATE\n29/03/2018 70:37:46\n(1Sr\nThen Fiona\n(,- :\nCASh\nIOlN\ntGः PORL DLAUKHEAD STEAY BALNZEAD\nCSR]\n$$04018600\n55. 90\n55. 90\n!isc 1० OO%\n-5. 59\nTG PORE TIGTENING COOLLING Pa३og\nISR]\n``$04017600\n55. 90\n55. 90\nIISC १०. 0O%\n-5. 59\nO(COUNT   १०%\nEAC\n[ZR]\n01S10\n0.00\n0.00\nItem Count\n3\nTota l  Sales Incl .\nGST\n100. 62\nPnunding Adjustnent\n-0. 02\nToral After Rounding\n100. ६०\n\"![$A\n1००. ६०\nCard No\n४६  XXXXXXXX 1८१९\nApP.\nCode\na0000000031010\n४६  XXXXXXXX 1R1९-\nsil Summar J\nAnount(RH)\nTax(RH )\nSR\n6%\n94. 92\n5. ७०\n२R\n0%\n0. 00\n0. 00\niolial pr !notional saving\n11. 18\ninted Cn: 2९-03-2018 20:38:07\nTinai %: You\nPlPas Come Aga in",
+            "processing_time_seconds": 18.8936
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "TONYMOLY VIVA CITY",
+                "date": "29/03/2018",
+                "address": "CTONYNULY SHOP 95874 UNIT L1-044B, VIVACITY MEGAMALL, JALAN HAN ALHI 93350 KUCHING, SARAWAK O51 1D 000349356032 TAY INVOICE SALES NO. . 1807949",
+                "total": "2018.70",
+                "source_image": "X51006311758.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TONYMOLY VIVA CITY",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "29/03/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "CTONYNULY SHOP 95874 UNIT L1-044B, VIVACITY MEGAMALL, JALAN HAN ALHI 93350 KUCHING, SARAWAK O51 1D 000349356032 TAY INVOICE SALES NO. . 1807949",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.70",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006311758.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "TONYMOLY VIVA CITY",
+                        "extracted": "TONYMOLY VIVA CITY",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "29/03/2018",
+                        "extracted": "29/03/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "UNIT L1-044B, VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK.",
+                        "extracted": "CTONYNULY SHOP 95874 UNIT L1-044B, VIVACITY MEGAMALL, JALAN HAN ALHI 93350 KUCHING, SARAWAK O51 1D 000349356032 TAY INVOICE SALES NO. . 1807949",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 81.82
+                    },
+                    "total": {
+                        "expected": "100.60",
+                        "extracted": "2018.70",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006311758.jpg",
+                        "extracted": "X51006311758.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "TONYMOLY VIVA CITY\nCTONYNULY SHOP (95874))\nUNIT L1-044B, VIVACITY MEGAMALL,\nJALAN HAN ALHI\n93350 KUCHING, SARAWAK\nO51 1D + 000349356032\n\nTay Invoice\nTERMINAL : 880\nSALES NO. . 1807949\nSALES DATE + 29/03/2018 70:37:46\nCASK : Then Fiona\n\nCiera!\nPOIN,\n\nEGG PORE bLACKHEAD STEAM BALMZEAC [SR]\n$$04018600 1 * 55.90 55.90\nJisc 10.00% 50.09\n{GG PORE TIGHTENING COOLING PA30g [SR]\n1S04017600 1 * 55,90 55.90\nHise 10.00% -5. 59\nDISCOUNT 10% EAC [ZR]\n1 * 0,00 0.00\n\nTtem Count\n\nTotal Sales Incl. GST\nPounding Adjustment\nTotal After Rounding\n\nCard No 46 XxxXxxxxx 1819\nApp. Code a0000000031010\n49 XXXXXXXX 1819\n\nLST summary Amount (RM) Tax(RM)\n\nZR = 0%\n\niotal promotional saving\n- inted cn: 29-03-2018 20:38:07\n\nThank You\nyme_Again-=~",
+            "processing_time_seconds": 1.9767
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "TONYMOLY VIVA CITY",
+                "date": "29/03/2018",
+                "address": "TONYMULY SHOP 95874 UNIT L1-O44B, VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK. GSI ID 000349356032 TAY INVOICE SALES NO.",
+                "total": "2018.20",
+                "source_image": "X51006311758.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "10.00",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TONYMOLY VIVA CITY",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "29/03/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "TONYMULY SHOP 95874 UNIT L1-O44B, VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK. GSI ID 000349356032 TAY INVOICE SALES NO.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.20",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006311758.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "10.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "TONYMOLY VIVA CITY",
+                        "extracted": "TONYMOLY VIVA CITY",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "29/03/2018",
+                        "extracted": "29/03/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "UNIT L1-044B, VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK.",
+                        "extracted": "TONYMULY SHOP 95874 UNIT L1-O44B, VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK. GSI ID 000349356032 TAY INVOICE SALES NO.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 90.91
+                    },
+                    "total": {
+                        "expected": "100.60",
+                        "extracted": "2018.20",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006311758.jpg",
+                        "extracted": "X51006311758.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "TONYMOLY VIVA CITY\n(TONYMULY SHOP (95874))\nUNIT L1-O44B, VIVACITY MEGAMALL,\nJALAN WAN ALWI,\n93350 KUCHING, SARAWAK.\nGSI ID : 000349356032\nTay Invoice\nTERMINAL\n:880\nSALES NO.\n807949\nSALES DATE\n:29/03/2018 20:37:46\nCASH\n: Then Fiona\nCL:I\n: CASH\nPOIN.\n:0\nEGG PORE BLACKHEAD STEAM BALM2EAC [SR]\nSS04018600\n1*55.90\n55.90\nDisc 10.00%\n-5.59\nLGG PORE TIGHTENING COOLING PA30g [SR]\nSS04017600\nDISC 10.00%\nDISCOUNT 10%\nEAC\n[ZR]\nDIS10\n1*0.00\n0.00\nItem Count\n3\nTotal Sales Incl. GST\n100.62\nPounding Adjustment\n-0.02\nTotal After Rounding\n100.60\nVISA\nCard No\n46 xxxxxxxx 1819\nApp. Code\na0000000031010\n46 xxxxxxxx 1819-\nCST summary\nAmount(RM)\nTax(RM)\nSR = 6%\n94.92\n5.70\nZR = 0%\nlotal promotional saving\n11.18\ninted cn: 29-03-2018 20:38:07\nThank: You\nPleace Come Again",
+            "processing_time_seconds": 20.041
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "TONYMOLY VIVA CITY",
+                "date": "29/03/2018",
+                "address": "TONYMULY SHOP 95874 UNITL1-044B,VIVACITY MEGAMALL JALAN WAN ALWI, 93350 KUCHING, SARAWAK. CSIID 000349356032 TAY INVOICE SALES NO.",
+                "total": "2018.20",
+                "source_image": "X51006311758.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "10.00",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TONYMOLY VIVA CITY",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "29/03/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "TONYMULY SHOP 95874 UNITL1-044B,VIVACITY MEGAMALL JALAN WAN ALWI, 93350 KUCHING, SARAWAK. CSIID 000349356032 TAY INVOICE SALES NO.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.20",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006311758.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "10.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "TONYMOLY VIVA CITY",
+                        "extracted": "TONYMOLY VIVA CITY",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "29/03/2018",
+                        "extracted": "29/03/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "UNIT L1-044B, VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK.",
+                        "extracted": "TONYMULY SHOP 95874 UNITL1-044B,VIVACITY MEGAMALL JALAN WAN ALWI, 93350 KUCHING, SARAWAK. CSIID 000349356032 TAY INVOICE SALES NO.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 81.82
+                    },
+                    "total": {
+                        "expected": "100.60",
+                        "extracted": "2018.20",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006311758.jpg",
+                        "extracted": "X51006311758.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "TONYMOLY VIVA CITY\n(TONYMULY SHOP(95874))\nUNITL1-044B,VIVACITY MEGAMALL\nJALAN WAN ALWI,\n93350 KUCHING, SARAWAK.\nCSIID:000349356032\nTay Invoice\nTERMINAL\n: 880\nSALES NO.\n：807949\nSALES DATE\n：29/03/201820:37:46\nCASH\n:Then Fiona\nUL:\n:CASH\nPOIN.\n:0\nEGG PORE DLACKHEAD STEAM BALMZEAC\n[SR]\nSS04018600\n1 * 55.90\n55.90\nDisc 10.00%\n-5.59\nLGG PORE TIGHTENING COOLING PA3Og [SR]\nCS04017600\n1*55.90\n55.90\nDISC10.00%\n-5.59\nDISCOUNT 10%\nEAC [ZR]\nDIS10\n1 * 0. 00\n0.00\nItem Count\n3\nTotal Sales Incl. GST\n100.62\nPounding Adjustment\n-0. 02\nTotal After Rounding\n100.60\nVISA\n100.60\nCard No\n46 xxxxxxxx1819\nApp. Code\na0000000031010\n46 xxxxxxxx1819-\nLSI summary\nAmount(RM)\nTax(RM)\nSR= 6%\n94.92\n5.70\nZR=0%\n0. 00\n0. 00\nlotal pr omotional saving\n11.18\ninted cn:29-03-2018 20:38:07\nThal. You\nPlpace fome Again",
+            "processing_time_seconds": 3.0424
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "TONYMOLY VIVA CITY",
+                "date": "29/03/2018",
+                "address": "TONYMOLY SHOP 95874 UNIT L1-044B. VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK. GSI ID 000349356032 TAY INVOICE SALES NO.",
+                "total": "2018.20",
+                "source_image": "X51006311758.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "10.00",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TONYMOLY VIVA CITY",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "29/03/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "TONYMOLY SHOP 95874 UNIT L1-044B. VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK. GSI ID 000349356032 TAY INVOICE SALES NO.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.20",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006311758.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "10.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "TONYMOLY VIVA CITY",
+                        "extracted": "TONYMOLY VIVA CITY",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "29/03/2018",
+                        "extracted": "29/03/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "UNIT L1-044B, VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK.",
+                        "extracted": "TONYMOLY SHOP 95874 UNIT L1-044B. VIVACITY MEGAMALL, JALAN WAN ALWI, 93350 KUCHING, SARAWAK. GSI ID 000349356032 TAY INVOICE SALES NO.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "100.60",
+                        "extracted": "2018.20",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006311758.jpg",
+                        "extracted": "X51006311758.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "TONYMOLY VIVA CITY\n(TONYMOLY SHOP (95874))\nUNIT L1-044B. VIVACITY MEGAMALL,\nJALAN WAN ALWI,\n93350 KUCHING, SARAWAK.\nGSI ID : 000349356032\nTay Invoice\nTERMINAL\n: 880\nSALES NO.\n0807949\nSALI ES DATE\n: 29/03/2018 20:37:46\nCASH\nThen Fiona\nLLI I\n: CASH\nPOINI\n: 0\nEGG PORE BLACKHEAD STEAM BALM2EAC [SR]\nSS04018600\n1 * 55.90\n55.90\nDisc 10. 00%\n-5.59\nLGG PORE TIGHTENING COOLING PA30g [SR]\nCS04017600\n1 * 55.90\n55.90\nDISC 10.00%\n-5.59\nDISCOUNT 10%\nEAC [ZR]\nDIS10\n1 *0.00\n0.00\nItem Count\n3\nTotal Sales Incl. GST\n100.62\nPounding Adjustment\n-0.02\nTotal After Rounding\n100.60\nVISA\n100. 60\nCard No\n46 XXXXXXXX 1819\nApp. Code\na0000000031010\n46 XXXXXXXX 1819-\nCST summary\nAmount(RM)\nTax(RM)\nSR = 6%\n94.92\n5.70\nZR = 0%\n0.00\n0.00\nTotal pr omotional saving\n11.18\nP inted cn: 29-03-2018 20:38:07\nThank You\nPlease Come_Again-",
+            "processing_time_seconds": 7.3217
+        }
+    }
+}

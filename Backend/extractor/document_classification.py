@@ -101,7 +101,12 @@ invoice_schema = {
     "company": ["Company", "CASH SALES", "INVOICE", "TAX INVOICE", "Receipt"],
     "date": ["Date", "Daie", "Invoice Date"],
     "address": ["Address", "Jalan", "Taman", "Lot", "No."],
+    "receipt_number": ["Receipt No.", "Invoice No.", "Doc No.", "Slip No."],
+    "subtotal": ["Subtotal", "Sub-total", "Total Sales"],
+    "tax": ["Tax", "GST", "Total Tax"],
+    "discount": ["Discount", "Disc"],
     "total": ["Total Sales", "Grand Total", "Amount", "Total", "CASH"],
+    "currency": ["Currency", "RM", "MYR"],
     "source_image": ["Source Image"],
 }
 

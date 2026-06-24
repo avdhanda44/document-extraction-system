@@ -121,7 +121,13 @@ document_validation_rules = {
             "total",
             "source_image",
         ],
-        "optional": [],
+        "optional": [
+            "receipt_number",
+            "subtotal",
+            "tax",
+            "discount",
+            "currency",
+        ],
     },
 }
 

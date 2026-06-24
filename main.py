@@ -304,10 +304,14 @@ def compare_with_ground_truth(extracted_data, ground_truth):
     field_results = {}
     matched_fields = 0
     total_fields = 0
+    metadata_fields = {"source_image", "pdf_type", "pages"}
 
     for field_name, expected_value in ground_truth.items():
         extracted_value = extracted_data.get(field_name, "")
-        used_for_accuracy = ground_truth_value_is_present(expected_value)
+        used_for_accuracy = (
+            field_name not in metadata_fields
+            and ground_truth_value_is_present(expected_value)
+        )
 
         if not used_for_accuracy:
             field_results[field_name] = {
@@ -315,7 +319,11 @@ def compare_with_ground_truth(extracted_data, ground_truth):
                 "ground_truth_value": expected_value,
                 "match": False,
                 "used_for_accuracy": False,
-                "reason": "ground truth value not present",
+                "reason": (
+                    "metadata field"
+                    if field_name in metadata_fields
+                    else "ground truth value not present"
+                ),
             }
             continue
 
@@ -1531,6 +1539,20 @@ def find_invoice_date(text):
     return ""
 
 
+def find_invoice_receipt_number(text):
+    patterns = [
+        r"\b(?:Receipt|Invoice|Doc(?:ument)?|Slip)\s*(?:No\.?|Number|#)\s*[:：]?\s*([A-Z0-9][A-Z0-9/-]{3,})",
+        r"\b(?:Bill)\s*(?:No\.?|Number|#)\s*[:：]?\s*([A-Z0-9][A-Z0-9/-]{3,})",
+    ]
+
+    for pattern in patterns:
+        match = re.search(pattern, text, flags=re.IGNORECASE)
+        if match:
+            return clean_invoice_line(match.group(1)).upper()
+
+    return ""
+
+
 def find_invoice_address(lines):
     address_lines = []
     started = False
@@ -1554,6 +1576,31 @@ def find_invoice_address(lines):
     address = " ".join(address_lines)
     address = re.sub(r"[^A-Za-z0-9,./& -]", " ", address)
     return " ".join(address.split()).upper()
+
+
+def find_invoice_labeled_amount(lines, labels):
+    label_pattern = "|".join(re.escape(label) for label in labels)
+
+    for line in reversed(lines):
+        normalized = line.replace(",", ".")
+        if not re.search(rf"\b(?:{label_pattern})\b", normalized, flags=re.IGNORECASE):
+            continue
+
+        amounts = re.findall(r"(?:RM|MYR|\$)?\s*-?\d+(?:[., ]\d{2})", normalized, flags=re.IGNORECASE)
+        if amounts:
+            return normalize_amount_for_comparison(amounts[-1])
+
+    return ""
+
+
+def find_invoice_currency(text):
+    if re.search(r"\b(?:RM|MYR)\b", text, flags=re.IGNORECASE):
+        return "MYR"
+
+    if "$" in text:
+        return "USD"
+
+    return ""
 
 
 def find_invoice_total(lines, text):
@@ -1597,7 +1644,12 @@ def extract_invoice_fields_from_text(text, image_path):
         "company": find_invoice_company(lines),
         "date": find_invoice_date(text),
         "address": find_invoice_address(lines),
+        "receipt_number": find_invoice_receipt_number(text),
+        "subtotal": find_invoice_labeled_amount(lines, ["subtotal", "sub-total", "total sales"]),
+        "tax": find_invoice_labeled_amount(lines, ["total tax", "tax", "gst"]),
+        "discount": find_invoice_labeled_amount(lines, ["discount", "disc"]),
         "total": find_invoice_total(lines, text),
+        "currency": find_invoice_currency(text),
         "source_image": Path(image_path).name,
     }
 
@@ -1652,8 +1704,18 @@ def process_text_for_document(
     }
 
 
-def process_image_with_model(image_path, model_name, fallback_extractor, make_fallback_classification):
-    text = extract_text_from_image(image_path, model_name=model_name)
+def process_image_with_model(
+    image_path,
+    model_name,
+    fallback_extractor,
+    make_fallback_classification,
+    ocr_languages=None,
+):
+    text = extract_text_from_image(
+        image_path,
+        model_name=model_name,
+        languages=ocr_languages,
+    )
     return process_text_for_document(
         text,
         image_path,
@@ -1695,6 +1757,7 @@ def process_invoice_image_with_model(image_path, model_name):
         model_name,
         extract_invoice_fields_from_text,
         lambda _document_type: make_invoice_classification(),
+        ocr_languages=("en",),
     )
 
 
@@ -1798,6 +1861,12 @@ def process_document_image_folder(
                 }
                 excel_row[model_name] = comparison["accuracy_percent"]
                 excel_row[f"{model_name} processing time (seconds)"] = processing_time_seconds
+                excel_row.setdefault("__field_results", {})[model_name] = comparison["field_results"]
+                excel_row.setdefault("__model_failed", {})[model_name] = False
+                excel_row.setdefault("__model_complete", {})[model_name] = (
+                    comparison["total_fields"] > 0
+                    and comparison["matched_fields"] == comparison["total_fields"]
+                )
             except Exception as error:
                 comparison = compare_with_ground_truth({}, ground_truth)
                 processing_time_seconds = round(time.perf_counter() - started_at, 4)
@@ -1809,6 +1878,9 @@ def process_document_image_folder(
                 }
                 excel_row[model_name] = comparison["accuracy_percent"]
                 excel_row[f"{model_name} processing time (seconds)"] = processing_time_seconds
+                excel_row.setdefault("__field_results", {})[model_name] = comparison["field_results"]
+                excel_row.setdefault("__model_failed", {})[model_name] = True
+                excel_row.setdefault("__model_complete", {})[model_name] = False
 
         final_json = {
             "image": {
@@ -1836,6 +1908,7 @@ def process_document_image_folder(
         file_name=excel_file_name,
         output_subfolder=document_name,
         output_format="image",
+        report_profile=document_name,
     )
 
     return {

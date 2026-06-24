@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51008114262.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51008114262.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "99 SPEED MART S/B",
+        "date": "05-05-18",
+        "address": "LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1237-TMN INDAH PERDANA",
+        "total": "137.15",
+        "source_image": "X51008114262.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "LOT PT. 2TL JLAY BNDSR ,",
+                "date": "",
+                "address": "LOT PT. 2TL JLAY BNDSR , TOHON BERAELEY 4I50 KLAN6, SELONGDR 1237-TH 3 DA PERDAA T7 IT. 0001817 7712 8380/103/70120",
+                "total": "150.15",
+                "source_image": "X51008114262.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 9,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 5,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "company": {
+                        "value": "LOT PT. 2TL JLAY BNDSR ,",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT PT. 2TL JLAY BNDSR , TOHON BERAELEY 4I50 KLAN6, SELONGDR 1237-TH 3 DA PERDAA T7 IT. 0001817 7712 8380/103/70120",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "150.15",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51008114262.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "99 SPEED MART S/B",
+                        "extracted": "LOT PT. 2TL JLAY BNDSR ,",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 21.05
+                    },
+                    "date": {
+                        "expected": "05-05-18",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1237-TMN INDAH PERDANA",
+                        "extracted": "LOT PT. 2TL JLAY BNDSR , TOHON BERAELEY 4I50 KLAN6, SELONGDR 1237-TH 3 DA PERDAA T7 IT. 0001817 7712 8380/103/70120",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 61.14
+                    },
+                    "total": {
+                        "expected": "137.15",
+                        "extracted": "150.15",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51008114262.jpg",
+                        "extracted": "X51008114262.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "११ SFEED TART 5/8 (51?537-X)\nLOT PT. २tL  JLAY BNDSR ,\nToHON BERAELEY\n4i50 KLAN6,> SELONGDR\n1237-TH) 3!DA{ PERDAA\nt7 it. क़\n0001817+7712\nINUOJLE ६०\n}8380/103/70120\n!!5:23p1\n588256\n05-15~18\n\ns७i5 KhDrP BICYEN GTOEK Zk\n%7134-80\nटैठ { Rf +६. 8६\n8u४8 6RDENIA ENRICHED LHJT\nR2. ३५ 2\nTotal Salet ArcluEive BST) Rf\n137.15\nCAsh Fh\n150,15\nCHANGE Ri\n!3.0!\n65T 5un3r\nAncur t(RH)\n1312#}\n=\n6/\n427.2:\n7.60\n2\n{ '\n2.35\n00\nTharik Yov Plezs६ cDfic २oair\nthe invoice ror aprlizatle returns\nKeet",
+            "processing_time_seconds": 15.9259
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "PR EE EM",
+                "date": "",
+                "address": "LOT 99, 2811, JALAN ANGSA, TAHAN BERKELEY 1150 KLANG, SELANGOR 237-THN INDOH PERDANA G57 ID. NO S 900181747712 INVOICE NO 2 19388/103/70124",
+                "total": "150.15",
+                "source_image": "X51008114262.jpg",
+                "receipt_number": "",
+                "subtotal": "137.45",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 9,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "company": {
+                        "value": "PR EE EM",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 99, 2811, JALAN ANGSA, TAHAN BERKELEY 1150 KLANG, SELANGOR 237-THN INDOH PERDANA G57 ID. NO S 900181747712 INVOICE NO 2 19388/103/70124",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "150.15",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51008114262.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "137.45",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "99 SPEED MART S/B",
+                        "extracted": "PR EE EM",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 40.0
+                    },
+                    "date": {
+                        "expected": "05-05-18",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1237-TMN INDAH PERDANA",
+                        "extracted": "LOT 99, 2811, JALAN ANGSA, TAHAN BERKELEY 1150 KLANG, SELANGOR 237-THN INDOH PERDANA G57 ID. NO S 900181747712 INVOICE NO 2 19388/103/70124",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 69.12
+                    },
+                    "total": {
+                        "expected": "137.15",
+                        "extracted": "150.15",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51008114262.jpg",
+                        "extracted": "X51008114262.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "PR ee em\n\n99 SPEED MART 5/B (519537-X)\nLOT ९9, 2811, JALAN ANGSA,\nTAHAN BERKELEY\n“$1150 KLANG, SELANGOR\n{237-THN INDOH PERDANA\nG57 ID. NO s 900181747712\nINVOICE NO 2 19388/103/70124\n\n05: 23PH 568248 Q5-15~18\n715 KNORR CHICKEN STOCK IK RMIS4.80 s -&\n88 X RM 16.985\n\n8048 GARDENIA ENRICHED WHIT RN2.35 z\n\nTotal Sales (Inclusive 657) RM 137.45\n\nCASH RM 150,15\nCHANGE RM 13,00\n\n657 Summary Amourct (RM) Tax{RA)\n\n5 = 67 127.20 7,60\n\n22 0% 2.35 00\n\nThank You, Please come again\nKeep the invoice for applicable returns",
+            "processing_time_seconds": 3.1754
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "TAMAN BERKELEY",
+                "date": "05-05-18",
+                "address": "LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1237-TMN INDAHPERDANA",
+                "total": "150.15",
+                "source_image": "X51008114262.jpg",
+                "receipt_number": "18388/103/T0126",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TAMAN BERKELEY",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "05-05-18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1237-TMN INDAHPERDANA",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "150.15",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51008114262.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "18388/103/T0126",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "99 SPEED MART S/B",
+                        "extracted": "TAMAN BERKELEY",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 25.81
+                    },
+                    "date": {
+                        "expected": "05-05-18",
+                        "extracted": "05-05-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1237-TMN INDAH PERDANA",
+                        "extracted": "LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1237-TMN INDAHPERDANA",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 99.39
+                    },
+                    "total": {
+                        "expected": "137.15",
+                        "extracted": "150.15",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51008114262.jpg",
+                        "extracted": "X51008114262.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "99 SPEED MART 5/B (519537-X)\nLOT P.T. 2811, JALAN ANGSA,\nTAMAN BERKELEY\n41150 KLANG, SELANGOR\n1237-TMN INDAHPERDANA\nGST ID. NO : 000181747712\nINVOICE NO : 18388/103/T0126\n05:23PM\n568268\n05-05-18\n0715 KNORR CHICKEN STOCK 1K\nRM134.80 ≤\n28 X RM 16.85\nRM2.35 z\n8048 GARDENIA ENRICHED WHIT\nTotal Sales (Inclusive GST) RM\n137.15\nCASH RM\n150.15\nCHANGE RM\n13.00\nAmount(RM)\nTax(RM)\nGST Summary\n127.20\n7.60\n≤ = 6%\n2.35\n.00\n2 = 07\nThank You. Please come again\nKeep the invoice for applicable returns",
+            "processing_time_seconds": 10.9466
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "TANAN BERKELEY",
+                "date": "05-05-18",
+                "address": "LOT P.T2811,JALAN ANG5A, TANAN BERKELEY 41150KLANG,SELANGOR 1237-TMN INDAH PERDANA",
+                "total": "137.15",
+                "source_image": "X51008114262.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TANAN BERKELEY",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "05-05-18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT P.T2811,JALAN ANG5A, TANAN BERKELEY 41150KLANG,SELANGOR 1237-TMN INDAH PERDANA",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "137.15",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51008114262.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "99 SPEED MART S/B",
+                        "extracted": "TANAN BERKELEY",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 19.35
+                    },
+                    "date": {
+                        "expected": "05-05-18",
+                        "extracted": "05-05-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1237-TMN INDAH PERDANA",
+                        "extracted": "LOT P.T2811,JALAN ANG5A, TANAN BERKELEY 41150KLANG,SELANGOR 1237-TMN INDAH PERDANA",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 96.34
+                    },
+                    "total": {
+                        "expected": "137.15",
+                        "extracted": "137.15",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51008114262.jpg",
+                        "extracted": "X51008114262.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "99SFEED MART5/B(519537-X)\nLOT P.T2811,JALAN ANG5A,\nTANAN BERKELEY\n41150KLANG,SELANGOR\n1237-TMN INDAH PERDANA\nGST ID.N0:000181747712\nINV0ICE N0:18388/103/T0126\n05:23PM\n568268\n05-05-18\n0715 KNORRCHICKENSTOCK 1K\nRM134.805\n08XRM16.85\n8048 GARDENIA ENRICHED WHIT\nRM2.35Z\nTotal 5ales (Inclusive65T)RM137.15\nCASHRN150.15\nCHANGE RM\n13.00\nG5TSummary\nAmount(RM)\nTax(RH)\n5=67\n127.20\n7.60\n2=07\n2.35\n00\nThank You. Please cone again\nKeep the invoice for applicable returns",
+            "processing_time_seconds": 1.0273
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "TAMAN BERKELEY",
+                "date": "05-05-18",
+                "address": "LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1237-TMN INDAH PERDANA",
+                "total": "150.15",
+                "source_image": "X51008114262.jpg",
+                "receipt_number": "18388/103/T0126",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "TAMAN BERKELEY",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "05-05-18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1237-TMN INDAH PERDANA",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "150.15",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51008114262.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "18388/103/T0126",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "99 SPEED MART S/B",
+                        "extracted": "TAMAN BERKELEY",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 25.81
+                    },
+                    "date": {
+                        "expected": "05-05-18",
+                        "extracted": "05-05-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1237-TMN INDAH PERDANA",
+                        "extracted": "LOT P.T. 2811, JALAN ANGSA, TAMAN BERKELEY 41150 KLANG, SELANGOR 1237-TMN INDAH PERDANA",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "137.15",
+                        "extracted": "150.15",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51008114262.jpg",
+                        "extracted": "X51008114262.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "99 SPEED MART 5/B (519537-X)\nLOT P.T. 2811, JALAN ANGSA,\nTAMAN BERKELEY\n41150 KLANG, SELANGOR\n1237-TMN INDAH PERDANA\nGST ID. NO : 000181747712\nINVOICE NO : 18388/103/T0126\n05:23PM\n568268\n05-05-18\n0715 KNORR CHICKEN STOCK 1K\nRM134.80 S\n28 X RM 16.85\n8048 BARDENIA ENRICHED WHIT\nRM2.35 Z\nTotal Sales (Inclusive OST) RM\n137.15\nCASH RM\n150,15\nCHANGE RM\n13.00\nGST Summary\nAmount(RM)\nTax(RH)\nS i 67\n127.20\n7.60\n2 i 07\n2.35\n.00\nThank You, Please come again\nKeep the invoice for applicable returns",
+            "processing_time_seconds": 4.1002
+        }
+    }
+}

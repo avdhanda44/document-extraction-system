@@ -1,0 +1,625 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51005361946.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51005361946.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "MR. D.I.Y. (M) SDN BHD",
+        "date": "14-03-18",
+        "address": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+        "total": "37.10",
+        "source_image": "X51005361946.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "0T1O5I-H",
+                "date": "",
+                "address": "43300 SEN-. TNSANAT SEIHHGOR CASRTTLIO 0803 60 0 2 CA C0 MUTTARTADITLILLLSALA",
+                "total": "3.00",
+                "source_image": "X51005361946.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 9,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "company": {
+                        "value": "0T1O5I-H",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "43300 SEN-. TNSANAT SEIHHGOR CASRTTLIO 0803 60 0 2 CA C0 MUTTARTADITLILLLSALA",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "3.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005361946.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (M) SDN BHD",
+                        "extracted": "0T1O5I-H",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 23.08
+                    },
+                    "date": {
+                        "expected": "14-03-18",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "43300 SEN-. TNSANAT SEIHHGOR CASRTTLIO 0803 60 0 2 CA C0 MUTTARTADITLILLLSALA",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 21.82
+                    },
+                    "total": {
+                        "expected": "37.10",
+                        "extracted": "3.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005361946.jpg",
+                        "extracted": "X51005361946.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "{,<8?\nvp\nDa8\n$0||#0-0\nit Re:\nt60e7422:\n0T1o5i-h\n५\n.1851-8.u1177n09868\nfAnnohhe PER NDOsrRih vapamioNa\n43300  SEn-.\ntnSANat :\nSEihHGOR\ncaSrttlio\n0803:60?0\"2\nca C० MUTTARtaDitlilllsAlA :\nTrrraiea\ndaoears  a iaiatt\n+$:\nनतसना\n2व \n525222808004\nel\"\nlar \n+aits.trPor:\n#3\nADtl:\n27/360)\n906442-\n:\n/\n.छ०\n3.00\nfpizaiiG SKT 5tllrsPoe5nड़aLE 2\n*$\n|1#27:\n२०\n३ttai1४४iial\n872 4;\n२२ .९०\n-ieliis :\n)\nty!5 )\n7\nTolaड़ Tric !\n$T061::\nRi ६7 . १०\nClisir\nRV  ६० .००\nGrrillaE\nRi १२ .९०\nasl Silllilta\nग़mc a n:\ndगR५ :\nG३1\nSa6%\na%0 )\n2\n१०\n1403-1?\n21 :43 3m2 \nT१ RD004181९३\nJFERATOR\nTuDD\nrmष raag nUlAN\nEXCHANGE iremEl  TLTHTN\nDAYS liTTH RECEIPT\nSTRIGTL : IO: CASHREEUND\nMn\n2018",
+            "processing_time_seconds": 34.152
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "KAWASAN PERINDUSTRIAN BALAKON",
+                "date": "06 LOT 1851",
+                "address": "LOT 1851-A.& 1851-BY JALAN KAWASAN PERINDUSTRIAN BALAKON 3300 SERI KEMBANGAN,..S",
+                "total": "50.00",
+                "source_image": "X51005361946.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "2.10",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "KAWASAN PERINDUSTRIAN BALAKON",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "06 LOT 1851",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 1851-A.& 1851-BY JALAN KAWASAN PERINDUSTRIAN BALAKON 3300 SERI KEMBANGAN,..S",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "50.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005361946.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "2.10",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (M) SDN BHD",
+                        "extracted": "KAWASAN PERINDUSTRIAN BALAKON",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 21.28
+                    },
+                    "date": {
+                        "expected": "14-03-18",
+                        "extracted": "06 LOT 1851",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "LOT 1851-A.& 1851-BY JALAN KAWASAN PERINDUSTRIAN BALAKON 3300 SERI KEMBANGAN,..S",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 90.36
+                    },
+                    "total": {
+                        "expected": "37.10",
+                        "extracted": "50.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005361946.jpg",
+                        "extracted": "X51005361946.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "i] 06\nLOT 1851-A.& 1851-By JALAN\nKAWASAN PERINDUSTRIAN: BALAKON\n3300 SERI KEMBANGAN,..S\n(GST ID “No 06030602\nCTESCO: MUTIARA: DAMANSA\n= TAX INVOICE\n\nSOURING PAD 018-4 *5\n\nWAGa = 24/240\n\n9655221801081 4-%2.B0--41520\n\nSCISSOR: G/FISH : #§\n\nADS T= 24/980\n\n9064422 2X {650 3.00\nRATEING SKT SGN+SP:3XE225MM CABLE 2 45\n\nWA2 20\n\n9563114461968 1X 22190 22,90\ntem(s), : 3 Qty(s) : 7\notal Incl, 09196% RM 37,10\nCASH RM 50.00\nCHANGE RM. 12.98\n\nGST Summary Amt (055 Tax(RM)\n\nGST 8863 35.00 2.10\n\nin ene ewnn¥\n\n3-18 21:49 SHOS 2920. 11 RO00418193\nOPERATOR THDC ~-SAH BIUAY: KUMAR\n\nEXCHANGE ARE: ALLOWED: WITHIN\n7 DAYS WITH RECELPT.\nSTRICTLY. NO. GASH REFUND:",
+            "processing_time_seconds": 2.0545
+        },
+        "paddleocr": {
+            "extracted_data": {},
+            "classification": {
+                "document_type": "unknown",
+                "confidence_percent": 30.0,
+                "confidence_level": "low"
+            },
+            "validation": {
+                "summary": {
+                    "total_fields_checked": 0,
+                    "valid_fields": 0,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 0,
+                    "ready_to_save": false,
+                    "requires_review": true,
+                    "note": "Document type is unknown, so validation could not run."
+                },
+                "field_results": {}
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (M) SDN BHD",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "date": {
+                        "expected": "14-03-18",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "total": {
+                        "expected": "37.10",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005361946.jpg",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "REND\nIE\nXCHI\nR IAMAR\n34-11 12 02 101119\n一—一*\n2.10\n3500\nG91 S6%\nAmt(  T(R)\nGs1 sumary\nM 12.90\nCHANGE\nRM 50.00\nCASH\nRM 37.10\nota 1GIIGS6%\n0ty(()s :7\nItem(s) : 3\nX 222.9\n5116\nA27-20\nA   AGGG AI\n2×153.00\n0622\n051 /360\nS*\nSCI/SSSOR G/ETSH\n全  0 1.20\n5511081\nA 240\nS0UUR -4S\nTAX INVIE\nE)\n(G1  :0000003552)\nN\n0T1 186\n(0 0681-0)\nMRT.V N ..BHD\n1 A2018",
+            "processing_time_seconds": 22.1981
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "MRD.I.Y M SDNBHD",
+                "date": "03-24/240",
+                "address": "KAWASAN PERINDUSTRIAN BALAKONG. 43300 SERI KEMBANGAN,SELANGOR GSTIDNO 000306020352 TESCO MUTIARADAMANSARA SOURINGPAD1018-44S WA03-24/240",
+                "total": "50.00",
+                "source_image": "X51005361946.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "MRD.I.Y M SDNBHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "03-24/240",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "KAWASAN PERINDUSTRIAN BALAKONG. 43300 SERI KEMBANGAN,SELANGOR GSTIDNO 000306020352 TESCO MUTIARADAMANSARA SOURINGPAD1018-44S WA03-24/240",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "50.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005361946.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (M) SDN BHD",
+                        "extracted": "MRD.I.Y M SDNBHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 94.12
+                    },
+                    "date": {
+                        "expected": "14-03-18",
+                        "extracted": "03-24/240",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "KAWASAN PERINDUSTRIAN BALAKONG. 43300 SERI KEMBANGAN,SELANGOR GSTIDNO 000306020352 TESCO MUTIARADAMANSARA SOURINGPAD1018-44S WA03-24/240",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 53.33
+                    },
+                    "total": {
+                        "expected": "37.10",
+                        "extracted": "50.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005361946.jpg",
+                        "extracted": "X51005361946.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "PAIT\nMAR2018\nMRD.I.Y（M）SDNBHD\n（C0-Reg:860671-D)\n10T1851-A&1851-8,JALANKPB6,\nKAWASAN PERINDUSTRIAN BALAKONG.\n43300 SERI KEMBANGAN,SELANGOR\n(GSTIDNo:000306020352)\n(TESCO MUTIARADAMANSARA)\n-TAX INVOICE\nSOURINGPAD1018-44S\nWA03-24/240\n9555221301081\n4X2.B011.20\nSCISSOR G/EISH\n*S\nAD51-24/360\n9064422\nX1.50\n3.00\nTRAILING SKT 5GN+SP 3X1.25MM CA3LE2 *S\nWA27-20\n9553114461966\n1X22.90\n22.90\nItem(s):3\nQty(s):7\nTotal Incl,GST@6%\nRM37.10\nHS\nRM50.00\nCHANGE\nRM.12.90\nGST Summary\nAmt（RM)Tax(RM)\nGST S@6%\n35.00\n2.10\n￥\n14-03-1821:49 SH03ZJ20\nT1 R000418193\nOPERATOR TMDC-SAH BIJAY KUMAR\nEXCHANGE ARE ALEOWED WITHIN\n7DAYS WITH RECEIPT.\nSTRICTLY NO CASH REFUND",
+            "processing_time_seconds": 1.3235
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "MR. D.I.Y.(M SON BHD",
+                "date": "14-03-18",
+                "address": "LOT 1851-A & 1851-B, JALAN-KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                "total": "50.00",
+                "source_image": "X51005361946.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "MR. D.I.Y.(M SON BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "14-03-18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "LOT 1851-A & 1851-B, JALAN-KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "50.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005361946.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "MR. D.I.Y. (M) SDN BHD",
+                        "extracted": "MR. D.I.Y.(M SON BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 94.44
+                    },
+                    "date": {
+                        "expected": "14-03-18",
+                        "extracted": "14-03-18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "LOT 1851-A & 1851-B, JALAN KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "extracted": "LOT 1851-A & 1851-B, JALAN-KPB 6, KAWASAN PERINDUSTRIAN BALAKONG, 43300 SERI KEMBANGAN, SELANGOR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "37.10",
+                        "extracted": "50.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005361946.jpg",
+                        "extracted": "X51005361946.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "MAR\nIALIIN\n2018\nMR. D.I.Y.(M SON BHD\n(CO- Reg :860671-D)\nLOT 1851-A & 1851-B, JALAN-KPB 6,\n: KAWASAN PERINDUSTRIAN BALAKONG,\n43300 SERI KEMBANGAN, SELANGOR\n(GST ID No :000306020352)\n(TESCO MUTIARA DAMANSARA)\nTAX INVOICE\nSOURING PAD 1018-4 48\n*S\nWA03 - 24/240\n9555221301081\n4 X 2.80 11.20\nSCISSOR G/FISH\n*S\nAD51 - 24/360\n9064422\n2 X 1.50 3.00\nTRAILING SKT 5GN+SP 3X1.25MM CABLE 2 *S\nWA27 - 20\n9553114461966\n1 X 22.90 22.90\nItem(s) : 3\nQty(s) : 7\nTotal Incl, GSTO6%\nRM 37.10\nCASH\nRM 50.00\nCHANGE\nRM, 12.90\nGST Summary\nAmt(RM) Tax(RM)\nGST SQ6X\n35.00\n2.10\n*\n14-03-18 21:49 SHO3 ZJ20 TI R000418193\nOPERATOR TMDC m SAH BIJAY KUMAR\nEXCHANGE ARE ALLOWED WITHIN\n7 DAYS WITH RECEIPT.\nSTRICTLY NO CASH REFUND.",
+            "processing_time_seconds": 3.6564
+        }
+    }
+}

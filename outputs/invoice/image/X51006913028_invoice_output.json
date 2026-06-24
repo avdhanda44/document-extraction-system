@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51006913028.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51006913028.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "UNIHAKKA INTERNATIONAL SDN BHD",
+        "date": "07 MAY 2018",
+        "address": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR",
+        "total": "$8.70",
+        "source_image": "X51006913028.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "UNIHAKKA INTERNATIONAL SDN BHD",
+                "date": "07 May 2018",
+                "address": "12, JALAN TAMPOI 7L4 KAWASAN PERINDUSTRIAN TAMPOI 81200 JOHOR BAHRU, JOHOR INVOICE 0R18050702170462 LTEM SR 100100000035",
+                "total": "2018.18",
+                "source_image": "X51006913028.jpg",
+                "receipt_number": "0R18050702170462",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "07 May 2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "12, JALAN TAMPOI 7L4 KAWASAN PERINDUSTRIAN TAMPOI 81200 JOHOR BAHRU, JOHOR INVOICE 0R18050702170462 LTEM SR 100100000035",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "2018.18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006913028.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "0R18050702170462",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "extracted": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "07 MAY 2018",
+                        "extracted": "07 May 2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR",
+                        "extracted": "12, JALAN TAMPOI 7L4 KAWASAN PERINDUSTRIAN TAMPOI 81200 JOHOR BAHRU, JOHOR INVOICE 0R18050702170462 LTEM SR 100100000035",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 80.0
+                    },
+                    "total": {
+                        "expected": "$8.70",
+                        "extracted": "2018.18",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51006913028.jpg",
+                        "extracted": "X51006913028.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "श0*036\nUNIHAKKA INTERNATIONAL SDN BHD\n०७ May 2018 18:21\n(867388-0)\n१२, Jalan Tampoi ७l४ Kawasan Perindustrian\nTampoi 81२०० Johor Bahru, Johor\nTAX INVOICE\nInvoice #\n0R18050702170462\nTotal\nltem\nSR 100100000035-\nMeat + 3 Vege\n$7.10\n$7.10\nSR IOO1OOOOO1 ७०- Imported Veggies\n$1.60\n$1.60\nTotal Amount: $8. ७०\nG$T @6%: $0.49\nNett Total: $8. ७०\nAmount\nPayment Mode\n$8.70\nCASH\n$0.00\nChange\nAmount $\nTax($)\nGST Summary\n8.21\n0.49\nSR = GST @6%\nGST REG #000656195584\nBAR WANG RICE@PERMAS JAYA\n(Price Inclusive Oi GST)\nThank You & Come Again!\nLike and Follow Us on Facebook!\nFacebook com BarWangRice\nQty",
+            "processing_time_seconds": 51.768
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "UNIHAKKA INTERNATIONAL SDN BHD",
+                "date": "07 May 2018",
+                "address": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU, JOHOR INVOICE OR180507021 70462 A SR 100100000035- 1 MEAT 3 VEGE 7.10 1 7.10",
+                "total": "8.70",
+                "source_image": "X51006913028.jpg",
+                "receipt_number": "OR180507021",
+                "subtotal": "",
+                "tax": "6.49",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "07 May 2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU, JOHOR INVOICE OR180507021 70462 A SR 100100000035- 1 MEAT 3 VEGE 7.10 1 7.10",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "8.70",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006913028.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "OR180507021",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "6.49",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "extracted": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "07 MAY 2018",
+                        "extracted": "07 May 2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR",
+                        "extracted": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU, JOHOR INVOICE OR180507021 70462 A SR 100100000035- 1 MEAT 3 VEGE 7.10 1 7.10",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "$8.70",
+                        "extracted": "8.70",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006913028.jpg",
+                        "extracted": "X51006913028.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "UNIHAKKA INTERNATIONAL SDN BHD\n07 May 2018 18:21\n\n(867388-U)\n12, Jalan Tampoi 7/4,Kawasan Perindustrian\nTampoi,81200 Johor Bahru, Johor\nTAX INVOICE\nInvoice # : OR180507021 70462\n\nItem Qty Total\n_ A\nSR 100100000035- 1 Meat + 3 Vege\n\n$7.10 1 $7.10\nSR 100100000170- Imported Veggies\n$1.60 1 $1.60\n\nTotal Amount: $8.70\nGST @6%: $0.49\nNett Total: $8.70\n\n_PaymentMode ___.ट.ट 3 -+ छः Mode Amount\n\nCASH $8.70\n\nChange $0.00\n\nGST Summary Amount($} Tax($)\n\nSR= GST @6% 8.21 6.49\nGST REG #000656195584\n\nBAR WANG RICE@PERMAS JAYA\n(Price Inclusive Of GST)\nThank You & Come Again!\n\nLike and Follow Us on Facebook!\nFacebook.com/BarWangRice",
+            "processing_time_seconds": 4.7786
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "UNIHAKKA INTERNATIONAL SDN BHD",
+                "date": "07 May 2018",
+                "address": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR INVOICE OR18050702170462 SR 100100000035- 1 MEAT 3 VEGE 7.10 1",
+                "total": "8.70",
+                "source_image": "X51006913028.jpg",
+                "receipt_number": "OR18050702170462",
+                "subtotal": "",
+                "tax": "0.49",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "07 May 2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR INVOICE OR18050702170462 SR 100100000035- 1 MEAT 3 VEGE 7.10 1",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "8.70",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006913028.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "OR18050702170462",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "0.49",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "extracted": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "07 MAY 2018",
+                        "extracted": "07 May 2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR",
+                        "extracted": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR INVOICE OR18050702170462 SR 100100000035- 1 MEAT 3 VEGE 7.10 1",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "$8.70",
+                        "extracted": "8.70",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006913028.jpg",
+                        "extracted": "X51006913028.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "A05036\nUNIHAKKA INTERNATIONAL SDN BHD\n07 May 2018 18:21\n(867388-U)\n12, Jalan Tampoi 7/4,Kawasan Perindustrian\nTampoi,81200 Johor Bahru,Johor\nTAX INVOICE\nInvoice # : OR18050702170462\nTotal\nItem\nQty\nSR 100100000035- 1 Meat + 3 Vege\n$7.10\n1\nSR 100100000170- Imported Veggies\n$1.60\n“”\nTotal Amount: $8.70\nGST @6%: $0.49\nNett Total: $8.70\nAmount\nPayment Mode\n$8.70\nCASH\n$0.00\nChange\nTax($)\nAmount($)\nGST Summary\n0.49\n8.21\nSR = GST @6%\nGST REG #000656195584\nBAR WANG RICE@PERMAS JAYA\n(Price Inclusive Of GST)\nThank You & Come Again!\nLike and Follow Us on Facebook!\nFacebook.com/BarWangRice\nG",
+            "processing_time_seconds": 163.2234
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "UNIHAKKAINTERNATIONAL SDN BHD",
+                "date": "07 May 2018",
+                "address": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200JOHORBAHRU,JOHOR TAXINVOICE INVOICE OR18050702170462 SR100100000035-1MEAT 3VEGE 7.10",
+                "total": "8.70",
+                "source_image": "X51006913028.jpg",
+                "receipt_number": "OR18050702170462",
+                "subtotal": "",
+                "tax": "0.49",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "UNIHAKKAINTERNATIONAL SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "07 May 2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200JOHORBAHRU,JOHOR TAXINVOICE INVOICE OR18050702170462 SR100100000035-1MEAT 3VEGE 7.10",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "8.70",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006913028.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "OR18050702170462",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "0.49",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "extracted": "UNIHAKKAINTERNATIONAL SDN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 98.31
+                    },
+                    "date": {
+                        "expected": "07 MAY 2018",
+                        "extracted": "07 May 2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR",
+                        "extracted": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200JOHORBAHRU,JOHOR TAXINVOICE INVOICE OR18050702170462 SR100100000035-1MEAT 3VEGE 7.10",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 80.0
+                    },
+                    "total": {
+                        "expected": "$8.70",
+                        "extracted": "8.70",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006913028.jpg",
+                        "extracted": "X51006913028.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "036\nUNIHAKKAINTERNATIONAL SDN BHD\n07 May 2018 18:21\n(867388-U)\n12, Jalan Tampoi 7/4,Kawasan Perindustrian\nTampoi,81200JohorBahru,Johor\nTAXINVOICE\nInvoice#:OR18050702170462\nTotal\nItem\nQty\nSR100100000035-1Meat+3Vege\n$7.10\n$7.10\n1\nSR 100100000170- Imported Veggies\n$1.60\n1\n$1.60\nTotal Amount: $8.70\nGST @6%: $0.49\nNet Total: $8.70\nPayment Mode\nAmount\n$8.70\nCASH\nChange\n$0.00\nGSTSummary\nTax($)\nSR=GST@6%\n8.21\n0.49\nGSTREG#000656195584\nBARWANG RICE@PERMASJAYA\n(Price Inclusive Of GST)\nThank You & Come Again!\nLike and Follow Us on Facebook!\nFacebook.com/BarWangRice",
+            "processing_time_seconds": 3.2117
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "UNIHAKKA INTERNATIONAL SDN BHD",
+                "date": "",
+                "address": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR TAXINVOICE INVOICE OR18050702170462 SR 100100000035- 1MEAT T 3 VEGE 7.10",
+                "total": "8.70",
+                "source_image": "X51006913028.jpg",
+                "receipt_number": "OR18050702170462",
+                "subtotal": "",
+                "tax": "0.49",
+                "discount": "",
+                "currency": "USD"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 9,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "company": {
+                        "value": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR TAXINVOICE INVOICE OR18050702170462 SR 100100000035- 1MEAT T 3 VEGE 7.10",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "8.70",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51006913028.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "OR18050702170462",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "0.49",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "USD",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "extracted": "UNIHAKKA INTERNATIONAL SDN BHD",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "07 MAY 2018",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR",
+                        "extracted": "12, JALAN TAMPOI 7/4,KAWASAN PERINDUSTRIAN TAMPOI,81200 JOHOR BAHRU,JOHOR TAXINVOICE INVOICE OR18050702170462 SR 100100000035- 1MEAT T 3 VEGE 7.10",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "$8.70",
+                        "extracted": "8.70",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51006913028.jpg",
+                        "extracted": "X51006913028.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "A0S036\nUNIHAKKA INTERNATIONAL SDN BHD\n071 May: 2018 18:21\n(867388-U)\n12, Jalan Tampoi 7/4,Kawasan Perindustrian\nTampoi,81200 Johor Bahru,Johor\nTAXINVOICE\nInvoice #: OR18050702170462\nItem\nQty\nTotal\nSR 100100000035- 1Meat t+3 Vege\n$7.10\n1\n$7.10\nSR 100100000170-1 Imported Veggies\n$1.60\n1\n$1.60\nTotal Amount: $8.70\nGST @6%: $0.49\nNett Total: $8.70\nPayment Mode\nAmount\nCASH\n$8.70\nChange\n$0.00\nGST Summary\nAmount($)\nTax(s)\nSR =GST @6%\n8.21\n0.49\nGST REG #000656195584\nBAR WANGI RICE@PERMAS JAYA\n(Price Inclusive Of GST)\nThank You & Come Again!\nLike and Followl Us onf Facebook!\nFacebook.com.Baangtice",
+            "processing_time_seconds": 6.4988
+        }
+    }
+}

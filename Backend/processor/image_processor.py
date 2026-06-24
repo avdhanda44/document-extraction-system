@@ -242,15 +242,20 @@ def extract_text_from_image_tesseract(image_path, preprocessing_mode="threshold"
         raise RuntimeError(f"Tesseract OCR failed: {error}") from error
 
 
-def extract_text_from_image_paddleocr(image_path, preprocessing_mode="none"):
+def extract_text_from_image_paddleocr(
+    image_path,
+    preprocessing_mode="none",
+    languages=None,
+):
     # Extract text using PaddleOCR.
     text_lines = []
     errors = []
+    languages = languages or ("en", "hi")
 
     with TemporaryDirectory() as temporary_folder:
         ocr_image_path = get_ocr_image_path(image_path, preprocessing_mode, temporary_folder)
 
-        for language in ["en", "hi"]:
+        for language in languages:
             try:
                 paddle = get_paddle_ocr(language)
                 results = paddle.ocr(str(ocr_image_path))
@@ -338,7 +343,12 @@ def extract_text_lines_from_paddle_results(results):
     return list(dict.fromkeys(text_lines))
 
 
-def extract_text_from_image(image_path, model_name="easyocr", preprocessing_mode="none"):
+def extract_text_from_image(
+    image_path,
+    model_name="easyocr",
+    preprocessing_mode="none",
+    languages=None,
+):
     # Default image OCR entry point used by text_extractor.py.
     if model_name == "easyocr":
         return extract_text_from_image_easyocr(image_path, preprocessing_mode)
@@ -347,7 +357,11 @@ def extract_text_from_image(image_path, model_name="easyocr", preprocessing_mode
         return extract_text_from_image_tesseract(image_path, preprocessing_mode)
 
     if model_name == "paddleocr":
-        return extract_text_from_image_paddleocr(image_path, preprocessing_mode)
+        return extract_text_from_image_paddleocr(
+            image_path,
+            preprocessing_mode,
+            languages=languages,
+        )
 
     if model_name == "rapidocr":
         return extract_text_from_image_rapidocr(image_path, preprocessing_mode)

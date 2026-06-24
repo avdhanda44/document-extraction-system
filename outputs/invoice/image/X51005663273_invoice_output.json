@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51005663273.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51005663273.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "SYARIKAT PERNIAGAAN GIN KEE",
+        "date": "04/12/2017",
+        "address": "NO 290, JALAN AIR PANAS. SETAPAK, 53200, KUALA LUMPUR",
+        "total": "47.70",
+        "source_image": "X51005663273.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "SYARIKAT PERNIAGAAN GIN KEE",
+                "date": "04/12/2017",
+                "address": "81109-A1 NO 290. JALANAIR PANAS SETAPAK, 53200. KIUALA LUMPUR. TE 03-40210276",
+                "total": "47.70",
+                "source_image": "X51005663273.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "04/12/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "81109-A1 NO 290. JALANAIR PANAS SETAPAK, 53200. KIUALA LUMPUR. TE 03-40210276",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "47.70",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005663273.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "extracted": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "04/12/2017",
+                        "extracted": "04/12/2017",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO 290, JALAN AIR PANAS. SETAPAK, 53200, KUALA LUMPUR",
+                        "extracted": "81109-A1 NO 290. JALANAIR PANAS SETAPAK, 53200. KIUALA LUMPUR. TE 03-40210276",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 78.69
+                    },
+                    "total": {
+                        "expected": "47.70",
+                        "extracted": "47.70",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51005663273.jpg",
+                        "extracted": "X51005663273.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "3 !८ !२ ० 2\nSYARIKAT PERNIAGAAN GIN KEE\n(81109-A1\nNO २९०. JALANAIR PANAS\nSETAPAK,\n53200. KIUALA LUMPUR.\nTE-\n03-40210276\nG$T ID : 000750673920\nSIMPLIFIED TAX INVOICE\nCASI\nDoc 1o.\nCS00011983\nDateः\n04/12/2017\nCashiier\nUSER\nTime:\n16:15:00\nSalesperson\nRef.\nOLL\nSPrice\nAmount\nTax\n147७\n15.90\n47 ७०\nSR\n२SK SIKn CREAM -88\nToiaoty:\n47.70\nToial Sales  Excluding GST )\n45.00\nDiscount\n0.00\nTotal GST\n2.?0\nRounding\n0.00\nTotal Salos (Inclusive of GST)\n47.70\nCASH\n47.70\nChange\n0.00\nGST JUMMARY\nJax Coce\n%\nAmt RI\nTax RM\nS२\n6\n45.00\n2.70\nTotal\n45.00\n2.70\nGOOUS SOLD ARE NOT RETURNABLE. TIANK YCU",
+            "processing_time_seconds": 11.4159
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "SYARIKAT PERNIAGAAN GIN KEE",
+                "date": "04/12/2017",
+                "address": "81109-A NO 290, JALAN AIR PANAS. SETAPAK, 53200, KUALA LUMPUR.",
+                "total": "45.00",
+                "source_image": "X51005663273.jpg",
+                "receipt_number": "",
+                "subtotal": "48.00",
+                "tax": "2.70",
+                "discount": "9.00",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "04/12/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "81109-A NO 290, JALAN AIR PANAS. SETAPAK, 53200, KUALA LUMPUR.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "45.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005663273.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "48.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "tax": {
+                        "value": "2.70",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "9.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "extracted": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "04/12/2017",
+                        "extracted": "04/12/2017",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO 290, JALAN AIR PANAS. SETAPAK, 53200, KUALA LUMPUR",
+                        "extracted": "81109-A NO 290, JALAN AIR PANAS. SETAPAK, 53200, KUALA LUMPUR.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "47.70",
+                        "extracted": "45.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005663273.jpg",
+                        "extracted": "X51005663273.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "te Lad}\n\nSYARIKAT PERNIAGAAN GIN KEE\n(81109-A)\nNO 290, JALAN AIR PANAS.\nSETAPAK,\n53200, KUALA LUMPUR.\nTEL : 03-40210276\nGST ID : 000750673920\nSIMPLIFIED TAX INVOICE\n\n| CASH\n\n| DocNo. . CS00011983 Date: 04/12/2017\n\n| Cashier - USER Time: 16:15:00\nSalesperson . Ref. :\n\nif Qty _S/Price Amount 132 _\n\n147७ 16.90 47790 sR\n25KG SIKA CREAM -88 est EB\na “Total Gry 3 रद 47-70\nTotal Sales (Excluding GST) : 48.00\n| Discount : 9.00\n| Total GST : 2.70\ni Rounding : 0.00\ni Total Sales (Inclusive of GST) : Card)\n| CASH : 47.70\nChange : 0.00\n\ni GST SUMMARY\n\nTax Code ५ Amt (र॥) a\nSR 6 45.00 2.70\n\nTotal 45.00 2.7)\n\nGOOUS 501 0 ARE NOT RETURNABLE, THANK YOU",
+            "processing_time_seconds": 1.6638
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "SYARIKAT PERNIAGAAN GIN KEE",
+                "date": "04/12/2017",
+                "address": "81109-A NO 290. JALAN AIR PANAS. SETAPAK, 53200, KUALA LUMPUR.",
+                "total": "47.70",
+                "source_image": "X51005663273.jpg",
+                "receipt_number": "CS00011983",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "04/12/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "81109-A NO 290. JALAN AIR PANAS. SETAPAK, 53200, KUALA LUMPUR.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "47.70",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005663273.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS00011983",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "extracted": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "04/12/2017",
+                        "extracted": "04/12/2017",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO 290, JALAN AIR PANAS. SETAPAK, 53200, KUALA LUMPUR",
+                        "extracted": "81109-A NO 290. JALAN AIR PANAS. SETAPAK, 53200, KUALA LUMPUR.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "47.70",
+                        "extracted": "47.70",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51005663273.jpg",
+                        "extracted": "X51005663273.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "31812012\nSYARIKAT PERNIAGAAN GIN KEE\n(81109-A)\nNO 290. JALAN AIR PANAS.\nSETAPAK,\n53200, KUALA LUMPUR.\nTEL:03-40210276\nGST ID : 000750673920\nSIMPLIFIED TAX INVOICE\nCASH\nDoc No.\nCS00011983\nDate: 04/12/2017\nUSER\nTime: 16:15:00\nCashier\nRef. :\nSalesperson\nQty\nS/Price\nAmount\nTax\n11\n3\n15.90\n1476\n47.70\nSR\n25KG SIKA CREAM -88\nTotal Qty:\nTotal Sales (Excluding GST)\n45.00\nDiscount\n0.00\nTotal GST\n2.70\nRounding\nTotal Sales (Inclusive of GST) :\nCASH :\nChange :\nGST SUMMARY\nTax Code\n%\nAmt(RM)\nTax(RM)\n6\nTotal :\nGOOUS SOLD ARE NOT RETURNABLE THANK YOU",
+            "processing_time_seconds": 15.8066
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "SYARIKAT PERNIAGAAN GIN KEE",
+                "date": "04/12/2017",
+                "address": "81109-A NO 290, JALAN AIR PANAS. SETAPAK, 53200,KUALA LUMPUR.",
+                "total": "47.70",
+                "source_image": "X51005663273.jpg",
+                "receipt_number": "CS00011983",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "04/12/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "81109-A NO 290, JALAN AIR PANAS. SETAPAK, 53200,KUALA LUMPUR.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "47.70",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005663273.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS00011983",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "extracted": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "04/12/2017",
+                        "extracted": "04/12/2017",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO 290, JALAN AIR PANAS. SETAPAK, 53200, KUALA LUMPUR",
+                        "extracted": "81109-A NO 290, JALAN AIR PANAS. SETAPAK, 53200,KUALA LUMPUR.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "47.70",
+                        "extracted": "47.70",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51005663273.jpg",
+                        "extracted": "X51005663273.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "31812012\nSYARIKAT PERNIAGAAN GIN KEE\n(81109-A)\nNO 290, JALAN AIR PANAS.\nSETAPAK,\n53200,KUALA LUMPUR.\nTEL:03-40210276\nGSTID:000750673920\nSIMPLIFIED TAX INVOICE\nCASH\nDoc No.\nCS00011983\nDate:04/12/2017\nCashier\nUSER\nTime:16:15:00\nSalesperson :\nRef.:\n11.\nQty\nS/Price\nAmount\nTax\n1476\n3\n15.90\n47.70\nSR\n25KGSIKA CREAM-88\nTotal Qty:\n3\n47.70\nTolal Sales (Excluding GsT) :\n45.00\nDiscount:\n0.00\nTotal GST\n2.70\nRounding :\n0.00\nTotal Sales (Inclusive of GsT) :\n47.70\nCASH :\n47.70\nChange :\n0.00\nGST SUMMARY\nTax Code\n%\nAmt (RM)\nTax(RM)\nSR\n6\n45.00\n2.70\nTotal :\n45.00\n2.70\nGOOUS SOLD ARENOT RETURNABLE,THANK YOU",
+            "processing_time_seconds": 1.2942
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "SYARIKAT PERNIAGAAN GIN KEE",
+                "date": "04/12/2017",
+                "address": "81109-A NO 290.JALAN AIR PANAS, SETAPAK, 53200, KUALALUMPUR.",
+                "total": "47.70",
+                "source_image": "X51005663273.jpg",
+                "receipt_number": "CS00011983",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "04/12/2017",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "81109-A NO 290.JALAN AIR PANAS, SETAPAK, 53200, KUALALUMPUR.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "47.70",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005663273.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "CS00011983",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 100.0,
+                "matched_fields": 4,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "extracted": "SYARIKAT PERNIAGAAN GIN KEE",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "04/12/2017",
+                        "extracted": "04/12/2017",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO 290, JALAN AIR PANAS. SETAPAK, 53200, KUALA LUMPUR",
+                        "extracted": "81109-A NO 290.JALAN AIR PANAS, SETAPAK, 53200, KUALALUMPUR.",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 91.43
+                    },
+                    "total": {
+                        "expected": "47.70",
+                        "extracted": "47.70",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "source_image": {
+                        "expected": "X51005663273.jpg",
+                        "extracted": "X51005663273.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "3 1812012\nSYARIKAT PERNIAGAAN GIN KEE\n(81109-A)\nNO 290.JALAN AIR PANAS,\nSETAPAK,\n53200, KUALALUMPUR.\nTEL : 03-40210276\nGST ID : 000750673920\nSIMPLIFIED TAX INVOICE\nCASH\nDoc No.\nCS00011983\nDate: 04/12/2017\nCashier\nUSER\nTime: 16:15:00\nSalesperson .\nRef.:\ni1\nQty\nS/Price\nAmount\nTax\n1476\n3\n15.90\n47.70\nSR\n25KG SIKA CREAM -88\nTotalOty:\n3\n47.70\nTotal Sales (Excluding GST) :\n45.00\nDiscount :\n0.00\nTotal GST :\n2.70\nRounding :\n0.00\nTotal Sales (Inclusive of GST) :\n47.70\nCASH :\n47.70\nChange :\n0.00\nGST SUMMARY\nTax Code\n%\nAmt (RM)\nTax (RM)\nSR\n6\n45.00\n2.70\nTotal:\n45.00\n2.70\nGOODS SOLD ARE NOT RETURNABLE, THANK YOU",
+            "processing_time_seconds": 3.197
+        }
+    }
+}

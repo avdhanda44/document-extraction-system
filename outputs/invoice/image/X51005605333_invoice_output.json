@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51005605333.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51005605333.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "POPULAR BOOK CO. (M) SDN BHD",
+        "date": "07/01/18",
+        "address": "NO 8, JALAN 7/118B, DESA TUN RAZAK 56000 KUALA LUMPUR, MALAYSIA KL FESTIVAL CITY MALL",
+        "total": "31.45",
+        "source_image": "X51005605333.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "FDFLLAE EDDI",
+                "date": "",
+                "address": "TC 8, JALAN T/LISB, DESA TUAR RAZ 5DDD FUALA LTNICITR NALASI3 AL FESTIVAL LITI TAL",
+                "total": "13.43",
+                "source_image": "X51005605333.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 9,
+                    "invalid_fields": 1,
+                    "fields_with_warnings": 5,
+                    "ready_to_save": false,
+                    "requires_review": true
+                },
+                "field_results": {
+                    "company": {
+                        "value": "FDFLLAE EDDI",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "",
+                        "valid": false,
+                        "error": "Required field missing",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "TC 8, JALAN T/LISB, DESA TUAR RAZ 5DDD FUALA LTNICITR NALASI3 AL FESTIVAL LITI TAL",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "13.43",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005605333.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "POPULAR BOOK CO. (M) SDN BHD",
+                        "extracted": "FDFLLAE EDDI",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 27.03
+                    },
+                    "date": {
+                        "expected": "07/01/18",
+                        "extracted": "",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "NO 8, JALAN 7/118B, DESA TUN RAZAK 56000 KUALA LUMPUR, MALAYSIA KL FESTIVAL CITY MALL",
+                        "extracted": "TC 8, JALAN T/LISB, DESA TUAR RAZ 5DDD FUALA LTNICITR NALASI3 AL FESTIVAL LITI TAL",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 69.14
+                    },
+                    "total": {
+                        "expected": "31.45",
+                        "extracted": "13.43",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005605333.jpg",
+                        "extracted": "X51005605333.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "FDFLLAE EDDi\nLD\n=\n(i )\nSDii BriD\n(LanEary Ilc. 1L382E-l )\n(GST REg lo. DDt4PZRPZDDD )\nTc 8, Jalan T/LISB, Desa Tuar Razऔ\n5DDD fuala Ltnicitr\nnalasi३\nAL FESTIVAL LITi TAL\nTeL\n03-41424540./22\nZr Di/la l४r४i\nSlir ND.६ 7OLU3B5OB4\nfiDrhasniaa\nTrans:  3t48i0\n4\n\nLescripition\nRiittrt\n*\n७७g\n4507=\n3rc ऐ 1३ ४३\n4_.07\n=\nStat Great Savirig\n-८२\nTotal Rii ZricL. Df tST\n3:.47\nfoLindirg Aaj\n-D.[2\nTotal Fn\n31 -#5\nLash\n-ED+D-\nCHAHE\nlt 5\nTteni Laurit\n=\nEST\nfiar ;\nHnotnt IRr )\nTa IFrj\nT = ४\n27.8f\n+ n%\nTotal Savings\n-,60\n-\nPE A FOPULAF CARD TEPEF\nAtDI ElDi SPECJAL LJSLDU;ITS\nTHhii YDU. PLEAE ZOiTE AEAlit.\nHklti . ZDELLar \nCDli = fl\nLrrinesE LoDkE Eniir\nklakl\n.EaZuLarDLZnE  CDlii = i y\nF Laty\ntuy",
+            "processing_time_seconds": 15.1061
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "POPULAR BOOK.",
+                "date": "00 CHANGE 18",
+                "address": "COMPANY NO. 115825-8 G57 REG NO. 001472992000 NO 8, JALAN 7/1198, BESA TUN RAZAK 6000 KUALA LUMPUR, NALAYSIS RL FESTIVAL CITY MALL",
+                "total": "9.40",
+                "source_image": "X51005605333.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "POPULAR BOOK.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "00 CHANGE 18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "COMPANY NO. 115825-8 G57 REG NO. 001472992000 NO 8, JALAN 7/1198, BESA TUN RAZAK 6000 KUALA LUMPUR, NALAYSIS RL FESTIVAL CITY MALL",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "9.40",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005605333.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "POPULAR BOOK CO. (M) SDN BHD",
+                        "extracted": "POPULAR BOOK.",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 64.86
+                    },
+                    "date": {
+                        "expected": "07/01/18",
+                        "extracted": "00 CHANGE 18",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "NO 8, JALAN 7/118B, DESA TUN RAZAK 56000 KUALA LUMPUR, MALAYSIA KL FESTIVAL CITY MALL",
+                        "extracted": "COMPANY NO. 115825-8 G57 REG NO. 001472992000 NO 8, JALAN 7/1198, BESA TUN RAZAK 6000 KUALA LUMPUR, NALAYSIS RL FESTIVAL CITY MALL",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 73.43
+                    },
+                    "total": {
+                        "expected": "31.45",
+                        "extracted": "9.40",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005605333.jpg",
+                        "extracted": "X51005605333.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "POPULAR BOOK.\nCO. (M) SDN BHD\n\n(Company No. 115825-8)\n(G57 Reg No. 001472992000)\nNo 8, Jalan 7/1198, Besa Tun Razak\n6000 Kuala Lumpur, Nalaysis\n_~ RL FESTIVAL CITY MALL\n\nTel ३ 03-41424540/20\nO7/O1/18 14:41 Slip Now: 701385004\nhovhasnida Trans: 344910\n\n70g P.Copy 450°S\n\nSpe @ 13.87 4i.07 T\nStat-Great Saving 7.80\nFotal RM Incl. of GST हे बा\nRounding Adj ~0.08\nTotal RH हें; 45\nCash ~50..00\nCHANGE 18.35\nTtenm Court 3\nGST =o mary Amount (RH) Tax (RA)\nT 8 4% 29.89 1.\nTotal Savings 9,40\n\nBE A POPULAR CARD MEMBER\nAND ENIOY SPECIAL BISCOUNTS\nTHANK YOU. FLEASE COME AGAIN.\nWa. POPULSY COM HY\nBuy Chinese books online\nWau. popuLaronLine.. coli. ny",
+            "processing_time_seconds": 1.9755
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "POPULAR BOOK",
+                "date": "07/01/18",
+                "address": "COMPANY NO. 113825-W",
+                "total": "50.00",
+                "source_image": "X51005605333.jpg",
+                "receipt_number": "7010385084",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "POPULAR BOOK",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "07/01/18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "COMPANY NO. 113825-W",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "50.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005605333.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "7010385084",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "POPULAR BOOK CO. (M) SDN BHD",
+                        "extracted": "POPULAR BOOK",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 64.86
+                    },
+                    "date": {
+                        "expected": "07/01/18",
+                        "extracted": "07/01/18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO 8, JALAN 7/118B, DESA TUN RAZAK 56000 KUALA LUMPUR, MALAYSIA KL FESTIVAL CITY MALL",
+                        "extracted": "COMPANY NO. 113825-W",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 15.84
+                    },
+                    "total": {
+                        "expected": "31.45",
+                        "extracted": "50.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005605333.jpg",
+                        "extracted": "X51005605333.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "POPULAR BOOK\nCO. (M) SDN BHD\n(Company No. 113825-W)\n(GST Reg No. 001492992000)\nNo 8, Jalan 7/118B, Desa Tun Razak\n56000 Kuala Lumpur, Malaysia\nKL FESTIVAL CITY MALL\nTel :03-41424540/20\n07/01/18 14:41\nSlip No.: 7010385084\nNorhasmida\nTrans: 364810\nDescription\nAmount\n70g P.Copy 450'S\n3pc @ 13.69\n41.07 T\nStat-Great Saving\n-9.60\nTotal RM Incl. of GST\n31.47\nRounding Adj\n-0.02\n31.45\nTotal RM\nCash\n-50.00\nCHANGE\n18.55\nItem Count\nPH3\nGST\nmary Amount (RM)\nTax (RH)\nT @ 6%\n29.69\n1.78\nTotal Savings\nBE A POPULAR CARD MEMBER\nAND ENJOY SPECIAL DISCOUNTS\nTHANK YOU. PLEASE COME AGAIN.\nwww.popular.com.my\nBuy Chinese books online\nwww.popularonline.com.my",
+            "processing_time_seconds": 11.4797
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "POPULAR BOOK",
+                "date": "07/01/1814",
+                "address": "COMPANY NO. 113825-",
+                "total": "69.62",
+                "source_image": "X51005605333.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "POPULAR BOOK",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "07/01/1814",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "COMPANY NO. 113825-",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "69.62",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005605333.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 0.0,
+                "matched_fields": 0,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "POPULAR BOOK CO. (M) SDN BHD",
+                        "extracted": "POPULAR BOOK",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 64.86
+                    },
+                    "date": {
+                        "expected": "07/01/18",
+                        "extracted": "07/01/1814",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "address": {
+                        "expected": "NO 8, JALAN 7/118B, DESA TUN RAZAK 56000 KUALA LUMPUR, MALAYSIA KL FESTIVAL CITY MALL",
+                        "extracted": "COMPANY NO. 113825-",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 14.14
+                    },
+                    "total": {
+                        "expected": "31.45",
+                        "extracted": "69.62",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005605333.jpg",
+                        "extracted": "X51005605333.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "POPULAR BOOK\nCO. (M) SDN BHD\n(Company No. 113825-)\n(GST Reg No. 001492992000)\nNo 8,Jalan 7/118B,Desa Tun Razak\n56000 Kuala Lumpur,Malaysia\nKL FESTIVAL CITY MALL\nTel :03-41424540/20\n07/01/1814:41\nSlip: No.: 7010385084\nTrans: 364810\nDescription\nAmount\n70g P.Copy 450'S\n3pc 013.69\n41.07 7\nStat-Great Saving\n-9.60\nTotal RM Incl.of GST\n31.47\nRounding Adj\n-0.02\nTotal R\n31.45\nCash\n-50.00\nCHANGE\n18.55\nItemCount\nGST\nAmount (RM)\nTax (RH)\n1 06%\n69.62\n1.78\nTotal Savings\n-9.60\nBEA POPULAR CARD MEMBER\nANI ENJOY SPECIAL DISCOUNTS\nTHANK YOU.FLEASE COME AGAIN.\nwww.popular.com.my\nBuy Chinese books onlire\nwww.popularonline.com.my",
+            "processing_time_seconds": 0.9212
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "POPULAR",
+                "date": "07/01/18",
+                "address": "COMPANY NO. 113825-W",
+                "total": "50.00",
+                "source_image": "X51005605333.jpg",
+                "receipt_number": "7010385084",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": "MYR"
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 3,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "POPULAR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "07/01/18",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "COMPANY NO. 113825-W",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "50.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005605333.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "7010385084",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "MYR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 25.0,
+                "matched_fields": 1,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "POPULAR BOOK CO. (M) SDN BHD",
+                        "extracted": "POPULAR",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 43.75
+                    },
+                    "date": {
+                        "expected": "07/01/18",
+                        "extracted": "07/01/18",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "NO 8, JALAN 7/118B, DESA TUN RAZAK 56000 KUALA LUMPUR, MALAYSIA KL FESTIVAL CITY MALL",
+                        "extracted": "COMPANY NO. 113825-W",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 15.84
+                    },
+                    "total": {
+                        "expected": "31.45",
+                        "extracted": "50.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005605333.jpg",
+                        "extracted": "X51005605333.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "POPULAR\nBOOK\nCO.\n- (M)\nSDN\nBHD\n(Company No. 113825-W)\n(GST Reg No. 001492992000)\nNo 8, Jalan 7/118B, Desa Tun Razak\n56000 Kuala Lumpur, malaysia\nKL FESTIVAL CITY MALL\nTel : 03-41424540/20\n07/01/18 14:41\nSlip No.: 7010385084\nNorhasmida\nTrans: 364810\nDescription\nAmount\n70g P.Copy 450'S\n3pc @ 13.69\n41.07 T\nStat-Great Saving\n-9.60\nTotal RM Incl. of GST\n31.47\nRounding Adj\n-0.02\nTotal RM\n31.45\nCash\n-50.00\nCHANGE\n18.55\nItem Count\n3\nGST\nmary Amount (RM)\nTax (RM)\nT @ 6%\n29.69\n1.78\nTotal Savings\n-9.60\nBE A POPULAR CARD MEMBER\nANDI ENJOY SPECIAL DISCOUNTS\nTHANK YOU. PLEASE COME AGAIN.\nwww.popular.cm.my\nBuy Chinese books online\nwww.popularonline.com.my",
+            "processing_time_seconds": 3.1916
+        }
+    }
+}

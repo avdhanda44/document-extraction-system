@@ -1,0 +1,697 @@
+{
+    "image": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/invoice/image/X51005605286.jpg",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/invoice/image/X51005605286.json",
+        "side": "front",
+        "quality": "unknown"
+    },
+    "ground_truth": {
+        "company": "AEON CO. (M) BHD",
+        "date": "09/02/2018",
+        "address": "3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+        "total": "5.90",
+        "source_image": "X51005605286.jpg"
+    },
+    "models": {
+        "easyocr": {
+            "extracted_data": {
+                "company": "AEON CO.",
+                "date": "09/02/2018",
+                "address": "JLN JEJAKA, TAMAN MALRI CHERAS 55100 KUALA LUMPUR",
+                "total": "5132.00",
+                "source_image": "X51005605286.jpg",
+                "receipt_number": "",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 5,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "AEON CO.",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "09/02/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "JLN JEJAKA, TAMAN MALRI CHERAS 55100 KUALA LUMPUR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "5132.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005605286.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 50.0,
+                "matched_fields": 2,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "AEON CO. (M) BHD",
+                        "extracted": "AEON CO.",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 70.0
+                    },
+                    "date": {
+                        "expected": "09/02/2018",
+                        "extracted": "09/02/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                        "extracted": "JLN JEJAKA, TAMAN MALRI CHERAS 55100 KUALA LUMPUR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 76.19
+                    },
+                    "total": {
+                        "expected": "5.90",
+                        "extracted": "5132.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005605286.jpg",
+                        "extracted": "X51005605286.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "AEON CO.\n(|) 8H0 (126926-#)\n३R० FLR, AEON TAYAN MALURT SC\nJLN JEJAKA,\nTAMAN MALRI\nCHERAS\n५५1०० KUALA LUMPUR\nGST LD\n002017394688\nSHDPPTNG HOURS\nHDII SU : १००० HRS\n२२०० HRS\n000008190901\n5.90SR\nSTERILE FZLTRAT\nSup-totai\n5 .९०\nTotal Sales Inci GST\n5.प`\nTotal After Adj Incl GST\n5.90\nCASH\n10.00\n-ten Count\nChange Amt\n4.10\nInvoice I0: 2018020951320023885\nGST Summary\nAlount\nTax\nSh\n@ ६१\n5.57\n0.33\nTota l\n5.57\n0,33\n09/02/2018 12:53\n5132 002  0023885\n0301371  NORSHAM BJIITL AHAMED SHA\nDALSO SUNiAY EOCTTI\nTE.  1-300-80-AE0| (2366)\nTHAK YOlJ FOR YOUR PATRONAZE\nPLEASE COHE AGALI\nBo० ^\nOt\n(^t\nOire",
+            "processing_time_seconds": 11.1171
+        },
+        "tesseract": {
+            "extracted_data": {
+                "company": "AEON CO. (M) BHD (126926-H)",
+                "date": "09/02/2018",
+                "address": "SRO FLR, AEON TAMAN MALURI SC LN JEJAKA, TAMAN MALURT CHERAS, 55100 KUALA LUMPUR",
+                "total": "0.33",
+                "source_image": "X51005605286.jpg",
+                "receipt_number": "2018020951320023885",
+                "subtotal": "5.90",
+                "tax": "5.90",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 2,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "AEON CO. (M) BHD (126926-H)",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "09/02/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "SRO FLR, AEON TAMAN MALURI SC LN JEJAKA, TAMAN MALURT CHERAS, 55100 KUALA LUMPUR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "0.33",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005605286.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "2018020951320023885",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "5.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "tax": {
+                        "value": "5.90",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "AEON CO. (M) BHD",
+                        "extracted": "AEON CO. (M) BHD (126926-H)",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "09/02/2018",
+                        "extracted": "09/02/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                        "extracted": "SRO FLR, AEON TAMAN MALURI SC LN JEJAKA, TAMAN MALURT CHERAS, 55100 KUALA LUMPUR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 95.48
+                    },
+                    "total": {
+                        "expected": "5.90",
+                        "extracted": "0.33",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005605286.jpg",
+                        "extracted": "X51005605286.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "0६\n\nAEON CO. (M) BHD (126926-H)\nSRO FLR, AEON TAMAN MALURI SC\nLN JEJAKA, TAMAN MALURT\nCHERAS, 55100 KUALA LUMPUR\nGST ID ; 002017394688\nSHOPPING HOURS\nMON-SUN; 1000 HRS - 2200 HRS\n\nos\n\n> 000008190901 5. 90SR\n5 STERILE FILTRAT\n\nSub-total 5.90\nTotal Sales Incl GST 5.90\nTotal After Adj Incl GST 5,90\nCASH 10.90\nItem Count 1 Change Amt 4.10\n\nInvoice No: 2018020951320023885\n\nGST Summary Amount Tax\nSR @ 64 5.57 0.33\nTotal 9.9 0,33\n09/02/2018 12:53 5132 002 0023885\n\n0301371 NORSHAM BINTI AHAMED SHA\n\nDAISO SUNWAY VELOCITY\nTEL 1-300-80-AEQN (2366)\nTHANK YOU FOR YOUR PATRONAGE\n\nPLEASE COME AGAIN\nTT,\n\nGOON PAY Brady",
+            "processing_time_seconds": 1.564
+        },
+        "paddleocr": {
+            "extracted_data": {
+                "company": "AEON CO. (M) BHD (126926-H)",
+                "date": "09/02/2018",
+                "address": "3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                "total": "5132.00",
+                "source_image": "X51005605286.jpg",
+                "receipt_number": "2018020951320023885",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "AEON CO. (M) BHD (126926-H)",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "09/02/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "5132.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005605286.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "2018020951320023885",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "AEON CO. (M) BHD",
+                        "extracted": "AEON CO. (M) BHD (126926-H)",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "09/02/2018",
+                        "extracted": "09/02/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                        "extracted": "3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "5.90",
+                        "extracted": "5132.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005605286.jpg",
+                        "extracted": "X51005605286.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "AEON CO. (M) BHD (126926-H)\n3RD FLR, AEON TAMAN MALURI SC\nJLN JEJAKA, TAMAN MALURI\nCHERAS, 55100 KUALA LUMPUR\nGST ID : 002017394688\nSHOPPING HOURS\nMON-SUN:1000 HRS - 2200 HRS\n000008190901\n5.90SR\nSTERILE FILTRAT\nSub-total\n5.90\nTotal Sales Incl GST\nTotal After Adj Incl GST\nCASH\n10.00\nItem Count 1\nChange Amt\n4.10\nInvoice No: 2018020951320023885\nGST Summary\nAmount\nTax\nSR @ 6%\n5.57\n0.33\nTotal\n09/02/2018 12:53\n5132 002 0023885\nO301371 NORSHAM BINTI AHAMED SHA\nDAISO SUNWAY VELOCITY\nTEL 1-300-80-AEON (2366)\nTHANK YOU FOR YOUR PATRONAGE\nPLEASE COME AGAIN\nBoon\nPay\n1",
+            "processing_time_seconds": 11.1305
+        },
+        "rapidocr": {
+            "extracted_data": {
+                "company": "AEON CO. (M) BHD (126926-H)",
+                "date": "09/02/2018",
+                "address": "3RD FLR,AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                "total": "5132.00",
+                "source_image": "X51005605286.jpg",
+                "receipt_number": "2018020951320023885",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "AEON CO. (M) BHD (126926-H)",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "09/02/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "3RD FLR,AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "5132.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005605286.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "2018020951320023885",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "AEON CO. (M) BHD",
+                        "extracted": "AEON CO. (M) BHD (126926-H)",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "09/02/2018",
+                        "extracted": "09/02/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                        "extracted": "3RD FLR,AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "5.90",
+                        "extracted": "5132.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005605286.jpg",
+                        "extracted": "X51005605286.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "OE\nAEON CO. (M) BHD (126926-H)\n3RD FLR,AEON TAMAN MALURI SC\nJLN JEJAKA, TAMAN MALURI\nCHERAS, 55100 KUALA LUMPUR\nGST ID : 002017394688\nSHOPPING HOURS\nMON-SUN:1000 HRS - 2200 HRS\n000008190901\n5.90SR\nSTERILE FILTRAT\nSub-total\n5.90\nTotal Sales Incl GST\n5.90\nTotal After Adj Incl GST\n5.90\nCASH\n10.00\nItem Count 1\nChange Amt\n4.10\nInvoice No: 2018020951320023885\nGST Summary\nAmount\nTax\nSR @ 6%\n5.57\n0.33\nTotal\n5.57\n0.33\n09/02/2018 12:53\n5132 002 0023885\n0301371 NORSHAM BINTI AHAMED SHA\nDAISO SUNWAY VELOCITY\nTEL 1-300-80-AE0N (2366)\nTHANK YOU FOR YOUR PATRONAGE\nPLEASE COME AGAIN\nPooh\nAhveade",
+            "processing_time_seconds": 0.9314
+        },
+        "doctr": {
+            "extracted_data": {
+                "company": "AEON CO. (M) BHD (126926-H)",
+                "date": "09/02/2018",
+                "address": "3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                "total": "5132.00",
+                "source_image": "X51005605286.jpg",
+                "receipt_number": "2018020951320023885",
+                "subtotal": "",
+                "tax": "",
+                "discount": "",
+                "currency": ""
+            },
+            "classification": {
+                "document_type": "invoice",
+                "confidence_percent": 100,
+                "confidence_level": "high"
+            },
+            "validation": {
+                "summary": {
+                    "document_type": "invoice",
+                    "total_fields_checked": 10,
+                    "valid_fields": 10,
+                    "invalid_fields": 0,
+                    "fields_with_warnings": 4,
+                    "ready_to_save": true,
+                    "requires_review": false
+                },
+                "field_results": {
+                    "company": {
+                        "value": "AEON CO. (M) BHD (126926-H)",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "date": {
+                        "value": "09/02/2018",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "address": {
+                        "value": "3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "total": {
+                        "value": "5132.00",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "source_image": {
+                        "value": "X51005605286.jpg",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "receipt_number": {
+                        "value": "2018020951320023885",
+                        "valid": true,
+                        "error": "",
+                        "warning": ""
+                    },
+                    "subtotal": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "tax": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "discount": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    },
+                    "currency": {
+                        "value": "",
+                        "valid": true,
+                        "error": "",
+                        "warning": "Optional field missing"
+                    }
+                }
+            },
+            "comparison_with_ground_truth": {
+                "accuracy_percent": 75.0,
+                "matched_fields": 3,
+                "total_fields": 4,
+                "fields": {
+                    "company": {
+                        "expected": "AEON CO. (M) BHD",
+                        "extracted": "AEON CO. (M) BHD (126926-H)",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "date": {
+                        "expected": "09/02/2018",
+                        "extracted": "09/02/2018",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100
+                    },
+                    "address": {
+                        "expected": "3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                        "extracted": "3RD FLR, AEON TAMAN MALURI SC JLN JEJAKA, TAMAN MALURI CHERAS, 55100 KUALA LUMPUR",
+                        "match": true,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 100.0
+                    },
+                    "total": {
+                        "expected": "5.90",
+                        "extracted": "5132.00",
+                        "match": false,
+                        "used_for_accuracy": true,
+                        "similarity_percent": 0
+                    },
+                    "source_image": {
+                        "expected": "X51005605286.jpg",
+                        "extracted": "X51005605286.jpg",
+                        "match": false,
+                        "used_for_accuracy": false,
+                        "reason": "metadata field"
+                    }
+                }
+            },
+            "raw_text": "OE\nAEON CO. (M) BHD (126926-H)\n3RD FLR, AEON TAMAN MALURI SC\nJLN JEJAKA, TAMAN MALURI\nCHERAS, 55100 KUALA LUMPUR\nGST ID : 002017394688\nSHOPPING HOURS\nMON-SUN:1000 HRS = 2200 HRS\nK 000008190901\n5.90SR\nSTERILE FILTRAT\nSub-total\n5.90\nTotal Sales Incl GST\n5.90\nTotal After Adj Incl GST\n5.90\nCASH\n10.00\nItem Count 1\nChange Amt\n4.10\nInvoice No: 2018020951320023885\nGST Summary\nAmount\nTax\nSR @ 6%\n5.57\n0.33\nTotal\n5.57\n0.33\n09/02/2018 12:53\n5132 002 0023885\n0301371 NORSHAM BINTI AHAMED SHA\nDAISO SUNWAY VELOCITY\nTEL 1-300-80-AEON (2366)\nTHANK YOU FOR YOUR PATRONAGE\nPLEASE COME AGAIN\nBoon\npay\nAhreeby",
+            "processing_time_seconds": 3.0627
+        }
+    }
+}
