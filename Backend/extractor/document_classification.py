@@ -222,6 +222,63 @@ def describe_confidence_level(confidence):
     return "low"
 
 
+def build_heuristic_match(document_type, confidence, all_scores):
+    schema = document_schemas[document_type]
+
+    return {
+        "document_type": document_type,
+        "schema": schema,
+        "confidence": confidence,
+        "confidence_percent": round(confidence * 100, 2),
+        "confidence_level": describe_confidence_level(confidence),
+        "matched_fields": [],
+        "missing_fields": list(schema.keys()),
+        "matched_count": 0,
+        "total_fields": len(schema),
+        "all_scores": all_scores,
+        "score_gap": 0,
+    }
+
+
+def infer_document_type_from_patterns(extracted_text):
+    normalized_text = make_text_easy_to_match(extracted_text)
+    compact_text = re.sub(r"[^a-z0-9]", "", extracted_text.casefold())
+    has_aadhaar_number = re.search(
+        r"(?<!\d)\d{4}[ \t-]*\d{4}[ \t-]*\d{4}(?!\d)",
+        extracted_text,
+    )
+
+    if has_aadhaar_number:
+        has_address_side_marker = (
+            re.search(r"\b(sio|s/o|c/o|w/o|address|pincode|uidai)\b", normalized_text)
+            or re.search(r"(?<!\d)[1-9]\d{5}(?!\d)", extracted_text)
+            or any(word in extracted_text for word in ["पता", "मार्फत", "पिता"])
+        )
+        has_front_side_marker = re.search(
+            r"\b(dob|date of birth|yob|male|female)\b",
+            normalized_text,
+        ) or any(word in extracted_text for word in ["जन्म", "पुरुष", "महिला"])
+
+        if has_address_side_marker and not has_front_side_marker:
+            return "aadhaar_back", 0.55
+
+        return "aadhaar_front", 0.5
+
+    if re.search(r"[A-Z]{5}\d{4}[A-Z]", re.sub(r"[^A-Za-z0-9]", "", extracted_text).upper()):
+        return "pan_card", 0.55
+
+    if any(marker in normalized_text for marker in ["ifsc", "account number", "passbook", "cif number"]):
+        return "passbook", 0.5
+
+    if any(marker in normalized_text for marker in ["invoice", "cash sales", "receipt", "doc no", "total sales"]):
+        return "invoice", 0.5
+
+    if "employeeid" in compact_text or "employeename" in compact_text:
+        return "employee_form", 0.5
+
+    return None, 0
+
+
 def choose_document_type_from_text(extracted_text):
     # Check the text against every schema we know.
     # The schema with the highest confidence becomes the selected document type.
@@ -270,6 +327,11 @@ def choose_document_type_from_text(extracted_text):
     # If confidence is too low, keep document type as unknown.
     # For now, at least 40% of labels should match.
     if best_match["confidence"] < 0.4:
+        heuristic_type, heuristic_confidence = infer_document_type_from_patterns(extracted_text)
+
+        if heuristic_type:
+            return build_heuristic_match(heuristic_type, heuristic_confidence, all_scores)
+
         selected_type = "unknown"
         selected_schema = None
     else:

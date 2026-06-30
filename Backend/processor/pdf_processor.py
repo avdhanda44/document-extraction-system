@@ -55,7 +55,7 @@ def extract_text_pages_from_digital_pdf(pdf_path, extractor_name):
     return extractors[extractor_name](pdf_path)
 
 
-def extract_text_from_pdf(pdf_path):
+def extract_text_from_pdf_with_metadata(pdf_path):
     # First try normal PDF text extraction.
     # This works for digital PDFs where text can be selected or copied.
     with pdfplumber.open(pdf_path) as pdf:
@@ -64,8 +64,20 @@ def extract_text_from_pdf(pdf_path):
     final_text = "\n".join(text_from_pages).strip()
 
     if final_text:
-        return final_text
+        return {
+            "text": final_text,
+            "engine": "pdfplumber",
+            "method": "digital_pdf_text",
+        }
 
     # If no text was found, the PDF is probably scanned.
     # In that case we load OCR only now, not during normal startup.
-    return extract_text_from_scanned_pdf(pdf_path)
+    return {
+        "text": extract_text_from_scanned_pdf(pdf_path),
+        "engine": "easyocr",
+        "method": "scanned_pdf_ocr",
+    }
+
+
+def extract_text_from_pdf(pdf_path):
+    return extract_text_from_pdf_with_metadata(pdf_path)["text"]

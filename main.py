@@ -1,3 +1,4 @@
+import argparse
 import json
 import re
 import sys
@@ -20,37 +21,36 @@ from Backend.extractor.document_classification import (
 from Backend.extractor.field_mapper import extract_field_values_using_schema
 from Backend.extractor.validation import validate_extracted_fields
 from Backend.json_generator import (
-    create_final_json_output,
     save_aadhaar_json_file,
     save_accuracy_excel,
     save_document_json_file,
-    save_final_json_file,
 )
+from Backend.pipeline import process_uploaded_document
 from Backend.processor.image_processor import extract_text_from_image, get_available_ocr_models
 from Backend.processor.pdf_processor import (
     extract_text_pages_from_digital_pdf,
     get_available_digital_pdf_extractors,
 )
-from Backend.processor.text_extractor import extract_uploaded_document
 
 
 project_folder = Path(__file__).resolve().parent
-aadhaar_images_folder = project_folder / "dataset" / "generated_docs" / "aadhaar" / "image"
-aadhaar_ground_truth_folder = project_folder / "dataset" / "ground_truth" / "aadhaar" / "image"
-pan_images_folder = project_folder / "dataset" / "generated_docs" / "pan" / "image"
-pan_ground_truth_folder = project_folder / "dataset" / "ground_truth" / "pan" / "image"
-passbook_images_folder = project_folder / "dataset" / "generated_docs" / "passbook" / "image"
-passbook_ground_truth_folder = project_folder / "dataset" / "ground_truth" / "passbook" / "image"
-invoice_images_folder = project_folder / "dataset" / "generated_docs" / "invoice" / "image"
-invoice_ground_truth_folder = project_folder / "dataset" / "ground_truth" / "invoice" / "image"
-aadhaar_pdfs_folder = project_folder / "dataset" / "generated_docs" / "aadhaar" / "pdf"
-aadhaar_pdf_ground_truth_folder = project_folder / "dataset" / "ground_truth" / "aadhaar" / "pdf"
-pan_pdfs_folder = project_folder / "dataset" / "generated_docs" / "pan" / "pdf"
-pan_pdf_ground_truth_folder = project_folder / "dataset" / "ground_truth" / "pan" / "pdf"
-passbook_pdfs_folder = project_folder / "dataset" / "generated_docs" / "passbook" / "pdf"
-passbook_pdf_ground_truth_folder = project_folder / "dataset" / "ground_truth" / "passbook" / "pdf"
-invoice_pdfs_folder = project_folder / "dataset" / "generated_docs" / "invoice" / "pdf"
-invoice_pdf_ground_truth_folder = project_folder / "dataset" / "ground_truth" / "invoice" / "pdf"
+test_data_folder = project_folder / "test-data"
+aadhaar_images_folder = test_data_folder / "generated_docs" / "aadhaar" / "image"
+aadhaar_ground_truth_folder = test_data_folder / "ground_truth" / "aadhaar" / "image"
+pan_images_folder = test_data_folder / "generated_docs" / "pan" / "image"
+pan_ground_truth_folder = test_data_folder / "ground_truth" / "pan" / "image"
+passbook_images_folder = test_data_folder / "generated_docs" / "passbook" / "image"
+passbook_ground_truth_folder = test_data_folder / "ground_truth" / "passbook" / "image"
+invoice_images_folder = test_data_folder / "generated_docs" / "invoice" / "image"
+invoice_ground_truth_folder = test_data_folder / "ground_truth" / "invoice" / "image"
+aadhaar_pdfs_folder = test_data_folder / "generated_docs" / "aadhaar" / "pdf"
+aadhaar_pdf_ground_truth_folder = test_data_folder / "ground_truth" / "aadhaar" / "pdf"
+pan_pdfs_folder = test_data_folder / "generated_docs" / "pan" / "pdf"
+pan_pdf_ground_truth_folder = test_data_folder / "ground_truth" / "pan" / "pdf"
+passbook_pdfs_folder = test_data_folder / "generated_docs" / "passbook" / "pdf"
+passbook_pdf_ground_truth_folder = test_data_folder / "ground_truth" / "passbook" / "pdf"
+invoice_pdfs_folder = test_data_folder / "generated_docs" / "invoice" / "pdf"
+invoice_pdf_ground_truth_folder = test_data_folder / "ground_truth" / "invoice" / "pdf"
 image_extensions = {".png", ".jpg", ".jpeg"}
 aadhaar_footer_words = [
     "www",
@@ -94,33 +94,8 @@ image_quality_categories = [
 def run_document_processing(file_name):
     # This function controls the full process from file name to final JSON.
 
-    # Get the file name and remove extra spaces.
-    file_name = file_name.strip()
-
-    # If no file name is typed, stop here and ask for one.
-    if file_name == "":
-        print("Please enter a file name from the uploads folder.")
-        return
-
     try:
-        # Step 1: read the uploaded document and get raw text.
-        result = extract_uploaded_document(file_name)
-
-        # Step 2: use the raw text to decide which schema fits best.
-        classification = choose_document_type_from_text(result["final_text"])
-
-        # Step 3: if we know the schema, extract values for each field.
-        if classification["schema"] is not None:
-            mapped_fields = extract_field_values_using_schema(result["final_text"], classification["schema"])
-        else:
-            mapped_fields = {}
-
-        # Step 4: validate the mapped fields before saving.
-        validation = validate_extracted_fields(classification, mapped_fields)
-
-        # Step 5: create the final JSON and save it in outputs.
-        final_json = create_final_json_output(result, classification, mapped_fields, validation)
-        save_final_json_file(final_json)
+        process_uploaded_document(file_name)
 
         # Show one short success message, but do not print the full JSON.
         print("Done. File processed and saved in the outputs folder.")
@@ -2338,6 +2313,13 @@ def print_help():
 Document Extraction POC
 
 Usage:
+  python main.py process <file_name>
+  python main.py batch <aadhaar|pan|passbook|invoice> --format image
+  python main.py batch <aadhaar|pan|passbook|invoice> --format pdf --pdf-type scanned
+  python main.py batch <aadhaar|pan|passbook> --format pdf --pdf-type digital
+  python main.py clear-output
+
+Legacy usage still supported:
   python main.py <file_name>
   python main.py --clear-output
   python main.py --aadhaar-batch
@@ -2392,89 +2374,197 @@ Outputs:
     )
 
 
-def main():
-    arguments = sys.argv[1:]
+def build_parser():
+    parser = argparse.ArgumentParser(
+        prog="python main.py",
+        description="Extract structured data from uploaded documents and generated datasets.",
+    )
+    subparsers = parser.add_subparsers(dest="command")
 
-    if not arguments or any(argument in {"--help", "-h"} for argument in arguments):
-        print_help()
-        return
+    process_parser = subparsers.add_parser(
+        "process",
+        help="Process one file from the uploads folder.",
+    )
+    process_parser.add_argument("file_name")
 
-    if "--clear-output" in arguments:
+    batch_parser = subparsers.add_parser(
+        "batch",
+        help="Run a generated dataset batch.",
+    )
+    batch_parser.add_argument(
+        "document",
+        choices=["aadhaar", "pan", "passbook", "invoice"],
+    )
+    batch_parser.add_argument(
+        "--format",
+        choices=["image", "pdf"],
+        default="image",
+        dest="input_format",
+    )
+    batch_parser.add_argument(
+        "--pdf-type",
+        choices=["scanned", "digital"],
+        default="scanned",
+    )
+    batch_parser.add_argument(
+        "--clear-output",
+        action="store_true",
+        help="Clear generated outputs before running this batch.",
+    )
+
+    subparsers.add_parser(
+        "clear-output",
+        help="Delete generated JSON and Excel files while keeping folders.",
+    )
+
+    return parser
+
+
+def run_image_batch(document_name):
+    processors = {
+        "aadhaar": ("Aadhaar", process_aadhaar_folder),
+        "pan": ("PAN", process_pan_folder),
+        "passbook": ("passbook", process_passbook_folder),
+        "invoice": ("invoice", process_invoice_folder),
+    }
+    document_label, processor = processors[document_name]
+    result = processor()
+    print(f"Done. Processed {result['processed_images']} {document_label} images.")
+    print(f"Excel saved at: {result['excel_output']}")
+
+
+def run_pdf_batch(document_name, pdf_type):
+    scanned_processors = {
+        "aadhaar": ("Aadhaar", process_aadhaar_pdf_folder),
+        "pan": ("PAN", process_pan_pdf_folder),
+        "passbook": ("passbook", process_passbook_pdf_folder),
+        "invoice": ("invoice", process_invoice_pdf_folder),
+    }
+    digital_processors = {
+        "aadhaar": ("digital Aadhaar", process_aadhaar_digital_pdf_folder),
+        "pan": ("digital PAN", process_pan_digital_pdf_folder),
+        "passbook": ("digital passbook", process_passbook_digital_pdf_folder),
+    }
+    processors = digital_processors if pdf_type == "digital" else scanned_processors
+
+    if document_name not in processors:
+        raise ValueError(f"{document_name} does not have a {pdf_type} PDF batch yet.")
+
+    document_label, processor = processors[document_name]
+    result = processor()
+    print(
+        f"Done. Processed {result['processed_pdfs']} {document_label} PDFs "
+        f"({result['processed_pages']} pages)."
+    )
+    print(f"Excel saved at: {result['excel_output']}")
+
+
+def run_batch_command(arguments):
+    if arguments.clear_output:
         clear_previous_outputs()
         print("Generated output files cleared.")
-        arguments.remove("--clear-output")
 
-        if not arguments:
-            return
+    if arguments.input_format == "image":
+        run_image_batch(arguments.document)
+    else:
+        run_pdf_batch(arguments.document, arguments.pdf_type)
 
-    if len(arguments) > 1:
-        print(f"Unexpected arguments: {' '.join(arguments[1:])}")
+
+def run_legacy_command(arguments):
+    if not arguments or any(argument in {"--help", "-h"} for argument in arguments):
+        print_help()
+        return True
+
+    legacy_arguments = list(arguments)
+
+    if "--clear-output" in legacy_arguments:
+        clear_previous_outputs()
+        print("Generated output files cleared.")
+        legacy_arguments.remove("--clear-output")
+
+        if not legacy_arguments:
+            return True
+
+    if len(legacy_arguments) > 1:
+        print(f"Unexpected arguments: {' '.join(legacy_arguments[1:])}")
         print()
         print_help()
-        return
+        return True
 
-    action = arguments[0]
+    action = legacy_arguments[0]
 
     if action == "--aadhaar-batch":
-        result = process_aadhaar_folder()
-        print(f"Done. Processed {result['processed_images']} Aadhaar images.")
-        print(f"Excel saved at: {result['excel_output']}")
-        return
+        run_image_batch("aadhaar")
+        return True
 
     if action == "--pan-batch":
-        result = process_pan_folder()
-        print(f"Done. Processed {result['processed_images']} PAN images.")
-        print(f"Excel saved at: {result['excel_output']}")
-        return
+        run_image_batch("pan")
+        return True
 
     if action == "--passbook-batch":
-        result = process_passbook_folder()
-        print(f"Done. Processed {result['processed_images']} passbook images.")
-        print(f"Excel saved at: {result['excel_output']}")
-        return
+        run_image_batch("passbook")
+        return True
 
     if action == "--invoice-batch":
-        result = process_invoice_folder()
-        print(f"Done. Processed {result['processed_images']} invoice images.")
-        print(f"Excel saved at: {result['excel_output']}")
-        return
+        run_image_batch("invoice")
+        return True
 
     pdf_batch_actions = {
-        "--aadhaar-pdf-batch": ("Aadhaar", process_aadhaar_pdf_folder),
-        "--pan-pdf-batch": ("PAN", process_pan_pdf_folder),
-        "--passbook-pdf-batch": ("passbook", process_passbook_pdf_folder),
-        "--invoice-pdf-batch": ("invoice", process_invoice_pdf_folder),
-        "--aadhaar-digital-pdf-batch": (
-            "digital Aadhaar",
-            process_aadhaar_digital_pdf_folder,
-        ),
-        "--pan-digital-pdf-batch": (
-            "digital PAN",
-            process_pan_digital_pdf_folder,
-        ),
-        "--passbook-digital-pdf-batch": (
-            "digital passbook",
-            process_passbook_digital_pdf_folder,
-        ),
+        "--aadhaar-pdf-batch": ("aadhaar", "scanned"),
+        "--pan-pdf-batch": ("pan", "scanned"),
+        "--passbook-pdf-batch": ("passbook", "scanned"),
+        "--invoice-pdf-batch": ("invoice", "scanned"),
+        "--aadhaar-digital-pdf-batch": ("aadhaar", "digital"),
+        "--pan-digital-pdf-batch": ("pan", "digital"),
+        "--passbook-digital-pdf-batch": ("passbook", "digital"),
     }
 
     if action in pdf_batch_actions:
-        document_label, processor = pdf_batch_actions[action]
-        result = processor()
-        print(
-            f"Done. Processed {result['processed_pdfs']} {document_label} PDFs "
-            f"({result['processed_pages']} pages)."
-        )
-        print(f"Excel saved at: {result['excel_output']}")
-        return
+        document_name, pdf_type = pdf_batch_actions[action]
+        run_pdf_batch(document_name, pdf_type)
+        return True
 
     if action.startswith("-"):
         print(f"Unknown option: {action}")
         print()
         print_help()
-        return
+        return True
 
     run_document_processing(action)
+    return True
+
+
+def main(argv=None):
+    arguments = list(sys.argv[1:] if argv is None else argv)
+
+    if not arguments or arguments[0].startswith("-"):
+        run_legacy_command(arguments)
+        return
+
+    if arguments[0] not in {"process", "batch", "clear-output"}:
+        run_legacy_command(arguments)
+        return
+
+    parser = build_parser()
+    parsed_arguments = parser.parse_args(arguments)
+
+    if parsed_arguments.command == "process":
+        run_document_processing(parsed_arguments.file_name)
+        return
+
+    if parsed_arguments.command == "batch":
+        try:
+            run_batch_command(parsed_arguments)
+        except ValueError as error:
+            parser.error(str(error))
+        return
+
+    if parsed_arguments.command == "clear-output":
+        clear_previous_outputs()
+        print("Generated output files cleared.")
+        return
+
+    parser.print_help()
 
 
 if __name__ == "__main__":

@@ -33,9 +33,13 @@ Implemented:
 Not implemented yet:
 
 - Excel extraction
-- API or web app
-- Human review/edit screen
 - Database storage
+
+In progress / newly added:
+
+- FastAPI extraction API
+- React review UI
+- Human review/edit screen for extracted fields
 
 ## Project Structure
 
@@ -43,7 +47,9 @@ Not implemented yet:
 document-extraction-system/
 ├── Backend/
 │   ├── __init__.py
+│   ├── api.py
 │   ├── main.py
+│   ├── pipeline.py
 │   ├── json_generator.py
 │   ├── processor/
 │   │   ├── __init__.py
@@ -56,6 +62,15 @@ document-extraction-system/
 │   │   ├── document_classification.py
 │   │   ├── field_mapper.py
 │   │   ├── validation.py
+├── frontend/
+│   ├── package.json
+│   ├── vite.config.js
+│   ├── index.html
+│   └── src/
+│       ├── App.jsx
+│       ├── api.js
+│       ├── main.jsx
+│       └── styles.css
 ├── uploads/
 ├── outputs/
 ├── main.py
@@ -116,14 +131,62 @@ outputs/<document_type>/<format>/<input_file_name>_output.json
 
 Running the same input file again replaces the same output file.
 
+## React Review UI
+
+The UI is a browser-based review workbench for the extraction pipeline:
+
+```text
+Upload document -> Extract fields -> Review/edit values -> Save reviewed JSON
+```
+
+Uploaded files are stored in:
+
+```text
+uploads/<safe_uploaded_file_name>
+```
+
+The first machine extraction is stored in the existing output layout:
+
+```text
+outputs/<document_type>/<format>/<file_stem>_output.json
+```
+
+The user-reviewed JSON is stored in:
+
+```text
+outputs/reviewed/<file_stem>_reviewed.json
+```
+
+Run the API server:
+
+```bash
+uv --cache-dir .uv-cache run uvicorn Backend.api:app --reload --host 127.0.0.1 --port 8000
+```
+
+Run the React app in another terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Then open:
+
+```text
+http://127.0.0.1:5173
+```
+
+The React app proxies `/api/*` requests to the FastAPI server at `http://127.0.0.1:8000`.
+
 ## Batch Evaluation
 
 The project includes terminal commands for batch evaluation of generated images and PDFs. Each batch compares extracted fields with matching ground truth and saves per-document JSON plus an Excel accuracy and processing-time report.
 
-The dataset is organized by document type and file format:
+The test data is organized by document type and file format:
 
 ```text
-dataset/
+test-data/
 ├── generated_docs/
 │   └── <document_type>/
 │       ├── image/
@@ -164,6 +227,12 @@ images:
 uv --cache-dir .uv-cache run python main.py --aadhaar-digital-pdf-batch
 uv --cache-dir .uv-cache run python main.py --pan-digital-pdf-batch
 uv --cache-dir .uv-cache run python main.py --passbook-digital-pdf-batch
+```
+
+Run the test suite from the project root:
+
+```bash
+uv --cache-dir .uv-cache run python -m unittest discover -s test-CLI
 ```
 
 Batch outputs are saved under:

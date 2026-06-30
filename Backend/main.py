@@ -1,11 +1,7 @@
 from IPython.display import display
 import ipywidgets as widgets
 
-from .extractor.document_classification import choose_document_type_from_text
-from .extractor.field_mapper import extract_field_values_using_schema
-from .extractor.validation import validate_extracted_fields
-from .json_generator import create_final_json_output, save_final_json_file
-from .processor.text_extractor import extract_uploaded_document
+from .pipeline import process_uploaded_document
 
 
 # Type the exact file name from the uploads folder here.
@@ -45,24 +41,8 @@ def run_document_processing(button):
                 print("Please enter a file name from the uploads folder.")
                 return
 
-            # Step 1: read the uploaded document and get raw text.
-            result = extract_uploaded_document(file_name)
-
-            # Step 2: use the raw text to decide which schema fits best.
-            classification = choose_document_type_from_text(result["final_text"])
-
-            # Step 3: if we know the schema, extract values for each field.
-            if classification["schema"] is not None:
-                mapped_fields = extract_field_values_using_schema(result["final_text"], classification["schema"])
-            else:
-                mapped_fields = {}
-
-            # Step 4: validate the mapped fields before saving.
-            validation = validate_extracted_fields(classification, mapped_fields)
-
-            # Step 5: create the final JSON and save it in outputs.
-            final_json = create_final_json_output(result, classification, mapped_fields, validation)
-            save_final_json_file(final_json)
+            # Run the shared pipeline used by the CLI too.
+            process_uploaded_document(file_name)
 
             # Show one short success message, but do not print the full JSON.
             print("Done. File processed and saved in the outputs folder.")

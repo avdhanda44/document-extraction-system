@@ -3,7 +3,7 @@ from pathlib import Path
 
 from .docx_processor import extract_text_from_docx
 from .image_processor import extract_text_from_image
-from .pdf_processor import extract_text_from_pdf
+from .pdf_processor import extract_text_from_pdf_with_metadata
 
 
 # Uploaded files will always be kept in the project uploads folder.
@@ -57,7 +57,7 @@ def extract_text_by_file_type(file_path, file_type):
     # Send the file to the correct processor based on its type.
     # Later, if we add Excel or another file type, we add one more condition here.
     if file_type == "pdf":
-        return extract_text_from_pdf(file_path)
+        return extract_text_from_pdf_with_metadata(file_path)["text"]
 
     if file_type in ["png", "jpg"]:
         return extract_text_from_image(file_path)
@@ -68,16 +68,39 @@ def extract_text_by_file_type(file_path, file_type):
     raise ValueError(f"Unsupported file type: {file_type}")
 
 
+def extract_text_with_metadata_by_file_type(file_path, file_type):
+    if file_type == "pdf":
+        return extract_text_from_pdf_with_metadata(file_path)
+
+    if file_type in ["png", "jpg"]:
+        return {
+            "text": extract_text_from_image(file_path),
+            "engine": "easyocr",
+            "method": "image_ocr",
+        }
+
+    if file_type == "docx":
+        return {
+            "text": extract_text_from_docx(file_path),
+            "engine": "python-docx",
+            "method": "docx_xml_text",
+        }
+
+    raise ValueError(f"Unsupported file type: {file_type}")
+
+
 def extract_uploaded_document(file_name):
     # This is the main function used by main.py.
     # Full flow: find the file, detect its type, extract text, return the result.
     file_path = get_uploaded_file_path(file_name)
     file_type = detect_uploaded_file_type(file_path)
-    final_text = extract_text_by_file_type(file_path, file_type)
+    extraction = extract_text_with_metadata_by_file_type(file_path, file_type)
 
     return {
         "file_path": file_path,
         "file_type": file_type,
         "is_pdf": file_type == "pdf",
-        "final_text": final_text,
+        "final_text": extraction["text"],
+        "extraction_engine": extraction["engine"],
+        "extraction_method": extraction["method"],
     }

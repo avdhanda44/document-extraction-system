@@ -116,8 +116,8 @@ class ScannedPdfOutputTests(unittest.TestCase):
 
         process_document_pdf_folder(
             "aadhaar",
-            Path("dataset/generated_docs/aadhaar/pdf/scanned"),
-            Path("dataset/ground_truth/aadhaar/pdf/scanned"),
+            Path("test-data/generated_docs/aadhaar/pdf/scanned"),
+            Path("test-data/ground_truth/aadhaar/pdf/scanned"),
             object(),
             "aadhaar_pdf_model_accuracy.xlsx",
         )
