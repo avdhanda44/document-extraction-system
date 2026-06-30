@@ -1,0 +1,1743 @@
+{
+    "pdf": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/aadhaar/pdf/scanned/reddy_nisha_19940726_0602_rotated.pdf",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/aadhaar/pdf/scanned/reddy_nisha_19940726_0602_rotated.json",
+        "quality": "rotated",
+        "page_count": 2,
+        "pages": {
+            "1": "front",
+            "2": "back"
+        }
+    },
+    "ground_truth": {
+        "pdf_type": "scanned",
+        "pages": {
+            "1": "front",
+            "2": "back"
+        },
+        "front": {
+            "aadhaar_number": "0602 3666 5669",
+            "vid": "",
+            "name": "Nisha Reddy",
+            "hindi_name": "निशा रेड्डी",
+            "date_of_birth": "",
+            "year_of_birth": "1994",
+            "gender": "FEMALE"
+        },
+        "back": {
+            "aadhaar_number": "0602 3666 5669",
+            "vid": "",
+            "relationship_label": "C/O",
+            "care_of": "Venkatesh Reddy",
+            "father_name": "",
+            "husband_name": "",
+            "hindi_relationship_label": "मार्फत",
+            "hindi_care_of": "वेंकटेश रेड्डी",
+            "hindi_father_name": "",
+            "hindi_husband_name": "",
+            "address": "82 Lake View Colony Hyderabad Telangana 500081",
+            "hindi_address": "82 लअकए वइएव कओलओञ हैदराबाद तएलअङअनअ 500081",
+            "hindi_address_lines": [
+                "पता:",
+                "मार्फत: वेंकटेश रेड्डी",
+                "82, लअकए वइएव कओलओञ",
+                "हैदराबाद, तएलअङअनअ",
+                "500081"
+            ],
+            "pincode": "500081"
+        }
+    },
+    "page_results": {
+        "1": {
+            "page_label": "front",
+            "ground_truth": {
+                "aadhaar_number": "0602 3666 5669",
+                "vid": "",
+                "name": "Nisha Reddy",
+                "hindi_name": "निशा रेड्डी",
+                "date_of_birth": "",
+                "year_of_birth": "1994",
+                "gender": "FEMALE"
+            },
+            "models": {
+                "easyocr": {
+                    "extracted_data": {},
+                    "classification": {
+                        "document_type": "unknown",
+                        "confidence_percent": 14.29,
+                        "confidence_level": "low"
+                    },
+                    "validation": {
+                        "summary": {
+                            "total_fields_checked": 0,
+                            "valid_fields": 0,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 0,
+                            "ready_to_save": false,
+                            "requires_review": true,
+                            "note": "Document type is unknown, so validation could not run."
+                        },
+                        "field_results": {}
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 0.0,
+                        "matched_fields": 0,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0602 3666 5669",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "Nisha Reddy",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "hindi_name": {
+                                "expected": "निशा रेड्डी",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "date_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "year_of_birth": {
+                                "expected": "1994",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "gender": {
+                                "expected": "FEMALE",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            }
+                        }
+                    },
+                    "raw_text": "OF\nof\nआम आदमी का\nभारत\nसरकार\nGOVERNMENT\nINDIA\nनशिा\nरेडडा\nNisha\nReddy\nजनम वरष\n/Year\nBirth :\n1994\nमहला / Female\nSAMPLE\nPHOTO\n0602\n3666\n5669\nआधार\nअधकार",
+                    "processing_time_seconds": 9.7535
+                },
+                "tesseract": {
+                    "extracted_data": {
+                        "aadhaar_number": "0602 3666 5669",
+                        "name": "Nisha Reddy",
+                        "gender": "",
+                        "vid": "",
+                        "hindi_name": "रेड्डी",
+                        "date_of_birth": "",
+                        "year_of_birth": "1994"
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_front",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_front",
+                            "total_fields_checked": 7,
+                            "valid_fields": 6,
+                            "invalid_fields": 1,
+                            "fields_with_warnings": 2,
+                            "ready_to_save": false,
+                            "requires_review": true
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0602 3666 5669",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "Nisha Reddy",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "gender": {
+                                "value": "",
+                                "valid": false,
+                                "error": "Required field missing",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_name": {
+                                "value": "रेड्डी",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_birth": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "year_of_birth": {
+                                "value": "1994",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 60.0,
+                        "matched_fields": 3,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0602 3666 5669",
+                                "extracted": "0602 3666 5669",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "Nisha Reddy",
+                                "extracted": "Nisha Reddy",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "निशा रेड्डी",
+                                "extracted": "रेड्डी",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 70.59
+                            },
+                            "date_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "year_of_birth": {
+                                "expected": "1994",
+                                "extracted": "1994",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "gender": {
+                                "expected": "FEMALE",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            }
+                        }
+                    },
+                    "raw_text": "ne रेड्डी\nNisha Reddy\n\nTT वरष / Year of Birth : 1994\ni Tele / F emale\nSAMP; PHOTO\n\n0602 3666 5669",
+                    "processing_time_seconds": 0.7217
+                },
+                "paddleocr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0602 3666 5669",
+                        "name": "Nisha Reddy",
+                        "gender": "FEMALE",
+                        "vid": "",
+                        "hindi_name": "भारत",
+                        "date_of_birth": "",
+                        "year_of_birth": "1994"
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_front",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_front",
+                            "total_fields_checked": 7,
+                            "valid_fields": 7,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 2,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0602 3666 5669",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "Nisha Reddy",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "gender": {
+                                "value": "FEMALE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_name": {
+                                "value": "भारत",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_birth": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "year_of_birth": {
+                                "value": "1994",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 80.0,
+                        "matched_fields": 4,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0602 3666 5669",
+                                "extracted": "0602 3666 5669",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "Nisha Reddy",
+                                "extracted": "Nisha Reddy",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "निशा रेड्डी",
+                                "extracted": "भारत",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 26.67
+                            },
+                            "date_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "year_of_birth": {
+                                "expected": "1994",
+                                "extracted": "1994",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "gender": {
+                                "expected": "FEMALE",
+                                "extracted": "FEMALE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "R\nGOVERNMENT OF INDIA\nwre\nfaTs\nNisha Reddy\n/Year of Birth:1994\nfeT/Female\nSAMPLE PHOTO\n0602 3666 5669\n- 3TTH 3T 3TE\n3TET\nभारत\nसरकार\nसप्मेत जकत\nनशा रेड्डी\nजन्म वर्ष / Year of Birth : 1994\nमहला/Female\n- आम आदमी का अधकार\nआधार",
+                    "processing_time_seconds": 105.7922
+                },
+                "rapidocr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0602 3666 5669",
+                        "name": "Nisha Reddy",
+                        "gender": "FEMALE",
+                        "vid": "",
+                        "hindi_name": "",
+                        "date_of_birth": "",
+                        "year_of_birth": "1994"
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_front",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_front",
+                            "total_fields_checked": 7,
+                            "valid_fields": 7,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 3,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0602 3666 5669",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "Nisha Reddy",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "gender": {
+                                "value": "FEMALE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "date_of_birth": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "year_of_birth": {
+                                "value": "1994",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 80.0,
+                        "matched_fields": 4,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0602 3666 5669",
+                                "extracted": "0602 3666 5669",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "Nisha Reddy",
+                                "extracted": "Nisha Reddy",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "निशा रेड्डी",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "date_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "year_of_birth": {
+                                "expected": "1994",
+                                "extracted": "1994",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "gender": {
+                                "expected": "FEMALE",
+                                "extracted": "FEMALE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "GOVERNMENT OF INDIA\nNisha Reddy\nR/YearofBirth:1994\nHeaT / Female\nSAMPLEPHOTO\n0602 3666 5669\nT\n-3",
+                    "processing_time_seconds": 1.2636
+                },
+                "doctr": {
+                    "extracted_data": {},
+                    "classification": {
+                        "document_type": "unknown",
+                        "confidence_percent": 28.57,
+                        "confidence_level": "low"
+                    },
+                    "validation": {
+                        "summary": {
+                            "total_fields_checked": 0,
+                            "valid_fields": 0,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 0,
+                            "ready_to_save": false,
+                            "requires_review": true,
+                            "note": "Document type is unknown, so validation could not run."
+                        },
+                        "field_results": {}
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 0.0,
+                        "matched_fields": 0,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0602 3666 5669",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "Nisha Reddy",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "hindi_name": {
+                                "expected": "निशा रेड्डी",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "date_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "year_of_birth": {
+                                "expected": "1994",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "gender": {
+                                "expected": "FEMALE",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            }
+                        }
+                    },
+                    "raw_text": "noir ari\nHRT ROR\nGOVERNMENT\nTFATT REET\nOF INDIA\nNisha Reddy\nU7H Aq / Year of Birth\n: 1994\nH6ReT / Female\nSAMPLE PHOTO\n0602 3666\n5669\n3TEIR\n= 3TTH 3164 a\nCT 3TETPR",
+                    "processing_time_seconds": 3.7826
+                }
+            }
+        },
+        "2": {
+            "page_label": "back",
+            "ground_truth": {
+                "aadhaar_number": "0602 3666 5669",
+                "vid": "",
+                "relationship_label": "C/O",
+                "care_of": "Venkatesh Reddy",
+                "father_name": "",
+                "husband_name": "",
+                "hindi_relationship_label": "मार्फत",
+                "hindi_care_of": "वेंकटेश रेड्डी",
+                "hindi_father_name": "",
+                "hindi_husband_name": "",
+                "address": "82 Lake View Colony Hyderabad Telangana 500081",
+                "hindi_address": "82 लअकए वइएव कओलओञ हैदराबाद तएलअङअनअ 500081",
+                "hindi_address_lines": [
+                    "पता:",
+                    "मार्फत: वेंकटेश रेड्डी",
+                    "82, लअकए वइएव कओलओञ",
+                    "हैदराबाद, तएलअङअनअ",
+                    "500081"
+                ],
+                "pincode": "500081"
+            },
+            "models": {
+                "easyocr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0602 3666 5669",
+                        "address": "Hyderabad, Telangana 500081",
+                        "pincode": "500081",
+                        "vid": "",
+                        "relationship_label": "ः वेंकटेश रेडडी ८२, Lake View ८२, लअकए वइएव कओलओञ Hyderabad, Telangana हैदराबाद, तएलअड़अनअ 500081 500081 0602 3666 5669 WWW 1947 १८०० १८० १९४७ help@uidai gov in www uidai gov in P.o. Box No. १९४७ , Bengaluru-5६० ००१ Reddy Colony",
+                        "care_of": "",
+                        "father_name": "",
+                        "husband_name": "",
+                        "hindi_relationship_label": "मार्फत",
+                        "hindi_care_of": "वेंकटेश रेडडी",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "",
+                        "hindi_address": "ः ८२, Lake View ८२, लअकए वइएव कओलओञ हैदराबाद, तएलअड़अनअ 500081",
+                        "hindi_address_lines": [
+                            "पता:",
+                            "ः",
+                            "मार्फतः वेंकटेश रेडडी",
+                            "८२, Lake View",
+                            "८२, लअकए वइएव कओलओञ",
+                            "हैदराबाद, तएलअड़अनअ",
+                            "500081"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 50.0,
+                        "confidence_level": "medium"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 6,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0602 3666 5669",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "Hyderabad, Telangana 500081",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "500081",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "ः वेंकटेश रेडडी ८२, Lake View ८२, लअकए वइएव कओलओञ Hyderabad, Telangana हैदराबाद, तएलअड़अनअ 500081 500081 0602 3666 5669 WWW 1947 १८०० १८० १९४७ help@uidai gov in www uidai gov in P.o. Box No. १९४७ , Bengaluru-5६० ००१ Reddy Colony",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_relationship_label": {
+                                "value": "मार्फत",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_care_of": {
+                                "value": "वेंकटेश रेडडी",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_address": {
+                                "value": "ः ८२, Lake View ८२, लअकए वइएव कओलओञ हैदराबाद, तएलअड़अनअ 500081",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "पता:",
+                                    "ः",
+                                    "मार्फतः वेंकटेश रेडडी",
+                                    "८२, Lake View",
+                                    "८२, लअकए वइएव कओलओञ",
+                                    "हैदराबाद, तएलअड़अनअ",
+                                    "500081"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 66.67,
+                        "matched_fields": 6,
+                        "total_fields": 9,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0602 3666 5669",
+                                "extracted": "0602 3666 5669",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "C/O",
+                                "extracted": "ः वेंकटेश रेडडी ८२, Lake View ८२, लअकए वइएव कओलओञ Hyderabad, Telangana हैदराबाद, तएलअड़अनअ 500081 500081 0602 3666 5669 WWW 1947 १८०० १८० १९४७ help@uidai gov in www uidai gov in P.o. Box No. १९४७ , Bengaluru-5६० ००१ Reddy Colony",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 50.0
+                            },
+                            "care_of": {
+                                "expected": "Venkatesh Reddy",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "मार्फत",
+                                "extracted": "मार्फत",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "hindi_care_of": {
+                                "expected": "वेंकटेश रेड्डी",
+                                "extracted": "वेंकटेश रेडडी",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 96.3
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "address": {
+                                "expected": "82 Lake View Colony Hyderabad Telangana 500081",
+                                "extracted": "Hyderabad, Telangana 500081",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 72.22
+                            },
+                            "hindi_address": {
+                                "expected": "82 लअकए वइएव कओलओञ हैदराबाद तएलअङअनअ 500081",
+                                "extracted": "ः ८२, Lake View ८२, लअकए वइएव कओलओञ हैदराबाद, तएलअड़अनअ 500081",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 79.21
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "मार्फत: वेंकटेश रेड्डी",
+                                    "82, लअकए वइएव कओलओञ",
+                                    "हैदराबाद, तएलअङअनअ",
+                                    "500081"
+                                ],
+                                "extracted": [
+                                    "पता:",
+                                    "ः",
+                                    "मार्फतः वेंकटेश रेडडी",
+                                    "८२, Lake View",
+                                    "८२, लअकए वइएव कओलओञ",
+                                    "हैदराबाद, तएलअड़अनअ",
+                                    "500081"
+                                ],
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 84.97
+                            },
+                            "pincode": {
+                                "expected": "500081",
+                                "extracted": "500081",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "भारतीय वशिषि्ट पहचान पराधकिरण\nAADHAAR\nUNIQUE IDENTIFICATION AUTHORITY OF INDIA\nपताः\nCIO: Venkatesh\nमार्फतः वेंकटेश रेडडी\n८२, Lake View\n८२, लअकए वइएव कओलओञ\nHyderabad, Telangana\nहैदराबाद, तएलअड़अनअ\n500081\n500081\n0602 3666 5669\nWWW\n1947\n१८०० १८० १९४७\nhelp@uidai gov in\nwww uidai gov in\nP.o. Box No. १९४७ ,\nBengaluru-5६० ००१\nReddy\nColony",
+                    "processing_time_seconds": 14.1566
+                },
+                "tesseract": {
+                    "extracted_data": {},
+                    "classification": {
+                        "document_type": "unknown",
+                        "confidence_percent": 0.0,
+                        "confidence_level": "low"
+                    },
+                    "validation": {
+                        "summary": {
+                            "total_fields_checked": 0,
+                            "valid_fields": 0,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 0,
+                            "ready_to_save": false,
+                            "requires_review": true,
+                            "note": "Document type is unknown, so validation could not run."
+                        },
+                        "field_results": {}
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 0.0,
+                        "matched_fields": 0,
+                        "total_fields": 9,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0602 3666 5669",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "C/O",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "care_of": {
+                                "expected": "Venkatesh Reddy",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "मार्फत",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "hindi_care_of": {
+                                "expected": "वेंकटेश रेड्डी",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "address": {
+                                "expected": "82 Lake View Colony Hyderabad Telangana 500081",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "hindi_address": {
+                                "expected": "82 लअकए वइएव कओलओञ हैदराबाद तएलअङअनअ 500081",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "मार्फत: वेंकटेश रेड्डी",
+                                    "82, लअकए वइएव कओलओञ",
+                                    "हैदराबाद, तएलअङअनअ",
+                                    "500081"
+                                ],
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "pincode": {
+                                "expected": "500081",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            }
+                        }
+                    },
+                    "raw_text": "",
+                    "processing_time_seconds": 1.1243
+                },
+                "paddleocr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0602 3666 5669",
+                        "address": "82, Lake View Colony Hyderabad, Telangana SGRTATG, ASM3TS3TT3T 500081",
+                        "pincode": "500081",
+                        "vid": "",
+                        "relationship_label": "C/O",
+                        "care_of": "Venkatesh Reddy",
+                        "father_name": "",
+                        "husband_name": "",
+                        "hindi_relationship_label": "मार्फत",
+                        "hindi_care_of": "वेकटेश रेड्डी",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "",
+                        "hindi_address": "500081",
+                        "hindi_address_lines": [
+                            "500081"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 50.0,
+                        "confidence_level": "medium"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 5,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0602 3666 5669",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "82, Lake View Colony Hyderabad, Telangana SGRTATG, ASM3TS3TT3T 500081",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "500081",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "C/O",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "care_of": {
+                                "value": "Venkatesh Reddy",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_relationship_label": {
+                                "value": "मार्फत",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_care_of": {
+                                "value": "वेकटेश रेड्डी",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_address": {
+                                "value": "500081",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "500081"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 77.78,
+                        "matched_fields": 7,
+                        "total_fields": 9,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0602 3666 5669",
+                                "extracted": "0602 3666 5669",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "C/O",
+                                "extracted": "C/O",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "care_of": {
+                                "expected": "Venkatesh Reddy",
+                                "extracted": "Venkatesh Reddy",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "मार्फत",
+                                "extracted": "मार्फत",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "hindi_care_of": {
+                                "expected": "वेंकटेश रेड्डी",
+                                "extracted": "वेकटेश रेड्डी",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 96.3
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "address": {
+                                "expected": "82 Lake View Colony Hyderabad Telangana 500081",
+                                "extracted": "82, Lake View Colony Hyderabad, Telangana SGRTATG, ASM3TS3TT3T 500081",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_address": {
+                                "expected": "82 लअकए वइएव कओलओञ हैदराबाद तएलअङअनअ 500081",
+                                "extracted": "500081",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 24.49
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "मार्फत: वेंकटेश रेड्डी",
+                                    "82, लअकए वइएव कओलओञ",
+                                    "हैदराबाद, तएलअङअनअ",
+                                    "500081"
+                                ],
+                                "extracted": [
+                                    "500081"
+                                ],
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 16.0
+                            },
+                            "pincode": {
+                                "expected": "500081",
+                                "extracted": "500081",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "Ra2aua-eoo\nUNIQUE IDENTIFICATION AUTHORITY OF INDIA\nAADHAAR\nTd:\nC/O: Venkatesh Reddy\nR:\n82, Lake View Colony\n82,3\nHyderabad, Telangana\nSGRTATG, ASM3TS3TT3T\n500081\n0602 3666 5669\nwww\n1947\nhelp@uidai.gov.in\nP.O. Box No. 1947,\nwww.uidai.gov.in\n1800 180 1947\nBengaluru-560 001\nभारतीय\nवशिष्ट पहचान प्राधकिरण\nUNIQUE IDENTIFICATION\nAUTHORITY OE INDIA\nपता:\nमार्फत: वेकटेश रेड्डी\n82, लअकए वइएव कओलओञ\nहैदराबाद, तएलअडअनअ",
+                    "processing_time_seconds": 95.3795
+                },
+                "rapidocr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0602 3666 5669",
+                        "address": "82,Lake View Colony Hyderabad,Telangana 500081",
+                        "pincode": "500081",
+                        "vid": "",
+                        "relationship_label": "C/O",
+                        "care_of": "Venkatesh Reddy",
+                        "father_name": "",
+                        "husband_name": "",
+                        "hindi_relationship_label": "",
+                        "hindi_care_of": "",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "",
+                        "hindi_address": "500081",
+                        "hindi_address_lines": [
+                            "500081"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 7,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0602 3666 5669",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "82,Lake View Colony Hyderabad,Telangana 500081",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "500081",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "C/O",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "care_of": {
+                                "value": "Venkatesh Reddy",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_address": {
+                                "value": "500081",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "500081"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 55.56,
+                        "matched_fields": 5,
+                        "total_fields": 9,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0602 3666 5669",
+                                "extracted": "0602 3666 5669",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "C/O",
+                                "extracted": "C/O",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "care_of": {
+                                "expected": "Venkatesh Reddy",
+                                "extracted": "Venkatesh Reddy",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "मार्फत",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "hindi_care_of": {
+                                "expected": "वेंकटेश रेड्डी",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "address": {
+                                "expected": "82 Lake View Colony Hyderabad Telangana 500081",
+                                "extracted": "82,Lake View Colony Hyderabad,Telangana 500081",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_address": {
+                                "expected": "82 लअकए वइएव कओलओञ हैदराबाद तएलअङअनअ 500081",
+                                "extracted": "500081",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 24.49
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "मार्फत: वेंकटेश रेड्डी",
+                                    "82, लअकए वइएव कओलओञ",
+                                    "हैदराबाद, तएलअङअनअ",
+                                    "500081"
+                                ],
+                                "extracted": [
+                                    "500081"
+                                ],
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 16.0
+                            },
+                            "pincode": {
+                                "expected": "500081",
+                                "extracted": "500081",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "lncejalhEllgh2hlejbhlpllt\nAADHAAR\nUNIQUE IDENTIFICATION AUTHORITY OFINDIA\nEh\nC/O:Venkatesh Reddy\n82,Lake View Colony\nHyderabad,Telangana\n500081\n500081\n0602 3666 5669\nwww\n1947\n18001801947\nhelp@uidai.gov.in\nwww.uidai.gov.in\nP.O.BoxNo.1947,\nBengaluru-560 001",
+                    "processing_time_seconds": 1.4448
+                },
+                "doctr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0602 3666 5669",
+                        "address": "82, Lake View Colony 82, MTohy asya 43T01311 Hyderabad, Telangana BGRITIG, dye31531731 500081",
+                        "pincode": "500081",
+                        "vid": "",
+                        "relationship_label": "C/O",
+                        "care_of": "Venkatesh Reddy",
+                        "father_name": "",
+                        "husband_name": "",
+                        "hindi_relationship_label": "",
+                        "hindi_care_of": "",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "",
+                        "hindi_address": "500081",
+                        "hindi_address_lines": [
+                            "500081"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 7,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0602 3666 5669",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "82, Lake View Colony 82, MTohy asya 43T01311 Hyderabad, Telangana BGRITIG, dye31531731 500081",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "500081",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "C/O",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "care_of": {
+                                "value": "Venkatesh Reddy",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_address": {
+                                "value": "500081",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "500081"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 55.56,
+                        "matched_fields": 5,
+                        "total_fields": 9,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0602 3666 5669",
+                                "extracted": "0602 3666 5669",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "C/O",
+                                "extracted": "C/O",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "care_of": {
+                                "expected": "Venkatesh Reddy",
+                                "extracted": "Venkatesh Reddy",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "मार्फत",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "hindi_care_of": {
+                                "expected": "वेंकटेश रेड्डी",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "address": {
+                                "expected": "82 Lake View Colony Hyderabad Telangana 500081",
+                                "extracted": "82, Lake View Colony 82, MTohy asya 43T01311 Hyderabad, Telangana BGRITIG, dye31531731 500081",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_address": {
+                                "expected": "82 लअकए वइएव कओलओञ हैदराबाद तएलअङअनअ 500081",
+                                "extracted": "500081",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 24.49
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "मार्फत: वेंकटेश रेड्डी",
+                                    "82, लअकए वइएव कओलओञ",
+                                    "हैदराबाद, तएलअङअनअ",
+                                    "500081"
+                                ],
+                                "extracted": [
+                                    "500081"
+                                ],
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 16.0
+                            },
+                            "pincode": {
+                                "expected": "500081",
+                                "extracted": "500081",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "HRA AATOC 46217 URTEICPRUT\nAADHAAR\nUNIQUE IDENTIFICATION AUTHORITY OFINDIA\n4dT:\nC/O: Venkatesh Reddy\nHRYd: aOCaTREET\n82, Lake View Colony\n82, à MTohy à asya 43T01311\nHyderabad, Telangana\nBGRITIG, dye31531731\n500081\n500081\n0602 3666 5669\n::\nWWW\n1947\n1800 180 1947\nhelp@uidai.gov.in\nwww.uidai.gov.in\nP.O.Box No. 1947,\nBengaluru-560 001",
+                    "processing_time_seconds": 3.5952
+                }
+            }
+        }
+    }
+}

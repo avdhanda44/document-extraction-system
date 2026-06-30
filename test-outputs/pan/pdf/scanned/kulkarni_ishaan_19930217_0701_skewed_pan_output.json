@@ -1,0 +1,760 @@
+{
+    "pdf": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/pan/pdf/scanned/kulkarni_ishaan_19930217_0701_skewed.pdf",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/pan/pdf/scanned/kulkarni_ishaan_19930217_0701_skewed.json",
+        "quality": "skewed",
+        "page_count": 1,
+        "pages": {
+            "1": "front"
+        }
+    },
+    "ground_truth": {
+        "pdf_type": "scanned",
+        "variant": "skewed",
+        "pages": {
+            "1": "front"
+        },
+        "front": {
+            "pan_number": "EFGPK7012M",
+            "name": "Ishaan Kulkarni",
+            "hindi_name": "ईशान कुलकर्णी",
+            "father_name": "Vivek Kulkarni",
+            "hindi_father_name": "विवेक कुलकर्णी",
+            "date_of_birth": "1993-02-17",
+            "signature_present": true,
+            "card_issue_date_text": "15112021"
+        }
+    },
+    "page_results": {
+        "1": {
+            "page_label": "front",
+            "ground_truth": {
+                "pan_number": "EFGPK7012M",
+                "name": "Ishaan Kulkarni",
+                "hindi_name": "ईशान कुलकर्णी",
+                "father_name": "Vivek Kulkarni",
+                "hindi_father_name": "विवेक कुलकर्णी",
+                "date_of_birth": "1993-02-17",
+                "signature_present": true,
+                "card_issue_date_text": "15112021"
+            },
+            "models": {
+                "easyocr": {
+                    "extracted_data": {
+                        "pan_number": "EFGPK7O1२M",
+                        "name": "ISHAAN KULKARNI",
+                        "father_name": "Fathers Name",
+                        "date_of_birth": "1993-02-17",
+                        "hindi_name": "ईशान कुलकर्णी",
+                        "hindi_father_name": "रत",
+                        "signature_present": true,
+                        "card_issue_date_text": "15112021"
+                    },
+                    "classification": {
+                        "document_type": "pan_card",
+                        "confidence_percent": 87.5,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "pan_card",
+                            "total_fields_checked": 8,
+                            "valid_fields": 7,
+                            "invalid_fields": 1,
+                            "fields_with_warnings": 0,
+                            "ready_to_save": false,
+                            "requires_review": true
+                        },
+                        "field_results": {
+                            "pan_number": {
+                                "value": "EFGPK7O1२M",
+                                "valid": false,
+                                "error": "PAN number must match format AAAAA9999A",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "ISHAAN KULKARNI",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "father_name": {
+                                "value": "Fathers Name",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_birth": {
+                                "value": "1993-02-17",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_name": {
+                                "value": "ईशान कुलकर्णी",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_father_name": {
+                                "value": "रत",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "signature_present": {
+                                "value": true,
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "card_issue_date_text": {
+                                "value": "15112021",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 62.5,
+                        "matched_fields": 5,
+                        "total_fields": 8,
+                        "fields": {
+                            "pan_number": {
+                                "expected": "EFGPK7012M",
+                                "extracted": "EFGPK7O1२M",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "name": {
+                                "expected": "Ishaan Kulkarni",
+                                "extracted": "ISHAAN KULKARNI",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "ईशान कुलकर्णी",
+                                "extracted": "ईशान कुलकर्णी",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "father_name": {
+                                "expected": "Vivek Kulkarni",
+                                "extracted": "Fathers Name",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 23.08
+                            },
+                            "hindi_father_name": {
+                                "expected": "विवेक कुलकर्णी",
+                                "extracted": "रत",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 12.5
+                            },
+                            "date_of_birth": {
+                                "expected": "1993-02-17",
+                                "extracted": "1993-02-17",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "signature_present": {
+                                "expected": true,
+                                "extracted": true,
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "card_issue_date_text": {
+                                "expected": "15112021",
+                                "extracted": "15112021",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "आयकर वाभाग\nभारत सरकार\n00\"\"\nINCOME TAX DEPARTMENTरत \nसरकार\nGOVT. OF INDIA\nलेखा संख्या कार्ड\nPermanent Account Number\nEFGPK7O1२M\nनाम\nName\nISHAAN KULKARNI\nईशान कुलकर्णी\nपता का नाम\nFathers Name\n15112021\nVIVEK KULKARNI\nवविक\nजन्म की तारीख/\nDate of Birth\nहसताकषर\nSignature\n17/02/1993\nस्थायी\nकुलकरणी",
+                    "processing_time_seconds": 11.4779
+                },
+                "tesseract": {
+                    "extracted_data": {
+                        "pan_number": "EFGPK7012M",
+                        "name": "ISHAAN KULKARNI",
+                        "father_name": "VIVEK KULKARNI",
+                        "date_of_birth": "1993-02-17",
+                        "hindi_name": "कुलकर् णी",
+                        "hindi_father_name": "स॒थायी लेखा संख्या",
+                        "signature_present": true,
+                        "card_issue_date_text": "15112021"
+                    },
+                    "classification": {
+                        "document_type": "pan_card",
+                        "confidence_percent": 75.0,
+                        "confidence_level": "medium"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "pan_card",
+                            "total_fields_checked": 8,
+                            "valid_fields": 8,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 0,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "pan_number": {
+                                "value": "EFGPK7012M",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "ISHAAN KULKARNI",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "father_name": {
+                                "value": "VIVEK KULKARNI",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_birth": {
+                                "value": "1993-02-17",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_name": {
+                                "value": "कुलकर् णी",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_father_name": {
+                                "value": "स॒थायी लेखा संख्या",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "signature_present": {
+                                "value": true,
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "card_issue_date_text": {
+                                "value": "15112021",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 75.0,
+                        "matched_fields": 6,
+                        "total_fields": 8,
+                        "fields": {
+                            "pan_number": {
+                                "expected": "EFGPK7012M",
+                                "extracted": "EFGPK7012M",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "name": {
+                                "expected": "Ishaan Kulkarni",
+                                "extracted": "ISHAAN KULKARNI",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "ईशान कुलकर्णी",
+                                "extracted": "कुलकर् णी",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 72.73
+                            },
+                            "father_name": {
+                                "expected": "Vivek Kulkarni",
+                                "extracted": "VIVEK KULKARNI",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_father_name": {
+                                "expected": "विवेक कुलकर्णी",
+                                "extracted": "स॒थायी लेखा संख्या",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 6.25
+                            },
+                            "date_of_birth": {
+                                "expected": "1993-02-17",
+                                "extracted": "1993-02-17",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "signature_present": {
+                                "expected": true,
+                                "extracted": true,
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "card_issue_date_text": {
+                                "expected": "15112021",
+                                "extracted": "15112021",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "आयकर वभिग im भारत सरकार\nINCOME TAX DEPARTMENT\" GOVT. OF INDIA\n\nस॒थायी लेखा संख्या PRS\nPermanent Account Number (2\n\nEFGPK7012M\n\nart / Name\nISHAAN KULKARNI\nईशान कुलकर्‌णी\n\nपति का नाम'/ Father's Name 15112021\n\nVIVEK KULKARNI\natte कुलकर्‌णी\n\nजन्‌म की तारीख/\nDate of Birth हसूताकषर / Signature\n\n17/02/1993",
+                    "processing_time_seconds": 1.0384
+                },
+                "paddleocr": {
+                    "extracted_data": {
+                        "pan_number": "EFGPK7012M",
+                        "name": "ISHAAN KULKARNI",
+                        "father_name": "VIVEK KULKARNI",
+                        "date_of_birth": "1993-02-17",
+                        "hindi_name": "ईशान",
+                        "hindi_father_name": "आयकर",
+                        "signature_present": true,
+                        "card_issue_date_text": "15112021"
+                    },
+                    "classification": {
+                        "document_type": "pan_card",
+                        "confidence_percent": 75.0,
+                        "confidence_level": "medium"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "pan_card",
+                            "total_fields_checked": 8,
+                            "valid_fields": 8,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 0,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "pan_number": {
+                                "value": "EFGPK7012M",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "ISHAAN KULKARNI",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "father_name": {
+                                "value": "VIVEK KULKARNI",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_birth": {
+                                "value": "1993-02-17",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_name": {
+                                "value": "ईशान",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_father_name": {
+                                "value": "आयकर",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "signature_present": {
+                                "value": true,
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "card_issue_date_text": {
+                                "value": "15112021",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 75.0,
+                        "matched_fields": 6,
+                        "total_fields": 8,
+                        "fields": {
+                            "pan_number": {
+                                "expected": "EFGPK7012M",
+                                "extracted": "EFGPK7012M",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "name": {
+                                "expected": "Ishaan Kulkarni",
+                                "extracted": "ISHAAN KULKARNI",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "ईशान कुलकर्णी",
+                                "extracted": "ईशान",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 50.0
+                            },
+                            "father_name": {
+                                "expected": "Vivek Kulkarni",
+                                "extracted": "VIVEK KULKARNI",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_father_name": {
+                                "expected": "विवेक कुलकर्णी",
+                                "extracted": "आयकर",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 22.22
+                            },
+                            "date_of_birth": {
+                                "expected": "1993-02-17",
+                                "extracted": "1993-02-17",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "signature_present": {
+                                "expected": true,
+                                "extracted": true,
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "card_issue_date_text": {
+                                "expected": "15112021",
+                                "extracted": "15112021",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "3TTTO\nf\nHRA\nRのR\nLOX\nINCOME TAX DEPARTMENT\née\nGOVT. OF INDIA\nRO\nPermanent Account Number\nEFGPK7012M\n/Name\nISHAAN KULKARNI\nFather's Name\n15112021\nVIVEK KULKARNI\na\nR\n/ Signature\nDate of Birth\n17/02/1993\nवभाग\nआयकर\nभारत\nसरकार\nINCOME\nTAX\nसल्यमेव जषे\nDEPARTMENT\nGOVT. OF\nINDIA\nभारत सरकार\nस्थायी\nलेखा\nसंख्या\nकार्ड\nPermanent\nAccount Number\nनाम / Name\nISHAAN\nKULKARNI\nईशान\nकुलकर्णी\nपतिा\nका\nनाम\nVIVEK\nवविक\nजन्म\nकी\nतारीख/\nDate\nof\nBirth\nहसताकषर",
+                    "processing_time_seconds": 81.4556
+                },
+                "rapidocr": {
+                    "extracted_data": {
+                        "pan_number": "EFGPK7012M",
+                        "name": "ISHAAN KULKARNI",
+                        "father_name": "15112021 VIVEKKULKARNI",
+                        "date_of_birth": "1993-02-17",
+                        "hindi_name": "",
+                        "hindi_father_name": "",
+                        "signature_present": true,
+                        "card_issue_date_text": "15112021"
+                    },
+                    "classification": {
+                        "document_type": "pan_card",
+                        "confidence_percent": 62.5,
+                        "confidence_level": "medium"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "pan_card",
+                            "total_fields_checked": 8,
+                            "valid_fields": 8,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 2,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "pan_number": {
+                                "value": "EFGPK7012M",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "ISHAAN KULKARNI",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "father_name": {
+                                "value": "15112021 VIVEKKULKARNI",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_birth": {
+                                "value": "1993-02-17",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "signature_present": {
+                                "value": true,
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "card_issue_date_text": {
+                                "value": "15112021",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 62.5,
+                        "matched_fields": 5,
+                        "total_fields": 8,
+                        "fields": {
+                            "pan_number": {
+                                "expected": "EFGPK7012M",
+                                "extracted": "EFGPK7012M",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "name": {
+                                "expected": "Ishaan Kulkarni",
+                                "extracted": "ISHAAN KULKARNI",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "ईशान कुलकर्णी",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "father_name": {
+                                "expected": "Vivek Kulkarni",
+                                "extracted": "15112021 VIVEKKULKARNI",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 72.22
+                            },
+                            "hindi_father_name": {
+                                "expected": "विवेक कुलकर्णी",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "date_of_birth": {
+                                "expected": "1993-02-17",
+                                "extracted": "1993-02-17",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "signature_present": {
+                                "expected": true,
+                                "extracted": true,
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "card_issue_date_text": {
+                                "expected": "15112021",
+                                "extracted": "15112021",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "INCOMETAXDEPARTMENT\nGOVT.OFINDIA\nREROR\nPermanent Account Number\nEFGPK7012M\n/Name\nISHAAN KULKARNI\nqfaTTH/Father'sName\n15112021\nVIVEKKULKARNI\nDate of Birth\n/Signature\n17/02/1993",
+                    "processing_time_seconds": 0.7354
+                },
+                "doctr": {
+                    "extracted_data": {
+                        "pan_number": "EFGPK7012M",
+                        "name": "ISHAAN KULKARNI",
+                        "father_name": "VIVEK KULKARNI",
+                        "date_of_birth": "1993-02-17",
+                        "hindi_name": "",
+                        "hindi_father_name": "",
+                        "signature_present": true,
+                        "card_issue_date_text": "15112021"
+                    },
+                    "classification": {
+                        "document_type": "pan_card",
+                        "confidence_percent": 62.5,
+                        "confidence_level": "medium"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "pan_card",
+                            "total_fields_checked": 8,
+                            "valid_fields": 8,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 2,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "pan_number": {
+                                "value": "EFGPK7012M",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "ISHAAN KULKARNI",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "father_name": {
+                                "value": "VIVEK KULKARNI",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_birth": {
+                                "value": "1993-02-17",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "signature_present": {
+                                "value": true,
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "card_issue_date_text": {
+                                "value": "15112021",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 75.0,
+                        "matched_fields": 6,
+                        "total_fields": 8,
+                        "fields": {
+                            "pan_number": {
+                                "expected": "EFGPK7012M",
+                                "extracted": "EFGPK7012M",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "name": {
+                                "expected": "Ishaan Kulkarni",
+                                "extracted": "ISHAAN KULKARNI",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "ईशान कुलकर्णी",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "father_name": {
+                                "expected": "Vivek Kulkarni",
+                                "extracted": "VIVEK KULKARNI",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_father_name": {
+                                "expected": "विवेक कुलकर्णी",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "date_of_birth": {
+                                "expected": "1993-02-17",
+                                "extracted": "1993-02-17",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "signature_present": {
+                                "expected": true,
+                                "extracted": true,
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "card_issue_date_text": {
+                                "expected": "15112021",
+                                "extracted": "15112021",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "31ROR CIATTT\nTRd HROR\nAg 7\nINCOME TAX DEPARTMENT Rd ROR\nGOVT.OF INDIA\nTAReT MAT HIGAT CRE\nPermanent Account Number .\n- -\nEFGPK7012M\n7TH/ Name\nISHAAN KULKARNI\nSATTT apelaruit\ngfar apT ATH/ Father's Name\n15112021\nVIVEK KULKARNI\nafo ageloyUit\nGH oT aRial\nDate of Birth\npedieher / Signature\n17/02/1993",
+                    "processing_time_seconds": 2.8641
+                }
+            }
+        }
+    }
+}

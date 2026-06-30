@@ -21,6 +21,7 @@ from Backend.extractor.document_classification import (
 from Backend.extractor.field_mapper import extract_field_values_using_schema
 from Backend.extractor.validation import validate_extracted_fields
 from Backend.json_generator import (
+    outputs_folder,
     save_aadhaar_json_file,
     save_accuracy_excel,
     save_document_json_file,
@@ -98,7 +99,7 @@ def run_document_processing(file_name):
         process_uploaded_document(file_name)
 
         # Show one short success message, but do not print the full JSON.
-        print("Done. File processed and saved in the outputs folder.")
+        print("Done. File processed and saved in the output folder.")
     except Exception as error:
         # Show a simple error message so the output is easier to read.
         print(error)
@@ -2299,7 +2300,6 @@ def process_passbook_digital_pdf_folder():
 
 
 def clear_previous_outputs():
-    outputs_folder = project_folder / "outputs"
     outputs_folder.mkdir(parents=True, exist_ok=True)
 
     for path in outputs_folder.rglob("*"):
@@ -2366,10 +2366,10 @@ Output cleanup:
                      It can be combined with a batch mode.
 
 Outputs:
-  Single file JSON: outputs/<document_type>/<format>/<input_file_name>_output.json
-  Batch image reports: outputs/<document_type>/image/
-  Scanned PDF reports: outputs/<document_type>/pdf/scanned/
-  Digital PDF reports: outputs/<document_type>/pdf/digital/
+  Single file JSON: output/<input_file_name>_output.json
+  Batch image reports: test-outputs/<document_type>/image/
+  Scanned PDF reports: test-outputs/<document_type>/pdf/scanned/
+  Digital PDF reports: test-outputs/<document_type>/pdf/digital/
 """.strip()
     )
 

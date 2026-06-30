@@ -6,8 +6,13 @@ from .extractor.document_classification import document_schemas
 from .extractor.document_classification import choose_document_type_from_text
 from .extractor.field_mapper import extract_field_values_using_schema
 from .extractor.validation import validate_extracted_fields
-from .json_generator import create_final_json_output, outputs_folder, save_final_json_file
+from .json_generator import create_final_json_output
 from .processor.text_extractor import extract_uploaded_document
+
+
+project_folder = Path(__file__).resolve().parent.parent
+website_output_folder = project_folder / "output"
+website_output_folder.mkdir(exist_ok=True)
 
 
 def classify_and_extract_fields(extracted_text):
@@ -42,7 +47,7 @@ def process_uploaded_document(file_name, save_output=True):
         mapped_fields,
         validation,
     )
-    output_path = save_final_json_file(final_json) if save_output else None
+    output_path = save_website_json_file(final_json) if save_output else None
 
     return {
         "document_result": document_result,
@@ -52,6 +57,16 @@ def process_uploaded_document(file_name, save_output=True):
         "final_json": final_json,
         "output_path": output_path,
     }
+
+
+def save_website_json_file(final_json):
+    file_stem = Path(final_json["extracted_output"]["file_name"]).stem
+    output_path = website_output_folder / f"{file_stem}_output.json"
+
+    with output_path.open("w", encoding="utf-8") as json_file:
+        json.dump(final_json, json_file, indent=4, ensure_ascii=False)
+
+    return output_path
 
 
 def make_classification_for_review(document_type):
@@ -75,11 +90,9 @@ def make_classification_for_review(document_type):
 def save_reviewed_document(file_name, file_type, document_type, fields):
     classification = make_classification_for_review(document_type)
     validation = validate_extracted_fields(classification, fields)
-    reviewed_folder = outputs_folder / "reviewed"
-    reviewed_folder.mkdir(parents=True, exist_ok=True)
 
     file_stem = Path(file_name).stem
-    output_path = reviewed_folder / f"{file_stem}_reviewed.json"
+    output_path = website_output_folder / f"{file_stem}_reviewed.json"
     reviewed_json = {
         "reviewed_output": {
             "file_name": file_name,

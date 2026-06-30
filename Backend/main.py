@@ -45,7 +45,7 @@ def run_document_processing(button):
             process_uploaded_document(file_name)
 
             # Show one short success message, but do not print the full JSON.
-            print("Done. File processed and saved in the outputs folder.")
+            print("Done. File processed and saved in the output folder.")
     except Exception as error:
         with output:
             # Show only errors, because successful runs should stay quiet.

@@ -6,16 +6,19 @@ from xml.sax.saxutils import escape
 
 def find_outputs_folder_for_json_files():
     # VS Code may run the file from Backend or from the project folder.
-    # This keeps JSON files saved in the project-level outputs folder.
+    # This keeps testing JSON and Excel reports in the project-level test output folder.
     current_folder = Path.cwd()
+    folder_names = ("test-outputs", "test-output", "outputs")
 
-    if (current_folder / "outputs").exists():
-        return current_folder / "outputs"
+    for folder_name in folder_names:
+        if (current_folder / folder_name).exists():
+            return current_folder / folder_name
 
-    if (current_folder.parent / "outputs").exists():
-        return current_folder.parent / "outputs"
+    for folder_name in folder_names:
+        if (current_folder.parent / folder_name).exists():
+            return current_folder.parent / folder_name
 
-    return current_folder / "outputs"
+    return current_folder / "test-outputs"
 
 
 outputs_folder = find_outputs_folder_for_json_files()

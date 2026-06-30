@@ -72,7 +72,8 @@ document-extraction-system/
 │       ├── main.jsx
 │       └── styles.css
 ├── uploads/
-├── outputs/
+├── output/
+├── test-outputs/
 ├── main.py
 ├── pyproject.toml
 ├── uv.lock
@@ -123,10 +124,10 @@ NehaPatil.png
 RahulVerma.pdf
 ```
 
-The output JSON file is saved by document type and input format:
+The website and single-file pipeline save JSON files in:
 
 ```text
-outputs/<document_type>/<format>/<input_file_name>_output.json
+output/<input_file_name>_output.json
 ```
 
 Running the same input file again replaces the same output file.
@@ -139,22 +140,22 @@ The UI is a browser-based review workbench for the extraction pipeline:
 Upload document -> Extract fields -> Review/edit values -> Save reviewed JSON
 ```
 
-Uploaded files are stored in:
+Uploaded files are stored temporarily in:
 
 ```text
 uploads/<safe_uploaded_file_name>
 ```
 
-The first machine extraction is stored in the existing output layout:
+After extraction, the uploaded original is deleted. The first machine extraction is stored in:
 
 ```text
-outputs/<document_type>/<format>/<file_stem>_output.json
+output/<file_stem>_output.json
 ```
 
 The user-reviewed JSON is stored in:
 
 ```text
-outputs/reviewed/<file_stem>_reviewed.json
+output/<file_stem>_reviewed.json
 ```
 
 Run the API server:
@@ -235,34 +236,34 @@ Run the test suite from the project root:
 uv --cache-dir .uv-cache run python -m unittest discover -s test-CLI
 ```
 
-Batch outputs are saved under:
+Batch testing outputs are saved under:
 
 ```text
-outputs/<document_type>/image/
-outputs/<document_type>/pdf/scanned/
-outputs/<document_type>/pdf/digital/
+test-outputs/<document_type>/image/
+test-outputs/<document_type>/pdf/scanned/
+test-outputs/<document_type>/pdf/digital/
 ```
 
 Each output folder contains matching JSON files and an Excel report. Reports contain `accuracy`, `quality_front`, `quality_back`, and `summary` sheets with model accuracy and processing times.
 
 ```text
-outputs/aadhaar/image/aadhaar_model_accuracy.xlsx
-outputs/pan/image/pan_model_accuracy.xlsx
-outputs/passbook/image/passbook_model_accuracy.xlsx
-outputs/invoice/image/invoice_model_accuracy.xlsx
-outputs/aadhaar/pdf/scanned/aadhaar_pdf_model_accuracy.xlsx
-outputs/pan/pdf/scanned/pan_pdf_model_accuracy.xlsx
-outputs/passbook/pdf/scanned/passbook_pdf_model_accuracy.xlsx
-outputs/invoice/pdf/scanned/invoice_pdf_model_accuracy.xlsx
-outputs/aadhaar/pdf/digital/aadhaar_digital_pdf_extractor_accuracy.xlsx
-outputs/pan/pdf/digital/pan_digital_pdf_extractor_accuracy.xlsx
-outputs/passbook/pdf/digital/passbook_digital_pdf_extractor_accuracy.xlsx
+test-outputs/aadhaar/image/aadhaar_model_accuracy.xlsx
+test-outputs/pan/image/pan_model_accuracy.xlsx
+test-outputs/passbook/image/passbook_model_accuracy.xlsx
+test-outputs/invoice/image/invoice_model_accuracy.xlsx
+test-outputs/aadhaar/pdf/scanned/aadhaar_pdf_model_accuracy.xlsx
+test-outputs/pan/pdf/scanned/pan_pdf_model_accuracy.xlsx
+test-outputs/passbook/pdf/scanned/passbook_pdf_model_accuracy.xlsx
+test-outputs/invoice/pdf/scanned/invoice_pdf_model_accuracy.xlsx
+test-outputs/aadhaar/pdf/digital/aadhaar_digital_pdf_extractor_accuracy.xlsx
+test-outputs/pan/pdf/digital/pan_digital_pdf_extractor_accuracy.xlsx
+test-outputs/passbook/pdf/digital/passbook_digital_pdf_extractor_accuracy.xlsx
 ```
 
 The output layout is ready for all supported formats:
 
 ```text
-outputs/
+test-outputs/
 └── <document_type>/
     ├── image/
     ├── pdf/
@@ -325,8 +326,8 @@ Invoice batch reports contain:
 - `summary`: average accuracy, speed, failures, and complete-record rate by model
 
 Scanned PDF JSON and Excel reports are saved under
-`outputs/<document_type>/pdf/scanned/`. Digital PDF reports are saved under
-`outputs/<document_type>/pdf/digital/`.
+`test-outputs/<document_type>/pdf/scanned/`. Digital PDF reports are saved under
+`test-outputs/<document_type>/pdf/digital/`.
 
 ## Extraction Logic
 

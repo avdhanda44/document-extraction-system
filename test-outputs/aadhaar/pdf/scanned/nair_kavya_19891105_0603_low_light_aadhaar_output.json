@@ -1,0 +1,1963 @@
+{
+    "pdf": {
+        "address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/generated_docs/aadhaar/pdf/scanned/nair_kavya_19891105_0603_low_light.pdf",
+        "ground_truth_address": "/Users/anuradhakumari/Library/Mobile Documents/com~apple~CloudDocs/KAINest/document-extraction-system/dataset/ground_truth/aadhaar/pdf/scanned/nair_kavya_19891105_0603_low_light.json",
+        "quality": "low_light",
+        "page_count": 2,
+        "pages": {
+            "1": "front",
+            "2": "back"
+        }
+    },
+    "ground_truth": {
+        "pdf_type": "scanned",
+        "pages": {
+            "1": "front",
+            "2": "back"
+        },
+        "front": {
+            "aadhaar_number": "0603 3667 5670",
+            "vid": "",
+            "name": "Kavya Nair",
+            "hindi_name": "काव्या नायर",
+            "date_of_birth": "1989-11-05",
+            "year_of_birth": "",
+            "gender": "FEMALE"
+        },
+        "back": {
+            "aadhaar_number": "0603 3667 5670",
+            "vid": "",
+            "relationship_label": "W/O",
+            "care_of": "",
+            "father_name": "",
+            "husband_name": "Rohit Nair",
+            "hindi_relationship_label": "पत्नी",
+            "hindi_care_of": "",
+            "hindi_father_name": "",
+            "hindi_husband_name": "रोहित नायर",
+            "address": "27 Marine Drive Kochi Kerala 682031",
+            "hindi_address": "27 मअरइनए दरइवए कओचइ कएरअलअ 682031",
+            "hindi_address_lines": [
+                "पता:",
+                "पत्नी: रोहित नायर",
+                "27, मअरइनए दरइवए",
+                "कओचइ, कएरअलअ",
+                "682031"
+            ],
+            "pincode": "682031"
+        }
+    },
+    "page_results": {
+        "1": {
+            "page_label": "front",
+            "ground_truth": {
+                "aadhaar_number": "0603 3667 5670",
+                "vid": "",
+                "name": "Kavya Nair",
+                "hindi_name": "काव्या नायर",
+                "date_of_birth": "1989-11-05",
+                "year_of_birth": "",
+                "gender": "FEMALE"
+            },
+            "models": {
+                "easyocr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0603 3667 5670",
+                        "name": "Kavya Nair",
+                        "gender": "FEMALE",
+                        "vid": "",
+                        "hindi_name": "काव्या नायर",
+                        "date_of_birth": "1989-11-05",
+                        "year_of_birth": ""
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_front",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_front",
+                            "total_fields_checked": 7,
+                            "valid_fields": 7,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 2,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0603 3667 5670",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "Kavya Nair",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "gender": {
+                                "value": "FEMALE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_name": {
+                                "value": "काव्या नायर",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_birth": {
+                                "value": "1989-11-05",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "year_of_birth": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 100.0,
+                        "matched_fields": 5,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0603 3667 5670",
+                                "extracted": "0603 3667 5670",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "Kavya Nair",
+                                "extracted": "Kavya Nair",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "काव्या नायर",
+                                "extracted": "काव्या नायर",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "date_of_birth": {
+                                "expected": "1989-11-05",
+                                "extracted": "1989-11-05",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "year_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "gender": {
+                                "expected": "FEMALE",
+                                "extracted": "FEMALE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "भारत सरकार\nGOVERNMENT OF INDIA\nकाव्या नायर\nKavya Nair\nजनम तथि// DOB : १९८९-11-०५\nमहला / Female\nSAMPLE PHOTO\n0603 3667 5670\nआधार\nआम आदमो का अधकिार",
+                    "processing_time_seconds": 5.9299
+                },
+                "tesseract": {
+                    "extracted_data": {
+                        "aadhaar_number": "0603 3667 5670",
+                        "name": "Kavya Nair",
+                        "gender": "FEMALE",
+                        "vid": "",
+                        "hindi_name": "नायर",
+                        "date_of_birth": "1989-41-05",
+                        "year_of_birth": ""
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_front",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_front",
+                            "total_fields_checked": 7,
+                            "valid_fields": 6,
+                            "invalid_fields": 1,
+                            "fields_with_warnings": 2,
+                            "ready_to_save": false,
+                            "requires_review": true
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0603 3667 5670",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "Kavya Nair",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "gender": {
+                                "value": "FEMALE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_name": {
+                                "value": "नायर",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_birth": {
+                                "value": "1989-41-05",
+                                "valid": false,
+                                "error": "Invalid date format or value",
+                                "warning": ""
+                            },
+                            "year_of_birth": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 60.0,
+                        "matched_fields": 3,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0603 3667 5670",
+                                "extracted": "0603 3667 5670",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "Kavya Nair",
+                                "extracted": "Kavya Nair",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "काव्या नायर",
+                                "extracted": "नायर",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 53.33
+                            },
+                            "date_of_birth": {
+                                "expected": "1989-11-05",
+                                "extracted": "1989-41-05",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "year_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "gender": {
+                                "expected": "FEMALE",
+                                "extracted": "FEMALE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "PITA नायर\nKavya Nair\n\naH afat7 DOB : 1989-41-05\n\nमहलि / Female\n\nSAMPLE PHOTO\n\n0603 3667 5670\n\nआधार - आम आदमी का अधकिर",
+                    "processing_time_seconds": 0.5324
+                },
+                "paddleocr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0603 3667 5670",
+                        "name": "Kavya Nair",
+                        "gender": "FEMALE",
+                        "vid": "",
+                        "hindi_name": "भारत",
+                        "date_of_birth": "1989-11-05",
+                        "year_of_birth": ""
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_front",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_front",
+                            "total_fields_checked": 7,
+                            "valid_fields": 7,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 2,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0603 3667 5670",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "Kavya Nair",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "gender": {
+                                "value": "FEMALE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_name": {
+                                "value": "भारत",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "date_of_birth": {
+                                "value": "1989-11-05",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "year_of_birth": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 80.0,
+                        "matched_fields": 4,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0603 3667 5670",
+                                "extracted": "0603 3667 5670",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "Kavya Nair",
+                                "extracted": "Kavya Nair",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "काव्या नायर",
+                                "extracted": "भारत",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 26.67
+                            },
+                            "date_of_birth": {
+                                "expected": "1989-11-05",
+                                "extracted": "1989-11-05",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "year_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "gender": {
+                                "expected": "FEMALE",
+                                "extracted": "FEMALE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "AR\nGOVERNMENT OF INDIA\nmqit au\na\nKavya Nair\nDOB:1989-11-05\nfeT/Female\nSAMPLEPHOTO\n0603 3667 5670\n- 3H 3  3E\n3\nभारत\nसरकार\nसपमे जक\nकाव्या नायर\nजन्म तथि 7 D0B : 1989-11-05\nमहला/Female\nआदमी\nअधकार\nआधार\nआम\nका",
+                    "processing_time_seconds": 52.5912
+                },
+                "rapidocr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0603 3667 5670",
+                        "name": "Kavya Nair",
+                        "gender": "FEMALE",
+                        "vid": "",
+                        "hindi_name": "",
+                        "date_of_birth": "1989-11-05",
+                        "year_of_birth": ""
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_front",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_front",
+                            "total_fields_checked": 7,
+                            "valid_fields": 7,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 3,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0603 3667 5670",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "Kavya Nair",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "gender": {
+                                "value": "FEMALE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "date_of_birth": {
+                                "value": "1989-11-05",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "year_of_birth": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 80.0,
+                        "matched_fields": 4,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0603 3667 5670",
+                                "extracted": "0603 3667 5670",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "Kavya Nair",
+                                "extracted": "Kavya Nair",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "काव्या नायर",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "date_of_birth": {
+                                "expected": "1989-11-05",
+                                "extracted": "1989-11-05",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "year_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "gender": {
+                                "expected": "FEMALE",
+                                "extracted": "FEMALE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "GOVERNMENT OF INDIA\nhlhb\nKavya Nair\na/DOB:1989-11-05\nHT/Female\nSAMPLEPHOTO\n0603 3667 5670",
+                    "processing_time_seconds": 0.5799
+                },
+                "doctr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0603 3667 5670",
+                        "name": "Kavya Nair",
+                        "gender": "FEMALE",
+                        "vid": "",
+                        "hindi_name": "",
+                        "date_of_birth": "1989-11-05",
+                        "year_of_birth": ""
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_front",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_front",
+                            "total_fields_checked": 7,
+                            "valid_fields": 7,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 3,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0603 3667 5670",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "name": {
+                                "value": "Kavya Nair",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "gender": {
+                                "value": "FEMALE",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "date_of_birth": {
+                                "value": "1989-11-05",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "year_of_birth": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 80.0,
+                        "matched_fields": 4,
+                        "total_fields": 5,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0603 3667 5670",
+                                "extracted": "0603 3667 5670",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "name": {
+                                "expected": "Kavya Nair",
+                                "extracted": "Kavya Nair",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_name": {
+                                "expected": "काव्या नायर",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "date_of_birth": {
+                                "expected": "1989-11-05",
+                                "extracted": "1989-11-05",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "year_of_birth": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "gender": {
+                                "expected": "FEMALE",
+                                "extracted": "FEMALE",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "RA ROPR\nFEORT auit\nGOVERNMENT OFINDIA\nigeT TRR\nKavya Nair\nUTH dfetl DOB: 1989-11-05\nH6TMT / Female\nSAMPLE PHOTO\n0603 3667 5670\n3TER\nI 314 31GHT cT 37eo",
+                    "processing_time_seconds": 2.3944
+                }
+            }
+        },
+        "2": {
+            "page_label": "back",
+            "ground_truth": {
+                "aadhaar_number": "0603 3667 5670",
+                "vid": "",
+                "relationship_label": "W/O",
+                "care_of": "",
+                "father_name": "",
+                "husband_name": "Rohit Nair",
+                "hindi_relationship_label": "पत्नी",
+                "hindi_care_of": "",
+                "hindi_father_name": "",
+                "hindi_husband_name": "रोहित नायर",
+                "address": "27 Marine Drive Kochi Kerala 682031",
+                "hindi_address": "27 मअरइनए दरइवए कओचइ कएरअलअ 682031",
+                "hindi_address_lines": [
+                    "पता:",
+                    "पत्नी: रोहित नायर",
+                    "27, मअरइनए दरइवए",
+                    "कओचइ, कएरअलअ",
+                    "682031"
+                ],
+                "pincode": "682031"
+            },
+            "models": {
+                "easyocr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0603 3667 5670",
+                        "address": "Kochi, Kerala 682031",
+                        "pincode": "682031",
+                        "vid": "",
+                        "relationship_label": "W/O",
+                        "care_of": "",
+                        "father_name": "",
+                        "husband_name": "Rohit Nair",
+                        "hindi_relationship_label": "पत्नी",
+                        "hindi_care_of": "",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "ः",
+                        "hindi_address": "ः रोहति नायर २७ , Marine Drive २७ , मअरइनए दरइवए कओचइ , कएरअलअ 682031",
+                        "hindi_address_lines": [
+                            "पता:",
+                            "ः",
+                            "रोहति नायर",
+                            "२७ , Marine Drive",
+                            "२७ , मअरइनए दरइवए",
+                            "कओचइ , कएरअलअ",
+                            "682031"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 5,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0603 3667 5670",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "Kochi, Kerala 682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "W/O",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "Rohit Nair",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_relationship_label": {
+                                "value": "पत्नी",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "ः",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address": {
+                                "value": "ः रोहति नायर २७ , Marine Drive २७ , मअरइनए दरइवए कओचइ , कएरअलअ 682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "पता:",
+                                    "ः",
+                                    "रोहति नायर",
+                                    "२७ , Marine Drive",
+                                    "२७ , मअरइनए दरइवए",
+                                    "कओचइ , कएरअलअ",
+                                    "682031"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 77.78,
+                        "matched_fields": 7,
+                        "total_fields": 9,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0603 3667 5670",
+                                "extracted": "0603 3667 5670",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "W/O",
+                                "extracted": "W/O",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "Rohit Nair",
+                                "extracted": "Rohit Nair",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "पत्नी",
+                                "extracted": "पत्नी",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "hindi_care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "रोहित नायर",
+                                "extracted": "ः",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0.0
+                            },
+                            "address": {
+                                "expected": "27 Marine Drive Kochi Kerala 682031",
+                                "extracted": "Kochi, Kerala 682031",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 70.37
+                            },
+                            "hindi_address": {
+                                "expected": "27 मअरइनए दरइवए कओचइ कएरअलअ 682031",
+                                "extracted": "ः रोहति नायर २७ , Marine Drive २७ , मअरइनए दरइवए कओचइ , कएरअलअ 682031",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 83.33
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "पत्नी: रोहित नायर",
+                                    "27, मअरइनए दरइवए",
+                                    "कओचइ, कएरअलअ",
+                                    "682031"
+                                ],
+                                "extracted": [
+                                    "पता:",
+                                    "ः",
+                                    "रोहति नायर",
+                                    "२७ , Marine Drive",
+                                    "२७ , मअरइनए दरइवए",
+                                    "कओचइ , कएरअलअ",
+                                    "682031"
+                                ],
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 77.05
+                            },
+                            "pincode": {
+                                "expected": "682031",
+                                "extracted": "682031",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "भारतीय वशिष्ट पहचान पराधकिरण\nAADHAAR\nUNIQUE IDENTIFICATIONAUTHORITY OF INDIA\nपताः\nWIO: Rohit Nair\nरोहति नायर\n२७ , Marine Drive\n२७ , मअरइनए दरइवए\nKochi, Kerala\nकओचइ , कएरअलअ\n682031\n682031\n0603 3667 5670\nWWW\n1947\nP.O. Box No. १९४७ ,\nhelp@uidai gov.in\nwww uidai gov.in\n1800 180 1९४7\nBengaluru-5६० ००१\nपत्नीः",
+                    "processing_time_seconds": 7.5979
+                },
+                "tesseract": {
+                    "extracted_data": {
+                        "aadhaar_number": "0603 3667 5670",
+                        "address": "27, Marine Drive Kochi, Kerala MX 682031",
+                        "pincode": "682031",
+                        "vid": "",
+                        "relationship_label": "W/O",
+                        "care_of": "",
+                        "father_name": "",
+                        "husband_name": "Rohit Nair",
+                        "hindi_relationship_label": "पत्नी",
+                        "hindi_care_of": "",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "रोहति नायर",
+                        "hindi_address": "27, मअरइनए दरडवए PAA, कएरअलअ 682031",
+                        "hindi_address_lines": [
+                            "पता:",
+                            "पत्नी रोहति नायर",
+                            "27, मअरइनए दरडवए",
+                            "PAA, कएरअलअ",
+                            "682031"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 50.0,
+                        "confidence_level": "medium"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 5,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0603 3667 5670",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "27, Marine Drive Kochi, Kerala MX 682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "W/O",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "Rohit Nair",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_relationship_label": {
+                                "value": "पत्नी",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "रोहति नायर",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address": {
+                                "value": "27, मअरइनए दरडवए PAA, कएरअलअ 682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "पता:",
+                                    "पत्नी रोहति नायर",
+                                    "27, मअरइनए दरडवए",
+                                    "PAA, कएरअलअ",
+                                    "682031"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 100.0,
+                        "matched_fields": 9,
+                        "total_fields": 9,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0603 3667 5670",
+                                "extracted": "0603 3667 5670",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "W/O",
+                                "extracted": "W/O",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "Rohit Nair",
+                                "extracted": "Rohit Nair",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "पत्नी",
+                                "extracted": "पत्नी",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "hindi_care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "रोहित नायर",
+                                "extracted": "रोहति नायर",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 90.0
+                            },
+                            "address": {
+                                "expected": "27 Marine Drive Kochi Kerala 682031",
+                                "extracted": "27, Marine Drive Kochi, Kerala MX 682031",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_address": {
+                                "expected": "27 मअरइनए दरइवए कओचइ कएरअलअ 682031",
+                                "extracted": "27, मअरइनए दरडवए PAA, कएरअलअ 682031",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 86.57
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "पत्नी: रोहित नायर",
+                                    "27, मअरइनए दरइवए",
+                                    "कओचइ, कएरअलअ",
+                                    "682031"
+                                ],
+                                "extracted": [
+                                    "पता:",
+                                    "पत्नी रोहति नायर",
+                                    "27, मअरइनए दरडवए",
+                                    "PAA, कएरअलअ",
+                                    "682031"
+                                ],
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 89.91
+                            },
+                            "pincode": {
+                                "expected": "682031",
+                                "extracted": "682031",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "AADHAAR\n\nपता:\n\nपत्नी: रोहति नायर\n27, मअरइनए दरडवए\nPAA, कएरअलअ\n682031\n\non\n335\n1947\n1800 180 1947\n\n_ UNIQUE IDENTIFICATION AUTHORITY OF INDIA\n\nW/O: Rohit Nair\n27, Marine Drive\nKochi, Kerala\n682031\n\n0603 3667 5670\n\nMX\n\ner 4 322 = P.O. Box No. 1947,\nhelp@uidai.gov.in www.uidai.gov.in f\nce ? Bengaluru-560 001",
+                    "processing_time_seconds": 0.8322
+                },
+                "paddleocr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0603 3667 5670",
+                        "address": "27, Marine Drive 27,3R Kochi, Kerala 3 33T 682031",
+                        "pincode": "682031",
+                        "vid": "",
+                        "relationship_label": "W/O",
+                        "care_of": "",
+                        "father_name": "",
+                        "husband_name": "Rohit Nair",
+                        "hindi_relationship_label": "पत्नी",
+                        "hindi_care_of": "",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "रोहित नायर",
+                        "hindi_address": "682031",
+                        "hindi_address_lines": [
+                            "682031"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 50.0,
+                        "confidence_level": "medium"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 5,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0603 3667 5670",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "27, Marine Drive 27,3R Kochi, Kerala 3 33T 682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "W/O",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "Rohit Nair",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_relationship_label": {
+                                "value": "पत्नी",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "रोहित नायर",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address": {
+                                "value": "682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "682031"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 77.78,
+                        "matched_fields": 7,
+                        "total_fields": 9,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0603 3667 5670",
+                                "extracted": "0603 3667 5670",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "W/O",
+                                "extracted": "W/O",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "Rohit Nair",
+                                "extracted": "Rohit Nair",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "पत्नी",
+                                "extracted": "पत्नी",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "hindi_care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "रोहित नायर",
+                                "extracted": "रोहित नायर",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "address": {
+                                "expected": "27 Marine Drive Kochi Kerala 682031",
+                                "extracted": "27, Marine Drive 27,3R Kochi, Kerala 3 33T 682031",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_address": {
+                                "expected": "27 मअरइनए दरइवए कओचइ कएरअलअ 682031",
+                                "extracted": "682031",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 30.0
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "पत्नी: रोहित नायर",
+                                    "27, मअरइनए दरइवए",
+                                    "कओचइ, कएरअलअ",
+                                    "682031"
+                                ],
+                                "extracted": [
+                                    "682031"
+                                ],
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 19.67
+                            },
+                            "pincode": {
+                                "expected": "682031",
+                                "extracted": "682031",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "HRaeTaaacyea-2eau\nUNIQUE IDENTIFICATION AUTHORITY OF INDIA\nAADHAAR\nTd:\nW/O: Rohit Nair\n9.：TR\n27, Marine Drive\n27,3R\nKochi, Kerala\n可3，33T\n682031\n0603 3667 5670\nwww\n1947\nP.O. Box No. 1947,\nhelp@uidai.gov.in\nwww.uidai.gov.in\n1800 180 1947\nBengaluru-560 001\nभारतीय\nवशिष्ट\nपहचान प्राधकिरण\nपता:\nपत्नी: रोहित नायर\n27, मअरइनए दरइवए\nकओचइ, कएरअलअ\n888\nP.0. Box No.1947,",
+                    "processing_time_seconds": 57.2461
+                },
+                "rapidocr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0603 3667 5670",
+                        "address": "27,Marine Drive Kochi,Kerala 682031",
+                        "pincode": "682031",
+                        "vid": "",
+                        "relationship_label": "W/O",
+                        "care_of": "",
+                        "father_name": "",
+                        "husband_name": "Rohit Nair",
+                        "hindi_relationship_label": "",
+                        "hindi_care_of": "",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "",
+                        "hindi_address": "682031",
+                        "hindi_address_lines": [
+                            "682031"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 7,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0603 3667 5670",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "27,Marine Drive Kochi,Kerala 682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "W/O",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "Rohit Nair",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_address": {
+                                "value": "682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "682031"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 55.56,
+                        "matched_fields": 5,
+                        "total_fields": 9,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0603 3667 5670",
+                                "extracted": "0603 3667 5670",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "W/O",
+                                "extracted": "W/O",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "Rohit Nair",
+                                "extracted": "Rohit Nair",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "पत्नी",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "hindi_care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "रोहित नायर",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "address": {
+                                "expected": "27 Marine Drive Kochi Kerala 682031",
+                                "extracted": "27,Marine Drive Kochi,Kerala 682031",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_address": {
+                                "expected": "27 मअरइनए दरइवए कओचइ कएरअलअ 682031",
+                                "extracted": "682031",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 30.0
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "पत्नी: रोहित नायर",
+                                    "27, मअरइनए दरइवए",
+                                    "कओचइ, कएरअलअ",
+                                    "682031"
+                                ],
+                                "extracted": [
+                                    "682031"
+                                ],
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 19.67
+                            },
+                            "pincode": {
+                                "expected": "682031",
+                                "extracted": "682031",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "UNIQUE IDENTIFICATION AUTHORITY OF INDIA\nAADHAAR\nW/O:Rohit Nair\n27,Marine Drive\n27\nKochi,Kerala\n682031\n682031\n060336675670\nWWW\n1947\nP.O.BoxNo.1947,\nhelp@uidai.gov.in\nwww.uidai.gov.in\n18001801947\nBengaluru-560 001",
+                    "processing_time_seconds": 1.0148
+                },
+                "doctr": {
+                    "extracted_data": {
+                        "aadhaar_number": "0603 3667 5670",
+                        "address": "27, Marine Drive 27,43R5T9 GREqU Kochi, Kerala 3531T45,097310731 682031",
+                        "pincode": "682031",
+                        "vid": "",
+                        "relationship_label": "W/O",
+                        "care_of": "",
+                        "father_name": "",
+                        "husband_name": "Rohit Nair",
+                        "hindi_relationship_label": "",
+                        "hindi_care_of": "",
+                        "hindi_father_name": "",
+                        "hindi_husband_name": "",
+                        "hindi_address": "682031",
+                        "hindi_address_lines": [
+                            "682031"
+                        ]
+                    },
+                    "classification": {
+                        "document_type": "aadhaar_back",
+                        "confidence_percent": 100,
+                        "confidence_level": "high"
+                    },
+                    "validation": {
+                        "summary": {
+                            "document_type": "aadhaar_back",
+                            "total_fields_checked": 14,
+                            "valid_fields": 14,
+                            "invalid_fields": 0,
+                            "fields_with_warnings": 7,
+                            "ready_to_save": true,
+                            "requires_review": false
+                        },
+                        "field_results": {
+                            "aadhaar_number": {
+                                "value": "0603 3667 5670",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "address": {
+                                "value": "27, Marine Drive 27,43R5T9 GREqU Kochi, Kerala 3531T45,097310731 682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "pincode": {
+                                "value": "682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "vid": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "relationship_label": {
+                                "value": "W/O",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "husband_name": {
+                                "value": "Rohit Nair",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_relationship_label": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_care_of": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_father_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_husband_name": {
+                                "value": "",
+                                "valid": true,
+                                "error": "",
+                                "warning": "Optional field missing"
+                            },
+                            "hindi_address": {
+                                "value": "682031",
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            },
+                            "hindi_address_lines": {
+                                "value": [
+                                    "682031"
+                                ],
+                                "valid": true,
+                                "error": "",
+                                "warning": ""
+                            }
+                        }
+                    },
+                    "comparison_with_ground_truth": {
+                        "accuracy_percent": 55.56,
+                        "matched_fields": 5,
+                        "total_fields": 9,
+                        "fields": {
+                            "aadhaar_number": {
+                                "expected": "0603 3667 5670",
+                                "extracted": "0603 3667 5670",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            },
+                            "vid": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "relationship_label": {
+                                "expected": "W/O",
+                                "extracted": "W/O",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "husband_name": {
+                                "expected": "Rohit Nair",
+                                "extracted": "Rohit Nair",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_relationship_label": {
+                                "expected": "पत्नी",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "hindi_care_of": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_father_name": {
+                                "expected": "",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": false,
+                                "reason": "ground truth value not present"
+                            },
+                            "hindi_husband_name": {
+                                "expected": "रोहित नायर",
+                                "extracted": "",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 0
+                            },
+                            "address": {
+                                "expected": "27 Marine Drive Kochi Kerala 682031",
+                                "extracted": "27, Marine Drive 27,43R5T9 GREqU Kochi, Kerala 3531T45,097310731 682031",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100.0
+                            },
+                            "hindi_address": {
+                                "expected": "27 मअरइनए दरइवए कओचइ कएरअलअ 682031",
+                                "extracted": "682031",
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 30.0
+                            },
+                            "hindi_address_lines": {
+                                "expected": [
+                                    "पता:",
+                                    "पत्नी: रोहित नायर",
+                                    "27, मअरइनए दरइवए",
+                                    "कओचइ, कएरअलअ",
+                                    "682031"
+                                ],
+                                "extracted": [
+                                    "682031"
+                                ],
+                                "match": false,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 19.67
+                            },
+                            "pincode": {
+                                "expected": "682031",
+                                "extracted": "682031",
+                                "match": true,
+                                "used_for_accuracy": true,
+                                "similarity_percent": 100
+                            }
+                        }
+                    },
+                    "raw_text": "HRAR aTIGC 46217 URTETCRUT\nAADHAAR\nUNIQUE IDENTIFICATION AUTHORITY OFINDIA\n4dT:\nW/O: Rohit Nair\n40-t: Ried TRR\n27, Marine Drive\n27,43R5T9 GREqU\nKochi, Kerala\n3531T45,097310731\n682031\n682031\n0603 3667 5670\nWWW\n: *\n1947\nhelp@uidai.gov.in\nwww.uidai.gov.in\nP.O.Box No. - 1947,\n1800 180 1947\nBengaluru-560 001",
+                    "processing_time_seconds": 3.1408
+                }
+            }
+        }
+    }
+}
