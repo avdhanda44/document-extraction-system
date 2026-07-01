@@ -17,7 +17,10 @@ Implemented:
 - Schema-based extraction for employee enrollment forms
 - Schema-based extraction for Aadhaar, PAN, passbook, and invoice documents
 - Cleanup for common OCR email mistakes
-- One output JSON file per uploaded file
+- FastAPI extraction API
+- React review UI
+- Human review/edit screen for extracted fields
+- Reviewed JSON output saved from the website
 - Post-extraction validation layer
 - Email validation
 - Mobile number validation
@@ -31,12 +34,6 @@ Not implemented yet:
 
 - Excel extraction
 - Database storage
-
-In progress / newly added:
-
-- FastAPI extraction API
-- React review UI
-- Human review/edit screen for extracted fields
 
 ## Project Structure
 
@@ -69,6 +66,7 @@ document-extraction-system/
 ├── outputs/
 ├── testing/
 │   ├── testing.py
+│   ├── reporting.py
 │   ├── test-CLI/
 │   ├── test-data/
 │   └── test-outputs/
@@ -331,6 +329,7 @@ Defined in `pyproject.toml`:
 
 - Python `>=3.12`
 - `easyocr`
+- `fastapi`
 - `pdfplumber`
 - `opencv-python`
 - `pdf2image`
@@ -343,6 +342,11 @@ Defined in `pyproject.toml`:
 - `rapidocr`
 - `onnxruntime`
 - `python-doctr[torch]`
+- `reportlab`
+- `pypdf`
+- `pymupdf`
+- `python-multipart`
+- `uvicorn[standard]`
 
 If using `uv`, install dependencies with:
 
@@ -397,6 +401,5 @@ Missing values remain empty strings and are reported through validation errors o
 Planned next steps:
 
 - Add confidence scores for OCR fields
-- Add a small review/edit interface
 - Add Excel input extraction if needed
-- Add API support later if needed
+- Add database storage if needed
