@@ -5,24 +5,22 @@ from xml.sax.saxutils import escape
 
 
 def find_outputs_folder_for_json_files():
-    # VS Code may run the file from Backend or from the project folder.
-    # This keeps testing JSON and Excel reports in the project-level test output folder.
+    # Batch/model-comparison reports are testing artifacts, not website output.
+    # Keep them under testing/test-outputs even when commands run from the project root.
     current_folder = Path.cwd()
-    folder_names = ("test-outputs", "test-output", "outputs")
+    candidate_folders = (
+        current_folder / "testing" / "test-outputs",
+        current_folder.parent / "testing" / "test-outputs",
+    )
 
-    for folder_name in folder_names:
-        if (current_folder / folder_name).exists():
-            return current_folder / folder_name
+    for folder in candidate_folders:
+        if folder.exists():
+            return folder
 
-    for folder_name in folder_names:
-        if (current_folder.parent / folder_name).exists():
-            return current_folder.parent / folder_name
-
-    return current_folder / "test-outputs"
+    return current_folder / "testing" / "test-outputs"
 
 
 outputs_folder = find_outputs_folder_for_json_files()
-outputs_folder.mkdir(exist_ok=True)
 
 
 def get_document_outputs_folder(document_name, file_format=None):
@@ -33,41 +31,6 @@ def get_document_outputs_folder(document_name, file_format=None):
 
     output_folder.mkdir(parents=True, exist_ok=True)
     return output_folder
-
-
-def create_final_json_output(document_result, classification, mapped_fields, validation):
-    # This creates the final JSON in the format we want to save.
-    # First we keep extracted output, then we keep validation details.
-    return {
-        "extracted_output": {
-            "file_name": document_result["file_path"].name,
-            "file_type": document_result["file_type"],
-            "document_type": classification["document_type"],
-            "confidence_percent": classification["confidence_percent"],
-            "confidence_level": classification["confidence_level"],
-            "fields": validation["extracted_data"],
-        },
-        "validation": {
-            "summary": validation["validation_summary"],
-            "field_results": validation["validation_results"],
-        },
-    }
-
-
-def save_final_json_file(final_json):
-    # Save one output file per uploaded document.
-    # If we run the same file again, this will replace the old output for that file.
-    file_stem = Path(final_json["extracted_output"]["file_name"]).stem
-    document_name = final_json["extracted_output"]["document_type"]
-    file_type = final_json["extracted_output"]["file_type"]
-    file_format = "image" if file_type in {"png", "jpg", "jpeg"} else file_type
-    output_folder = get_document_outputs_folder(document_name, file_format)
-    output_path = output_folder / f"{file_stem}_output.json"
-
-    with output_path.open("w", encoding="utf-8") as json_file:
-        json.dump(final_json, json_file, indent=4, ensure_ascii=False)
-
-    return output_path
 
 
 def save_aadhaar_json_file(image_path, final_json):

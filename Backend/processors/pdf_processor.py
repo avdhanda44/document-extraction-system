@@ -1,5 +1,6 @@
 import pdfplumber
 
+from ..model_policy import digital_pdf_extractors, get_scanned_pdf_ocr_policy
 from .image_processor import extract_text_from_scanned_pdf
 
 
@@ -56,24 +57,38 @@ def extract_text_pages_from_digital_pdf(pdf_path, extractor_name):
 
 
 def extract_text_from_pdf_with_metadata(pdf_path):
-    # First try normal PDF text extraction.
-    # This works for digital PDFs where text can be selected or copied.
-    with pdfplumber.open(pdf_path) as pdf:
-        text_from_pages = [page.extract_text() or "" for page in pdf.pages]
+    for extractor_name in digital_pdf_extractors:
+        try:
+            text_from_pages = extract_text_pages_from_digital_pdf(pdf_path, extractor_name)
+        except Exception:
+            continue
 
-    final_text = "\n".join(text_from_pages).strip()
+        final_text = "\n".join(text_from_pages).strip()
 
-    if final_text:
-        return {
-            "text": final_text,
-            "engine": "pdfplumber",
-            "method": "digital_pdf_text",
-        }
+        if final_text:
+            return {
+                "text": final_text,
+                "engine": extractor_name,
+                "method": "digital_pdf_text",
+            }
 
     # If no text was found, the PDF is probably scanned.
     # In that case we load OCR only now, not during normal startup.
+    for model_name in get_scanned_pdf_ocr_policy():
+        try:
+            final_text = extract_text_from_scanned_pdf(pdf_path, model_name=model_name)
+        except Exception:
+            continue
+
+        if final_text:
+            return {
+                "text": final_text,
+                "engine": model_name,
+                "method": "scanned_pdf_ocr",
+            }
+
     return {
-        "text": extract_text_from_scanned_pdf(pdf_path),
+        "text": extract_text_from_scanned_pdf(pdf_path, model_name="easyocr"),
         "engine": "easyocr",
         "method": "scanned_pdf_ocr",
     }

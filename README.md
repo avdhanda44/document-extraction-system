@@ -1,8 +1,8 @@
 # Document Extraction POC
 
-This project is a local proof of concept for extracting structured data from employee documents and generated identity/banking/invoice samples.
+This project is a local proof of concept for extracting structured data from uploaded employee, identity, banking, and invoice documents.
 
-The main file to run is `main.py`. It reads a file from `uploads/`, extracts text, classifies the document, maps field values, validates the extracted values, and saves the final JSON.
+The production website uses `Backend/api.py`, `Backend/pipeline.py`, and the shared processors/extractor modules. Batch model comparison and Excel reports live separately under `testing/`.
 
 ## Current Status
 
@@ -10,15 +10,12 @@ Implemented:
 
 - File name validation against the local `uploads/` folder
 - File type detection using file content, not only file extension
-- Digital PDF text extraction with `pdfplumber`
+- Digital PDF text extraction with `pypdf`, `pymupdf`, `pdfminer`, and `pdfplumber`
 - Scanned PDF OCR using `pdf2image` and OCR engines
 - PNG/JPG image OCR using available OCR engines
 - DOCX text extraction using `python-docx`
 - Schema-based extraction for employee enrollment forms
 - Schema-based extraction for Aadhaar, PAN, passbook, and invoice documents
-- Batch evaluation for generated Aadhaar, PAN, passbook, and invoice images
-- JSON output per processed image
-- Excel accuracy reports for batch evaluation
 - Cleanup for common OCR email mistakes
 - One output JSON file per uploaded file
 - Post-extraction validation layer
@@ -46,19 +43,16 @@ In progress / newly added:
 ```text
 document-extraction-system/
 ├── Backend/
-│   ├── __init__.py
 │   ├── api.py
-│   ├── main.py
+│   ├── output.py
 │   ├── pipeline.py
-│   ├── json_generator.py
-│   ├── processor/
-│   │   ├── __init__.py
+│   ├── model_policy.py
+│   ├── processors/
 │   │   ├── text_extractor.py
 │   │   ├── pdf_processor.py
 │   │   ├── image_processor.py
 │   │   ├── docx_processor.py
-│   ├── extractor/
-│   │   ├── __init__.py
+│   ├── extractors/
 │   │   ├── document_classification.py
 │   │   ├── field_mapper.py
 │   │   ├── validation.py
@@ -72,8 +66,12 @@ document-extraction-system/
 │       ├── main.jsx
 │       └── styles.css
 ├── uploads/
-├── output/
-├── test-outputs/
+├── outputs/
+├── testing/
+│   ├── testing.py
+│   ├── test-CLI/
+│   ├── test-data/
+│   └── test-outputs/
 ├── main.py
 ├── pyproject.toml
 ├── uv.lock
@@ -90,7 +88,7 @@ Currently supported:
 - `.jpg` / `.jpeg` images
 - `.docx` Word documents
 
-Scanned PDFs are converted to images with `pdf2image`, then read with the OCR processor. EasyOCR is the default OCR engine.
+Scanned PDFs are converted to images with `pdf2image`, then read with the OCR processor. The website uses the production model policy in `Backend/model_policy.py`.
 
 DOCX files are read directly with `python-docx`. The extractor reads both normal paragraphs and table cells.
 
@@ -108,33 +106,17 @@ Activate the local virtual environment if you want to run commands inside it:
 source .venv/bin/activate
 ```
 
-Put the document inside the `uploads/` folder.
-
-Run the project from the project root:
+Run the production API from the project root:
 
 ```bash
-uv --cache-dir .uv-cache run python main.py RahulVerma.pdf
+uv --cache-dir .uv-cache run uvicorn main:app --reload
 ```
 
-Example file names:
-
-```text
-AnjaliSharma.pdf
-NehaPatil.png
-RahulVerma.pdf
-```
-
-The website and single-file pipeline save JSON files in:
-
-```text
-output/<input_file_name>_output.json
-```
-
-Running the same input file again replaces the same output file.
+The website upload flow accepts a user file through the frontend, stores it temporarily in `uploads/`, extracts and validates fields, deletes the uploaded original, and saves reviewed JSON only when the user clicks save.
 
 ## React Review UI
 
-The UI is a browser-based review workbench for the extraction pipeline:
+The UI is a browser-based review workbench for the extraction pipeline. Extraction previews data on screen first; it does not save a JSON file until the user clicks **Save reviewed**.
 
 ```text
 Upload document -> Extract fields -> Review/edit values -> Save reviewed JSON
@@ -146,16 +128,10 @@ Uploaded files are stored temporarily in:
 uploads/<safe_uploaded_file_name>
 ```
 
-After extraction, the uploaded original is deleted. The first machine extraction is stored in:
+After extraction, the uploaded original is deleted. The user-reviewed JSON is stored only when the user clicks **Save reviewed**:
 
 ```text
-output/<file_stem>_output.json
-```
-
-The user-reviewed JSON is stored in:
-
-```text
-output/<file_stem>_reviewed.json
+outputs/<file_stem>_reviewed.json
 ```
 
 Run the API server:
@@ -187,7 +163,7 @@ The project includes terminal commands for batch evaluation of generated images 
 The test data is organized by document type and file format:
 
 ```text
-test-data/
+testing/test-data/
 ├── generated_docs/
 │   └── <document_type>/
 │       ├── image/
@@ -205,65 +181,65 @@ test-data/
 ```
 
 ```bash
-uv --cache-dir .uv-cache run python main.py --aadhaar-batch
-uv --cache-dir .uv-cache run python main.py --pan-batch
-uv --cache-dir .uv-cache run python main.py --passbook-batch
-uv --cache-dir .uv-cache run python main.py --invoice-batch
+uv --cache-dir .uv-cache run python testing/testing.py --aadhaar-batch
+uv --cache-dir .uv-cache run python testing/testing.py --pan-batch
+uv --cache-dir .uv-cache run python testing/testing.py --passbook-batch
+uv --cache-dir .uv-cache run python testing/testing.py --invoice-batch
 ```
 
 PDF batches process every page using the ground-truth `pages` mapping:
 
 ```bash
-uv --cache-dir .uv-cache run python main.py --aadhaar-pdf-batch
-uv --cache-dir .uv-cache run python main.py --pan-pdf-batch
-uv --cache-dir .uv-cache run python main.py --passbook-pdf-batch
-uv --cache-dir .uv-cache run python main.py --invoice-pdf-batch
+uv --cache-dir .uv-cache run python testing/testing.py --aadhaar-pdf-batch
+uv --cache-dir .uv-cache run python testing/testing.py --pan-pdf-batch
+uv --cache-dir .uv-cache run python testing/testing.py --passbook-pdf-batch
+uv --cache-dir .uv-cache run python testing/testing.py --invoice-pdf-batch
 ```
 
 Scanned PDF batches compare the five OCR engines. Digital PDF batches compare
-`pdfplumber`, `pypdf`, `pymupdf`, and `pdfminer` without converting pages to
+`pypdf`, `pymupdf`, `pdfminer`, and `pdfplumber` without converting pages to
 images:
 
 ```bash
-uv --cache-dir .uv-cache run python main.py --aadhaar-digital-pdf-batch
-uv --cache-dir .uv-cache run python main.py --pan-digital-pdf-batch
-uv --cache-dir .uv-cache run python main.py --passbook-digital-pdf-batch
+uv --cache-dir .uv-cache run python testing/testing.py --aadhaar-digital-pdf-batch
+uv --cache-dir .uv-cache run python testing/testing.py --pan-digital-pdf-batch
+uv --cache-dir .uv-cache run python testing/testing.py --passbook-digital-pdf-batch
 ```
 
 Run the test suite from the project root:
 
 ```bash
-uv --cache-dir .uv-cache run python -m unittest discover -s test-CLI
+uv --cache-dir .uv-cache run python -m unittest discover -s testing/test-CLI
 ```
 
 Batch testing outputs are saved under:
 
 ```text
-test-outputs/<document_type>/image/
-test-outputs/<document_type>/pdf/scanned/
-test-outputs/<document_type>/pdf/digital/
+testing/test-outputs/<document_type>/image/
+testing/test-outputs/<document_type>/pdf/scanned/
+testing/test-outputs/<document_type>/pdf/digital/
 ```
 
-Each output folder contains matching JSON files and an Excel report. Reports contain `accuracy`, `quality_front`, `quality_back`, and `summary` sheets with model accuracy and processing times.
+Each outputs folder contains matching JSON files and an Excel report. Reports contain `accuracy`, `quality_front`, `quality_back`, and `summary` sheets with model accuracy and processing times.
 
 ```text
-test-outputs/aadhaar/image/aadhaar_model_accuracy.xlsx
-test-outputs/pan/image/pan_model_accuracy.xlsx
-test-outputs/passbook/image/passbook_model_accuracy.xlsx
-test-outputs/invoice/image/invoice_model_accuracy.xlsx
-test-outputs/aadhaar/pdf/scanned/aadhaar_pdf_model_accuracy.xlsx
-test-outputs/pan/pdf/scanned/pan_pdf_model_accuracy.xlsx
-test-outputs/passbook/pdf/scanned/passbook_pdf_model_accuracy.xlsx
-test-outputs/invoice/pdf/scanned/invoice_pdf_model_accuracy.xlsx
-test-outputs/aadhaar/pdf/digital/aadhaar_digital_pdf_extractor_accuracy.xlsx
-test-outputs/pan/pdf/digital/pan_digital_pdf_extractor_accuracy.xlsx
-test-outputs/passbook/pdf/digital/passbook_digital_pdf_extractor_accuracy.xlsx
+testing/test-outputs/aadhaar/image/aadhaar_model_accuracy.xlsx
+testing/test-outputs/pan/image/pan_model_accuracy.xlsx
+testing/test-outputs/passbook/image/passbook_model_accuracy.xlsx
+testing/test-outputs/invoice/image/invoice_model_accuracy.xlsx
+testing/test-outputs/aadhaar/pdf/scanned/aadhaar_pdf_model_accuracy.xlsx
+testing/test-outputs/pan/pdf/scanned/pan_pdf_model_accuracy.xlsx
+testing/test-outputs/passbook/pdf/scanned/passbook_pdf_model_accuracy.xlsx
+testing/test-outputs/invoice/pdf/scanned/invoice_pdf_model_accuracy.xlsx
+testing/test-outputs/aadhaar/pdf/digital/aadhaar_digital_pdf_extractor_accuracy.xlsx
+testing/test-outputs/pan/pdf/digital/pan_digital_pdf_extractor_accuracy.xlsx
+testing/test-outputs/passbook/pdf/digital/passbook_digital_pdf_extractor_accuracy.xlsx
 ```
 
 The output layout is ready for all supported formats:
 
 ```text
-test-outputs/
+testing/test-outputs/
 └── <document_type>/
     ├── image/
     ├── pdf/
@@ -274,19 +250,19 @@ test-outputs/
 
 ## Clear Outputs
 
-Delete generated JSON and Excel files while keeping the output folder structure:
+Delete generated JSON and Excel files while keeping the outputs folder structure:
 
 ```bash
-uv --cache-dir .uv-cache run python main.py --clear-output
+uv --cache-dir .uv-cache run python testing/testing.py --clear-output
 ```
 
 Clear old results and immediately rebuild a batch:
 
 ```bash
-uv --cache-dir .uv-cache run python main.py --clear-output --aadhaar-batch
-uv --cache-dir .uv-cache run python main.py --clear-output --pan-batch
-uv --cache-dir .uv-cache run python main.py --clear-output --passbook-batch
-uv --cache-dir .uv-cache run python main.py --clear-output --invoice-batch
+uv --cache-dir .uv-cache run python testing/testing.py --clear-output --aadhaar-batch
+uv --cache-dir .uv-cache run python testing/testing.py --clear-output --pan-batch
+uv --cache-dir .uv-cache run python testing/testing.py --clear-output --passbook-batch
+uv --cache-dir .uv-cache run python testing/testing.py --clear-output --invoice-batch
 ```
 
 ## Extracted Fields
@@ -326,8 +302,8 @@ Invoice batch reports contain:
 - `summary`: average accuracy, speed, failures, and complete-record rate by model
 
 Scanned PDF JSON and Excel reports are saved under
-`test-outputs/<document_type>/pdf/scanned/`. Digital PDF reports are saved under
-`test-outputs/<document_type>/pdf/digital/`.
+`testing/test-outputs/<document_type>/pdf/scanned/`. Digital PDF reports are saved under
+`testing/test-outputs/<document_type>/pdf/digital/`.
 
 ## Extraction Logic
 
@@ -356,7 +332,6 @@ Defined in `pyproject.toml`:
 - Python `>=3.12`
 - `easyocr`
 - `pdfplumber`
-- `ipywidgets`
 - `opencv-python`
 - `pdf2image`
 - `pillow`
@@ -377,7 +352,9 @@ uv sync
 
 OCR engines used by the code:
 
-- EasyOCR is the default image OCR engine.
+- The website uses the production model policy in `Backend/model_policy.py`.
+- Digital PDFs try `pypdf`, `pymupdf`, `pdfminer`, then `pdfplumber`.
+- Images and scanned PDFs try available OCR engines in policy order, currently `doctr`, `paddleocr`, then `easyocr`.
 - Tesseract is used when installed and available through `pytesseract`.
 - PaddleOCR is used when `paddleocr` and `paddlepaddle` are installed.
 - Invoice batches run PaddleOCR in English-only mode for this English receipt dataset.
@@ -409,11 +386,11 @@ Missing values remain empty strings and are reported through validation errors o
 ## Notes For Contributors
 
 - Put test files in `uploads/`.
-- Run `main.py` from the project root.
+- Run `testing/testing.py` from the project root for batch evaluation.
 - Do not manually edit generated JSON files unless testing output formatting.
 - If field extraction is wrong, first inspect the raw extracted text from the processor output during debugging.
 - If OCR reads a value incorrectly, inspect the image quality and OCR output.
-- If a new file type is needed, update `detect_uploaded_file_type()` and `extract_text_by_file_type()` in `Backend/processor/text_extractor.py`.
+- If a new file type is needed, update `detect_uploaded_file_type()` and `extract_text_by_file_type()` in `Backend/processors/text_extractor.py`.
 
 ## Roadmap
 

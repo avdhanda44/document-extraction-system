@@ -59,6 +59,12 @@ aadhaar_card_schema = {
 }
 
 
+aadhaar_full_schema = {
+    **aadhaar_front_schema,
+    **aadhaar_back_schema,
+}
+
+
 pan_card_schema = {
     "pan_number": ["Permanent Account Number", "PAN", "PAN Number"],
     "name": ["Name", "नाम"],
@@ -115,8 +121,9 @@ invoice_schema = {
 # Later, if we add PAN card or another form, we will add it in this dictionary.
 document_schemas = {
     "employee_form": employee_form_schema,
-    "aadhaar_front": aadhaar_front_schema,
-    "aadhaar_back": aadhaar_back_schema,
+    "aadhaar_full": aadhaar_full_schema,
+    "aadhaar_front": aadhaar_full_schema,
+    "aadhaar_back": aadhaar_full_schema,
     "pan_card": pan_card_schema,
     "passbook": passbook_schema,
     "invoice": invoice_schema,
@@ -259,6 +266,9 @@ def infer_document_type_from_patterns(extracted_text):
             normalized_text,
         ) or any(word in extracted_text for word in ["जन्म", "पुरुष", "महिला"])
 
+        if has_address_side_marker and has_front_side_marker:
+            return "aadhaar_full", 0.65
+
         if has_address_side_marker and not has_front_side_marker:
             return "aadhaar_back", 0.55
 
@@ -337,6 +347,21 @@ def choose_document_type_from_text(extracted_text):
     else:
         selected_type = best_match["document_type"]
         selected_schema = best_match["schema"]
+
+    heuristic_type, heuristic_confidence = infer_document_type_from_patterns(extracted_text)
+
+    if heuristic_type == "aadhaar_full" and selected_type in {"aadhaar_front", "aadhaar_back", "aadhaar_full"}:
+        selected_type = "aadhaar_full"
+        selected_schema = document_schemas[selected_type]
+        best_match = {
+            **best_match,
+            "document_type": selected_type,
+            "schema": selected_schema,
+            "confidence": max(best_match["confidence"], heuristic_confidence),
+            "confidence_percent": round(max(best_match["confidence"], heuristic_confidence) * 100, 2),
+            "confidence_level": describe_confidence_level(max(best_match["confidence"], heuristic_confidence)),
+            "total_fields": len(selected_schema),
+        }
 
     return {
         "document_type": selected_type,

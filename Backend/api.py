@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from .pipeline import process_uploaded_document, save_reviewed_document
-from .processor.text_extractor import uploads_folder
+from .processors.text_extractor import uploads_folder
 
 
 allowed_file_extensions = {".pdf", ".png", ".jpg", ".jpeg", ".docx"}
@@ -77,6 +77,7 @@ def make_extract_response(result):
         "raw_text": result["document_result"].get("final_text", ""),
         "extraction_engine": result["document_result"].get("extraction_engine", "unknown"),
         "extraction_method": result["document_result"].get("extraction_method", "unknown"),
+        "extraction_attempts": result["document_result"].get("attempts", []),
         "uploaded_file_deleted": result["document_result"].get("uploaded_file_deleted", False),
         "output_path": str(result["output_path"]) if result["output_path"] else "",
     }
@@ -102,7 +103,7 @@ def extract_document(file: UploadFile = File(...)):
         with upload_path.open("wb") as output_file:
             shutil.copyfileobj(file.file, output_file)
 
-        result = process_uploaded_document(upload_path.name)
+        result = process_uploaded_document(upload_path.name, save_output=False)
         try:
             upload_path.unlink()
             uploaded_file_deleted = True

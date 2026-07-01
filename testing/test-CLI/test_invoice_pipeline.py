@@ -2,8 +2,8 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from Backend.json_generator import get_sheet_rows_and_headers
-from main import (
+from testing.reporting import get_sheet_rows_and_headers
+from testing.testing import (
     compare_with_ground_truth,
     extract_invoice_fields_from_text,
     process_document_pdf_folder,
@@ -103,9 +103,9 @@ class InvoiceReportTests(unittest.TestCase):
 
 
 class ScannedPdfOutputTests(unittest.TestCase):
-    @patch("main.save_accuracy_excel")
-    @patch("main.list_document_pdfs", return_value=[])
-    @patch("main.get_available_ocr_models", return_value=["tesseract"])
+    @patch("testing.testing.save_accuracy_excel")
+    @patch("testing.testing.list_document_pdfs", return_value=[])
+    @patch("testing.testing.get_available_ocr_models", return_value=["tesseract"])
     def test_scanned_pdf_report_uses_scanned_output_folder(
         self,
         _get_models,
@@ -116,8 +116,8 @@ class ScannedPdfOutputTests(unittest.TestCase):
 
         process_document_pdf_folder(
             "aadhaar",
-            Path("test-data/generated_docs/aadhaar/pdf/scanned"),
-            Path("test-data/ground_truth/aadhaar/pdf/scanned"),
+            Path("testing/test-data/generated_docs/aadhaar/pdf/scanned"),
+            Path("testing/test-data/ground_truth/aadhaar/pdf/scanned"),
             object(),
             "aadhaar_pdf_model_accuracy.xlsx",
         )

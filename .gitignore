@@ -24,16 +24,19 @@ frontend/dist/
 .DS_Store
 **/.DS_Store
 
-# Notebook and output artifacts
+# Notebook and outputs artifacts
 .ipynb_checkpoints/
-output/**
-!output/**/
-!output/**/.gitkeep
 outputs/**
 !outputs/**/
 !outputs/**/.gitkeep
+uploads/**
+!uploads/**/
+!uploads/**/.gitkeep
 outputs 2/
 validation_test_report*.json
 
+# Local understanding/reference documents
+docs/*.pdf
+
 # Optional: uncomment this if generated test data should not be versioned.
-# test-data/employee_docs/generated_docs/
+# testing/test-data/employee_docs/generated_docs/

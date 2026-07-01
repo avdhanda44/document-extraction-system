@@ -255,6 +255,16 @@ export default function App() {
                 <dt>Method</dt>
                 <dd>{result?.extraction_method || "-"}</dd>
               </div>
+              {result?.extraction_attempts?.length > 1 && (
+                <div>
+                  <dt>Attempts</dt>
+                  <dd>
+                    {result.extraction_attempts
+                      .map((attempt) => attempt.engine)
+                      .join(" > ")}
+                  </dd>
+                </div>
+              )}
               <div>
                 <dt>Original upload</dt>
                 <dd>{result?.uploaded_file_deleted ? "Deleted after extraction" : "-"}</dd>
