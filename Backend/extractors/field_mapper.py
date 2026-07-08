@@ -1,3 +1,5 @@
+from functools import lru_cache
+
 import regex as fuzzy_regex
 
 
@@ -10,6 +12,7 @@ def get_labels_for_field(label_or_labels):
     return [label_or_labels]
 
 
+@lru_cache(maxsize=256)
 def remove_colon_from_label(label):
     # Remove common label separators because extracted text may or may not keep them.
     label = fuzzy_regex.sub(r"[:：|._-]+", " ", label)
@@ -25,8 +28,16 @@ def clean_extracted_value(value):
     return value
 
 
+@lru_cache(maxsize=128)
 def get_clean_lines(extracted_text):
-    return [clean_extracted_value(line) for line in extracted_text.splitlines() if clean_extracted_value(line)]
+    lines = []
+
+    for line in extracted_text.splitlines():
+        clean_line = clean_extracted_value(line)
+        if clean_line:
+            lines.append(clean_line)
+
+    return tuple(lines)
 
 
 def extract_first_aadhaar_number(extracted_text):
@@ -40,6 +51,21 @@ def extract_first_aadhaar_number(extracted_text):
     if match:
         value = match.group(1)
         return f"{value[:4]} {value[4:8]} {value[8:]}"
+
+    return ""
+
+
+def extract_first_vid(extracted_text):
+    match = fuzzy_regex.search(r"(?<!\d)(\d{4}\s+\d{4}\s+\d{4}\s+\d{4})(?!\d)", extracted_text)
+
+    if match:
+        return match.group(1)
+
+    match = fuzzy_regex.search(r"(?<!\d)(\d{16})(?!\d)", extracted_text)
+
+    if match:
+        value = match.group(1)
+        return f"{value[:4]} {value[4:8]} {value[8:12]} {value[12:]}"
 
     return ""
 
@@ -88,6 +114,22 @@ def extract_name_from_aadhaar_front(extracted_text):
     return ""
 
 
+def is_noisy_aadhaar_hindi_name(value):
+    value = value or ""
+
+    if not value:
+        return True
+
+    noisy_values = {
+        "भारत सरकार",
+        "भारतीय विशिष्ट पहचान प्राधिकरण",
+        "आधार",
+    }
+    noisy_markers = ["जन्म", "पुरुष", "महिला", "आम आदमी", "अधिकार"]
+
+    return value in noisy_values or any(marker in value for marker in noisy_markers) or len(value.split()) > 4
+
+
 def extract_hindi_name_from_aadhaar_front(extracted_text):
     lines = get_clean_lines(extracted_text)
 
@@ -102,6 +144,66 @@ def extract_hindi_name_from_aadhaar_front(extracted_text):
                         continue
 
                     return previous_line
+
+    return ""
+
+
+def normalize_aadhaar_ocr_digits(text):
+    translation = str.maketrans({
+        "०": "0",
+        "१": "1",
+        "२": "2",
+        "३": "3",
+        "४": "4",
+        "५": "5",
+        "६": "6",
+        "७": "7",
+        "८": "8",
+        "९": "9",
+    })
+    return str(text or "").translate(translation)
+
+
+def normalize_aadhaar_front_date(date_text):
+    text = normalize_aadhaar_ocr_digits(date_text)
+    text = fuzzy_regex.sub(r"(?i)[il|]", "1", text)
+    text = fuzzy_regex.sub(r"\s+", "", text)
+    text = text.replace("-/", "-1").replace("./", ".1")
+    text = fuzzy_regex.sub(r"(?<=\d)/(?!\d{2,4}\b)", "1", text)
+
+    match = fuzzy_regex.search(r"(\d{4})[-/.](\d{2})[-/.](\d{2})", text)
+    if match:
+        return "-".join(match.groups())
+
+    match = fuzzy_regex.search(r"(\d{2})[-/.](\d{2})[-/.](\d{4})", text)
+    if match:
+        day, month, year = match.groups()
+        return f"{year}-{month}-{day}"
+
+    return ""
+
+
+def extract_aadhaar_front_date(extracted_text):
+    label_match = fuzzy_regex.search(
+        r"(?:DOB|D\.O\.B|Date\s+of\s+Birth|जन्म\s*(?:तिथि|तारीख))\s*[:：/]?\s*([^\n]+)",
+        extracted_text,
+        flags=fuzzy_regex.IGNORECASE,
+    )
+
+    if label_match:
+        normalized_date = normalize_aadhaar_front_date(label_match.group(1))
+        if normalized_date:
+            return normalized_date
+
+    return normalize_aadhaar_front_date(extracted_text)
+
+
+def extract_aadhaar_gender(extracted_text):
+    if fuzzy_regex.search(r"\bFemale\b|महिला", extracted_text, flags=fuzzy_regex.IGNORECASE):
+        return "Female"
+
+    if fuzzy_regex.search(r"\bMale\b|पुरुष", extracted_text, flags=fuzzy_regex.IGNORECASE):
+        return "Male"
 
     return ""
 
@@ -245,27 +347,27 @@ def extract_hindi_aadhaar_address(extracted_text):
 
 def extract_aadhaar_relationship_name(extracted_text):
     match = fuzzy_regex.search(
-        r"\b(?:S/O|C/O|W/O)\s*[:：]\s*([A-Za-z][A-Za-z .]+)",
+        r"\b(S/O|C/O|W/O)\s*[:：]\s*([A-Za-z][A-Za-z .]+)",
         extracted_text,
         flags=fuzzy_regex.IGNORECASE,
     )
 
     if match:
-        return clean_extracted_value(match.group(1))
+        return match.group(1).upper(), clean_extracted_value(match.group(2))
 
-    return ""
+    return "", ""
 
 
 def extract_hindi_relationship_name(extracted_text):
     match = fuzzy_regex.search(
-        r"(?:पुत्र|पिता|पति)\s*[:：]\s*([\p{Devanagari}\s]+?)(?=\s*\d|[A-Za-z]|$)",
+        r"(पुत्र|पिता|पति|पत्नी|मार्फत)\s*[:：]\s*([\p{Devanagari}\s]+?)(?=\s*\d|[A-Za-z]|$)",
         extracted_text,
     )
 
     if match:
-        return clean_extracted_value(match.group(1))
+        return match.group(1), clean_extracted_value(match.group(2))
 
-    return ""
+    return "", ""
 
 
 def is_noisy_aadhaar_relationship_value(value):
@@ -287,6 +389,9 @@ def enhance_aadhaar_fields(extracted_text, mapped_fields):
     if "aadhaar_number" in mapped_fields:
         mapped_fields["aadhaar_number"] = mapped_fields["aadhaar_number"] or extract_first_aadhaar_number(extracted_text)
 
+    if "vid" in mapped_fields:
+        mapped_fields["vid"] = extract_first_vid(mapped_fields["vid"]) or extract_first_vid(extracted_text) or mapped_fields["vid"]
+
     if "pincode" in mapped_fields:
         mapped_fields["pincode"] = mapped_fields["pincode"] or extract_first_pincode(extracted_text)
 
@@ -307,36 +412,50 @@ def enhance_aadhaar_fields(extracted_text, mapped_fields):
         mapped_fields["name"] = mapped_fields["name"] or extract_name_from_aadhaar_front(extracted_text)
 
     if "hindi_name" in mapped_fields:
-        if not mapped_fields["hindi_name"] or len(mapped_fields["hindi_name"].split()) > 4:
+        if is_noisy_aadhaar_hindi_name(mapped_fields["hindi_name"]):
             mapped_fields["hindi_name"] = extract_hindi_name_from_aadhaar_front(extracted_text)
 
     if "date_of_birth" in mapped_fields:
-        dob = extract_text_after_any_label(extracted_text, ["DOB", "Date of Birth", "जन्म तिथि"])
-        dob_match = fuzzy_regex.search(r"\d{4}[-/.]\d{2}[-/.]\d{2}|\d{2}[-/.]\d{2}[-/.]\d{4}", dob)
-        mapped_fields["date_of_birth"] = mapped_fields["date_of_birth"] or (dob_match.group(0) if dob_match else "")
+        normalized_date = normalize_aadhaar_front_date(mapped_fields["date_of_birth"])
+        mapped_fields["date_of_birth"] = normalized_date or extract_aadhaar_front_date(extracted_text) or mapped_fields["date_of_birth"]
 
     if "gender" in mapped_fields:
-        if fuzzy_regex.search(r"\bMale\b|पुरुष", extracted_text, flags=fuzzy_regex.IGNORECASE):
-            if not mapped_fields["gender"] or len(mapped_fields["gender"].split()) > 3:
-                mapped_fields["gender"] = "Male"
-        elif fuzzy_regex.search(r"\bFemale\b|महिला", extracted_text, flags=fuzzy_regex.IGNORECASE):
-            if not mapped_fields["gender"] or len(mapped_fields["gender"].split()) > 3:
-                mapped_fields["gender"] = "Female"
+        mapped_fields["gender"] = extract_aadhaar_gender(extracted_text) or mapped_fields["gender"]
 
-    relationship_name = extract_aadhaar_relationship_name(extracted_text)
+    relationship_label, relationship_name = extract_aadhaar_relationship_name(extracted_text)
 
     if relationship_name:
-        for field_name in ("relationship_label", "father_name", "care_of"):
+        if "relationship_label" in mapped_fields:
+            mapped_fields["relationship_label"] = relationship_name
+
+        target_fields = {
+            "S/O": ("father_name",),
+            "C/O": ("care_of",),
+            "W/O": ("husband_name",),
+        }.get(relationship_label, ("relationship_label",))
+
+        for field_name in target_fields:
             if field_name in mapped_fields and (
                 not mapped_fields[field_name]
                 or is_noisy_aadhaar_relationship_value(mapped_fields[field_name])
             ):
                 mapped_fields[field_name] = relationship_name
 
-    hindi_relationship_name = extract_hindi_relationship_name(extracted_text)
+    hindi_relationship_label, hindi_relationship_name = extract_hindi_relationship_name(extracted_text)
 
     if hindi_relationship_name:
-        for field_name in ("hindi_relationship_label", "hindi_father_name", "hindi_care_of"):
+        if "hindi_relationship_label" in mapped_fields:
+            mapped_fields["hindi_relationship_label"] = hindi_relationship_name
+
+        target_fields = {
+            "पुत्र": ("hindi_father_name",),
+            "पिता": ("hindi_father_name",),
+            "मार्फत": ("hindi_care_of",),
+            "पति": ("hindi_husband_name",),
+            "पत्नी": ("hindi_husband_name",),
+        }.get(hindi_relationship_label, ("hindi_relationship_label",))
+
+        for field_name in target_fields:
             if field_name in mapped_fields:
                 mapped_fields[field_name] = hindi_relationship_name
 
@@ -348,20 +467,23 @@ def enhance_aadhaar_fields(extracted_text, mapped_fields):
     return mapped_fields
 
 
+PAN_DIGIT_TRANSLATION = str.maketrans({
+    "०": "0",
+    "१": "1",
+    "२": "2",
+    "३": "3",
+    "४": "4",
+    "५": "5",
+    "६": "6",
+    "७": "7",
+    "८": "8",
+    "९": "9",
+})
+
+
+@lru_cache(maxsize=128)
 def normalize_pan_ocr_text(text):
-    translation = str.maketrans({
-        "०": "0",
-        "१": "1",
-        "२": "2",
-        "३": "3",
-        "४": "4",
-        "५": "5",
-        "६": "6",
-        "७": "7",
-        "८": "8",
-        "९": "9",
-    })
-    return text.translate(translation)
+    return text.translate(PAN_DIGIT_TRANSLATION)
 
 
 def normalize_pan_date(date_text):
@@ -640,6 +762,7 @@ def enhance_invoice_fields(extracted_text, mapped_fields):
     return mapped_fields
 
 
+@lru_cache(maxsize=256)
 def make_spacing_flexible_label_pattern(label_text):
     # This helps match labels even if PDF/OCR text changes spacing or separators.
     # Example: Employee Name, Employee   Name, Employee-Name, and Employee\nName can all match.
@@ -651,6 +774,7 @@ def make_spacing_flexible_label_pattern(label_text):
     return separator_pattern.join(escaped_words)
 
 
+@lru_cache(maxsize=256)
 def get_allowed_fuzzy_errors(label_text):
     # Fuzzy matching helps when OCR reads a label with a tiny mistake.
     # Short labels stay strict so they do not match unrelated text.
@@ -665,6 +789,7 @@ def get_allowed_fuzzy_errors(label_text):
     return 2
 
 
+@lru_cache(maxsize=256)
 def add_fuzzy_matching_to_pattern(label_pattern, label_text):
     allowed_errors = get_allowed_fuzzy_errors(label_text)
 

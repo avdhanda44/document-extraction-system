@@ -1,4 +1,6 @@
 import re
+from functools import lru_cache
+
 import regex as fuzzy_regex
 
 
@@ -21,11 +23,11 @@ employee_form_schema = {
 # Aadhaar front schema.
 # Keep only the fields that can appear on the front side of an Aadhaar card.
 aadhaar_front_schema = {
-    "aadhaar_number": ["Aadhaar Number:", "आधार संख्या:", "आधार नंबर:"],
-    "vid": ["VID:", "वीआईडी:"],
+    "aadhaar_number": ["Aadhaar Number:", "Aadhaar No:", "Aadhaar:", "आधार संख्या:", "आधार नंबर:"],
+    "vid": ["VID:", "VID Number:", "Virtual ID:", "वीआईडी:"],
     "name": ["Name:", "नाम:"],
-    "hindi_name": ["Hindi Name:", "नाम:"],
-    "date_of_birth": ["Date of Birth:", "DOB:", "जन्म तिथि:"],
+    "hindi_name": ["Hindi Name:", "नाम:", "हिंदी नाम:"],
+    "date_of_birth": ["Date of Birth:", "DOB:", "D.O.B:", "जन्म तिथि:", "जन्म तारीख:"],
     "year_of_birth": ["Year of Birth:", "YOB:", "जन्म वर्ष:"],
     "gender": ["Gender:", "लिंग:", "Male", "Female", "पुरुष", "महिला"],
 }
@@ -35,20 +37,20 @@ aadhaar_front_schema = {
 # Keep only address-side fields. Relationship fields are split so comparison can
 # score C/O, Father/S/O, and W/O/Husband separately.
 aadhaar_back_schema = {
-    "aadhaar_number": ["Aadhaar Number:", "आधार संख्या:", "आधार नंबर:"],
-    "vid": ["VID:", "वीआईडी:"],
-    "relationship_label": ["Father:", "S/O:", "C/O:", "W/O:", "Husband:", "पिता:", "पति:", "मार्फत:"],
+    "aadhaar_number": ["Aadhaar Number:", "Aadhaar No:", "Aadhaar:", "आधार संख्या:", "आधार नंबर:"],
+    "vid": ["VID:", "VID Number:", "Virtual ID:", "वीआईडी:"],
+    "relationship_label": ["Father:", "S/O:", "C/O:", "W/O:", "Husband:", "पिता:", "पति:", "पत्नी:", "पुत्र:", "मार्फत:"],
     "care_of": ["C/O:", "Care Of:", "मार्फत:"],
-    "father_name": ["Father:", "Father Name:", "S/O:", "पिता का नाम:", "पिता:"],
-    "husband_name": ["Husband:", "Husband Name:", "W/O:", "पति का नाम:", "पति:"],
+    "father_name": ["Father:", "Father Name:", "S/O:", "पिता का नाम:", "पिता:", "पुत्र:"],
+    "husband_name": ["Husband:", "Husband Name:", "W/O:", "पति का नाम:", "पति:", "पत्नी:"],
     "hindi_relationship_label": ["पिता:", "पति:", "पत्नी:", "पुत्र:", "मार्फत:"],
     "hindi_care_of": ["मार्फत:"],
     "hindi_father_name": ["पिता:", "पिता का नाम:", "पुत्र:"],
     "hindi_husband_name": ["पति:", "पति का नाम:", "पत्नी:"],
-    "address": ["Address:", "पता:"],
+    "address": ["Address:", "पता:", "आवासीय पता:"],
     "hindi_address": ["पता:"],
     "hindi_address_lines": ["पता:"],
-    "pincode": ["Pincode:", "PIN Code:", "Postal Code:"],
+    "pincode": ["Pincode:", "PIN Code:", "PIN:", "Postal Code:"],
 }
 
 
@@ -122,14 +124,15 @@ invoice_schema = {
 document_schemas = {
     "employee_form": employee_form_schema,
     "aadhaar_full": aadhaar_full_schema,
-    "aadhaar_front": aadhaar_full_schema,
-    "aadhaar_back": aadhaar_full_schema,
+    "aadhaar_front": aadhaar_front_schema,
+    "aadhaar_back": aadhaar_back_schema,
     "pan_card": pan_card_schema,
     "passbook": passbook_schema,
     "invoice": invoice_schema,
 }
 
 
+@lru_cache(maxsize=128)
 def make_text_easy_to_match(text):
     # Extracted text can have extra spaces, line breaks, missing colons, or mixed case.
     # I replace common separators with spaces, then make one simple lowercase line.
@@ -138,6 +141,7 @@ def make_text_easy_to_match(text):
     return " ".join(text.split())
 
 
+@lru_cache(maxsize=256)
 def make_label_easy_to_match(label):
     # Make schema labels match the same style as extracted text.
     # Example: "Employee Name:" and "employee-name" both become "employee name".
@@ -155,6 +159,7 @@ def get_labels_for_field(label_or_labels):
     return [label_or_labels]
 
 
+@lru_cache(maxsize=256)
 def get_allowed_fuzzy_errors(label):
     # Fuzzy matching means we allow a few small OCR mistakes in labels.
     # Short labels like DOB or VID should stay strict, otherwise they may match wrong text.

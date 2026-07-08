@@ -71,6 +71,124 @@ class PipelineTests(unittest.TestCase):
         self.assertIn("hindi_address_lines", mapped_fields)
         self.assertEqual(validation["validation_summary"]["invalid_fields"], 0)
 
+    def test_aadhaar_front_accepts_realistic_label_variants(self):
+        text = """
+        भारत सरकार
+        GOVERNMENT OF INDIA
+        हिंदी नाम: काव्या नायर
+        Name: Kavya Nair
+        D.O.B: 1989-11-05
+        Female
+        Aadhaar: 0603 3667 5670
+        Virtual ID: 1234 5678 9012 3456
+        आधार - आम आदमी का अधिकार
+        """
+
+        classification, mapped_fields, validation = classify_and_extract_fields(text)
+
+        self.assertEqual(classification["document_type"], "aadhaar_front")
+        self.assertEqual(mapped_fields["aadhaar_number"], "0603 3667 5670")
+        self.assertEqual(mapped_fields["vid"], "1234 5678 9012 3456")
+        self.assertEqual(mapped_fields["name"], "Kavya Nair")
+        self.assertEqual(mapped_fields["hindi_name"], "काव्या नायर")
+        self.assertEqual(mapped_fields["date_of_birth"], "1989-11-05")
+        self.assertEqual(mapped_fields["gender"], "Female")
+        self.assertNotIn("address", mapped_fields)
+        self.assertNotIn("pincode", validation["extracted_data"])
+        self.assertEqual(validation["validation_summary"]["invalid_fields"], 0)
+
+    def test_aadhaar_front_cleans_noisy_label_slices(self):
+        text = """
+        भारत सरकार
+        GOVERNMENT OF INDIA
+        आरय नेहा
+        Marav Uunla
+        जन्मतिथि / DOB : i९९ 1-03-/8
+        पुरुष / walo
+        0601 3665 5668
+        आधार
+        आम
+        आदमी का अधिकार
+        """
+
+        classification, mapped_fields, validation = classify_and_extract_fields(text)
+
+        self.assertEqual(classification["document_type"], "aadhaar_front")
+        self.assertEqual(mapped_fields["aadhaar_number"], "0601 3665 5668")
+        self.assertEqual(mapped_fields["hindi_name"], "आरय नेहा")
+        self.assertEqual(mapped_fields["date_of_birth"], "1991-03-18")
+        self.assertEqual(mapped_fields["gender"], "Male")
+        self.assertNotIn("आम आदमी", mapped_fields["gender"])
+        self.assertNotEqual(mapped_fields["hindi_name"], "भारत सरकार")
+        self.assertEqual(validation["validation_summary"]["invalid_fields"], 0)
+
+    def test_aadhaar_back_accepts_realistic_label_variants(self):
+        text = """
+        भारतीय विशिष्ट पहचान प्राधिकरण
+        UNIQUE IDENTIFICATION AUTHORITY OF INDIA
+        Aadhaar: 0601 3665 5668
+        आवासीय पता: C/O: Suresh Mehta
+        14 Lotus Park Road
+        Pune Maharashtra
+        PIN: 411001
+        """
+
+        classification, mapped_fields, validation = classify_and_extract_fields(text)
+
+        self.assertEqual(classification["document_type"], "aadhaar_back")
+        self.assertEqual(mapped_fields["aadhaar_number"], "0601 3665 5668")
+        self.assertEqual(mapped_fields["pincode"], "411001")
+        self.assertIn("Lotus Park Road", mapped_fields["address"])
+        self.assertEqual(mapped_fields["relationship_label"], "Suresh Mehta")
+        self.assertNotIn("name", mapped_fields)
+        self.assertNotIn("gender", validation["extracted_data"])
+        self.assertEqual(validation["validation_summary"]["invalid_fields"], 0)
+
+    def test_aadhaar_full_routes_wife_of_to_husband_fields(self):
+        text = """
+        भारत सरकार
+        GOVERNMENT OF INDIA
+        SAMPLE PHOTO
+        काव्या नायर
+        Kavya Nair
+        जन्म तिथि / DOB : 1989-11-05
+        महिला / Female
+        आधार
+        - आम आदमी का अधिकार
+        भारतीय विशिष्ट पहचान प्राधिकरण
+        UNIQUE IDENTIFICATION AUTHORITY OF INDIA
+        पता:
+        पत्नी: रोहित नायर
+        27, मअरइनए दरइवए
+        कओचइ, कएरअलअ
+        682031
+        W/O: Rohit Nair
+        27, Marine Drive
+        Kochi, Kerala
+        682031
+        1947
+        1800 180 1947
+        help@uidai.gov.in
+        www.uidai.gov.in
+        P.O. Box No. 1947,
+        Bengaluru-560 001
+        0603 3667 5670
+        """
+
+        classification, mapped_fields, validation = classify_and_extract_fields(text)
+
+        self.assertEqual(classification["document_type"], "aadhaar_full")
+        self.assertEqual(mapped_fields["name"], "Kavya Nair")
+        self.assertEqual(mapped_fields["gender"], "Female")
+        self.assertEqual(mapped_fields["pincode"], "682031")
+        self.assertEqual(mapped_fields["relationship_label"], "Rohit Nair")
+        self.assertEqual(mapped_fields["husband_name"], "Rohit Nair")
+        self.assertEqual(mapped_fields["hindi_relationship_label"], "रोहित नायर")
+        self.assertEqual(mapped_fields["hindi_husband_name"], "रोहित नायर")
+        self.assertNotEqual(mapped_fields["father_name"], "Rohit Nair")
+        self.assertNotEqual(mapped_fields["hindi_father_name"], "रोहित नायर")
+        self.assertEqual(validation["validation_summary"]["invalid_fields"], 0)
+
     def test_pan_extracts_fields_from_clean_front_raw_text(self):
         text = """
         INCOME TAX DEPARTMENT

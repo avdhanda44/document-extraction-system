@@ -1,10 +1,8 @@
+from functools import lru_cache
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import importlib.util
 import os
-
-import easyocr
-from pdf2image import convert_from_path
 
 
 PROJECT_FOLDER = Path(__file__).resolve().parents[2]
@@ -33,6 +31,8 @@ def get_easyocr_reader():
     global easyocr_reader
 
     if easyocr_reader is None:
+        import easyocr
+
         # gpu=False means this will run on a normal CPU.
         easyocr_reader = easyocr.Reader(["en", "hi"], gpu=False)
 
@@ -125,6 +125,7 @@ def get_tesseract_language_config():
     return "eng"
 
 
+@lru_cache(maxsize=1)
 def get_available_ocr_models():
     # These are the OCR engines this processor knows how to run.
     models = ["easyocr"]
@@ -395,6 +396,8 @@ def extract_text_from_scanned_pdf(pdf_path, model_name="easyocr", preprocessing_
     # Scanned PDFs are basically images inside a PDF.
     # So first we convert each page into an image, then run OCR on those images.
     try:
+        from pdf2image import convert_from_path
+
         pages = convert_from_path(str(pdf_path), dpi=350)
     except Exception as error:
         raise RuntimeError("Scanned PDF files need Poppler installed.") from error

@@ -1,7 +1,6 @@
-from docx import Document
-
-
 def extract_text_from_docx(docx_path):
+    from docx import Document
+
     # DOCX files can have text in paragraphs and tables.
     # We read both so form values are not missed.
     document = Document(docx_path)

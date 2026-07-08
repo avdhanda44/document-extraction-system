@@ -1,14 +1,22 @@
-import pdfplumber
-
 from ..model_policy import digital_pdf_extractors, get_scanned_pdf_ocr_policy
 from .image_processor import extract_text_from_scanned_pdf
 
 
+PDF_EXTRACTORS = {
+    "pdfplumber": "extract_pages_with_pdfplumber",
+    "pypdf": "extract_pages_with_pypdf",
+    "pymupdf": "extract_pages_with_pymupdf",
+    "pdfminer": "extract_pages_with_pdfminer",
+}
+
+
 def get_available_digital_pdf_extractors():
-    return ["pdfplumber", "pypdf", "pymupdf", "pdfminer"]
+    return list(PDF_EXTRACTORS)
 
 
 def extract_pages_with_pdfplumber(pdf_path):
+    import pdfplumber
+
     with pdfplumber.open(pdf_path) as pdf:
         return [(page.extract_text() or "").strip() for page in pdf.pages]
 
@@ -43,17 +51,12 @@ def extract_pages_with_pdfminer(pdf_path):
 
 
 def extract_text_pages_from_digital_pdf(pdf_path, extractor_name):
-    extractors = {
-        "pdfplumber": extract_pages_with_pdfplumber,
-        "pypdf": extract_pages_with_pypdf,
-        "pymupdf": extract_pages_with_pymupdf,
-        "pdfminer": extract_pages_with_pdfminer,
-    }
+    extractor_function_name = PDF_EXTRACTORS.get(extractor_name)
 
-    if extractor_name not in extractors:
+    if extractor_function_name is None:
         raise ValueError(f"Unknown digital PDF extractor: {extractor_name}")
 
-    return extractors[extractor_name](pdf_path)
+    return globals()[extractor_function_name](pdf_path)
 
 
 def extract_text_from_pdf_with_metadata(pdf_path):
