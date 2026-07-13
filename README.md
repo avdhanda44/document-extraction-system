@@ -146,6 +146,13 @@ npm install
 npm run dev
 ```
 
+Build or preview the React app:
+
+```bash
+npm run build
+npm run preview
+```
+
 Then open:
 
 ```text

@@ -10,8 +10,12 @@ from tempfile import TemporaryDirectory
 testing_folder = Path(__file__).resolve().parent
 project_folder = testing_folder.parent
 
-if str(project_folder) not in sys.path:
-    sys.path.insert(0, str(project_folder))
+project_folder_text = str(project_folder)
+
+if project_folder_text in sys.path:
+    sys.path.remove(project_folder_text)
+
+sys.path.insert(0, project_folder_text)
 
 from pdf2image import convert_from_path
 
@@ -31,6 +35,13 @@ from testing.reporting import (
     save_aadhaar_json_file,
     save_accuracy_excel,
     save_document_json_file,
+)
+from testing.llm_testing import (
+    get_text_llm_models,
+    get_vision_llm_models,
+    is_llm_model,
+    process_image_with_llm,
+    process_text_with_llm,
 )
 from Backend.pipeline import process_uploaded_document
 from Backend.processors.image_processor import extract_text_from_image, get_available_ocr_models
@@ -95,6 +106,19 @@ image_quality_categories = [
     "rotated",
     "clean",
 ]
+MODEL_SCOPE_ALL = "all"
+MODEL_SCOPE_NO_LLM = "no_llm"
+MODEL_SCOPE_LLM_ONLY = "llm_only"
+
+
+def choose_models(primary_models, llm_models, model_scope=MODEL_SCOPE_ALL):
+    if model_scope == MODEL_SCOPE_NO_LLM:
+        return list(primary_models)
+
+    if model_scope == MODEL_SCOPE_LLM_ONLY:
+        return list(llm_models)
+
+    return list(primary_models) + list(llm_models)
 
 
 def run_document_processing(file_name):
@@ -1810,8 +1834,13 @@ def process_document_image_folder(
     ground_truth_folder,
     process_model,
     excel_file_name,
+    model_scope=MODEL_SCOPE_ALL,
 ):
-    model_names = get_available_ocr_models()
+    model_names = choose_models(
+        get_available_ocr_models(),
+        get_vision_llm_models(),
+        model_scope,
+    )
     excel_rows = []
     json_outputs = []
 
@@ -1829,7 +1858,10 @@ def process_document_image_folder(
             started_at = time.perf_counter()
 
             try:
-                model_result = process_model(image_path, model_name)
+                if is_llm_model(model_name):
+                    model_result = process_image_with_llm(document_name, image_path, model_name)
+                else:
+                    model_result = process_model(image_path, model_name)
                 comparison = compare_with_ground_truth(model_result["extracted_data"], ground_truth)
                 processing_time_seconds = round(time.perf_counter() - started_at, 4)
                 model_outputs[model_name] = {
@@ -1906,8 +1938,13 @@ def process_document_pdf_folder(
     process_model,
     excel_file_name,
     output_format="pdf/scanned",
+    model_scope=MODEL_SCOPE_ALL,
 ):
-    model_names = get_available_ocr_models()
+    model_names = choose_models(
+        get_available_ocr_models(),
+        get_vision_llm_models(),
+        model_scope,
+    )
     excel_rows = []
     json_outputs = []
 
@@ -1939,7 +1976,14 @@ def process_document_pdf_folder(
                     started_at = time.perf_counter()
 
                     try:
-                        model_result = process_model(page_image_path, model_name)
+                        if is_llm_model(model_name):
+                            model_result = process_image_with_llm(
+                                document_name,
+                                page_image_path,
+                                model_name,
+                            )
+                        else:
+                            model_result = process_model(page_image_path, model_name)
                         comparison = compare_with_ground_truth(
                             model_result["extracted_data"],
                             page_ground_truth,
@@ -2054,8 +2098,13 @@ def process_document_digital_pdf_folder(
     pdfs_folder,
     ground_truth_folder,
     excel_file_name,
+    model_scope=MODEL_SCOPE_ALL,
 ):
-    extractor_names = get_available_digital_pdf_extractors()
+    extractor_names = choose_models(
+        get_available_digital_pdf_extractors(),
+        get_text_llm_models(),
+        model_scope,
+    )
     excel_rows = []
     json_outputs = []
 
@@ -2087,10 +2136,16 @@ def process_document_digital_pdf_folder(
         for extractor_name in extractor_names:
             started_at = time.perf_counter()
             try:
-                page_texts = extract_text_pages_from_digital_pdf(
-                    pdf_path,
-                    extractor_name,
-                )
+                if is_llm_model(extractor_name):
+                    page_texts = extract_text_pages_from_digital_pdf(
+                        pdf_path,
+                        "pymupdf",
+                    )
+                else:
+                    page_texts = extract_text_pages_from_digital_pdf(
+                        pdf_path,
+                        extractor_name,
+                    )
                 total_time = time.perf_counter() - started_at
                 average_page_time = round(
                     total_time / max(len(page_texts), 1),
@@ -2104,11 +2159,25 @@ def process_document_digital_pdf_folder(
                         if page_index < len(page_texts)
                         else ""
                     )
-                    model_result = process_digital_pdf_text(
-                        document_name,
-                        page_text,
-                        pdf_path,
-                    )
+                    page_started_at = time.perf_counter()
+                    if is_llm_model(extractor_name):
+                        model_result = process_text_with_llm(
+                            document_name,
+                            page_text,
+                            pdf_path,
+                            extractor_name,
+                        )
+                        page_processing_time = round(
+                            average_page_time + time.perf_counter() - page_started_at,
+                            4,
+                        )
+                    else:
+                        model_result = process_digital_pdf_text(
+                            document_name,
+                            page_text,
+                            pdf_path,
+                        )
+                        page_processing_time = average_page_time
                     page_ground_truth = get_pdf_page_ground_truth(
                         ground_truth,
                         page_label,
@@ -2124,15 +2193,20 @@ def process_document_digital_pdf_folder(
                         "comparison_with_ground_truth": make_readable_comparison(
                             comparison
                         ),
-                        "raw_text": page_text,
-                        "processing_time_seconds": average_page_time,
+                        "source_text": page_text if is_llm_model(extractor_name) else "",
+                        "raw_text": (
+                            model_result.get("raw_text", "")
+                            if is_llm_model(extractor_name)
+                            else page_text
+                        ),
+                        "processing_time_seconds": page_processing_time,
                     }
                     page_rows[page_key][extractor_name] = comparison[
                         "accuracy_percent"
                     ]
                     page_rows[page_key][
                         f"{extractor_name} processing time (seconds)"
-                    ] = average_page_time
+                    ] = page_processing_time
             except Exception as error:
                 elapsed = round(time.perf_counter() - started_at, 4)
                 for page_key, page_label in page_mapping.items():
@@ -2197,110 +2271,121 @@ def process_document_digital_pdf_folder(
     }
 
 
-def process_aadhaar_folder():
+def process_aadhaar_folder(model_scope=MODEL_SCOPE_ALL):
     return process_document_image_folder(
         "aadhaar",
         aadhaar_images_folder,
         aadhaar_ground_truth_folder,
         process_aadhaar_image_with_model,
         "aadhaar_model_accuracy.xlsx",
+        model_scope=model_scope,
     )
 
 
-def process_pan_folder():
+def process_pan_folder(model_scope=MODEL_SCOPE_ALL):
     return process_document_image_folder(
         "pan",
         pan_images_folder,
         pan_ground_truth_folder,
         process_pan_image_with_model,
         "pan_model_accuracy.xlsx",
+        model_scope=model_scope,
     )
 
 
-def process_passbook_folder():
+def process_passbook_folder(model_scope=MODEL_SCOPE_ALL):
     return process_document_image_folder(
         "passbook",
         passbook_images_folder,
         passbook_ground_truth_folder,
         process_passbook_image_with_model,
         "passbook_model_accuracy.xlsx",
+        model_scope=model_scope,
     )
 
 
-def process_invoice_folder():
+def process_invoice_folder(model_scope=MODEL_SCOPE_ALL):
     return process_document_image_folder(
         "invoice",
         invoice_images_folder,
         invoice_ground_truth_folder,
         process_invoice_image_with_model,
         "invoice_model_accuracy.xlsx",
+        model_scope=model_scope,
     )
 
 
-def process_aadhaar_pdf_folder():
+def process_aadhaar_pdf_folder(model_scope=MODEL_SCOPE_ALL):
     return process_document_pdf_folder(
         "aadhaar",
         aadhaar_pdfs_folder / "scanned",
         aadhaar_pdf_ground_truth_folder / "scanned",
         process_aadhaar_image_with_model,
         "aadhaar_pdf_model_accuracy.xlsx",
+        model_scope=model_scope,
     )
 
 
-def process_pan_pdf_folder():
+def process_pan_pdf_folder(model_scope=MODEL_SCOPE_ALL):
     return process_document_pdf_folder(
         "pan",
         pan_pdfs_folder / "scanned",
         pan_pdf_ground_truth_folder / "scanned",
         process_pan_image_with_model,
         "pan_pdf_model_accuracy.xlsx",
+        model_scope=model_scope,
     )
 
 
-def process_passbook_pdf_folder():
+def process_passbook_pdf_folder(model_scope=MODEL_SCOPE_ALL):
     return process_document_pdf_folder(
         "passbook",
         passbook_pdfs_folder / "scanned",
         passbook_pdf_ground_truth_folder / "scanned",
         process_passbook_image_with_model,
         "passbook_pdf_model_accuracy.xlsx",
+        model_scope=model_scope,
     )
 
 
-def process_invoice_pdf_folder():
+def process_invoice_pdf_folder(model_scope=MODEL_SCOPE_ALL):
     return process_document_pdf_folder(
         "invoice",
         invoice_pdfs_folder / "scanned",
         invoice_pdf_ground_truth_folder / "scanned",
         process_invoice_image_with_model,
         "invoice_pdf_model_accuracy.xlsx",
+        model_scope=model_scope,
     )
 
 
-def process_aadhaar_digital_pdf_folder():
+def process_aadhaar_digital_pdf_folder(model_scope=MODEL_SCOPE_ALL):
     return process_document_digital_pdf_folder(
         "aadhaar",
         aadhaar_pdfs_folder / "digital",
         aadhaar_pdf_ground_truth_folder / "digital",
         "aadhaar_digital_pdf_extractor_accuracy.xlsx",
+        model_scope=model_scope,
     )
 
 
-def process_pan_digital_pdf_folder():
+def process_pan_digital_pdf_folder(model_scope=MODEL_SCOPE_ALL):
     return process_document_digital_pdf_folder(
         "pan",
         pan_pdfs_folder / "digital",
         pan_pdf_ground_truth_folder / "digital",
         "pan_digital_pdf_extractor_accuracy.xlsx",
+        model_scope=model_scope,
     )
 
 
-def process_passbook_digital_pdf_folder():
+def process_passbook_digital_pdf_folder(model_scope=MODEL_SCOPE_ALL):
     return process_document_digital_pdf_folder(
         "passbook",
         passbook_pdfs_folder / "digital",
         passbook_pdf_ground_truth_folder / "digital",
         "passbook_digital_pdf_extractor_accuracy.xlsx",
+        model_scope=model_scope,
     )
 
 
@@ -2322,6 +2407,8 @@ Usage:
   python testing/testing.py batch <aadhaar|pan|passbook|invoice> --format image
   python testing/testing.py batch <aadhaar|pan|passbook|invoice> --format pdf --pdf-type scanned
   python testing/testing.py batch <aadhaar|pan|passbook> --format pdf --pdf-type digital
+  python testing/testing.py batch <document> --format image --llm-only
+  python testing/testing.py batch <document> --format image --no-llm
   python testing/testing.py clear-output
 
 Legacy usage still supported:
@@ -2375,6 +2462,17 @@ Outputs:
   Batch image reports: testing/test-outputs/<document_type>/image/
   Scanned PDF reports: testing/test-outputs/<document_type>/pdf/scanned/
   Digital PDF reports: testing/test-outputs/<document_type>/pdf/digital/
+
+LLM comparison:
+  Image and scanned PDF batches also include Ollama vision models:
+  llm:qwen2.5vl:7b, llm:llama3.2-vision:11b
+  Digital PDF batches also include Ollama text models:
+  llm:qwen2.5:7b-instruct, llm:llama3.1:8b
+  Pull the models with ollama first, or those columns will show failures.
+  Default batch mode runs all available extractors plus all configured LLMs.
+  Use --no-llm for extractor-only batches, or --llm-only for LLM-only batches.
+  To run fewer LLMs, set VISION_LLM_MODELS or TEXT_LLM_MODELS as comma-separated names.
+  Example: VISION_LLM_MODELS=qwen2.5vl:7b
 """.strip()
     )
 
@@ -2416,6 +2514,23 @@ def build_parser():
         action="store_true",
         help="Clear generated outputs before running this batch.",
     )
+    model_scope_group = batch_parser.add_mutually_exclusive_group()
+    model_scope_group.add_argument(
+        "--no-llm",
+        "--ocr-only",
+        action="store_const",
+        const=MODEL_SCOPE_NO_LLM,
+        default=MODEL_SCOPE_ALL,
+        dest="model_scope",
+        help="Run only OCR/text extractors, excluding LLM models.",
+    )
+    model_scope_group.add_argument(
+        "--llm-only",
+        action="store_const",
+        const=MODEL_SCOPE_LLM_ONLY,
+        dest="model_scope",
+        help="Run only configured LLM models.",
+    )
 
     subparsers.add_parser(
         "clear-output",
@@ -2425,7 +2540,7 @@ def build_parser():
     return parser
 
 
-def run_image_batch(document_name):
+def run_image_batch(document_name, model_scope=MODEL_SCOPE_ALL):
     processors = {
         "aadhaar": ("Aadhaar", process_aadhaar_folder),
         "pan": ("PAN", process_pan_folder),
@@ -2433,12 +2548,12 @@ def run_image_batch(document_name):
         "invoice": ("invoice", process_invoice_folder),
     }
     document_label, processor = processors[document_name]
-    result = processor()
+    result = processor(model_scope=model_scope)
     print(f"Done. Processed {result['processed_images']} {document_label} images.")
     print(f"Excel saved at: {result['excel_output']}")
 
 
-def run_pdf_batch(document_name, pdf_type):
+def run_pdf_batch(document_name, pdf_type, model_scope=MODEL_SCOPE_ALL):
     scanned_processors = {
         "aadhaar": ("Aadhaar", process_aadhaar_pdf_folder),
         "pan": ("PAN", process_pan_pdf_folder),
@@ -2456,7 +2571,7 @@ def run_pdf_batch(document_name, pdf_type):
         raise ValueError(f"{document_name} does not have a {pdf_type} PDF batch yet.")
 
     document_label, processor = processors[document_name]
-    result = processor()
+    result = processor(model_scope=model_scope)
     print(
         f"Done. Processed {result['processed_pdfs']} {document_label} PDFs "
         f"({result['processed_pages']} pages)."
@@ -2470,9 +2585,9 @@ def run_batch_command(arguments):
         print("Generated output files cleared.")
 
     if arguments.input_format == "image":
-        run_image_batch(arguments.document)
+        run_image_batch(arguments.document, arguments.model_scope)
     else:
-        run_pdf_batch(arguments.document, arguments.pdf_type)
+        run_pdf_batch(arguments.document, arguments.pdf_type, arguments.model_scope)
 
 
 def run_legacy_command(arguments):
